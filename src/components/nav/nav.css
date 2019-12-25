@@ -1,0 +1,149 @@
+
+
+.threeiinc-header {
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+	height: 210px;
+	overflow: visible;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.3s;
+	display: flex;
+    flex-direction: column;
+    justify-content: flex;
+	position: relative;
+	order: 0;
+	
+
+}
+
+.threeiinc-inner {
+	width: 100%;
+	padding: 0 6em;
+}
+
+.threeiinc-header h1,
+.threeiinc-header nav {
+	display: inline-block;
+	position: relative;
+}
+
+ /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
+.threeiinc-header h1,
+.threeiinc-header nav a {
+	line-height: 100px;
+}
+
+.threeiinc-header h1 {
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+	letter-spacing: 3px;
+	font-size: 2.5em;
+	margin: 0;
+}
+
+.threeiinc-header nav {
+	float: right;
+}
+
+.Logo__Brand {
+	color: rgb(255, 255, 255);
+	margin: 0 0 0 -220px;
+}
+.threeiinc-header nav a {
+	color: rgb(255, 255, 255);
+	font-weight: 600;
+	margin: 0 0 0 40px;
+	font-size: 1.2em;
+}
+
+.threeiinc-header nav a:hover {
+	color: rgb(255, 240, 30);
+}
+
+/* Transitions and class for reduced height */
+.threeiinc-header h1,
+.threeiinc-header nav a {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.threeiinc-header.threeiinc-header-shrink {
+	height: 90px;
+}
+
+.threeiinc-header.threeiinc-header-shrink h1,
+.threeiinc-header.threeiinc-header-shrink nav a {
+	line-height: 90px;
+}
+
+.threeiinc-header.threeiinc-header-shrink h1 {
+	font-size: 2em;
+}
+
+/* Example Media Queries */
+@media screen and (max-width: 55em) {
+	
+	.threeiinc-header .threeiinc-inner {
+		width: 100%;
+	}
+	.Logo__Brand {
+		margin: 0 0 0 0;
+	}
+	.threeiinc-header h1,
+	.threeiinc-header nav {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		float: none;
+		margin-left: -50px;
+	}
+
+	.threeiinc-header h1,
+	.threeiinc-header nav a {
+        line-height: 70px;
+		margin-top: 20px;
+		
+	}
+
+	.threeiinc-header nav a {
+        margin: 0 20px;
+
+	}
+
+	.threeiinc-header.threeiinc-header-shrink h1,
+	.threeiinc-header.threeiinc-header-shrink nav a {
+		line-height: 45px;
+	}
+
+	.threeiinc-header.threeiinc-header-shrink h1 {
+		font-size: 2em;
+	}
+
+	.threeiinc-header.threeiinc-header-shrink nav a {
+		font-size: 1em;
+	}
+	.threeiinc-inner{
+		margin-left: -80px;
+	}
+}
+
+@media screen and (max-width: 32.25em) {
+	.threeiinc-header nav a {
+		font-size: 1em;
+	}
+	.Logo__Brand {
+		margin: 0 0 0 0;
+	}
+}
+
+@media screen and (max-width: 24em) {
+	.threeiinc-header nav a,
+	.threeiinc-header.threeiinc-header-shrink nav a {
+		line-height: 1;
+	}
+}
