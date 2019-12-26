@@ -85,7 +85,6 @@ body {
     align-items: center;
     min-height: 100px;
     z-index: 0;
-
 }
 
 .blog__title {
@@ -94,7 +93,7 @@ body {
     max-width: 960px;
     z-index: 10;
     margin-left: -100px;
-
+    color: white;
 }
 
 .blog__wrapper {
@@ -200,11 +199,12 @@ body {
         margin: 60px auto;
     }
     .blog__author{
-        margin-left: 0px;
         margin-top: 150px;
+        margin-left: 15px;
+
     }
     .blog__title {
-        margin-left: 0px;
+        margin-left: 15px;
     }
     .disqus__section{
         max-width: 100%;

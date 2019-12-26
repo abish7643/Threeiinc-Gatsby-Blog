@@ -7,12 +7,11 @@ const Footer = () => {
         <footer className="footer__div">
             <div className='footer__hero' style={{backgroundImage: `linear-gradient(
             to top,
-            rgba(10, 10, 10, 0.4) 10%,
-            rgba(10, 10, 10, 0.9) 40%,
-            rgba(10, 10, 10, 1) 100%),
+            rgba(10, 10, 10, 0.9) 0%,
+            rgba(10, 10, 10, 0.8) 50%,
+            rgba(10, 10, 10, 0.7) 100%),
             url(${foooter})`
             }}>
-                3i INC
             </div>
         </footer>
     )

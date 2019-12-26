@@ -7,7 +7,7 @@
     width: 100%;
     align-items: center;
     margin-left: -10px;
-    margin-top: 335px;
+    margin-top: 375px;
     position: relative;
     order: 2;
     z-index: 0;
@@ -66,23 +66,28 @@
     grid-column-start: span 3;
 }
 
-
 .viewmore{
     font-family: 'Montserrat';
-    font-size: 10px;
+    font-size: 14px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 900;
     color: #fff;
     text-align: center;
     margin-bottom: 40px;
     display: block;
     text-decoration: none;
     transition: all 0.3s ease 0s;
-
+    margin-top: 40px;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .viewmore:hover{
-    color: #043784;
+    color: #d5d81b;
 }
 @media screen and (max-width: 1350px) {
     
@@ -105,7 +110,7 @@
         margin-left: 22px;
     }
     .viewmore{
-        margin-left: -70px;
+        margin-left: 0px;
 
     }
 }
@@ -120,7 +125,23 @@
         margin-left: 18px;
     }
     .viewmore{
-        margin-left: -110px;
+        margin-left: 0px;
+
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    .card:nth-child(n){
+        grid-column-start: span 12;
+
+    }
+    .feed{
+        width: 80%;
+        margin-left: -25px;
+    }
+    .viewmore{
+        margin-left: 0px;
 
     }
     

@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
-import { window } from 'browser-monads';
+/*import { window } from 'browser-monads';
+*/
 import './nav.css';
 
 const Nav = () => (
