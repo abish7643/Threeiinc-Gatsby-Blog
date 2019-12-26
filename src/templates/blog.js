@@ -37,7 +37,7 @@ const BlogTemplate = (props) => {
                 <div className='disqus__section'>
                 <DiscussionEmbed shortname={disqusConfig.shortname} config={disqusConfig.config} />
                 </div>
-                <div className='blog__footer'><Footer/></div>
+                
             </div>
             </div>
         </Layout>
