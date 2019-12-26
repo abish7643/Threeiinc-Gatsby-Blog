@@ -48,7 +48,6 @@ const getBlog = makeRequest(graphql, `
         })
     })
 });
-
 return Promise.all([
     getBlog
 ])

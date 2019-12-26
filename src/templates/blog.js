@@ -1,12 +1,21 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import { DiscussionEmbed } from 'disqus-react' 
 import Layout from '../components/layout'
 import Nav from '../components/nav'
 import SEO from '../components/seo'
 import './blog.css'
 import Footer from '../components/footer'
 
+
+
 const BlogTemplate = (props) => {
+    const disqusConfig = {
+        shortname:  'threeiinc',
+        config: {   identifier: props.data.contentfulBlog.id,
+                    title: props.data.contentfulBlog.slug,
+                }
+      };
     return (
         <Layout>
             <div className="blog__initialmodel">
@@ -25,6 +34,9 @@ const BlogTemplate = (props) => {
                         {__html: `${props.data.contentfulBlog.content.childMarkdownRemark.html}`}
                     }/>
                 </div>
+                <div className='disqus__section'>
+                <DiscussionEmbed shortname={disqusConfig.shortname} config={disqusConfig.config} />
+                </div>
                 <div className='blog__footer'><Footer/></div>
             </div>
             </div>
@@ -33,7 +45,6 @@ const BlogTemplate = (props) => {
 }
 
 export default BlogTemplate
-
 
 
 
