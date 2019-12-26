@@ -6,7 +6,7 @@
     right: 0;
     width: 100%;
     align-items: center;
-    margin-left: 25px;
+    margin-left: -10px;
     margin-top: 335px;
     position: relative;
     order: 2;
@@ -90,7 +90,9 @@
         grid-column-start: span 4;
     }
     .feed{
-        width: 90%;
+        width: 100%;
+        margin-left: -70px;
+
     }
 }
 @media screen and (max-width: 1250px) {
@@ -99,8 +101,8 @@
         grid-column-start: span 6;
     }
     .feed{
-        width: 100%;
-        margin-left: -70px;
+        width: 90%;
+        margin-left: 22px;
     }
     .viewmore{
         margin-left: -70px;
@@ -114,8 +116,8 @@
 
     }
     .feed{
-        width: 100%;
-        margin-left: -120px;
+        width: 90%;
+        margin-left: 18px;
     }
     .viewmore{
         margin-left: -110px;
