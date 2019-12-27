@@ -41,10 +41,6 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `google-site-verification`,
-          content: `OmtY-G0uiMLwiLdjSX2ZX0wa_K1p_xT3sRFy1BgaeK8`,
-        },
-        {
-          name: `google-site-verification`,
           content: `pJnzsujROCaGcov4AIbtPbHmFUMJYfg5jGt_hdgv930`,
         },
         {
