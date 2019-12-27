@@ -25,6 +25,7 @@ body {
     max-width: 100%;
     padding-left: 20%;
     padding-right: 20%;
+    margin-bottom: 140px;
 }
 .blog__hero{
     display: flex;
