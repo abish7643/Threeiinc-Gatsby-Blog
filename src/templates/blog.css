@@ -65,38 +65,26 @@ body {
 }
 
 .blog__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    order: 1;
-    align-items: center;
-    min-height: 100px;
-    z-index: 0;
+    width: 80%;
+    
 }
 
 .blog__title {
     position: absolute;
-    text-align: left;
-    max-width: 960px;
-    z-index: 10;
-    margin-left: -150px;
+    z-index: 2;
     color: white;
+    float: left;
+    
+
 }
 .blog__author{
-    font-size: 16px;
-    font-weight: 300;
-    color: white;
-    display: flex;
-    flex-direction: column;
     position: absolute;
-    text-align: left;
-    max-width: 960px;
-    z-index: 10;
-    margin-top: 120px;
-    margin-left: -140px;
-    text-decoration-line: underline;
+    z-index: 2;
+    color: white;
+    font-size: 14px;
+    margin-top: 130px;
+    border-bottom: 1px solid white;
 }
-
 
 .blog__wrapper {
     display: flex;
@@ -116,9 +104,8 @@ body {
 .blog__content {
     max-width: 960px;
     margin: 60px auto;
-    padding: 0 10%;
+    padding: 0 6%;
     text-align: justify;
-    text-justify: inter-word;
 }
 
 .blog__content p {
@@ -144,7 +131,7 @@ body {
 }
 
 .blog__content blockquote p {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 60px;
     font-weight: 700;
     color: #0a0a0a;
@@ -200,15 +187,6 @@ body {
         display: block;
         margin: 60px auto;
     }
-    .blog__author{
-        margin-top: 150px;
-        margin-left: -90px;
-
-    }
-    .blog__title {
-        margin-left: -100px;
-        margin-right: 80px;
-    }
     .disqus__section{
         max-width: 100%;
         padding-left: 10%;
@@ -222,16 +200,6 @@ body {
         width: 90%;
         display: block;
         margin: 60px auto;
-    }
-    .blog__author{
-        margin-top: 150px;
-        margin-left: 0px;
-        padding-left: 10px;
-    }
-    .blog__title {
-        margin-left: -10px;
-        padding-left: 20px;
-        padding-right: 10px;
     }
     .disqus__section{
         max-width: 100%;

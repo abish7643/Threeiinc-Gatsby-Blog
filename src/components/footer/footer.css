@@ -11,13 +11,12 @@
     position: absolute;
     z-index: -10;
     max-height: 330px;
-
 }
 
 .footer__div{
     order: 2;
     width: 100%;
     align-content: center;
-    margin-top: -120px;
+    margin-top: -95px;
 }
 

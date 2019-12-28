@@ -36,6 +36,7 @@
     font-weight: 400;
     color: #fff;
     margin: 10px 0px 10px 10px;
+
 }
 
 .card {
@@ -51,11 +52,15 @@
     transition: all .3s ease;
     border: none;
     z-index: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
 }
 
 .card:hover{
     cursor: pointer;
     transform: scale(1.02);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
 }
 
 .card:nth-child(1), :nth-child(6), :nth-child(7){

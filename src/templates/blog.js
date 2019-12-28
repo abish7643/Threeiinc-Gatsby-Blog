@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import Nav from '../components/nav'
 import SEO from '../components/seo'
 import './blog.css'
+import Img from "gatsby-image"
 import Footer from '../components/footer'
 
 
@@ -37,7 +38,7 @@ const BlogTemplate = (props) => {
                 <div className='disqus__section'>
                 <DiscussionEmbed shortname={disqusConfig.shortname} config={disqusConfig.config} />
                 </div>
-                
+                <Footer/>
             </div>
             </div>
         </Layout>
