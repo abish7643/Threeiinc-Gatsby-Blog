@@ -47,11 +47,11 @@
 @media screen and (max-width: 450px) {
     .feed{
         width: 90%;
-        margin-left: 10px;
+        margin-left: 20px;
         margin-right: 15px;
     }
     .nav__wrapper{
-        margin-left: -51.2vw;
+        margin-left: -51.8vw;
     }
 
     
