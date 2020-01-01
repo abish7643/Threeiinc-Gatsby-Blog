@@ -48,7 +48,44 @@ const getBlog = makeRequest(graphql, `
         })
     })
 });
+
+const getArchive = makeRequest(graphql, `
+{
+    allContentfulBlog (
+        sort: { fields: [createdAt], order: DESC }
+        filter: {
+            node_locale: {eq: "en-US"}},)
+    {
+        edges {
+            node {
+                id
+                slug
+            }
+        }
+    }
+}
+`).then(result =>  {
+    const blogs = result.data.allContentfulBlog.edges
+    const blogsPerpage = 9
+    const numPages = Math.ceil(blogs.length / blogsPerpage)
+
+    Array.from({ length: numPages }).forEach((_, i) => {
+        createPage({
+            path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+            component: path.resolve("./src/templates/archive.js"),
+            context: {
+                limit: blogsPerpage,
+                skip: i * blogsPerpage,
+                numPages,
+                currentPage: i + 1
+            },
+        })
+    })
+});
+
+
 return Promise.all([
-    getBlog
+    getBlog,
+    getArchive
 ])
 };
