@@ -123,8 +123,8 @@
 
     }
     .feed{
-        width: 90%;
-        margin-left: 18px;
+        width: 84%;
+        margin-left: -14px;
     }
     .viewmore{
         margin-left: 0px;
@@ -133,19 +133,22 @@
     
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 450px) {
     .card:nth-child(n){
         grid-column-start: span 12;
 
     }
     .feed{
-        width: 90%;
-        margin-left: -10px;
+        width: 95%;
+        margin-left: 10px;
     }
     .card{
-        width: 87%;
+        width: 98%;
+        margin-left: 7px;
     }
-    
+    .feed__initial{
+        width: 98%;
+    }
     
 }
 
