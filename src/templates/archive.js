@@ -10,6 +10,7 @@ import Featured from '../components/featured'
 import Footer from '../components/footer'
 
 
+
 const Archive = (props) => {
 
     const blogContent = props.data.allContentfulBlog
@@ -56,14 +57,14 @@ const Archive = (props) => {
             <div className='pagination'>
                 <button className='pagination__item'>
                         {!isLast && (
-                            <Link to={nextPage} rel='next'>
+                            <Link to={nextPage} rel='next' style={{ color: "white"}}>
                                 <div className='arrow__next'>Next</div>
                             </Link>
                         )}
                 </button>
                 <button className='pagination__item'>
                         {!isFirst && (
-                            <Link to={prevPage} rel='prev'>
+                            <Link to={prevPage} rel='prev' style={{ color: "white" }}>
                                 <div className='arrow__back'>Back</div>
                             </Link>
                         )}

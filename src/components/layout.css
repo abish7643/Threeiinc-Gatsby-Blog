@@ -38,7 +38,7 @@ h2 {
 .btn__med{
   border-radius: 15px;
   text-align: center;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
   background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%);
   color: white;
@@ -47,4 +47,8 @@ h2 {
   margin-top: 10px;
   cursor: pointer;
   border: 0px solid white;
+  font-family: 'poppins';
+}
+.btn__med:hover{
+  background-position: right center;
 }
