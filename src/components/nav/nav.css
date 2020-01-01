@@ -93,11 +93,10 @@
 @media screen and (max-width: 55em) {
 	
 	.threeiinc-header .threeiinc-inner {
-		width: 80%;
+		width: 95%;
 		align-content: center;
-		margin-left: -20px;
+		margin-left: -25px;
 	}
-	
 	.Logo__Brand {
 		margin: 0 0 0 0;
 	}
@@ -109,19 +108,17 @@
 		float: none;
 		margin-left: -50px;
 	}
-	.threeiinc-header nav {
-		margin-left: -65px;
-	}
 
 	.threeiinc-header h1,
 	.threeiinc-header nav a {
         line-height: 70px;
 		margin-top: 20px;
+		
 	}
 
 	.threeiinc-header nav a {
         margin: 0 20px;
-		
+
 	}
 
 	.threeiinc-header.threeiinc-header-shrink h1,
@@ -147,16 +144,15 @@
 	}
 	.Logo__Brand {
 		margin: 0 0 0 0;
-
+		margin-left: 50px;
 	}
-	.threeiinc-header {
-		width: 56%;
+	.threeiinc-header .threeiinc-inner {
+		width: 60%;
 		align-content: center;
-		margin-left: 40px;
+		margin-left: 0px;
 	}
 	.threeiinc-inner {
-		align-content: center;
-		margin-left: 40px;
+		width: 100px;
 	}
 }
 
@@ -165,14 +161,8 @@
 	.threeiinc-header.threeiinc-header-shrink nav a {
 		line-height: 30px;
 	}
-	.threeiinc-header {
-		margin-left: 26px;
-	}
-	.threeiinc-inner {
-		max-width: 420px;
-		margin-right: -50px;
-	}
-	.threeiinc-header h1{
-		margin-left: -20px;
+	.threeiinc-header .threeiinc-inner {
+
+		
 	}
 }
