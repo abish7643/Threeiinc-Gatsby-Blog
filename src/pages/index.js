@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import Nav from '../components/nav'
 import Layout from "../components/layout"
 import Featured from "../components/featured"
@@ -8,6 +9,12 @@ import './index.css'
 
 const IndexPage = () => (
   <Layout>
+    <Helmet>
+    <meta charSet="utf-8" />
+    <title>3i INC</title>
+    <meta name="title" content="3i INC" />
+    <meta name="description" content="Idiots by Choice" />
+  </Helmet>
     <Nav/>
     <Featured/>
     <Home/>

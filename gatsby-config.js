@@ -5,7 +5,6 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `3i INC`,
-    seoTitle: `3i INC`,
     description: `Idiots by Choice!`,
     author: `@abishvijayan`,
   },
@@ -17,6 +16,13 @@ module.exports = {
       options: {
         spaceId: `2g0bd82kkvps`,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    {
+      resolve: `gatsby-remark-images-contentful`,
+      options: {
+        loading: `lazy`,
+        maxWidth: 590,
       },
     },
     {
@@ -40,8 +46,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `3i INC`,
+        short_name: `3i`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
