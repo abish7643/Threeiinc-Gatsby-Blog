@@ -57,7 +57,7 @@ render={data => (
          ))}
     </div>
     <div className='viewmore_wrapper'>
-    <Link to='/blog' className='viewmore'>More Posts</Link>
+    <Link to='/blog/2' className='viewmore'>More Posts</Link>
     </div>
     
     </div>

@@ -32,18 +32,18 @@
     min-height: 500px;
     color: white;
     padding: 50px 50px 50px 50px;
-    margin-left: 70px;
     position: absolute;
 	left: 0;
     right: 0;
     justify-content: center;
     display: flex;
     margin-top: -200px;
-    width: 60vw;
+    width: 100%;
+
 }
 
 .header__info{
-    max-width: 750px;
+    max-width: 90%;
     margin: 130px 30px 30px -60px;
 }
 .banner_title{

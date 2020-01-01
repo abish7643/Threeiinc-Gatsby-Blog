@@ -36,21 +36,15 @@ h2 {
 }
 
 .btn__med{
-  border-radius: 30px;
+  border-radius: 15px;
   text-align: center;
   font-size: 17px;
   font-weight: 400;
-  width: 124px;
-  height: 40px;
+  background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%);
+  color: white;
+  width: 110px;
+  height: 35px;
   margin-top: 10px;
-  border: none;
-  box-shadow: 4px 4px rgba(51, 52, 53, 0.2);
   cursor: pointer;
-}
-
-.btn__med:hover{
-  font-size: 17px;
-  font-weight: 600;
-  transition: all 0.5s ease 0s;
-
+  border: 0px solid white;
 }
