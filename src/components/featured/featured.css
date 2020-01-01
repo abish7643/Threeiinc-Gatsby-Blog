@@ -37,14 +37,13 @@
     right: 0;
     justify-content: center;
     display: flex;
-    margin-top: -200px;
-    width: 100%;
-
+    margin-top: -220px;
 }
 
 .header__info{
-    max-width: 90%;
-    margin: 130px 30px 30px -60px;
+    max-width: 100%;
+    margin: 130px 0 0 0;
+    margin-left: -20px;
     font-family: 'poppins';
 }
 .banner_title{
@@ -56,5 +55,34 @@
     font-weight: 300;
     color: white;
     margin: 0 0 30px 0;
-    
 }
+
+
+@media screen and (max-width: 1250px) {
+    .header__info{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header__info{
+        width: 90%;
+        margin-top: 160px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header__info{
+        width: 95%;
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header__info{
+        width: 95%;
+        margin-top: 120px;
+    }
+}
+
+

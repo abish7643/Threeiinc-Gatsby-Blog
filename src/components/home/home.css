@@ -133,14 +133,17 @@
     
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 460px) {
     .card:nth-child(n){
         grid-column-start: span 12;
 
     }
     .feed{
-        width: 100%;
+        width: 90%;
         margin-left: -10px;
+    }
+    .card{
+        width: 87%;
     }
     
     

@@ -73,7 +73,7 @@ body {
 .blog__content__title {
     position: absolute;
     height: 250px;
-    width: 80%;
+    width: 78%;
     margin-left: 120px;
     margin-right: 100px;
     font-family: 'poppins';
@@ -117,6 +117,7 @@ body {
 .blog__content {
     max-width: 960px;
     margin: 60px auto;
+
     padding: 0 6%;
     text-align: justify;
 }

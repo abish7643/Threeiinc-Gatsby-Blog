@@ -93,7 +93,7 @@
 @media screen and (max-width: 55em) {
 	
 	.threeiinc-header .threeiinc-inner {
-		width: 100%;
+		width: 95%;
 		align-content: center;
 		margin-left: -25px;
 	}
@@ -144,21 +144,25 @@
 	}
 	.Logo__Brand {
 		margin: 0 0 0 0;
+		margin-left: 50px;
 	}
 	.threeiinc-header .threeiinc-inner {
-		width: 100%;
+		width: 60%;
 		align-content: center;
-		margin-left: -20px;
+		margin-left: 0px;
+	}
+	.threeiinc-inner {
+		width: 100px;
 	}
 }
 
 @media screen and (max-width: 450px) {
 	.threeiinc-header nav a,
 	.threeiinc-header.threeiinc-header-shrink nav a {
-		line-height: 1;
+		line-height: 30px;
 	}
 	.threeiinc-header .threeiinc-inner {
 
-		margin-left: -40px;
+		
 	}
 }
