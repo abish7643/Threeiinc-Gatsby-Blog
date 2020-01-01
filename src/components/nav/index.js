@@ -7,11 +7,11 @@ import './nav.css';
 const Nav = () => (
         <div className="threeiinc-header">
             <div className="threeiinc-inner">
-                <h1><Link to='/' className="Logo__Brand">3i INC</Link></h1>
+                <h1><Link to='/' className="Logo__Brand" style={{textDecoration: 'None'}}>3i INC</Link></h1>
                 <nav> 
-                    <Link to="/about" className="nav__link">About</Link>
-                    <Link to="/contact">Contact</Link>
-                    <Link to="/contribute">Contribute</Link>
+                    <Link to="/about" className="nav__link" style={{textDecoration: 'None'}}>About</Link>
+                    <Link to="/contact" style={{textDecoration: 'None'}}>Contact</Link>
+                    <Link to="/contribute" style={{textDecoration: 'None'}}>Contribute</Link>
                 </nav>
             </div>
         </div>

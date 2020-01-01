@@ -16,7 +16,6 @@
 	position: relative;
 	order: 0;
 	
-
 }
 
 .threeiinc-inner {
@@ -28,6 +27,7 @@
 .threeiinc-header nav {
 	display: inline-block;
 	position: relative;
+	text-decoration: none;
 }
 
  /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
@@ -42,6 +42,8 @@
 	letter-spacing: 3px;
 	font-size: 2.5em;
 	margin: 0;
+	text-decoration: none;
+	
 }
 
 .threeiinc-header nav {
@@ -51,16 +53,19 @@
 .Logo__Brand {
 	color: rgb(255, 255, 255);
 	margin: 0 0 0 -220px;
+	
 }
 .threeiinc-header nav a {
 	color: rgb(255, 255, 255);
 	font-weight: 600;
 	margin: 0 0 0 40px;
 	font-size: 1.2em;
+	
+
 }
 
 .threeiinc-header nav a:hover {
-	color: rgb(255, 240, 30);
+	color: rgb(49, 69, 156);
 }
 
 /* Transitions and class for reduced height */
