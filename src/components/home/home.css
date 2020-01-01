@@ -141,12 +141,11 @@
 
     }
     .feed{
-        width: 80%;
-        margin-left: -25px;
+        width: 100%;
+        margin-left: -50px;
     }
-    .viewmore{
-        margin-left: 0px;
-
+    .card{
+        margin-left: -20px;
     }
     
 }

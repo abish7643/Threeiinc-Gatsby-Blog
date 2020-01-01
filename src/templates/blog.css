@@ -27,6 +27,12 @@ body {
     padding-right: 20%;
     margin-bottom: 140px;
 }
+.blog__header{
+    height: 580px;
+    width: 100vw;
+    justify-content: center;
+
+}
 .blog__hero{
     display: flex;
     flex-direction: column;
@@ -64,25 +70,31 @@ body {
         rgba(10, 10, 10, 0.4) 100%);
 }
 
-.blog__info {
+.blog__content__title {
+    position: absolute;
+    height: 250px;
     width: 80%;
-    
+    margin-left: 120px;
+    margin-right: 100px;
+
 }
 
 .blog__title {
     position: absolute;
-    z-index: 2;
-    color: white;
-    float: left;
-    
+    z-index: 10;
+    color: #fff;
+    margin: 10px 0px 10px 10px;
 
 }
 .blog__author{
     position: absolute;
     z-index: 2;
-    color: white;
     font-size: 14px;
-    margin-top: 130px;
+    position: absolute;
+    z-index: 10;
+    color: #fff;
+    margin: 10px 0px 10px 10px;
+    margin-top: 160px;
     border-bottom: 1px solid white;
 }
 
@@ -98,6 +110,7 @@ body {
     position: absolute;
     margin-left: -50vw;
     margin-right: -50vw;
+    
     margin-top: 400px;
 }
 
@@ -165,12 +178,18 @@ body {
         padding-left: 3%;
         padding-right: 3%;
     }
+    .blog__content__title {
+        width: 80%;
+    }
 }
 @media screen and (max-width: 1600px){
     .disqus__section{
         max-width: 100%;
         padding-left: 18%;
         padding-right: 18%;
+    }
+    .blog__content__title {
+        width: 61%;
     }
 }
 @media screen and (max-width: 1200px){
@@ -179,6 +198,10 @@ body {
         padding-left: 10%;
         padding-right: 10%;
     }
+    .blog__content__title {
+        width: 80%;
+    }
+
 }
 @media screen and (max-width: 1000px){
     .right {
@@ -191,6 +214,10 @@ body {
         max-width: 100%;
         padding-left: 10%;
         padding-right: 10%;
+    }
+    .blog__content__title {
+        width: 80%;
+        margin-left: 30px;
     }
 }
 

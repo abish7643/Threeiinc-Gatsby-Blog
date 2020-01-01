@@ -23,10 +23,11 @@ const BlogTemplate = (props) => {
             <SEO title={props.data.contentfulBlog.seoTitle} description={props.data.contentfulBlog.seoDescription} keyword={props.data.contentfulBlog.seoKeywords} />
             <Nav/>
             <div className='blog__header'>
-                <div className='blog__hero' style={{backgroundImage: `url(${props.data.contentfulBlog.featuredImage.fluid.src})`}}></div>
-                <div className='blog-info'>
-                    <h1 className='blog__title'>{props.data.contentfulBlog.title}</h1>
-                    <h6 className='blog__author'>{props.data.contentfulBlog.author}</h6>
+                <div className='blog__hero' style={{backgroundImage: `url(${props.data.contentfulBlog.featuredImage.fluid.src})`}}>
+                </div>
+                <div className='blog__content__title'>
+                    <h2 className='blog__title'>{props.data.contentfulBlog.title}</h2>
+                    <p className='blog__author'>{props.data.contentfulBlog.author}</p>
                 </div>
             </div>
             <div className='blog__wrapper'>
