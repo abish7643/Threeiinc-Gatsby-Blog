@@ -6,10 +6,10 @@ const Footer = () => {
     return (
         <footer className="footer__div">
             <div className='footer__hero' style={{backgroundImage: `linear-gradient(
-            to top,
-            rgba(10, 10, 10, 0.9) 0%,
-            rgba(10, 10, 10, 0.8) 50%,
-            rgba(10, 10, 10, 0.7) 100%),
+            to bottom,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.9) 50%,
+            rgba(10, 10, 10, 0.8) 100%),
             url(${foooter})`
             }}>
             </div>
