@@ -24,9 +24,7 @@ const Archive = (props) => {
         <Layout>
             <SEO title='Blog' keywords={['3i INC', 'Idiots by Choice', 'Idiotism', '3i INC Blog']} /> 
             <Nav/>
-            <div className='nav__wrapper'>
-            </div>
-
+            <div className='nav__wrapper'></div>
             <header>
                 <div className='archive__section'>
                 <div className='archive__nav'>
@@ -70,7 +68,9 @@ const Archive = (props) => {
                         )}
                 </button>
             </div>
+            <div className='footer_wrapper_archive'>
             <Footer/>
+            </div>
         </Layout>
     )
 }

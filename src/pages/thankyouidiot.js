@@ -19,9 +19,6 @@ const Thanksyou = () => (
                 </button>
                 </div>
             </div>
-            <div className='footer_wrapper_thankyou'>
-            <Footer/>
-            </div>
     </Layout>
 )
 

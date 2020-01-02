@@ -11,12 +11,80 @@
     position: absolute;
     z-index: -10;
     max-height: 330px;
+    margin-top: 130px;
+    
 }
 
 .footer__div{
     order: 2;
     width: 95%;
     align-content: center;
+    text-align: center;
     margin-top: -95px;
 }
 
+.newsletter__field__hidden{
+    display: none;
+}
+
+.newsletter__form{
+    color: white;
+    font-family: 'poppins';
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px rgba(10, 10, 10, 0.2);
+    margin-left: 20px;
+    width: 400px;
+}
+
+.newsletter__form p{
+    font-size: 17px;   
+}
+
+
+.newsletter__field input {
+    padding: 1px;
+    outline: none;
+    width: 100%;
+    border: none;
+    color: white;
+    height: 25px;
+    background: transparent;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+    float: right;
+    border-radius: 2px;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+.newsletter__field input:hover{
+    border-bottom: 1px solid rgb(255, 255, 255, 0.8);
+
+}
+.threeiinc__header{
+    color: white;
+    font-size: 40px;
+    align-self: center;
+    flex-grow: 1;
+    max-width: 400px;
+    padding: 30px;
+}
+.threeiinc__header p{
+    font-size: 17px;
+    font-weight: 700;
+
+}
+.footer__contents {
+    display: flex;
+    flex-direction: row ;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 750px){
+    .newsletter__form{
+        width: 750px;
+    }
+}
