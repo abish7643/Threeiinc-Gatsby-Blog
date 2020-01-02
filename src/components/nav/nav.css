@@ -149,7 +149,7 @@
 	.threeiinc-header .threeiinc-inner {
 		width: 60%;
 		align-content: center;
-		margin-left: 0px;
+		margin-left: 25px;
 	}
 	.threeiinc-inner {
 		width: 100px;
@@ -162,7 +162,11 @@
 		line-height: 30px;
 	}
 	.threeiinc-header .threeiinc-inner {
-
-		
+		width: 60%;
+		align-content: center;
+		margin-left: -5px;
+	}
+	.threeiinc-inner {
+		width: 100px;
 	}
 }
