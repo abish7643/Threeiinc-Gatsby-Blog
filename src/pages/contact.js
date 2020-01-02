@@ -7,7 +7,7 @@ import './contact.css'
 
 const Contact = () => (
     <Layout>
-        <SEO title='Contact 3i INC' description='Contact 3 Idiots Incorporation'/>
+        <SEO title='Contact - 3iINC' description='Transform Yourself with Idiotism!'/>
         <Nav/>
         <div className='contact__header'>
         <div className='contact__section'>
@@ -22,15 +22,15 @@ const Contact = () => (
                         </div>
                         <div className='field'>
                             <label>Name</label>
-                            <input type='text' name='name'/>
+                            <input type='text' id='name' name='name'/>
                         </div>
                         <div className='field'>
                             <label>Email</label>
-                            <input type='text' name='email'/>
+                            <input type='text' id='email' name='email'/>
                         </div>
                         <div className='field'>
                             <label>Message</label>
-                            <textarea name='message' rows='6'></textarea>
+                            <textarea name='message' id='message' rows='6'></textarea>
                         </div>
                         <div className='submit'>
                             <button type='submit' className='btn__med'>Submit</button>

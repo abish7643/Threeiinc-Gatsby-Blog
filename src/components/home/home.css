@@ -145,7 +145,10 @@
     .card{
         width: 87%;
     }
-    
+    .viewmore_wrapper{
+        margin-left: -20px;
+
+    }
     
 }
 
