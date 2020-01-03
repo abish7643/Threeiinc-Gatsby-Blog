@@ -88,6 +88,8 @@ body {
 }
 .blog__author{
     position: absolute;
+    font-weight: 900;
+    font-family: 'montserrat';
     z-index: 2;
     font-size: 14px;
     position: absolute;
