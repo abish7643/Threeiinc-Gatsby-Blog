@@ -3,7 +3,8 @@ import Layout from '../components/layout'
 import Nav from '../components/nav'
 import Footer from '../components/footer'
 import './contact.css'
-import { Link } from 'gatsby'
+import { Link, navigate } from 'gatsby'
+
 
 const Thanksyou = () => (
     <Layout>
@@ -14,8 +15,8 @@ const Thanksyou = () => (
                     <p>Welcome to the Club, Cheers Mate!</p>
                 </div>
                 <div className='home__button'>
-                <button class='button_med'>
-                    <Link to='/' className="button_med_link" style={{textDecoration: 'None', color: 'white'}}>Home</Link>
+                <button class='button_med' onClick={() => navigate(`/`)}>
+                    Home
                 </button>
                 </div>
             </div>

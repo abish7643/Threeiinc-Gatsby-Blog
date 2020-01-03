@@ -117,9 +117,16 @@ body {
 .blog__content {
     max-width: 960px;
     margin: 60px auto;
-
     padding: 0 6%;
     text-align: justify;
+}
+.blog__content::first-letter{
+    font-size: 50px;
+    font-family: fantasy;
+    font-weight: 900;
+    margin-right: 0px;
+    color: #65009c;
+    margin-left: 70px;
 }
 
 .blog__content p {
@@ -131,9 +138,12 @@ body {
     margin: 40px 0;
 }
 
+
 .blog__content blockquote {
-    margin: 0 0 60px 0;
-    
+    margin: 30px 5px 30px 5px;
+    border-radius: 15px;
+    padding: 0px 30px 5px 35px;
+    box-shadow: 0px 6px 12px 0 rgba(10, 10, 10, 0.2);
 }
 
 
@@ -141,15 +151,17 @@ body {
     content: url('../images/quote.png');
     display: inline-block;
     transform: translateY(30px);
-    
+    filter: invert(10%) sepia(34%) saturate(5857%) hue-rotate(271deg) brightness(152%) contrast(129%);
 }
 
 .blog__content blockquote p {
-    font-size: 30px;
-    line-height: 60px;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 40px;
     font-weight: 700;
-    color: #0a0a0a;
-
+    color: #65009c;
+    font-family: 'montserrat';
+    text-align: initial;
 }
 
 .blog__content img {
@@ -168,9 +180,9 @@ body {
 }
 
 .right {
-    width: 100%;
-    display: block;
-    margin: 60px auto;
+    width: 50%;
+    float: right;
+    margin: 40px 0 40px 40px;
 }
 
 @media screen and (max-width: 1400px){
@@ -206,11 +218,8 @@ body {
 
 }
 @media screen and (max-width: 1000px){
-    .right {
-        float:none;
-        width: 90%;
-        display: block;
-        margin: 60px auto;
+    .right{
+        margin-top: 90px;
     }
     .disqus__section{
         max-width: 100%;
@@ -226,7 +235,7 @@ body {
 @media screen and (max-width: 750px){
     .right {
         float:none;
-        width: 90%;
+        width: 100%;
         display: block;
         margin: 60px auto;
     }
@@ -235,4 +244,12 @@ body {
         padding-left: 10%;
         padding-right: 10%;
     }
+    .blog__content blockquote {
+        padding: 0px 15px 5px 15px;
+        margin: 10px 0px 10px 0;
+    }
+    .blog__content blockquote p{
+        font-size: 21px;
+    }
 }
+
