@@ -69,7 +69,7 @@ export const query = graphql`
                 title
                 id
             }
-            createdAt(formatString: "MMMM DD, YYYY")
+            createdAt
             content {
                 childMarkdownRemark {
                     html
