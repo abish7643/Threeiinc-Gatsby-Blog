@@ -55,22 +55,22 @@ const Archive = (props) => {
             <div className='pagination'>
                 <button className='pagination__item'>
                         {!isLast && (
-                            <Link to={nextPage} rel='next' style={{ color: "white"}}>
+                            <Link to={nextPage} rel='next' style={{ color: "white", textDecoration: 'none'}}>
                                 <div className='arrow__next'>Next</div>
                             </Link>
                         )}
                         {isLast && (
-                                <div className='arrow__next' style={{opacity: '0'}}>Next</div>
+                                <div className='arrow__next' style={{opacity: '0', textDecoration: 'none'}}>Next</div>
                         )}
                 </button>
                 <button className='pagination__item'>
                         {!isFirst && (
-                            <Link to={prevPage} rel='prev' style={{ color: "white" }}>
+                            <Link to={prevPage} rel='prev' style={{ color: "white", textDecoration: 'none' }}>
                                 <div className='arrow__back'>Back</div>
                             </Link>
                         )}
                         {isFirst && (
-                                <div className='arrow__back' style={{opacity: '0'}}>Back</div>
+                                <div className='arrow__back' style={{opacity: '0', textDecoration: 'none'}}>Back</div>
                         )}
                 </button>
             </div>
