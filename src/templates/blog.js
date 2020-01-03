@@ -17,6 +17,9 @@ const BlogTemplate = (props) => {
                     title: props.data.contentfulBlog.slug,
                 }
       };
+      const date = {
+          createdat: props.data.contentfulBlog.createdAt,
+      }
     return (
         <Layout>
             <div className="blog__initialmodel">
@@ -28,8 +31,8 @@ const BlogTemplate = (props) => {
                 </div>
                 <div className='blog__content__title'>
                     <h2 className='blog__title'>{props.data.contentfulBlog.title}</h2>
-                    <p className='blog__author'>{props.data.contentfulBlog.author}</p>
-                    <CommentCount config={disqusConfig} placeholder={'...'} />
+                    <p className='blog__author'>{props.data.contentfulBlog.author} |  {date.createdat} </p>
+                    <p> {props.data.contentfulBlog.category.title} </p>
                 </div>
             </div>
             <div className='blog__wrapper'>
@@ -62,6 +65,11 @@ export const query = graphql`
             slug
             author
             shortDescription
+            category {
+                title
+                id
+            }
+            createdAt(formatString: "MMMM DD, YYYY")
             content {
                 childMarkdownRemark {
                     html
