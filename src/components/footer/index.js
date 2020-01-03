@@ -7,9 +7,9 @@ const Footer = () => {
         <footer className="footer__div">
             <div className='footer__hero' style={{backgroundImage: `linear-gradient(
             to bottom,
-            rgba(0, 0, 0, 1) 0%,
-            rgba(0, 0, 0, 0.9) 50%,
-            rgba(10, 10, 10, 0.8) 100%),
+            rgba(255, 255, 255, 0.7) 0%,
+            rgba(10, 10, 10, 0.5) 50%,
+            rgba(10, 10, 10, 0.3) 100%),
             url(${foooter})`
             }}>
             <div className='footer__contents'>
@@ -23,6 +23,7 @@ const Footer = () => {
                                 <input name='bot'/>
                             </div>
                             <div className='newsletter__field'>
+                                <p>Email</p>
                                 <input type='text' id='email' name='email' placeholder='email'/>
                             </div>
                             <div className='newsletter__submit'>
