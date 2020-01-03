@@ -28,7 +28,7 @@ const Footer = () => {
                                 <input type='text' id='email' name='email' placeholder='email'/>
                             </div>
                             <div className='newsletter__field__checkbox'>
-                                <input type='checkbox' id='1' name='acknowledgement' checked/>
+                                <input type='checkbox' id='1' name='acknowledgement'/>
                                 <p>I Acknowledge to Receive Contents from 3i INC</p>
                             </div>
                             <div className='newsletter__submit'>
