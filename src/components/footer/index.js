@@ -1,6 +1,7 @@
 import React from 'react'
 import './footer.css'
 import foooter from '../../images/footer.jpg'
+import Link from 'gatsby'
 
 const Footer = () => {
     return (
