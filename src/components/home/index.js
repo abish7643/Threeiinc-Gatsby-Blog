@@ -56,8 +56,8 @@ render={data => (
             </div>
          ))}
     </div>
-    <button className='viewmore_wrapper'>
-    <Link to='/blog/2' className='viewmore'>More Posts</Link>
+    <button className='viewmore_wrapper' onClick={() => navigate(`/blog/2`)}>
+        More Posts
     </button>
     
     </div>

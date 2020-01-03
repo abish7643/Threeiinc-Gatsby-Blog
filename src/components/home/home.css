@@ -83,11 +83,8 @@
     cursor: pointer;
     border: 0px solid white;
     transition: 1s ease;
-}
-.viewmore{
     color: white;
     font-family: 'poppins';
-
 }
 
 .viewmore:hover{

@@ -119,13 +119,14 @@ body {
     margin: 60px auto;
     padding: 0 6%;
     text-align: justify;
+    border-bottom: 2px solid rgba(30, 60, 114, 0.15);
 }
 .blog__content::first-letter{
     font-size: 50px;
     font-family: fantasy;
     font-weight: 900;
     margin-right: 0px;
-    color: #65009c;
+    color: #1e3c72;
     margin-left: 70px;
 }
 
@@ -143,7 +144,7 @@ body {
     margin: 30px 5px 30px 5px;
     border-radius: 15px;
     padding: 0px 30px 5px 35px;
-    box-shadow: 0px 6px 12px 0 rgba(10, 10, 10, 0.2);
+    box-shadow: 0px 6px 12px 0 rgba(30, 60, 114, 0.2);
 }
 
 
@@ -151,22 +152,22 @@ body {
     content: url('../images/quote.png');
     display: inline-block;
     transform: translateY(30px);
-    filter: invert(10%) sepia(34%) saturate(5857%) hue-rotate(271deg) brightness(152%) contrast(129%);
+    filter: invert(19%) sepia(37%) saturate(1527%) hue-rotate(186deg) brightness(100%) contrast(95%);
 }
 
 .blog__content blockquote p {
     font-size: 22px;
     font-style: italic;
     line-height: 40px;
-    font-weight: 700;
-    color: #65009c;
+    font-weight: bolder;
+    color: #1e3c72;
     font-family: 'montserrat';
     text-align: initial;
 }
 
 .blog__content img {
     border-radius: 5px;
-    box-shadow: 0px 10px 10px -2px rgba(10, 10, 10, 0.15);
+    box-shadow: 0px 10px 10px -2px rgba(30, 60, 114, 0.15);
 }
 
 .img {

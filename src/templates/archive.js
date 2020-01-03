@@ -59,12 +59,18 @@ const Archive = (props) => {
                                 <div className='arrow__next'>Next</div>
                             </Link>
                         )}
+                        {isLast && (
+                                <div className='arrow__next' style={{opacity: '0'}}>Next</div>
+                        )}
                 </button>
                 <button className='pagination__item'>
                         {!isFirst && (
                             <Link to={prevPage} rel='prev' style={{ color: "white" }}>
                                 <div className='arrow__back'>Back</div>
                             </Link>
+                        )}
+                        {isFirst && (
+                                <div className='arrow__back' style={{opacity: '0'}}>Back</div>
                         )}
                 </button>
             </div>
