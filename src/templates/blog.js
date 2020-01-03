@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { DiscussionEmbed } from 'disqus-react' 
+import { DiscussionEmbed, CommentCount } from 'disqus-react' 
 import Layout from '../components/layout'
 import Nav from '../components/nav'
 import SEO from '../components/seo'
@@ -29,6 +29,7 @@ const BlogTemplate = (props) => {
                 <div className='blog__content__title'>
                     <h2 className='blog__title'>{props.data.contentfulBlog.title}</h2>
                     <p className='blog__author'>{props.data.contentfulBlog.author}</p>
+                    <CommentCount config={disqusConfig} placeholder={'...'} />
                 </div>
             </div>
             <div className='blog__wrapper'>
