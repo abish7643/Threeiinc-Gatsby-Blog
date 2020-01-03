@@ -23,6 +23,7 @@ const BlogTemplate = (props) => {
             <SEO title={props.data.contentfulBlog.seoTitle} description={props.data.contentfulBlog.seoDescription} keyword={props.data.contentfulBlog.seoKeywords} />
             <Nav/>
             <div className='blog__header'>
+
                 <div className='blog__hero' style={{backgroundImage: `url(${props.data.contentfulBlog.featuredImage.fluid.src})`}}>
                 </div>
                 <div className='blog__content__title'>
@@ -39,7 +40,9 @@ const BlogTemplate = (props) => {
                 <div className='disqus__section'>
                 <DiscussionEmbed shortname={disqusConfig.shortname} config={disqusConfig.config} />
                 </div>
-                <Footer/>
+                <div className='footer__div'>
+                    <Footer/>
+                </div>
             </div>
             </div>
         </Layout>
@@ -69,13 +72,13 @@ export const query = graphql`
             seoKeywords
             seoImage {
                 fluid(maxWidth: 1200, quality: 100) {
-                    ...GatsbyContentfulFluid
+                    ...GatsbyContentfulFluid_withWebp
                     src
                 }
             }
             featuredImage {
                 fluid(maxWidth: 1200, quality: 100) {
-                    ...GatsbyContentfulFluid
+                    ...GatsbyContentfulFluid_withWebp
                     src
                 }
             }

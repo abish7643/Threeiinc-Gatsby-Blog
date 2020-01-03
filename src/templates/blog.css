@@ -54,7 +54,7 @@ body {
     display: block;
     max-height: max-content;
     width: auto;
-
+    overflow: hidden;
 }
 .blog__hero:before {
     content: "";
@@ -178,6 +178,7 @@ body {
         max-width: 100%;
         padding-left: 3%;
         padding-right: 3%;
+        
     }
     .blog__content__title {
         width: 80%;

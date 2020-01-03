@@ -22,7 +22,8 @@ module.exports = {
       resolve: `gatsby-remark-images-contentful`,
       options: {
         loading: `lazy`,
-        maxWidth: 590,
+        maxWidth: 1200,
+        withWebp: true
       },
     },
     {
