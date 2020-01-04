@@ -34,8 +34,8 @@ const Footer = () => {
                                 <input type='checkbox' id='1' name='acknowledgement' style={{cursor: 'pointer'}}/>
                                 <p>I Acknowledge to Receive Contents from 3i INC</p>
                             </div>
-                            <div data-netlify-recaptcha="true"></div>
                             <div className='newsletter__submit'>
+                                <div data-netlify-recaptcha="true"></div>
                                 <button type='submit' className='btn__med'>Submit</button>
                             </div>
                         </form>
