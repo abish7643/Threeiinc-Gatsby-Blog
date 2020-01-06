@@ -150,4 +150,15 @@
     
 }
 
+@media screen and (max-width: 400px) {
+    .feed__initial{
+        width: 80%;
+    }
+    .card {
+        width: 94%;
+    }
+    
+}
+
+
 

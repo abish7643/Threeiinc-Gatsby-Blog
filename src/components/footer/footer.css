@@ -74,10 +74,9 @@
     color: white;
     font-size: 40px;
     align-self: center;
-    flex-grow: 1;
     max-width: 400px;
-    padding: 30px;
     cursor: pointer;
+    margin-left: 70px;
 }
 .threeiinc__header p{
     font-size: 17px;
@@ -116,6 +115,9 @@
         display: flex;
         flex-direction: column;
     }
+    .threeiinc__header{
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -126,5 +128,20 @@
     .footer__contents {
         display: flex;
         flex-direction: column;
+    }
+    .header__title{
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    
+    .header__title{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .newsletter__form{
+        max-width: 280px;
     }
 }
