@@ -7,10 +7,12 @@ module.exports = {
     title: `3i INC`,
     description: `Idiots by Choice!`,
     author: `@abishvijayan`,
+    siteUrl: `https://www.3iinc.ml`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-advanced-sitemap`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
