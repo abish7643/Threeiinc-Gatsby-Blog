@@ -33,7 +33,9 @@ const BlogTemplate = (props) => {
                     <h2 className='blog__title'>{props.data.contentfulBlog.title}</h2>
                     <p className='blog__author'>{props.data.contentfulBlog.author} |  {date.createdat} </p>
                     <p className='blog__extratitle'>{props.data.contentfulBlog.readDuration}</p>
-                    <p> {props.data.contentfulBlog.category.title} </p>
+                    {props.data.contentfulBlog.category.map(category => (
+                    <strong class='blog__categories'>{category.title} | </strong>
+                ))}
                 </div>
             </div>
             <div className='blog__wrapper'>
