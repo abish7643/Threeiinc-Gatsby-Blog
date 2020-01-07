@@ -172,11 +172,10 @@ body {
 
 .blog__content blockquote p {
     font-size: 22px;
-    font-style: italic;
-    line-height: 40px;
+    line-height: 36px;
     font-weight: bolder;
     color: #1e3c72;
-    font-family: 'montserrat';
+    font-family: 'poppins';
     text-align: initial;
 }
 
