@@ -114,8 +114,8 @@ body {
     border-bottom: 2px solid rgba(30, 60, 114, 0.15);
 }
 .blog__content::first-letter{
-    font-size: 50px;
-    font-family: fantasy;
+    font-size: 30px;
+    font-family: 'montserrat';
     font-weight: 900;
     margin-right: 0px;
     color: #1e3c72;
@@ -130,7 +130,16 @@ body {
     color: #0a0a0a;
     margin: 40px 0;
 }
+.blog__content table{
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
 
+.blog__content hr{
+    border-color: rgba(30, 60, 114, 0.1);
+}
 
 .blog__content blockquote {
     margin: 30px 5px 30px 5px;
