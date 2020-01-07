@@ -32,6 +32,7 @@ const BlogTemplate = (props) => {
                 <div className='blog__content__title'>
                     <h2 className='blog__title'>{props.data.contentfulBlog.title}</h2>
                     <p className='blog__author'>{props.data.contentfulBlog.author} |  {date.createdat} </p>
+                    <p className='blog__extratitle'>{props.data.contentfulBlog.readDuration}</p>
                     <p> {props.data.contentfulBlog.category.title} </p>
                 </div>
             </div>
@@ -64,6 +65,7 @@ export const query = graphql`
             id
             slug
             author
+            readDuration
             shortDescription
             category {
                 title

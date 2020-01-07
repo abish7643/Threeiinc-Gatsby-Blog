@@ -89,6 +89,13 @@ body {
     width: 90%;
     margin-top: -5px;
 }
+.blog__extratitle{
+    font-family: 'montserrat';
+    z-index: 2;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 900;
+}
 
 .blog__wrapper {
     display: flex;
