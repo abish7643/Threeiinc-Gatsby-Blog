@@ -29,7 +29,6 @@ body {
 }
 .blog__header{
     height: 580px;
-    width: 100vw;
     justify-content: center;
 
 }
@@ -71,33 +70,24 @@ body {
 }
 
 .blog__content__title {
-    position: absolute;
-    height: 250px;
-    width: 78%;
-    margin-left: 120px;
-    margin-right: 100px;
-    font-family: 'poppins';
+    position: relative;
+    z-index: 10;
 }
 
 .blog__title {
-    position: absolute;
-    z-index: 10;
-    color: #fff;
-    margin: 10px 0px 10px 10px;
+    font-family: 'poppins';
+    display: inline-block;
 
 }
 .blog__author{
-    position: absolute;
     font-weight: 900;
     font-family: 'montserrat';
     z-index: 2;
     font-size: 14px;
-    position: absolute;
-    z-index: 10;
     color: #fff;
-    margin: 10px 0px 10px 10px;
-    margin-top: 160px;
     border-bottom: 1px solid white;
+    width: 90%;
+    margin-top: -5px;
 }
 
 .blog__wrapper {
@@ -195,9 +185,6 @@ body {
         padding-right: 3%;
         
     }
-    .blog__content__title {
-        width: 80%;
-    }
 }
 @media screen and (max-width: 1600px){
     .disqus__section{
@@ -205,18 +192,12 @@ body {
         padding-left: 18%;
         padding-right: 18%;
     }
-    .blog__content__title {
-        width: 61%;
-    }
 }
 @media screen and (max-width: 1200px){
     .disqus__section{
         max-width: 100%;
         padding-left: 10%;
         padding-right: 10%;
-    }
-    .blog__content__title {
-        width: 80%;
     }
 
 }
@@ -229,9 +210,9 @@ body {
         padding-left: 10%;
         padding-right: 10%;
     }
-    .blog__content__title {
-        width: 80%;
-        margin-left: 30px;
+    .blog__content__title{
+        padding: 20px;
+        margin-top: -30px;
     }
 }
 
@@ -253,6 +234,15 @@ body {
     }
     .blog__content blockquote p{
         font-size: 21px;
+    }
+    .blog__content__title{
+        position: absolute;
+    }
+    .blog__title{
+        font-size: 33px;
+    }
+    .blog__header{
+        
     }
 }
 
