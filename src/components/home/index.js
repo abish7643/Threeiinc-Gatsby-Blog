@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, navigate, StaticQuery, Link } from "gatsby"
 import './home.css'
 
+
 export default () => (
     <StaticQuery
     query = {graphql`
@@ -59,7 +60,6 @@ render={data => (
     <button className='viewmore_wrapper' onClick={() => navigate(`/blog/2`)}>
         More Posts
     </button>
-    
     </div>
     )}
     />

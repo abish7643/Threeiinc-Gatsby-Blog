@@ -2,17 +2,52 @@ import React from 'react'
 import './footer.css'
 import foooter from '../../images/footer.jpg'
 import Link from 'gatsby'
+import Particles from 'react-particles-js'
+
 
 const Footer = () => {
     return (
-        <footer className="footer__div">
-            <div className='footer__hero' style={{backgroundImage: `linear-gradient(
-            to bottom,
-            rgba(255, 255, 255, 0.7) 0%,
-            rgba(10, 10, 10, 0.5) 50%,
-            rgba(10, 10, 10, 0.3) 100%),
-            url(${foooter})`
+        <footer className="footer__div"> 
+            <div className='footer__hero' style={{
+                backgroundColor: '#1e3c72',
+                backgroundImage: 'linear-gradient(to top, #1e3c72, #2a5298)'
             }}>
+                <Particles style={{position: 'absolute', zIndex: '-1', top: '0', left: '0',}} params={{
+        particles: {
+          move: {
+            speed: 3,
+          },
+          size: {
+            value: 3,
+          },
+          color:{
+            value: "#ffffff"
+        },
+        number: {
+            value: 20
+        },
+        line_linked: {
+            enable: true,
+            distance: 100,
+            color: "#ffffff",
+            opacity: 1,
+            width: 1
+          },
+        },
+        interactivity: {
+            events: {
+                onhover:{
+                    enable: true,
+                    mode: 'push'
+                },
+                onclick: {
+                    enable: true,
+                    mode: 'push'
+                }
+            },
+        },
+        
+      }}/>  
             <div className='footer__contents'>
                 <div className='newsletter__form'>
                     <p>Subscribe for Newsletter</p>

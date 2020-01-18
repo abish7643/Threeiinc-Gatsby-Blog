@@ -161,4 +161,7 @@
 }
 
 
-
+.particle__home{
+    position: absolute;
+    z-index: 100;
+}
