@@ -9,10 +9,10 @@ const Footer = () => {
     return (
         <footer className="footer__div"> 
             <div className='footer__hero' style={{
-                backgroundColor: '#1e3c72',
-                backgroundImage: 'linear-gradient(to top, #1e3c72, #2a5298)'
+                background: 'rgb(2,0,36)',
+                backgroundImage: 'linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(8,75,128,0.30012554950024706) 33%, rgba(80,124,133,1) 98%)',
             }}>
-                <Particles style={{position: 'absolute', zIndex: '-1', top: '0', left: '0',}} params={{
+            <Particles style={{position: 'absolute', zIndex: '-1', top: '0', left: '0',}} params={{
         particles: {
           move: {
             speed: 3,
