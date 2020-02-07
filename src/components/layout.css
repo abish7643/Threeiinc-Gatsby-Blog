@@ -49,12 +49,3 @@ h2 {
 .btn__med:hover{
   background-position: right center;
 }
-
-@media screen and (max-width: 450px) {
-  .header__title{
-      font-size: 25px;
-  }
-  .header__subtitle{
-      font-size: 17px;
-  }
-}
