@@ -50,6 +50,9 @@
 .banner_title{
     margin: 0 0 30px 0;   
 }
+.header__title{
+    font-weight: 300;
+}
 
 .header__subtitle{
     font-size: 18px;
@@ -95,7 +98,7 @@
     }
 
     .header__title{
-        font-size: 25px;
+        font-size: 28px;
     }
     .header__subtitle{
         font-size: 17px;
