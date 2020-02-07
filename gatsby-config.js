@@ -31,31 +31,18 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: `gatsby-plugin-facebook-analytics`,
       options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [
-          "UA-155379843-2", // Google Analytics / GA
-          "AW-CONVERSION_ID", // Google Ads / Adwords / AW
-          "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
-        ],
-        // This object gets passed directly to the gtag config command
-        // This config will be shared across all trackingIds
-        gtagConfig: {
-          optimize_id: "OPT_CONTAINER_ID",
-          anonymize_ip: true,
-          cookie_expires: 0,
-        },
-        // This object is used for configuration specific to this plugin
-        pluginConfig: {
-          // Puts tracking script in the head instead of the body
-          head: false,
-          // Setting this parameter is also optional
-          respectDNT: true,
-          // Avoids sending pageview hits from custom paths
-          exclude: ["/preview/**", "/do-not-track/me/too/"],
-        },
-      },
+        appId: "2161218783980671",
+        // Include facebook analytics in development.
+        // Defaults to false meaning the library will only be loaded in production.
+        includeInDevelopment: false,
+        // Include debug version of sdk
+        // Defaults to false meaning the library will load sdk.js
+        debug: false,
+        // Can select your language, default will load english
+        language: "en_US"
+      }
     },
     {
       resolve: `gatsby-remark-images-contentful`,
