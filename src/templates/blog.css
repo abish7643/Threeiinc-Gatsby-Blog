@@ -78,7 +78,7 @@ body {
 .blog__title {
     font-family: 'poppins';
     display: inline-block;
-
+    font-size: 36px;
 }
 .blog__author{
     font-weight: 900;
@@ -237,10 +237,10 @@ body {
     }
     .blog__content__title{
         padding: 20px;
-        margin-top: -30px;
+        margin-top: -50px;
     }
     .blog__title{
-        font-size: 30px;
+        font-size: 28px;
     }
     .blog__header{
         

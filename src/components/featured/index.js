@@ -41,7 +41,7 @@ render={data => (
                 <div className='header__hero' style={{backgroundImage: `url(${edge.node.featuredImage.fluid.src})`}}></div>
                 <div className='header__content'>
                     <div className='header__info'>
-                        <p className='header__title'>{edge.node.title}</p>
+                        <h2 className='header__title'>{edge.node.title}</h2>
                         <p className='header__subtitle'>{edge.node.shortDescription}</p>
                         <button onClick={() => navigate(`/blog/${edge.node.slug}`)} className='btn__med'>
                             Read More

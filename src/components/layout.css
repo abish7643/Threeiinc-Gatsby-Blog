@@ -27,6 +27,11 @@ body {
 
 }
 
+h2 {
+  color: white;
+  font-weight: 500;
+}
+
 .btn__med{
   border-radius: 15px;
   text-align: center;

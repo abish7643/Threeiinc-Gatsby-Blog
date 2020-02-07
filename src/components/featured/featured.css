@@ -52,6 +52,7 @@
 }
 .header__title{
     font-weight: 300;
+    font-size: 36px;
 }
 
 .header__subtitle{
@@ -85,6 +86,7 @@
 
     .header__title{
         font-size: 30px;
+        line-height: 38px;
     }
 }
 
