@@ -90,7 +90,7 @@
 
 @media screen and (max-width: 450px) {
     .header__info{
-        width: 95%;
+        width: 96%;
         margin-top: 90px;
     }
     .header__content {
@@ -101,6 +101,7 @@
         font-size: 28px;
     }
     .header__subtitle{
+        margin-top: -5px;
         font-size: 17px;
     }
 }
