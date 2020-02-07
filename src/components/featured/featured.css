@@ -95,6 +95,9 @@
     }
 
     .header__title{
-        font-size: 28px;
+        font-size: 25px;
+    }
+    .header__subtitle{
+        font-size: 17px;
     }
 }
