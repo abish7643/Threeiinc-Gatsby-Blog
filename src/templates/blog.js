@@ -4,6 +4,7 @@ import { DiscussionEmbed, CommentCount } from 'disqus-react'
 import Layout from '../components/layout'
 import Nav from '../components/nav'
 import SEO from '../components/seo'
+import { Helmet } from "react-helmet";
 import './blog.css'
 import Img from "gatsby-image"
 import Footer from '../components/footer'
@@ -23,7 +24,7 @@ const BlogTemplate = (props) => {
     return (
         <Layout>
             <div className="blog__initialmodel">
-            <SEO title={props.data.contentfulBlog.seoTitle} description={props.data.contentfulBlog.seoDescription} keyword={props.data.contentfulBlog.seoKeywords} />
+            <SEO title={props.data.contentfulBlog.seoTitle} description={props.data.contentfulBlog.seoDescription} keyword={props.data.contentfulBlog.seoKeywords} url={props.data.contentfulBlog.seoUrl} image={props.data.contentfulBlog.seoImage} author={props.data.contentfulBlog.seoAuthor} />
             <Nav/>
             <div className='blog__header'>
 
@@ -83,6 +84,7 @@ export const query = graphql`
             seoDescription
             seoAuthor
             seoKeywords
+            seoUrl
             seoImage {
                 fluid(maxWidth: 1200, quality: 100) {
                     ...GatsbyContentfulFluid_withWebp

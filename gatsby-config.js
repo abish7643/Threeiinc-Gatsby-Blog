@@ -5,9 +5,12 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `3i INC`,
-    description: `Idiots by Choice!`,
+    description: `Idiots by Choice! | 3 Idiots Incorporation`,
     author: `@abishvijayan`,
-    siteUrl: `https://www.3iinc.ml`,
+    siteUrl: `https://www.3iinc.xyz`,
+    keyword: ``,
+    image: ``,
+    url: ``,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
