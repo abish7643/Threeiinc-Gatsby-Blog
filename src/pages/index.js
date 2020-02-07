@@ -12,7 +12,7 @@ const IndexPage = () => (
     <Helmet>
     <meta charSet="utf-8" />
     <title>3i INC</title>
-    <meta name="title" content="3i INC" />
+    <meta name="title" content="3i INC | Idiots by Choice" />
     <meta name="description" content="Idiots by Choice" />
   </Helmet>
     <Nav/>
