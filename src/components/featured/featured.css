@@ -73,6 +73,9 @@
         width: 90%;
         margin-top: 160px;
     }
+    .header__title {
+        line-height: 40px;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -92,11 +95,10 @@
 
 @media screen and (max-width: 450px) {
     .header__info{
-        width: 96%;
-        margin-top: 90px;
+        width: 95%;
     }
     .header__content {
-        padding: 80px 25px;
+        margin-top: -240px;
     }
 
     .header__title{
