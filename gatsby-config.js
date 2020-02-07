@@ -45,6 +45,23 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-amplitude-analytics`,
+      options: {
+        // Specify the API key for your Amplitude Project (required)
+        apiKey: "122a271a78939de0c8ae403c9ad53f0c",
+        // Puts tracking script in the head instead of the body (optional)
+        head: true,
+        // Prevents loading Amplitude and logging events if visitors have "Do Not Track" enabled (optional)
+        respectDNT: true,
+        // Amplitude JS SDK configuration options (optional)
+        amplitudeConfig: {
+          saveEvents: true,
+          includeUtm: true,
+          includeReferrer: true
+        }
+      },
+    },
+    {
       resolve: `gatsby-remark-images-contentful`,
       options: {
         loading: `lazy`,
