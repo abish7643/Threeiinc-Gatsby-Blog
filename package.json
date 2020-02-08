@@ -1,7 +1,7 @@
 {
   "name": "gatsby",
   "private": true,
-  "description": "Idiots by Choice",
+  "description": "Idiots by Choice | 3 Idiots Incorporations | 3i INC",
   "version": "0.1.0",
   "author": "Abish Vijayan <abishvijayan7643@gmail.com>",
   "dependencies": {
@@ -35,7 +35,7 @@
     "prettier": "^1.19.1"
   },
   "keywords": [
-    "gatsby"
+    "3iinc", "3 Idiots Incorporations", "3i INC"
   ],
   "license": "MIT",
   "scripts": {
