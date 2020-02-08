@@ -116,7 +116,7 @@ body {
     position: absolute;
     margin-left: -50vw;
     margin-right: -50vw;
-    
+    align-items: center;
     margin-top: 400px;
 }
 
@@ -200,21 +200,21 @@ body {
     float: right;
     margin: 40px 0 40px 40px;
 }
+.disqus__section{
+    width: 58%;
+}
 
 @media screen and (max-width: 1400px){
     .disqus__section {
         max-width: 100%;
         padding-left: 3%;
         padding-right: 3%;
+        width: 80%;
         
     }
 }
 @media screen and (max-width: 1600px){
-    .disqus__section{
-        max-width: 100%;
-        padding-left: 18%;
-        padding-right: 18%;
-    }
+    
 }
 @media screen and (max-width: 1200px){
     .disqus__section{
