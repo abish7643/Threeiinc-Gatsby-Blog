@@ -21,7 +21,7 @@ import {
     TwitterShareButton,
     TwitterIcon,
     WhatsappShareButton,
-    WhatsappIcon
+    WhatsappIcon,
   } from "react-share";
 
 
@@ -36,7 +36,7 @@ const BlogTemplate = (props) => {
           createdat: props.data.contentfulBlog.createdAt,
       }
       const shareUrl = 'https://3iinc.xyz/blog/' + props.data.contentfulBlog.slug + '/'
-      
+      const shareTitle = "'" + props.data.contentfulBlog.title + "'" + " | 3i INC | 3 Idiots Incorporation"
       const iconProp = {
         size: 32,
         round: true
@@ -66,25 +66,25 @@ const BlogTemplate = (props) => {
                     }/>
                 </div>
                     <div className="share__buttons">
-                        <WhatsappShareButton url={shareUrl}>
+                        <WhatsappShareButton url={shareUrl} title={shareTitle}  style={{marginRight: '16px'}}>
                             <WhatsappIcon  {...iconProp}/>
                         </WhatsappShareButton>
-                        <FacebookShareButton url={shareUrl}>
+                        <FacebookShareButton url={shareUrl} quote={shareTitle} style={{marginRight: '16px'}}>
                             <FacebookIcon  {...iconProp}/>
                         </FacebookShareButton>
-                        <EmailShareButton url={shareUrl}>
+                        <EmailShareButton url={shareUrl} subject={shareTitle} style={{marginRight: '16px'}}>
                             <EmailIcon  {...iconProp}/>
                         </EmailShareButton>
-                        <TelegramShareButton url={shareUrl}>
+                        <TelegramShareButton url={shareUrl} title={shareTitle} style={{marginRight: '16px'}}>
                             <TelegramIcon  {...iconProp}/>
                         </TelegramShareButton>
-                        <TwitterShareButton url={shareUrl}>
+                        <TwitterShareButton url={shareUrl} title={shareTitle} style={{marginRight: '16px'}}>
                             <TwitterIcon  {...iconProp}/>
                         </TwitterShareButton>
-                        <LinkedinShareButton url={shareUrl}>
+                        <LinkedinShareButton url={shareUrl} title={shareTitle} style={{marginRight: '16px'}}>
                             <LinkedinIcon  {...iconProp}/>
                         </LinkedinShareButton>
-                        <RedditShareButton url={shareUrl}>
+                        <RedditShareButton url={shareUrl} title={shareTitle} style={{marginRight: '16px'}}>
                             <RedditIcon  {...iconProp}/>
                         </RedditShareButton>
                     </div>
