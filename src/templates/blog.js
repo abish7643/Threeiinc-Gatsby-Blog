@@ -4,11 +4,12 @@ import { DiscussionEmbed, CommentCount } from 'disqus-react'
 import Layout from '../components/layout'
 import Nav from '../components/nav'
 import SEO from '../components/seo'
-import { Helmet } from "react-helmet";
 import './blog.css'
-import Img from "gatsby-image"
 import Footer from '../components/footer'
 
+import { css } from 'emotion';
+import {FaTwitter, FaFacebook, FaEnvelope, FaPinterest, FaShareAlt} from 'react-icons/fa/';
+import { ShareButtonIconOnly, ShareBlockStandard } from "react-custom-share";
 
 
 const BlogTemplate = (props) => {
@@ -21,6 +22,21 @@ const BlogTemplate = (props) => {
       const date = {
           createdat: props.data.contentfulBlog.createdAt,
       }
+      const shareUrl = 'https://3iinc.xyz/blog/' + props.data.contentfulBlog.slug + '/'
+      
+      const shareBlockProps = {
+        url: shareUrl,
+        button: ShareButtonIconOnly,
+        buttons: [
+          { network: "Twitter", icon: FaTwitter },
+          { network: "Facebook", icon: FaFacebook },
+          { network: "Pinterest", icon: FaPinterest },
+          { network: "Share", icon: FaShareAlt },
+          { network: "Email", icon: FaEnvelope }
+        ],
+        text: props.data.contentfulBlog.seoTitle,
+        longtext: props.data.contentfulBlog.seoDescription
+      };
     return (
         <Layout>
             <div className="blog__initialmodel">
@@ -45,8 +61,13 @@ const BlogTemplate = (props) => {
                         {__html: `${props.data.contentfulBlog.content.childMarkdownRemark.html}`}
                     }/>
                 </div>
+                
                 <div className='disqus__section'>
-                <DiscussionEmbed shortname={disqusConfig.shortname} config={disqusConfig.config} />
+                    <div className="share__buttons">
+                        <ShareBlockStandard {...shareBlockProps} />
+                    </div>
+                    
+                    <DiscussionEmbed shortname={disqusConfig.shortname} config={disqusConfig.config} />
                 </div>
                 <div className='footer__div'>
                     <Footer/>

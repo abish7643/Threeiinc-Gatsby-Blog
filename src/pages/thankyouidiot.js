@@ -1,9 +1,9 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Nav from '../components/nav'
-import Footer from '../components/footer'
+
 import './contact.css'
-import { Link, navigate } from 'gatsby'
+import { navigate } from 'gatsby'
 
 
 const Thanksyou = () => (

@@ -1,7 +1,5 @@
 import React from 'react'
 import './footer.css'
-import foooter from '../../images/footer.jpg'
-import Link from 'gatsby'
 import Particles from 'react-particles-js'
 
 

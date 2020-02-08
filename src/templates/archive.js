@@ -1,12 +1,10 @@
 import React from 'react'
 import { Link, graphql, navigate } from 'gatsby'
-import { window } from 'browser-monads'
 import Layout from '../components/layout'
 import Nav from '../components/nav'
 import SEO from '../components/seo'
 import '../components/home/home.css'
 import './archive.css'
-import Featured from '../components/featured'
 import Footer from '../components/footer'
 
 
