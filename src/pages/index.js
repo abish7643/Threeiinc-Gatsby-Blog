@@ -11,7 +11,7 @@ const IndexPage = () => (
   <Layout>
     <Helmet>
     <meta charSet="utf-8" />
-    <title>3i INC</title>
+    <title>3i INC | 3 Idiots Incorporation | Idiots by Choice</title>
     <meta name="title" content="3i INC | Idiots by Choice" />
     <meta name="description" content="
       Who's an Idiot? The one who questions the system,

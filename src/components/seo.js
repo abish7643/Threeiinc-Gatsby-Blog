@@ -29,6 +29,7 @@ function SEO({ description, author, keywords, url, image, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const metaTitle = title + " | 3i INC | 3 Idiots Incorporation"
   
 
   return (
@@ -45,7 +46,7 @@ function SEO({ description, author, keywords, url, image, lang, meta, title }) {
         },
         {
           name: `title`,
-          content: title,
+          content: metaTitle,
         },
         {
           name: `keywords`,
