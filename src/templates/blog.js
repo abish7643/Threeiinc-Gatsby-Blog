@@ -66,7 +66,7 @@ const BlogTemplate = (props) => {
                     }/>
                 </div>
                     <div className="share__buttons">
-                        <WhatsappShareButton url={shareUrl} title={shareTitle}  style={{marginRight: '16px'}}>
+                        <WhatsappShareButton url={shareUrl} title={shareTitle} separator=" " style={{marginRight: '16px'}}>
                             <WhatsappIcon  {...iconProp}/>
                         </WhatsappShareButton>
                         <FacebookShareButton url={shareUrl} quote={shareTitle} style={{marginRight: '16px'}}>
