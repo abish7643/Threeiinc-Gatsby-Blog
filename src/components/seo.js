@@ -65,10 +65,6 @@ function SEO({ description, author, keywords, url, image, lang, meta, title }) {
           content: url,
         },
         {
-          name: `google-site-verification`,
-          content: `pJnzsujROCaGcov4AIbtPbHmFUMJYfg5jGt_hdgv930`,
-        },
-        {
           property: `og:title`,
           content: title,
         },

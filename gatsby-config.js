@@ -4,7 +4,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `3i INC`,
+    title: `3i INC | 3 Idiots Incorporation`,
     description: `Idiots by Choice! | 3 Idiots Incorporation`,
     author: `@abishvijayan`,
     siteUrl: `https://www.3iinc.xyz`,
@@ -45,23 +45,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-amplitude-analytics`,
-      options: {
-        // Specify the API key for your Amplitude Project (required)
-        apiKey: "122a271a78939de0c8ae403c9ad53f0c",
-        // Puts tracking script in the head instead of the body (optional)
-        head: true,
-        // Prevents loading Amplitude and logging events if visitors have "Do Not Track" enabled (optional)
-        respectDNT: true,
-        // Amplitude JS SDK configuration options (optional)
-        amplitudeConfig: {
-          saveEvents: true,
-          includeUtm: true,
-          includeReferrer: true
-        }
-      },
-    },
-    {
       resolve: `gatsby-remark-images-contentful`,
       options: {
         loading: `lazy`,
@@ -90,7 +73,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `3i INC`,
+        name: `3i INC | 3 Idiots Incorporation`,
         short_name: `3i`,
         start_url: `/`,
         background_color: `#663399`,
