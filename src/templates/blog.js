@@ -8,7 +8,7 @@ import './blog.css'
 import Footer from '../components/footer'
 
 import { css } from 'emotion';
-import {FaTwitter, FaFacebook, FaEnvelope, FaPinterest, FaShareAlt} from 'react-icons/fa/';
+import {FaTwitter, FaFacebook, FaEnvelope, FaLink, FaLinkedin, FaMobile} from 'react-icons/fa/';
 import { ShareButtonIconOnly, ShareBlockStandard } from "react-custom-share";
 
 
@@ -30,8 +30,8 @@ const BlogTemplate = (props) => {
         buttons: [
           { network: "Twitter", icon: FaTwitter },
           { network: "Facebook", icon: FaFacebook },
-          { network: "Pinterest", icon: FaPinterest },
-          { network: "Share", icon: FaShareAlt },
+          { network: "Linkedin", icon: FaLinkedin },
+          { network: "Link", icon: FaLink },
           { network: "Email", icon: FaEnvelope }
         ],
         text: props.data.contentfulBlog.seoTitle,
