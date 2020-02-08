@@ -12,7 +12,6 @@ import Footer from '../components/footer'
 
 
 const Archive = (props) => {
-
     const blogContent = props.data.allContentfulBlog
     const { currentPage, numPages } = props.pageContext
     const isFirst = currentPage === 1

@@ -13,7 +13,11 @@ const IndexPage = () => (
     <meta charSet="utf-8" />
     <title>3i INC</title>
     <meta name="title" content="3i INC | Idiots by Choice" />
-    <meta name="description" content="Idiots by Choice" />
+    <meta name="description" content="
+      Who's an Idiot? The one who questions the system,
+      The one who doesn't like how the system works or
+      The one who doesn't believe in the system.
+      We Are The Fucking Idiots! | 3i INC | 3 Idiots Incorporation | 3iinc.xyz | 3iinc" />
   </Helmet>
     <Nav/>
     <Featured/>
