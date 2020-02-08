@@ -7,9 +7,22 @@ import SEO from '../components/seo'
 import './blog.css'
 import Footer from '../components/footer'
 
-import { css } from 'emotion';
-import {FaTwitter, FaFacebook, FaEnvelope, FaLink, FaLinkedin, FaMobile} from 'react-icons/fa/';
-import { ShareButtonIconOnly, ShareBlockStandard } from "react-custom-share";
+import {
+    EmailShareButton,
+    EmailIcon,
+    FacebookShareButton,
+    FacebookIcon,
+    LinkedinShareButton,
+    LinkedinIcon,
+    RedditShareButton,
+    RedditIcon,
+    TelegramShareButton,
+    TelegramIcon,
+    TwitterShareButton,
+    TwitterIcon,
+    WhatsappShareButton,
+    WhatsappIcon
+  } from "react-share";
 
 
 const BlogTemplate = (props) => {
@@ -24,19 +37,10 @@ const BlogTemplate = (props) => {
       }
       const shareUrl = 'https://3iinc.xyz/blog/' + props.data.contentfulBlog.slug + '/'
       
-      const shareBlockProps = {
-        url: shareUrl,
-        button: ShareButtonIconOnly,
-        buttons: [
-          { network: "Twitter", icon: FaTwitter },
-          { network: "Facebook", icon: FaFacebook },
-          { network: "Linkedin", icon: FaLinkedin },
-          { network: "Link", icon: FaLink },
-          { network: "Email", icon: FaEnvelope }
-        ],
-        text: props.data.contentfulBlog.seoTitle,
-        longtext: props.data.contentfulBlog.seoDescription
-      };
+      const iconProp = {
+        size: 32,
+        round: true
+      }
     return (
         <Layout>
             <div className="blog__initialmodel">
@@ -61,12 +65,30 @@ const BlogTemplate = (props) => {
                         {__html: `${props.data.contentfulBlog.content.childMarkdownRemark.html}`}
                     }/>
                 </div>
-                
-                <div className='disqus__section'>
                     <div className="share__buttons">
-                        <ShareBlockStandard {...shareBlockProps} />
+                        <WhatsappShareButton url={shareUrl}>
+                            <WhatsappIcon  {...iconProp}/>
+                        </WhatsappShareButton>
+                        <FacebookShareButton url={shareUrl}>
+                            <FacebookIcon  {...iconProp}/>
+                        </FacebookShareButton>
+                        <EmailShareButton url={shareUrl}>
+                            <EmailIcon  {...iconProp}/>
+                        </EmailShareButton>
+                        <TelegramShareButton url={shareUrl}>
+                            <TelegramIcon  {...iconProp}/>
+                        </TelegramShareButton>
+                        <TwitterShareButton url={shareUrl}>
+                            <TwitterIcon  {...iconProp}/>
+                        </TwitterShareButton>
+                        <LinkedinShareButton url={shareUrl}>
+                            <LinkedinIcon  {...iconProp}/>
+                        </LinkedinShareButton>
+                        <RedditShareButton url={shareUrl}>
+                            <RedditIcon  {...iconProp}/>
+                        </RedditShareButton>
                     </div>
-                    
+                <div className='disqus__section'>
                     <DiscussionEmbed shortname={disqusConfig.shortname} config={disqusConfig.config} />
                 </div>
                 <div className='footer__div'>
