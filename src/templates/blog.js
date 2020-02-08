@@ -24,7 +24,7 @@ const BlogTemplate = (props) => {
     return (
         <Layout>
             <div className="blog__initialmodel">
-            <SEO title={props.data.contentfulBlog.seoTitle} description={props.data.contentfulBlog.seoDescription} keyword={props.data.contentfulBlog.seoKeywords} url={props.data.contentfulBlog.seoUrl} image={props.data.contentfulBlog.seoImage} author={props.data.contentfulBlog.seoAuthor} />
+            <SEO title={props.data.contentfulBlog.seoTitle} description={props.data.contentfulBlog.seoDescription} keywords={props.data.contentfulBlog.seoKeywords} url={props.data.contentfulBlog.seoUrl} image={props.data.contentfulBlog.seoImage} author={props.data.contentfulBlog.seoAuthor} />
             <Nav/>
             <div className='blog__header'>
 
