@@ -41,8 +41,8 @@ const BlogTemplate = (props) => {
       }
       const shareUrl = 'https://3iinc.xyz/blog/' + props.data.contentfulBlog.slug + '/'
       const shareMedia = props.data.contentfulBlog.featuredImage.fluid.src
-      const propDescription = shareTitle + " | " + shareUrl
       const shareTitle = "'" + props.data.contentfulBlog.title + "'" + " | 3i INC | 3 Idiots Incorporation"
+      const propDescription = shareTitle + " | " + shareUrl
       const shareTitleLink = shareTitle + " | " + shareUrl
       const iconProp = {
         size: 34,
