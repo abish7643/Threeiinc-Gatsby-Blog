@@ -22,6 +22,8 @@ import {
     TwitterIcon,
     WhatsappShareButton,
     WhatsappIcon,
+    TumblrShareButton,
+    TumblrIcon,
   } from "react-share";
 
 
@@ -39,10 +41,13 @@ const BlogTemplate = (props) => {
       const shareTitle = "'" + props.data.contentfulBlog.title + "'" + " | 3i INC | 3 Idiots Incorporation"
       const iconProp = {
         size: 36,
-        round: true
+        round: true,
+        bgStyle: {opacity: '1'},
+        iconFillColor: 'white',
       }
       const socialIconcss = {
-          marginRight: '12px'
+          marginRight: '10px',
+          marginTop: '-3px'
       }
     return (
         <Layout>
@@ -70,7 +75,7 @@ const BlogTemplate = (props) => {
                 </div>
                     <div className="share__buttons">
                         <WhatsappShareButton url={shareUrl} title={shareTitle} separator=" " style={socialIconcss}>
-                            <WhatsappIcon  {...iconProp}/>
+                            <WhatsappIcon  {...iconProp} />
                         </WhatsappShareButton>
                         <FacebookShareButton url={shareUrl} quote={shareTitle} style={socialIconcss}>
                             <FacebookIcon  {...iconProp}/>
@@ -90,6 +95,10 @@ const BlogTemplate = (props) => {
                         <RedditShareButton url={shareUrl} title={shareTitle} style={socialIconcss}>
                             <RedditIcon  {...iconProp}/>
                         </RedditShareButton>
+                        <TumblrShareButton url={shareUrl} title={shareTitle} style={socialIconcss}>
+                            <TumblrIcon  {...iconProp}/>
+                        </TumblrShareButton>
+
                     </div>
                 <div className='disqus__section'>
                     <DiscussionEmbed shortname={disqusConfig.shortname} config={disqusConfig.config} />
