@@ -40,14 +40,16 @@ const BlogTemplate = (props) => {
           createdat: props.data.contentfulBlog.createdAt,
       }
       const shareUrl = 'https://3iinc.xyz/blog/' + props.data.contentfulBlog.slug + '/'
+      const shareMedia = props.data.contentfulBlog.featuredImage.fluid.src
+      const propDescription = shareTitle + " | " + shareUrl
       const shareTitle = "'" + props.data.contentfulBlog.title + "'" + " | 3i INC | 3 Idiots Incorporation"
+      const shareTitleLink = shareTitle + " | " + shareUrl
       const iconProp = {
         size: 34,
         round: true,
         bgStyle: {opacity: '1'},
         iconFillColor: 'white',
       }
-      const shareMedia = props.data.contentfulBlog.featuredImage.fluid.src
       const socialIconcss = {
           marginRight: '6px',
           marginTop: '-3px'
@@ -101,7 +103,7 @@ const BlogTemplate = (props) => {
                         <TumblrShareButton url={shareUrl} title={shareTitle} style={socialIconcss}>
                             <TumblrIcon  {...iconProp}/>
                         </TumblrShareButton>
-                        <PinterestShareButton url={shareUrl} title={shareTitle} media={shareMedia} style={socialIconcss}>
+                        <PinterestShareButton url={shareUrl} title={shareTitleLink} description={propDescription} media={shareMedia} style={socialIconcss}>
                             <PinterestIcon  {...iconProp}/>
                         </PinterestShareButton>
 
