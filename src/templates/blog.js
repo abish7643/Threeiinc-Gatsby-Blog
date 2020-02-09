@@ -24,6 +24,8 @@ import {
     WhatsappIcon,
     TumblrShareButton,
     TumblrIcon,
+    PinterestShareButton,
+    PinterestIcon,
   } from "react-share";
 
 
@@ -45,6 +47,7 @@ const BlogTemplate = (props) => {
         bgStyle: {opacity: '1'},
         iconFillColor: 'white',
       }
+      const shareMedia = props.data.contentfulBlog.featuredImage.fluid.src
       const socialIconcss = {
           marginRight: '10px',
           marginTop: '-3px'
@@ -98,6 +101,9 @@ const BlogTemplate = (props) => {
                         <TumblrShareButton url={shareUrl} title={shareTitle} style={socialIconcss}>
                             <TumblrIcon  {...iconProp}/>
                         </TumblrShareButton>
+                        <PinterestShareButton url={shareUrl} title={shareTitle} media={shareMedia} style={socialIconcss}>
+                            <PinterestIcon  {...iconProp}/>
+                        </PinterestShareButton>
 
                     </div>
                 <div className='disqus__section'>
