@@ -30,7 +30,9 @@ import {
 
 
 const BlogTemplate = (props) => {
+    const shareUrl = 'https://3iinc.xyz/blog/' + props.data.contentfulBlog.slug + '/'
     const disqusConfig = {
+        url: shareUrl,
         shortname:  'threeiinc',
         config: {   identifier: props.data.contentfulBlog.id,
                     title: props.data.contentfulBlog.slug,
@@ -39,7 +41,6 @@ const BlogTemplate = (props) => {
       const date = {
           createdat: props.data.contentfulBlog.createdAt,
       }
-      const shareUrl = 'https://3iinc.xyz/blog/' + props.data.contentfulBlog.slug + '/'
       const shareMedia = props.data.contentfulBlog.featuredImage.fluid.src
       const shareTitle = "'" + props.data.contentfulBlog.title + "'" + " | 3i INC | 3 Idiots Incorporation"
       const propDescription = shareTitle + " | " + shareUrl
@@ -106,7 +107,7 @@ const BlogTemplate = (props) => {
                         <PinterestShareButton url={shareUrl} title={shareTitleLink} description={propDescription} media={shareMedia} style={socialIconcss}>
                             <PinterestIcon  {...iconProp}/>
                         </PinterestShareButton>
-
+                        <CommentCount config={disqusConfig} placeholder={'...'}/>
                     </div>
                 <div className='disqus__section'>
                     <DiscussionEmbed shortname={disqusConfig.shortname} config={disqusConfig.config} />
