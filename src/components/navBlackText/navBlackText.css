@@ -1,4 +1,4 @@
-.threeiinc-header {
+.threeiinc-header-black {
     font-family: 'Montserrat', 'Poppins', sans-serif;
 	top: 0;
 	left: 0;
@@ -17,27 +17,27 @@
 	order: 0;
 }
 
-.threeiinc-inner {
+.threeiinc-inner-black {
 	width: 100%;
 	padding: 0 6em;
 }
 
-.threeiinc-header h1,
-.threeiinc-header nav {
+.threeiinc-header-black h1,
+.threeiinc-header-black nav {
 	display: inline-block;
 	position: relative;
 	text-decoration: none;
 }
 
  /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
-.threeiinc-header h1,
-.threeiinc-header nav a {
+.threeiinc-header-black h1,
+.threeiinc-header-black nav a {
 	line-height: 100px;
 }
 
-.threeiinc-header h1 {
+.threeiinc-header-black h1 {
 	text-transform: uppercase;
-	color: rgb(255, 255, 255);
+	color: black;
 	letter-spacing: 3px;
 	font-size: 2.5em;
 	margin: 0;
@@ -45,17 +45,17 @@
 	
 }
 
-.threeiinc-header nav {
+.threeiinc-header-black nav {
 	float: right;
 }
 
-.Logo__Brand {
-	color: rgb(255, 255, 255);
+.Logo__Brand__black {
+	color: black;
 	margin: 0 0 0 -220px;
 	
 }
-.threeiinc-header nav a {
-	color: rgb(255, 255, 255);
+.threeiinc-header-black nav a {
+	color: black;
 	font-weight: 600;
 	margin: 0 0 0 40px;
 	font-size: 1.2em;
@@ -63,44 +63,44 @@
 
 }
 
-.threeiinc-header nav a:hover {
+.threeiinc-header-black nav a:hover {
 	color: rgb(49, 69, 156);
 }
 
 /* Transitions and class for reduced height */
-.threeiinc-header h1,
-.threeiinc-header nav a {
+.threeiinc-header-black h1,
+.threeiinc-header-black nav a {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
-.threeiinc-header.threeiinc-header-shrink {
+.threeiinc-header-black.threeiinc-header-shrink {
 	height: 90px;
 }
 
-.threeiinc-header.threeiinc-header-shrink h1,
+.threeiinc-header-black.threeiinc-header-shrink h1,
 .threeiinc-header.threeiinc-header-shrink nav a {
 	line-height: 90px;
 }
 
-.threeiinc-header.threeiinc-header-shrink h1 {
+.threeiinc-header-black.threeiinc-header-shrink h1 {
 	font-size: 2em;
 }
 
 /* Example Media Queries */
 @media screen and (max-width: 55em) {
 	
-	.threeiinc-header .threeiinc-inner {
+	.threeiinc-header-black .threeiinc-inner-black {
 		width: 95%;
 		align-content: center;
 		margin-left: -25px;
 	}
-	.Logo__Brand {
+	.Logo__Brand__black {
 		margin: 0 0 0 0;
 	}
-	.threeiinc-header h1,
-	.threeiinc-header nav {
+	.threeiinc-header-black h1,
+	.threeiinc-header-black nav {
 		display: block;
 		margin: 0 auto;
 		text-align: center;
@@ -108,8 +108,8 @@
 		margin-left: -50px;
 	}
 
-	.threeiinc-header h1,
-	.threeiinc-header nav a {
+	.threeiinc-header-black h1,
+	.threeiinc-header-black nav a {
         line-height: 70px;
 		margin-top: 20px;
 		
@@ -120,52 +120,52 @@
 
 	}
 
-	.threeiinc-header.threeiinc-header-shrink h1,
+	.threeiinc-header-black.threeiinc-header-shrink h1,
 	.threeiinc-header.threeiinc-header-shrink nav a {
 		line-height: 45px;
 	}
 
-	.threeiinc-header.threeiinc-header-shrink h1 {
+	.threeiinc-header-black.threeiinc-header-shrink h1 {
 		font-size: 2em;
 	}
 
-	.threeiinc-header.threeiinc-header-shrink nav a {
+	.threeiinc-header-black.threeiinc-header-shrink nav a {
 		font-size: 1em;
 	}
-	.threeiinc-inner{
+	.threeiinc-inner-black{
 		margin-left: -80px;
 	}
 }
 
 @media screen and (max-width: 32.25em) {
-	.threeiinc-header nav a {
+	.threeiinc-header-black nav a {
 		font-size: 1em;
 	}
-	.Logo__Brand {
+	.Logo__Brand__black {
 		margin: 0 0 0 0;
 		margin-left: 50px;
 	}
-	.threeiinc-header .threeiinc-inner {
+	.threeiinc-header-black .threeiinc-inner-black {
 		width: 60%;
 		align-content: center;
 		margin-left: 25px;
 	}
-	.threeiinc-inner {
+	.threeiinc-inner-black {
 		width: 100px;
 	}
 }
 
 @media screen and (max-width: 450px) {
-	.threeiinc-header nav a,
+	.threeiinc-header-black nav a,
 	.threeiinc-header.threeiinc-header-shrink nav a {
 		line-height: 30px;
 	}
-	.threeiinc-header .threeiinc-inner {
+	.threeiinc-header-black .threeiinc-inner-black {
 		width: 60%;
 		align-content: center;
 		margin-left: -5px;
 	}
-	.threeiinc-inner {
+	.threeiinc-inner-black {
 		width: 100px;
 	}
 }
