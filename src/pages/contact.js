@@ -66,9 +66,9 @@ const Contact = () => (
                 </div>
                 <div className='footer__contact__two'>
                     <h2>STAY CONNECTED</h2>
-                    <a href='#'>Follow us on Instagram</a><br/>
-                    <a href='#'>Follow us on Facebook</a><br/>
-                    <a href='#'>Follow us on Blank</a><br/>
+                    <a href='https://www.instagram.com/3i.inc/' target="_blank">Follow us on Instagram</a><br/>
+                    <a href='https://www.instagram.com/3i.inc/' target="_blank">Follow us on Facebook</a><br/>
+                    <a href='https://www.instagram.com/3i.inc/' target="_blank">Follow us on Blank</a><br/>
                 </div>
                 <div className='footer__contact__three'>
                     <h2>CONTACT INFO</h2>

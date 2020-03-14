@@ -2,16 +2,17 @@
 .contact__section{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: auto;
     left: 0;
-    margin-top: 360px;
+    top: 0;
+    margin-top: 0px;
     text-align: center;
 }
 .contact__container{
     display: inline-block;
     width: 50%;
-    height: 70%;
-    margin-top: 200px;
+    height: 600px;
+    margin-top: 180px;
     background: white;
     box-shadow: 8px 8px rgba(0,0,0,0.25) blur(0%);
 }
@@ -125,7 +126,7 @@
     text-align: center;
     font-size: 16px;
     font-weight: 400;
-    background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%);
+    background-image: linear-gradient(to right, #1e3c72, #2a5298);
     color: white;
     width: 110px;
     height: 35px;
@@ -262,7 +263,6 @@
     }
     .contact__container{
         width: 90%;
-        height: 60%;
     }
     .contact__container__right{
         width: 65%;
@@ -275,7 +275,7 @@
 @media screen and (max-width: 500px) {
     .contact__container{
         width: 90%;
-        height: 60%;
+        height: 520px;
     }
     .field input{
         width: 80%;
