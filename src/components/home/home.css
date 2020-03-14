@@ -107,7 +107,11 @@
     }
     .feed{
         width: 90%;
-        margin-left: 40px;
+        margin-left: 0px;
+    }
+
+    .feed__initial{
+     width: 100vw;   
     }
     .viewmore{
         margin-left: 0px;
@@ -120,9 +124,9 @@
         grid-column-start: span 12;
 
     }
-    .feed{
+    .feed {
         width: 90%;
-        margin-left: 18px;
+        margin-left: 0px;
     }
     .viewmore{
         margin-left: 0px;
@@ -136,13 +140,6 @@
         grid-column-start: span 12;
 
     }
-    .feed{
-        width: 90%;
-        margin-left: -10px;
-    }
-    .card{
-        width: 87%;
-    }
     .viewmore_wrapper{
         margin-left: -20px;
 
@@ -151,12 +148,7 @@
 }
 
 @media screen and (max-width: 400px) {
-    .feed__initial{
-        width: 80%;
-    }
-    .card {
-        width: 94%;
-    }
+    
     
 }
 

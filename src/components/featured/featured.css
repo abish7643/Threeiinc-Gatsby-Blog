@@ -1,3 +1,9 @@
+header {
+    width: 100vw;
+}
+.header__section {
+    width: 100vw;
+}
 .header__hero {
     background-position: absolute;
     background-size: cover;
