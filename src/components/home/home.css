@@ -140,6 +140,9 @@
         grid-column-start: span 12;
 
     }
+    .card {
+        margin-left: 5px;
+    }
     .viewmore_wrapper{
         margin-left: -20px;
 
