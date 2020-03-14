@@ -22,6 +22,7 @@
     width: 55%;
     height: 100%;
     background: white;
+
 }
 
 .contact__container__left{
@@ -33,10 +34,9 @@
 }
 
 .contact__container__right h1{
-    font-family: 'Montserrat', 'Poppins', sans-serif;
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 59px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
     margin-top: 80px;
 }
 
@@ -73,7 +73,7 @@
 
 ::placeholder{
     font-weight: 100;
-    padding-left: 12px;
+    padding-left: 16px;
 }
 .message__field::placeholder{
     padding-top: 10px;

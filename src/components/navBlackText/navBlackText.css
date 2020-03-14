@@ -80,7 +80,7 @@
 }
 
 .threeiinc-header-black.threeiinc-header-shrink h1,
-.threeiinc-header.threeiinc-header-shrink nav a {
+.threeiinc-header-black.threeiinc-header-shrink nav a {
 	line-height: 90px;
 }
 
@@ -115,13 +115,13 @@
 		
 	}
 
-	.threeiinc-header nav a {
+	.threeiinc-header-black nav a {
         margin: 0 20px;
 
 	}
 
 	.threeiinc-header-black.threeiinc-header-shrink h1,
-	.threeiinc-header.threeiinc-header-shrink nav a {
+	.threeiinc-header-black.threeiinc-header-shrink nav a {
 		line-height: 45px;
 	}
 
@@ -157,7 +157,7 @@
 
 @media screen and (max-width: 450px) {
 	.threeiinc-header-black nav a,
-	.threeiinc-header.threeiinc-header-shrink nav a {
+	.threeiinc-header-black.threeiinc-header-shrink nav a {
 		line-height: 30px;
 	}
 	.threeiinc-header-black .threeiinc-inner-black {

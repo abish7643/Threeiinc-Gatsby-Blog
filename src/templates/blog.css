@@ -125,17 +125,19 @@ body {
     margin-top: 40px;
     margin-bottom: 10px;
     padding: 0 6%;
-    border-bottom: 2px solid rgba(30, 60, 114, 0.15);
+    border-bottom: 1px solid rgba(30, 60, 114, 0.15);
 }
 
 .blog__content p {
     font-family: 'Poppins';
     font-size: 17px;
-    line-height: 32px;
+    line-height: 28px;
     font-weight: 300;
     color: #0a0a0a;
     margin: 40px 0;
-    text-indent: 80px;
+}
+.blog__content::first-line {
+    text-indent: 70px;
 }
 .blog__content table{
     padding: 0 20px;
@@ -152,7 +154,8 @@ body {
     margin: 30px 5px 30px 5px;
     border-radius: 15px;
     padding: 0px 30px 5px 35px;
-    box-shadow: 0px 6px 12px 0 rgba(30, 60, 114, 0.1);
+    box-shadow: 0px 6px 12px 0 rgba(30, 60, 114, 0.05);
+    
 }
 
 
@@ -164,12 +167,14 @@ body {
 }
 
 .blog__content blockquote p {
-    font-size: 22px;
-    line-height: 36px;
-    font-weight: bolder;
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 700;
     color: #1e3c72;
     font-family: 'poppins';
     text-align: initial;
+    text-transform: uppercase;
+    
 }
 
 .blog__content img {
@@ -265,7 +270,7 @@ body {
         margin: 10px 0px 10px 0;
     }
     .blog__content blockquote p{
-        font-size: 21px;
+        font-size: 26px;
     }
     .blog__content__title{
         margin-top: -55px;
@@ -285,8 +290,8 @@ body {
         margin-top: -55px;
     }
     .blog__title{
-        font-size: 28px;
-        line-height: 34px;
+        font-size: 26px;
+        line-height: 40px;
     }
     .blog__content{
         width: 85%;
