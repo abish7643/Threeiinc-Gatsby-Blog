@@ -57,7 +57,8 @@ module.exports = {
       options: {
         fonts: [
           `Montserrat`,
-          `Poppins`,
+          `Poppins\:200,300,400`,
+          `Roboto`
         ],
       },
     },

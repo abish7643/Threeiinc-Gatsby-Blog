@@ -150,13 +150,13 @@ export const query = graphql`
             seoKeywords
             seoUrl
             seoImage {
-                fluid(maxWidth: 1200, quality: 100) {
+                fluid(maxWidth: 800, quality: 100) {
                     ...GatsbyContentfulFluid_withWebp
                     src
                 }
             }
             featuredImage {
-                fluid(maxWidth: 1200, quality: 100) {
+                fluid(maxWidth: 800, quality: 100) {
                     ...GatsbyContentfulFluid_withWebp
                     src
                 }
