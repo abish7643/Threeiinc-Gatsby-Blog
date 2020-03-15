@@ -325,10 +325,12 @@ a{
     .blog__content__title{
         position: absolute;
         margin-top: -55px;
+        margin-left: 10px;
     }
     .blog__title{
         font-size: 26px;
         line-height: 40px;
+        margin-top: 10px;
     }
     .blog__content{
         width: 85%;
