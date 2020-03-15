@@ -131,8 +131,7 @@ a{
 
 }
 .blog__categories{
-    font-weight    border-bottom: 1px solid rgba(30, 60, 114, 0.15);
-    : 900;
+    font-weight: 900;
     font-family: 'montserrat';
     font-size: 14px;
     color: #fff;
