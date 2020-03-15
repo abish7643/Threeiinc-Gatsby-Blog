@@ -96,7 +96,7 @@ export const pageQuery = graphql`
                         id
                     }
                     featuredImage {
-                        fluid(maxWidth: 1200, quality: 85) {
+                        fluid(maxWidth: 600, quality: 85) {
                             src
                             ...GatsbyContentfulFluid
                         }

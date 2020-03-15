@@ -175,14 +175,14 @@ export const query = graphql`
             seoKeywords
             seoUrl
             seoImage {
-                fluid(maxWidth: 800, quality: 100) {
-                    ...GatsbyContentfulFluid_withWebp
+                fluid(maxWidth: 1200, quality: 100) {
+                    ...GatsbyContentfulFluid
                     src
                 }
             }
             featuredImage {
-                fluid(maxWidth: 800, quality: 100) {
-                    ...GatsbyContentfulFluid_withWebp
+                fluid(maxWidth: 1200, quality: 100) {
+                    ...GatsbyContentfulFluid
                     src
                 }
             }
@@ -201,8 +201,8 @@ export const query = graphql`
                 slug
                 author
                 featuredImage {
-                    fluid(maxWidth: 200, quality: 100) {
-                        ...GatsbyContentfulFluid_withWebp
+                    fluid(maxWidth: 200, quality: 85) {
+                        ...GatsbyContentfulFluid
                         src
                     }
                 }

@@ -25,7 +25,7 @@ export default () => (
                         id
                     }
                     featuredImage {
-                        fluid(maxWidth: 1200) {
+                        fluid(maxWidth: 600, quality: 85) {
                             src
                             ...GatsbyContentfulFluid
                         }
