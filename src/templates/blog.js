@@ -30,19 +30,19 @@ import {
 
 
 const BlogTemplate = (props) => {
-    const shareUrl = 'https://3iinc.xyz/blog/' + props.data.contentfulBlog.slug + '/'
+    const shareUrl = 'https://3iinc.xyz/blog/' + props.data.currentBlog.slug + '/'
     const disqusConfig = {
         url: shareUrl,
         shortname:  'threeiinc',
-        config: {   identifier: props.data.contentfulBlog.id,
-                    title: props.data.contentfulBlog.slug,
+        config: {   identifier: props.data.currentBlog.id,
+                    title: props.data.currentBlog.slug,
                 }
       };
       const date = {
-          createdat: props.data.contentfulBlog.createdAt,
+          createdat: props.data.currentBlog.createdAt,
       }
-      const shareMedia = props.data.contentfulBlog.featuredImage.fluid.src
-      const shareTitle = "'" + props.data.contentfulBlog.title + "'" + " | 3i INC | 3 Idiots Incorporation"
+      const shareMedia = props.data.currentBlog.featuredImage.fluid.src
+      const shareTitle = "'" + props.data.currentBlog.title + "'" + " | 3i INC | 3 Idiots Incorporation"
       const propDescription = shareTitle + " | " + shareUrl
       const shareTitleLink = shareTitle + " | " + shareUrl
       const iconProp = {
@@ -58,19 +58,22 @@ const BlogTemplate = (props) => {
     return (
         <Layout>
             <div className="blog__initialmodel">
-            <SEO title={props.data.contentfulBlog.seoTitle} description={props.data.contentfulBlog.seoDescription} keywords={props.data.contentfulBlog.seoKeywords} url={props.data.contentfulBlog.seoUrl} image={props.data.contentfulBlog.seoImage} author={props.data.contentfulBlog.seoAuthor} />
+            <SEO title={props.data.currentBlog.seoTitle} description={props.data.currentBlog.seoDescription}
+                keywords={props.data.currentBlog.seoKeywords} url={props.data.currentBlog.seoUrl} 
+                image={props.data.currentBlog.seoImage} author={props.data.currentBlog.seoAuthor} 
+            />
             <Nav/>
             <div className='blog__header'>
 
-                <div className='blog__hero' style={{backgroundImage: `url(${props.data.contentfulBlog.featuredImage.fluid.src})`}}>
+                <div className='blog__hero' style={{backgroundImage: `url(${props.data.currentBlog.featuredImage.fluid.src})`}}>
                 </div>
                 <div className='blog__content__title'>
-                    <h2 className='blog__title'>{props.data.contentfulBlog.title}</h2><br/>
-                    <a className='blog__author' onClick={() => navigate(`/idiots/${props.data.contentfulBlog.authorSlug}`)}>
-                        <p className='blog__extratitleone' style={{textDecoration: 'none'}}>{props.data.contentfulBlog.author} | {date.createdat} </p>
+                    <h2 className='blog__title'>{props.data.currentBlog.title}</h2><br/>
+                    <a className='blog__author' onClick={() => navigate(`/idiots/${props.data.currentBlog.authorSlug}`)}>
+                        <p className='blog__extratitleone' style={{textDecoration: 'none'}}>{props.data.currentBlog.author} | {date.createdat} </p>
                     </a>
-                    <p className='blog__extratitletwo'>{props.data.contentfulBlog.readDuration}</p>
-                    {props.data.contentfulBlog.category.map(category => (
+                    <p className='blog__extratitletwo'>{props.data.currentBlog.readDuration}</p>
+                    {props.data.currentBlog.category.map(category => (
                     <strong class='blog__categories'>{category.title} | </strong>
                 ))}
                 </div>
@@ -78,7 +81,7 @@ const BlogTemplate = (props) => {
             <div className='blog__wrapper'>
                 <div className='blog__content'>
                     <div dangerouslySetInnerHTML={
-                        {__html: `${props.data.contentfulBlog.content.childMarkdownRemark.html}`}
+                        {__html: `${props.data.currentBlog.content.childMarkdownRemark.html}`}
                     }/>
                 </div>
                     <div className="share__buttons">
@@ -111,7 +114,19 @@ const BlogTemplate = (props) => {
                         </PinterestShareButton>
                         <CommentCount config={disqusConfig} placeholder={'...'}/>
                     </div>
-                <div className='disqus__section'>
+                    <h5 className='Heading__latestposts'>Latest Posts:</h5>
+                    <div className='nextPost__Container'>
+                    
+                        {props.data.nextBlog.edges.map(edge => (
+                        <Link className='nextPosts' to={`/blog/${edge.node.slug}/`} style={{textDecoration: 'none', color: 'black'}}>
+                            <h4>{edge.node.title}</h4>
+                            <h5>{edge.node.author}</h5>
+                            <h6>{edge.node.createdAt}</h6>
+                        </Link>
+                    ))}
+                    </div>
+
+                <div className='disqus__section' >
                     <DiscussionEmbed shortname={disqusConfig.shortname} config={disqusConfig.config} />
                 </div>
                 <div className='footer__div'>
@@ -122,14 +137,10 @@ const BlogTemplate = (props) => {
         </Layout>
     )
 }
-
 export default BlogTemplate
-
-
-
 export const query = graphql`
     query BlogTemplate($id: String!) {
-        contentfulBlog(id: {eq: $id}) {
+    currentBlog: contentfulBlog(id: {eq: $id}) {
             title
             id
             slug
@@ -165,5 +176,23 @@ export const query = graphql`
                 }
             }
         }
+        nextBlog: allContentfulBlog(
+            limit: 2
+            sort: { fields: [createdAt], order: DESC}
+            filter: {
+                node_locale: {eq: "en-US",}
+                id: {ne: $id}
+            }
+        ){ edges {
+            node {
+                title
+                id
+                slug
+                author
+                createdAt(formatString: "MMMM DD, YYYY")
+        
+            }
+        }
+    }
     }
 `

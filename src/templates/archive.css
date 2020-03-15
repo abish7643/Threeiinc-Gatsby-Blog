@@ -1,5 +1,7 @@
+
 .pagination {
-    z-index: 0;
+    position: relative;
+    z-index: 2;
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 5px;
@@ -10,14 +12,15 @@
     text-align: center;
     background: linear-gradient(to right, #1e3c72 0%, #2a5298 51%);
     height: 35px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 0px;
+    padding: 0px 20px;
+    margin-top: -30px;
     cursor: pointer;
     border: 0px solid white;
     font-size: 17px;
     font-family: 'poppins';
     transition: all 0.2s ease-in-out;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 .pagination__item:hover{
@@ -40,8 +43,15 @@
 .feed {
     margin-bottom: 70px;
 }
+@media screen and (max-width: 1000px) {
+    
+    .main__div{
+        width: 100vw;   
+    }
+}
 
 @media screen and (max-width: 450px) {
+    
     .feed{
         width: 90%;
         margin-left: 15px;

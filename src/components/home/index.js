@@ -19,6 +19,7 @@ export default () => (
                     id
                     slug
                     title
+                    author
                     category {
                         title
                         id
