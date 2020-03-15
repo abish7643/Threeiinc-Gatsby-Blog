@@ -84,8 +84,39 @@ const getArchive = makeRequest(graphql, `
 });
 
 
+const getAuthorPage = makeRequest(graphql, `
+{
+    allContentfulBlog (
+        sort: { fields: [createdAt], order: DESC }
+        filter: {
+            node_locale: {eq: "en-US"}},
+            )
+            
+    {
+        edges {
+            node {
+                author
+                authorSlug
+            }
+        }
+    }
+}
+`).then(result => {
+    result.data.allContentfulBlog.edges.forEach(({ node }) => {
+        createPage({
+            path: `idiots/${node.authorSlug}`,
+            component: path.resolve(`src/templates/author.js`),
+            context: {
+                author: node.author,
+            },
+        })
+    })
+});
+
+
 return Promise.all([
     getBlog,
-    getArchive
+    getArchive,
+    getAuthorPage
 ])
 };

@@ -9,6 +9,26 @@ body {
     align-items: initial;
 
 }
+.Author__Info__Container{
+    position: relative;
+    margin-bottom: 50px;
+    background-color: black;
+    color: white;
+    align-self: center;
+}
+.feed__initial__authorposts{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex;
+    left: 0;
+    right: 0;
+    width: 100%;
+    align-items: center;
+    margin-left: -10px;
+    position: relative;
+    order: 2;
+    z-index: 0;
+}
 
 .blog__footer {
     display: flex;
@@ -80,25 +100,39 @@ body {
     display: inline-block;
     font-size: 36px;
 }
-.blog__author{
+.blog__author .blog__date{
     font-weight: 900;
     font-family: 'montserrat';
     z-index: 2;
     font-size: 14px;
     color: #fff;
     border-bottom: 1px solid white;
-    width: 90%;
-    margin-top: -5px;
+        margin-top: -5px;
+    
 }
-.blog__extratitle{
+a{
+    text-decoration: none;
+}
+.blog__extratitleone{
     font-family: 'montserrat';
     z-index: 2;
     font-size: 14px;
     color: #fff;
     font-weight: 900;
+    border-bottom: 1px solid white;
+    width: 93%;
+}
+.blog__extratitletwo{
+    font-family: 'montserrat';
+    z-index: 2;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 900;
+
 }
 .blog__categories{
-    font-weight: 900;
+    font-weight    border-bottom: 1px solid rgba(30, 60, 114, 0.15);
+    : 900;
     font-family: 'montserrat';
     font-size: 14px;
     color: #fff;
@@ -229,6 +263,9 @@ body {
     .blog__content__title{
         margin-top: -55px;
         margin-left: 80px;
+    }
+    .feed__initial__authorposts{
+        width: 100vw;
     }
 
 }

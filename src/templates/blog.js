@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, navigate, Link } from 'gatsby'
 import { DiscussionEmbed, CommentCount } from 'disqus-react' 
 import Layout from '../components/layout'
 import Nav from '../components/nav'
@@ -65,9 +65,11 @@ const BlogTemplate = (props) => {
                 <div className='blog__hero' style={{backgroundImage: `url(${props.data.contentfulBlog.featuredImage.fluid.src})`}}>
                 </div>
                 <div className='blog__content__title'>
-                    <h2 className='blog__title'>{props.data.contentfulBlog.title}</h2>
-                    <p className='blog__author'>{props.data.contentfulBlog.author} |  {date.createdat} </p>
-                    <p className='blog__extratitle'>{props.data.contentfulBlog.readDuration}</p>
+                    <h2 className='blog__title'>{props.data.contentfulBlog.title}</h2><br/>
+                    <a className='blog__author' onClick={() => navigate(`/idiots/${props.data.contentfulBlog.authorSlug}`)}>
+                        <p className='blog__extratitleone' style={{textDecoration: 'none'}}>{props.data.contentfulBlog.author} | {date.createdat} </p>
+                    </a>
+                    <p className='blog__extratitletwo'>{props.data.contentfulBlog.readDuration}</p>
                     {props.data.contentfulBlog.category.map(category => (
                     <strong class='blog__categories'>{category.title} | </strong>
                 ))}
@@ -132,6 +134,7 @@ export const query = graphql`
             id
             slug
             author
+            authorSlug
             readDuration
             shortDescription
             category {
