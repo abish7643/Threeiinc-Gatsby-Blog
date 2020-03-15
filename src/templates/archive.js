@@ -21,16 +21,6 @@ const Archive = (props) => {
         <Layout>
             <SEO title='Blog' keywords={['3i INC', 'Idiots by Choice', 'Idiotism', '3i INC Blog']} /> 
             <NavBlackText/>
-
-            <header>
-                <div className='archive__section'>
-                <div className='archive__nav'>
-                    <Link to='/blog'>
-                        
-                    </Link>
-                </div>
-                </div>
-            </header>
             <div className='Author__Info__Container'>
                 <h1>
                    Blog Posts

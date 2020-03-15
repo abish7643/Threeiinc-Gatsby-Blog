@@ -118,7 +118,18 @@ const BlogTemplate = (props) => {
                     <div className='nextPost__Container'>
                     
                         {props.data.nextBlog.edges.map(edge => (
-                        <Link className='nextPosts' to={`/blog/${edge.node.slug}/`} style={{textDecoration: 'none', color: 'black'}}>
+                        <Link className='nextPosts' to={`/blog/${edge.node.slug}/`} style={{textDecoration: 'none',
+                            color: 'black',
+                            backgroundRepeat: 'no-repeat',
+                            backgroundSize: 'cover',
+                            backgroundImage: `linear-gradient(
+                                to bottom,
+                                rgba(255, 255, 255, 0.95) 40%,
+                                rgba(255, 255, 255, 0.97) 70%,
+                                rgba(255, 255, 255, 1) 100%),
+                                url(${edge.node.featuredImage.fluid.src})`
+                                }}
+                                >
                             <h4>{edge.node.title}</h4>
                             <h5>{edge.node.author}</h5>
                             <h6>{edge.node.createdAt}</h6>
@@ -189,6 +200,12 @@ export const query = graphql`
                 id
                 slug
                 author
+                featuredImage {
+                    fluid(maxWidth: 200, quality: 100) {
+                        ...GatsbyContentfulFluid_withWebp
+                        src
+                    }
+                }
                 createdAt(formatString: "MMMM DD, YYYY")
         
             }
