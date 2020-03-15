@@ -121,6 +121,7 @@ a{
     font-weight: 900;
     border-bottom: 1px solid white;
     width: 93%;
+    margin-top: -10px;
 }
 .blog__extratitletwo{
     font-family: 'montserrat';
