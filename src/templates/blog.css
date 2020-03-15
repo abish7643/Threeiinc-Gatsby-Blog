@@ -234,6 +234,7 @@ a{
 .nextPost__Container {
     display: flex;
     margin-top: -30px;
+    width: 70%;
 }
 .Heading__latestposts {
     margin-top: 10px;
@@ -250,9 +251,11 @@ a{
 }
 .nextPosts h5, h6{
     margin-top: -12px;
+    padding: 0px 0px;
 }
 .nextPosts h4 {
     margin-top: 40px;
+    padding: 0px 0px;
 }
 
 .disqus__section{
@@ -312,6 +315,9 @@ a{
     .blog__content__title{
         margin-left: 20px;
     }
+    .nextPost__Container {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 750px){
@@ -342,6 +348,9 @@ a{
     }
     .blog__header{
         
+    }
+    .nextPost__Container {
+        width: 100%;
     }
 }
 
