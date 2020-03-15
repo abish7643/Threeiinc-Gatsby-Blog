@@ -113,7 +113,6 @@ const getAuthorPage = makeRequest(graphql, `
     })
 });
 
-
 return Promise.all([
     getBlog,
     getArchive,
