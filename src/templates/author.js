@@ -14,8 +14,9 @@ const AuthorTemplate = (props) => {
             <div className='Author__Info__Container'>
                 {props.data.authorInfo.edges.map(edge => (
                 <div key={edge.node.id}>
-                   
-                   <h1>Posts By {edge.node.authorData.authorName}</h1>
+                   <div>
+                        <h1>Posts By {edge.node.authorData.authorName}</h1>
+                   </div>
                    <SEO title={edge.node.authorData.authorName} 
                    keywords={edge.node.authorData.seoAuthorKeywords} 
                    author={edge.node.authorData.authorName}

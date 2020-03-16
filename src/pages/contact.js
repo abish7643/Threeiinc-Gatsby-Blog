@@ -61,7 +61,7 @@ const Contact = () => (
                     <h1>3i INC</h1>
                     <h3>3 IDIOTS INCORPORATION</h3>
                     <p>
-                        Each I is 3I is intricately designed to match the natural genetic code, the imaginary number of complex world, the structural integrity of the strongest bridge, the quintessential paragon of the contemporary universe.
+                        Each I in 3I is intricately designed to match the natural genetic code, the imaginary number of complex world, the structural integrity of the strongest bridge, the quintessential paragon of the contemporary universe.
                     </p>
                 </div>
                 <div className='footer__contact__two'>
