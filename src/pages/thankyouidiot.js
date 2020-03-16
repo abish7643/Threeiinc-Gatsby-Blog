@@ -9,7 +9,6 @@ import { navigate } from 'gatsby'
 const Thanksyou = () => (
     <Layout>
         <Nav />
-            <div className='contact__header__thankyou'></div>
             <div className='thankyou__wrapper'>
                 <div className='contact__thanks'>
                     <p>Welcome to the Club, Cheers Mate!</p>

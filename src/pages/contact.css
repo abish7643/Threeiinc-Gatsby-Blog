@@ -142,10 +142,11 @@
 
 .thankyou__wrapper {
     display: grid;
-    grid-template-columns: 91%;
+    grid-template-columns: 100%;
     grid-auto-rows: 180px auto;
-    margin-left: -5px;
-    margin-top: 160px;
+    margin-left: 0px;
+    margin-top: 120px;
+    padding: 10px;
 
 }
 
