@@ -65,18 +65,24 @@ const BlogTemplate = (props) => {
             />
             <Nav/>
             <div className='blog__header'>
-
                 <div className='blog__hero' style={{backgroundImage: `url(${props.data.currentBlog.featuredImage.fluid.src})`}}>
+                
+                </div>              
+            </div>
+            <div className='blog__info'>
+                <div className='blog__info__title'>
+                    <h2>{props.data.currentBlog.title}</h2><br/>
                 </div>
-                <div className='blog__content__title'>
-                    <h2 className='blog__title'>{props.data.currentBlog.title}</h2><br/>
-                    <a className='blog__author' onClick={() => navigate(`/idiots/${props.data.currentBlog.authorData.authorSlug}`)}>
+                <div className='blog__info__author'>
+                    <a onClick={() => navigate(`/idiots/${props.data.currentBlog.authorData.authorSlug}`)}>
                         <p className='blog__extratitleone' style={{textDecoration: 'none'}}>{props.data.currentBlog.authorData.authorName} | {date.createdat} </p>
                     </a>
+                </div>
+                <div className='blog__extratitletwo'>
                     <p className='blog__extratitletwo'>{props.data.currentBlog.readDuration}</p>
-                    {props.data.currentBlog.category.map(category => (
-                    <strong class='blog__categories'>{category.title} | </strong>
-                ))}
+                        {props.data.currentBlog.category.map(category => (
+                    <strong class='blog__categories'>{category.title} | </strong> 
+                    ))}
                 </div>
             </div>
             <div className='blog__wrapper'>
@@ -131,8 +137,8 @@ const BlogTemplate = (props) => {
                             </div>
                         </div>
                     </Link>
-                    <h5 className='Heading__latestposts'>Latest Posts:</h5>
-                    <div className='nextPost__Container'>
+                    <h5 className='Heading__latestposts'>LATEST POSTS</h5>
+                    <div className='nextPost__Container' style={{marginBottom: '10px'}}>
                     
                         {props.data.nextBlog.edges.map(edge => (
                         <Link className='nextPosts' to={`/blog/${edge.node.slug}/`} style={{textDecoration: 'none',
@@ -147,9 +153,9 @@ const BlogTemplate = (props) => {
                                 url(${edge.node.featuredImage.fluid.src})`
                                 }}
                                 >
-                            <h4>{edge.node.title}</h4>
-                            <h5>{edge.node.authorData.authorName}</h5>
-                            <h6>{edge.node.createdAt}</h6>
+                            <h4 style={{}}>{edge.node.title}</h4>
+                            <h5 style={{textTransform: 'uppercase', fontWeight: '900'}}>{edge.node.authorData.authorName}</h5>
+                            <h6 style={{textTransform: 'uppercase'}}>{edge.node.createdAt}</h6>
                         </Link>
                     ))}
                     </div>

@@ -55,6 +55,8 @@ header {
 }
 .banner_title{
     margin: 0 0 30px 0;   
+    font-family: 'poppins';
+
 }
 .banner___title{
     font-weight: 300;
@@ -108,7 +110,7 @@ header {
     }
 
     .banner___title{
-        font-size: 28px;
+        font-size: 25px;
     }
     .header__subtitle{
         margin-top: -5px;
