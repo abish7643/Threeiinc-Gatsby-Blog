@@ -59,8 +59,9 @@ header {
 
 }
 .banner___title{
-    font-weight: 300;
+    font-weight: 500;
     font-size: 36px;
+
 }
 
 .header__subtitle{
@@ -110,7 +111,7 @@ header {
     }
 
     .banner___title{
-        font-size: 25px;
+        font-size: 29px;
     }
     .header__subtitle{
         margin-top: -5px;
