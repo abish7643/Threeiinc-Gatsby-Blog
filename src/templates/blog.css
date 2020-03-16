@@ -304,6 +304,7 @@ a{
 }
 .author__description {
     margin-top: -30px;
+    padding-right: 15px;
 }
 
 @media screen and (max-width: 1400px){

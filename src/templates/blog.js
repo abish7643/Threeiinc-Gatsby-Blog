@@ -123,7 +123,7 @@ const BlogTemplate = (props) => {
                         <div className='author__details'>
                             
                             <div className='author__name'>
-                            <h6>About Author</h6>
+                                <h6>About Author</h6>
                                 <h4>{props.data.currentBlog.authorData.authorName}</h4>
                             </div>
                             <div className='author__description'>
