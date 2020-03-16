@@ -67,9 +67,20 @@ header {
 .header__subtitle{
     font-size: 18px;
     line-height: 24px;
-    font-weight: 300;
+    font-weight: 500;
     color: white;
     margin: 0 0 30px 0;
+}
+.header__author{
+    font-family: 'montserrat';
+    z-index: 2;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 900;
+    border-bottom: 1px solid white;
+    width: 93%;
+    margin-top: -10px;
+    
 }
 @media screen and (max-width: 1250px) {
     .header__info{
