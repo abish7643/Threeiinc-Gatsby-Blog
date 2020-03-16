@@ -24,6 +24,7 @@ export default () => (
                         title
                         id
                     }
+                    
                     featuredImage {
                         fluid(maxWidth: 600, quality: 85) {
                             src

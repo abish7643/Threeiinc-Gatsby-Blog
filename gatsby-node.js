@@ -33,6 +33,10 @@ const getBlog = makeRequest(graphql, `
             node {
                 id
                 slug
+                authorData{
+                    authorName
+                    authorSlug
+                }
             }
         }
     }
@@ -95,8 +99,10 @@ const getAuthorPage = makeRequest(graphql, `
     {
         edges {
             node {
-                author
-                authorSlug
+                authorData{
+                    authorName
+                    authorSlug
+                }
             }
         }
     }
@@ -104,10 +110,10 @@ const getAuthorPage = makeRequest(graphql, `
 `).then(result => {
     result.data.allContentfulBlog.edges.forEach(({ node }) => {
         createPage({
-            path: `idiots/${node.authorSlug}`,
+            path: `idiots/${node.authorData.authorSlug}`,
             component: path.resolve(`src/templates/author.js`),
             context: {
-                author: node.author,
+                author: node.authorData.authorName,
             },
         })
     })

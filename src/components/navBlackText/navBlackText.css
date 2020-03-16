@@ -143,15 +143,12 @@
 	}
 	.Logo__Brand__black {
 		margin: 0 0 0 0;
-		margin-left: 50px;
+		margin-left: 55px;
 	}
 	.threeiinc-header-black .threeiinc-inner-black {
 		width: 60%;
 		align-content: center;
 		margin-left: 25px;
-	}
-	.threeiinc-inner-black {
-		width: 100px;
 	}
 }
 
@@ -164,8 +161,5 @@
 		width: 60%;
 		align-content: center;
 		margin-left: -5px;
-	}
-	.threeiinc-inner-black {
-		width: 100px;
 	}
 }

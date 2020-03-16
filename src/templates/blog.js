@@ -48,19 +48,20 @@ const BlogTemplate = (props) => {
       const iconProp = {
         size: 34,
         round: true,
-        bgStyle: {opacity: '1'},
+        bgStyle: {opacity: '1',
+        },
         iconFillColor: 'white',
       }
       const socialIconcss = {
           marginRight: '6px',
-          marginTop: '-3px'
+          marginTop: '-3px',
       }
     return (
         <Layout>
             <div className="blog__initialmodel">
             <SEO title={props.data.currentBlog.seoTitle} description={props.data.currentBlog.seoDescription}
                 keywords={props.data.currentBlog.seoKeywords} url={props.data.currentBlog.seoUrl} 
-                image={props.data.currentBlog.seoImage} author={props.data.currentBlog.seoAuthor} 
+                image={props.data.currentBlog.seoImage} author={props.data.currentBlog.authorData.seoAuthorName} 
             />
             <Nav/>
             <div className='blog__header'>
@@ -69,8 +70,8 @@ const BlogTemplate = (props) => {
                 </div>
                 <div className='blog__content__title'>
                     <h2 className='blog__title'>{props.data.currentBlog.title}</h2><br/>
-                    <a className='blog__author' onClick={() => navigate(`/idiots/${props.data.currentBlog.authorSlug}`)}>
-                        <p className='blog__extratitleone' style={{textDecoration: 'none'}}>{props.data.currentBlog.author} | {date.createdat} </p>
+                    <a className='blog__author' onClick={() => navigate(`/idiots/${props.data.currentBlog.authorData.authorSlug}`)}>
+                        <p className='blog__extratitleone' style={{textDecoration: 'none'}}>{props.data.currentBlog.authorData.authorName} | {date.createdat} </p>
                     </a>
                     <p className='blog__extratitletwo'>{props.data.currentBlog.readDuration}</p>
                     {props.data.currentBlog.category.map(category => (
@@ -114,6 +115,22 @@ const BlogTemplate = (props) => {
                         </PinterestShareButton>
                         <CommentCount config={disqusConfig} placeholder={'...'}/>
                     </div>
+                    <Link className='about__author' 
+                        to={`/idiots/${props.data.currentBlog.authorData.authorSlug}/`}
+                        style={{textDecoration: 'none', color: 'black'}}
+                        >
+                        <div className='author__image' style={{backgroundImage: `url(${props.data.currentBlog.authorData.authorPhoto.fluid.src})`}}></div>
+                        <div className='author__details'>
+                            
+                            <div className='author__name'>
+                            <h6>About Author</h6>
+                                <h4>{props.data.currentBlog.authorData.authorName}</h4>
+                            </div>
+                            <div className='author__description'>
+                                <h5>{props.data.currentBlog.authorData.authorDescription}</h5>
+                            </div>
+                        </div>
+                    </Link>
                     <h5 className='Heading__latestposts'>Latest Posts:</h5>
                     <div className='nextPost__Container'>
                     
@@ -131,7 +148,7 @@ const BlogTemplate = (props) => {
                                 }}
                                 >
                             <h4>{edge.node.title}</h4>
-                            <h5>{edge.node.author}</h5>
+                            <h5>{edge.node.authorData.authorName}</h5>
                             <h6>{edge.node.createdAt}</h6>
                         </Link>
                     ))}
@@ -155,14 +172,25 @@ export const query = graphql`
             title
             id
             slug
-            author
-            authorSlug
+            authorData{
+                authorName
+                authorSlug
+                seoAuthorName
+                authorDescription
+                authorPhoto{
+                    fluid(maxWidth: 400, quality: 85) {
+                        ...GatsbyContentfulFluid
+                        src
+                    }
+                }
+            }
             readDuration
             shortDescription
             category {
                 title
                 id
             }
+            
             createdAt(formatString: "MMMM DD, YYYY")
             content {
                 childMarkdownRemark {
@@ -199,7 +227,10 @@ export const query = graphql`
                 title
                 id
                 slug
-                author
+                authorData{
+                    authorName
+                    authorSlug
+                }
                 featuredImage {
                     fluid(maxWidth: 200, quality: 85) {
                         ...GatsbyContentfulFluid

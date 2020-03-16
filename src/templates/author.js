@@ -13,13 +13,21 @@ const AuthorTemplate = (props) => {
             
             <div className='Author__Info__Container'>
                 {props.data.authorInfo.edges.map(edge => (
-                <h1 key={edge.node.id}>
-                   Posts By {edge.node.author}
-                   <SEO title={edge.node.seoAuthorSlug} seoTitle={edge.node.authorSlug} author={edge.node.author} seoAuthor={edge.node.author}
-                   description='Read All The Posts From The Author of 3i INC | Idiots By Choice!' />
-                </h1>
+                <div key={edge.node.id}>
+                   
+                   <h1>Posts By {edge.node.authorData.authorName}</h1>
+                   <SEO title={edge.node.authorData.authorName} 
+                   keywords={edge.node.authorData.seoAuthorKeywords} 
+                   author={edge.node.authorData.authorName}
+                   description={edge.node.authorData.authorDescription}
+                   description={`${edge.node.authorData.authorDescription} ' Read All The Posts From The Author of 3i INC | Idiots By Choice!'`} />
+                </div>
+                
             ))}
+
+
             </div>
+            
             <div className='feed__initial__authorposts'>
             <div className='feed'>
             {props.data.authorPosts.edges.map(edge => (
@@ -55,14 +63,18 @@ export const query = graphql`
         authorInfo: allContentfulBlog(
             limit: 1
             filter: {
-            author: {eq: $author}
+            authorData: {authorName: {eq: $author}}
             node_locale: {eq: "en-US",}
         }){
             edges{
                 node{
-                    author
-                    authorSlug
-                    seoAuthorSlug
+                    authorData{
+                        authorName
+                        authorSlug
+                        seoAuthorName
+                        seoAuthorKeywords
+                        authorDescription
+                    }
                 }
             }
         }
@@ -71,7 +83,7 @@ export const query = graphql`
             sort: { fields: [createdAt], order: DESC}
             filter: {
 
-                author: {eq: $author},
+                authorData: {authorName: {eq: $author}},
                 node_locale: {eq: "en-US",}
             }
             ) {
@@ -80,12 +92,15 @@ export const query = graphql`
                     title
                     id
                     slug
-                    author
                     readDuration
                     shortDescription
                     category {
                         title
                         id
+                    }
+                    authorData{
+                        authorName
+                        authorSlug
                     }
                     featuredImage {
                         fluid(maxWidth: 1200) {
