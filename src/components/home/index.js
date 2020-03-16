@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, navigate, StaticQuery, Link } from "gatsby"
+import { graphql, navigate, StaticQuery} from "gatsby"
 import './home.css'
 
 

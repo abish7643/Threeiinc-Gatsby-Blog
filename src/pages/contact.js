@@ -2,7 +2,6 @@ import React from 'react'
 import Layout from '../components/layout'
 import NavBlackText from '../components/navBlackText'
 import SEO from '../components/seo'
-import Footer from '../components/footer'
 import './contact.css'
 import about from '../images/about.jpg'
 

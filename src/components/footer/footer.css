@@ -28,16 +28,15 @@
 }
 
 .newsletter__form{
-    color: white;
+    color: black;
     font-family: 'poppins';
-    border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 20px;
     margin-top: 20px;
-    border-radius: 10px;
+    border-radius: 0px;
     box-shadow: 0px 4px 8px 0px rgba(10, 10, 10, 0.2);
     margin-left: 20px;
     width: 400px;
-    background-color: rgb(10, 10, 10, 0.6);
+    background-color: rgb(255, 255, 255, 0.88);
 }
 
 .newsletter__form p{
@@ -49,20 +48,21 @@
     padding: 1px;
     outline: none;
     width: 100%;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid black;
+    color: black;
     height: 25px;
     background: transparent;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
     float: right;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 10px 0;
     margin-bottom: 20px;
     transition: all 0.3s ease;
 }
-.newsletter__field input:hover{
-    border-bottom: 1px solid rgb(255, 255, 255, 0.8);
-
+.newsletter__field input::placeholder{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 800;
 }
 .newsletter__field p{
     text-align: left;

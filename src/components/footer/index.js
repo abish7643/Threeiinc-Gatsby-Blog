@@ -57,16 +57,15 @@ const Footer = () => {
                                 <input name='bot'/>
                             </div>
                             <div className='newsletter__field'>
-                                <p>Email</p>
                                 <input type='text' id='email' name='email' placeholder='email'/>
                             </div>
-                            
-                                <input type="reset" value="Clear" style={{background: 'transparent', border: '1px solid rgba(255,255,255,0.5)', cursor:'pointer', marginRight: '30px', color: 'white', fontSize: '10px', fontFamily: 'poppins', fontWeight: '900'}} />
-                        
-                            <div className='newsletter__field__checkbox'>
-                                <input type='checkbox' id='1' name='acknowledgement' style={{cursor: 'pointer'}}/>
-                                <p>I Acknowledge to Receive Contents from 3i INC</p>
+                            <div style={{width: '100%'}}>
+                                <div className='newsletter__field__checkbox'>
+                                    <input type='checkbox' id='1' name='acknowledgement' style={{cursor: 'pointer', marginBottom: '30px'}}/>
+                                    <p>I Acknowledge to Receive Contents from 3i INC</p>
+                                </div>
                             </div>
+                            
                             <div className='newsletter__submit'>
                                 <div data-netlify-recaptcha="true"></div>
                                 <button type='submit' className='btn__med'>Submit</button>
