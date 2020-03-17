@@ -295,8 +295,8 @@ a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 200px;
-    max-width: 140px;
+    width: 100%;
+    max-width: 100px;
 
 }
 
