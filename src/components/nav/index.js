@@ -12,6 +12,9 @@ const Nav = () => (
                     <Link to="/about" className="nav__link" style={{textDecoration: 'None'}}>About</Link>
                     <Link to="/contact" style={{textDecoration: 'None'}}>Contact</Link>
                     <Link to="/contribute" style={{textDecoration: 'None'}}>Contribute</Link>
+                    <a href='https://3iinc.xyz/blog/'
+                        style={{opacity: '0', fontSize: '1px'}}
+                    >Blog</a>
                 </nav>
             </div>
         </div>
