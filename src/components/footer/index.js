@@ -1,51 +1,13 @@
 import React from 'react'
 import './footer.css'
-import Particles from 'react-particles-js'
 
 
 const Footer = () => {
     return (
         <footer className="footer__div"> 
             <div className='footer__hero' style={{
-                background: 'rgb(2,0,36)',
-                backgroundImage: 'linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(8,75,128,0.30012554950024706) 33%, rgba(80,124,133,1) 98%)',
-            }}>
-            <Particles style={{position: 'absolute', zIndex: '-1', top: '0', left: '0',}} params={{
-        particles: {
-          move: {
-            speed: 3,
-          },
-          size: {
-            value: 3,
-          },
-          color:{
-            value: "#ffffff"
-        },
-        number: {
-            value: 20
-        },
-        line_linked: {
-            enable: true,
-            distance: 100,
-            color: "#ffffff",
-            opacity: 1,
-            width: 1
-          },
-        },
-        interactivity: {
-            events: {
-                onhover:{
-                    enable: true,
-                    mode: 'push'
-                },
-                onclick: {
-                    enable: true,
-                    mode: 'push'
-                }
-            },
-        },
-        
-      }}/>  
+                background: '#2B2C31',
+                }}>  
             <div className='footer__contents'>
                 <div className='newsletter__form'>
                     <p>Subscribe for Newsletter</p>

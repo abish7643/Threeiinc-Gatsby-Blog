@@ -63,6 +63,7 @@ const BlogTemplate = (props) => {
                 keywords={props.data.currentBlog.seoKeywords} url={props.data.currentBlog.seoUrl} 
                 image={props.data.currentBlog.seoImage} author={props.data.currentBlog.authorData.seoAuthorName} 
             />
+            
             <Nav/>
             <div className='blog__header'>
                 <div className='blog__hero' style={{backgroundImage: `url(${props.data.currentBlog.featuredImage.fluid.src})`}}>
