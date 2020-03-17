@@ -18,7 +18,6 @@ module.exports = {
       options: {
         color: `#b202bf`,
         showSpinner: true,
-        minimum: 1,
         trickle: true,
         easing: 'ease',
       },
