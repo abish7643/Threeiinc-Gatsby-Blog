@@ -296,7 +296,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     width: 200px;
-    max-width: 200px;
+    max-width: 140px;
 
 }
 
@@ -319,6 +319,25 @@ a{
 .author__description {
     margin-top: -30px;
     padding-right: 15px;
+}
+
+.author__feed{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.contribute__question__header{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-right: 20px;
 }
 
 @media screen and (max-width: 1400px){

@@ -20,8 +20,9 @@ const AuthorTemplate = (props) => {
                    <SEO title={edge.node.authorData.authorName} 
                    keywords={edge.node.authorData.seoAuthorKeywords} 
                    author={edge.node.authorData.authorName}
-                   description={edge.node.authorData.authorDescription}
+                   url={`https://3iinc.xyz/idiots/${edge.node.authorData.authorSlug}/`}
                    description={`${edge.node.authorData.authorDescription} ' Read All The Posts From The Author of 3i INC | Idiots By Choice!'`} />
+
                 </div>
                 
             ))}
@@ -46,6 +47,11 @@ const AuthorTemplate = (props) => {
                     <p className="card__category">{category.title}</p>
                     ))}
                 <p className="card__title">{edge.node.title}</p>
+                <a 
+                    to={`https://3iinc.xyz/blog/${edge.node.slug}/`}
+                    style={{opacity: '0', fontSize: '1px', marginBottom:'-1px'}}>
+                        {`https://3iinc.xyz/blog/${edge.node.slug}/`}
+                </a>
                 </div>
             ))}
             </div>
