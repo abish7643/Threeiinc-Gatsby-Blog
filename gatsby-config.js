@@ -13,6 +13,15 @@ module.exports = {
     url: ``,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `white`,
+        showSpinner: true,
+        minimum: 0.4,
+        trickle: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-advanced-sitemap`,
