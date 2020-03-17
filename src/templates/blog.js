@@ -85,6 +85,16 @@ const BlogTemplate = (props) => {
                     <strong class='blog__categories'>{category.title} | </strong> 
                     ))}
                 </div>
+                <a
+                    style={{fontSize: '1px', opacity: '0', marginBottom: '-1px'}}
+                    to={`https://3iinc.xyz/idiots/${props.data.currentBlog.authorData.authorSlug}/`}>
+                    {`https://3iinc.xyz/idiots/${props.data.currentBlog.authorData.authorSlug}/`}
+                </a>
+                <a 
+                    to={`https://3iinc.xyz/blog/${props.data.currentBlog.slug}/`}
+                    style={{opacity: '0', fontSize: '1px', marginBottom:'-1px'}}>
+                        {`https://3iinc.xyz/blog/${props.data.currentBlog.slug}/`}
+                </a>
             </div>
             <div className='blog__wrapper'>
                 <div className='blog__content'>
