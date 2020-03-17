@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
-        color: `#7cfc00`,
+        color: `#93e9be`,
         showSpinner: true,
         trickle: true,
         easing: 'ease',
@@ -27,7 +27,7 @@ module.exports = {
       options: {
         includePaths: [],
         excludePaths: ["/","/contact/"],
-        color: '#7cfc00',
+        color: '#93e9be',
       }
     },
     `gatsby-plugin-react-helmet`,
