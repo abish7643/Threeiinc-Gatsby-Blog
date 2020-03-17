@@ -28,9 +28,23 @@ module.exports = {
       resolve: "gatsby-plugin-page-progress",
       options: {
         includePaths: [],
-        excludePaths: ["/","/contact/"],
+        excludePaths: ["/",'/contact'],
         color: '#93e9be',
       }
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Montserrat`,
+          },
+          {
+            family: `Poppins`,
+            variants: [`200`,`300`,`400`,`500`,`600`,`700`]
+          },
+        ],
+      },
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
@@ -69,15 +83,6 @@ module.exports = {
         loading: `lazy`,
         maxWidth: 1200,
         withWebp: true
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `Montserrat`,
-          `Poppins\:200,300,400,500,600,700`,
-        ],
       },
     },
     {
