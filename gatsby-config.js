@@ -20,6 +20,8 @@ module.exports = {
         showSpinner: true,
         trickle: true,
         easing: 'ease',
+        speed: 500,
+        minimum: 0.05,
       },
     },
     {
