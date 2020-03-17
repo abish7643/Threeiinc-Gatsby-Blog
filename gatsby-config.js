@@ -16,11 +16,20 @@ module.exports = {
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
-        color: `#2a5298`,
+        color: `#b202bf`,
         showSpinner: true,
-        minimum: 0.4,
+        minimum: 1,
         trickle: true,
+        easing: 'ease',
       },
+    },
+    {
+      resolve: "gatsby-plugin-page-progress",
+      options: {
+        includePaths: [],
+        excludePaths: ["/","/contact/"],
+        color: '#323232',
+      }
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
