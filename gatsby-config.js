@@ -7,7 +7,7 @@ module.exports = {
     title: `3i INC | 3 Idiots Incorporated.`,
     description: `Idiots by Choice! | 3 Idiots Incorporated.`,
     author: `@abishvijayan`,
-    siteUrl: `https://3iinc.xyz`,
+    siteUrl: `https://www.3iinc.xyz`,
     keywords: ``,
     image: ``,
     url: ``,
