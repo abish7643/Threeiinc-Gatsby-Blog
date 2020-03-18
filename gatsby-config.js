@@ -56,10 +56,8 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     {
-      resolve: `gatsby-plugin-advanced-sitemap`,
+      resolve: `gatsby-plugin-sitemap`,
       options: {
-        createLinkInHead: true,
-        addUncaughtPages: true,
         
       },
     },
