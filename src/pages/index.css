@@ -3,3 +3,7 @@
      width: 100vw;   
     }
 }
+
+.main__div{
+    overflow-x: hidden;
+}
