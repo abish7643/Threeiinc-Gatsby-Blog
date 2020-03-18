@@ -63,13 +63,13 @@ render={data => (
             <p className="card__title">{edge.node.title}</p>
             <a
                 style={{fontSize: '1px', opacity: '0', marginBottom: '-1px'}}
-                to={`https://www.3iinc.xyz/idiots/${edge.node.authorData.authorSlug}/`}>
-                {`https://www.3iinc.xyz/idiots/${edge.node.authorData.authorSlug}/`}
+                to={`https://3iinc.xyz/idiots/${edge.node.authorData.authorSlug}/`}>
+                {`https://3iinc.xyz/idiots/${edge.node.authorData.authorSlug}/`}
             </a>
             <a 
-                to={`https://www.3iinc.xyz/blog/${edge.node.slug}/`}
+                to={`https://3iinc.xyz/blog/${edge.node.slug}/`}
                 style={{opacity: '0', fontSize: '1px', marginBottom:'-1px'}}>
-                    {`https://www.3iinc.xyz/blog/${edge.node.slug}/`}
+                    {`https://3iinc.xyz/blog/${edge.node.slug}/`}
             </a>
             </div>
          ))}
