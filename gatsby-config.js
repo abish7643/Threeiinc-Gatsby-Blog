@@ -12,6 +12,7 @@ module.exports = {
     image: ``,
     url: ``,
   },
+
   plugins: [
     {
       resolve: `gatsby-plugin-nprogress`,
@@ -31,6 +32,12 @@ module.exports = {
         excludePaths: ["/",'/contact'],
         color: '#93e9be',
       }
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.3iinc.xyz`,
+      },
     },
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
