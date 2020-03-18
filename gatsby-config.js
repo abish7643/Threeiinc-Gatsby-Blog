@@ -60,16 +60,7 @@ module.exports = {
       options: {
         createLinkInHead: true,
         addUncaughtPages: true,
-        additionalSitemaps:  [
-          {
-            name: `blog`,
-            url: `/blog/sitemap-blog.xml`,
-
-          },
-          {
-            url: `https://3iinc.xyz/sitemap.xml`,
-          },
-        ]
+        
       },
     },
     {
