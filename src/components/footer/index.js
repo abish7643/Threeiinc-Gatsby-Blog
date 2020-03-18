@@ -29,7 +29,7 @@ const Footer = () => {
                             </div>
                             
                             <div className='newsletter__submit'>
-                                <div data-netlify-recaptcha="true"></div>
+                                <div data-netlify-recaptcha="false"></div>
                                 <button type='submit' className='btn__med'>Submit</button>
                             </div>
                         </form>
