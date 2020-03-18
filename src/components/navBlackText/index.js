@@ -16,11 +16,8 @@ const NavBlackText = () => (
             </div>
             <a href='https://3iinc.xyz/blog/'
                         style={{opacity: '0', fontSize: '1px',visibility: 'none'}}
-                    >Blog</a>
-                    <a href='https://3iinc.xyz/idiots/'
-                        style={{opacity: '0', visibility: 'none',fontSize: '1px'}}
-                    >Authors</a>
-        </div>
+                    ></a>
+            </div>
 
 )
 
