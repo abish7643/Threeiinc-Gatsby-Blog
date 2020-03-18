@@ -17,19 +17,7 @@ body {
     align-self: center;
     margin-left: -15px;
 }
-.feed__initial__authorposts{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex;
-    left: 0;
-    right: 0;
-    width: 100%;
-    align-items: center;
-    margin-left: -10px;
-    position: relative;
-    order: 2;
-    z-index: 0;
-}
+
 
 .blog__footer {
     display: flex;

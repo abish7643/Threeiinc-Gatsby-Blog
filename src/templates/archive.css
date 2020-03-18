@@ -43,7 +43,11 @@
 .feed {
     margin-bottom: 70px;
 }
-@media screen and (max-width: 1000px) {
+
+.feed__initial__authorposts{
+    margin-left: 10px;
+}
+@media screen and (max-width: 1200px) {
     
     .main__div{
         width: 100vw;   
@@ -54,11 +58,12 @@
     
     .feed{
         width: 90%;
-        margin-left: 15px;
-        margin-right: 15px;
     }
     .nav__wrapper{
         max-width: 420px;
+    }
+    .feed__initial__authorposts{
+        width: 100vw;
     }
     
 }
