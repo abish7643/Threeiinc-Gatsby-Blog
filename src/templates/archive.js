@@ -19,7 +19,9 @@ const Archive = (props) => {
 
     return (
         <Layout>
-            <SEO title='Blog' keywords={['3i INC', '3i Incorporated', '3 Idiots Incorporation', 'Idiots by Choice', 'Idiotism', '3i INC Blog']} /> 
+            <SEO title='Blog' 
+            keywords={['3i INC', '3i Incorporated', '3 Idiots Incorporation', 'Idiots by Choice', 'Idiotism', '3i INC Blog']}
+            description='Read the Latest Posts from the Contributers of 3i INC | Idiots by Choice! | 3iinc.xyz' /> 
             <NavBlackText/>
             <div className='Author__Info__Container'>
                 <h1>
@@ -43,6 +45,16 @@ const Archive = (props) => {
                             <p className="card__category">{category.title}</p>
                             ))}
                         <p className="card__title">{edge.node.title}</p>
+                        <a
+                            style={{fontSize: '1px', opacity: '0', marginBottom: '-1px'}}
+                            to={`https://www.3iinc.xyz/idiots/${edge.node.authorData.authorSlug}/`}>
+                            {`https://www.3iinc.xyz/idiots/${edge.node.authorData.authorSlug}/`}
+                        </a>
+                        <a 
+                            to={`https://www.3iinc.xyz/blog/${edge.node.slug}/`}
+                            style={{opacity: '0', fontSize: '1px', marginBottom:'-1px'}}>
+                                {`https://www.3iinc.xyz/blog/${edge.node.slug}/`}
+                        </a>
                     </div>
                 ))}
                 </div>
@@ -91,6 +103,10 @@ export const pageQuery = graphql`
                     id
                     slug
                     title
+                    authorData{
+                        authorName
+                        authorSlug
+                    }
                     category {
                         title
                         id
