@@ -76,28 +76,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-facebook-analytics`,
-      options: {
-        appId: "2161218783980671",
-        // Include facebook analytics in development.
-        // Defaults to false meaning the library will only be loaded in production.
-        includeInDevelopment: false,
-        // Include debug version of sdk
-        // Defaults to false meaning the library will load sdk.js
-        debug: false,
-        // Can select your language, default will load english
-        language: "en_US"
-      }
-    },
-    {
-      resolve: `gatsby-remark-images-contentful`,
-      options: {
-        loading: `lazy`,
-        maxWidth: 1200,
-        withWebp: true
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
