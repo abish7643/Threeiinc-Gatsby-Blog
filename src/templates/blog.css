@@ -173,8 +173,6 @@ a{
     border-bottom: 1px solid rgba(30, 60, 114, 0.15);
 }
 .blog__content::first-letter {
-    font-weight: 900;
-    font-size: 28px;
 }
 .blog__content h3{
     margin-bottom: 40px;
@@ -188,7 +186,6 @@ a{
     margin: 40px 0;
 }
 .blog__content::first-line {
-    text-indent: 70px;
 }
 .blog__content table{
     padding: 0 20px;
