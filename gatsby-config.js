@@ -67,7 +67,7 @@ module.exports = {
 
           },
           {
-            url: `https://3iinc.xyz/xml`,
+            url: `https://3iinc.xyz/sitemap.xml`,
           },
         ]
       },
