@@ -193,6 +193,20 @@ a{
     margin-bottom: 20px;
     text-align: center;
 }
+.blog__content ul{
+    margin-top: 40px;
+    margin-bottom: -10px;
+    margin-left: -5px;
+}
+.blog__content p::first-line{
+    text-indent: 30px;
+}
+.blog__content li{
+    margin: 5px 0px;
+}
+.blog__content h3{
+    margin-top: 30px;
+}
 
 .blog__content hr{
     border-color: rgba(30, 60, 114, 0.1);
