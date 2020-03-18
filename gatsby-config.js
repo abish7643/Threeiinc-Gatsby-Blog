@@ -4,8 +4,8 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `3i INC | 3 Idiots Incorporation`,
-    description: `Idiots by Choice! | 3 Idiots Incorporation`,
+    title: `3i INC | 3 Idiots Incorporated.`,
+    description: `Idiots by Choice! | 3 Idiots Incorporated.`,
     author: `@abishvijayan`,
     siteUrl: `https://3iinc.xyz`,
     keywords: ``,

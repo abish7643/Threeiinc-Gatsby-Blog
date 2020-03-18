@@ -19,7 +19,7 @@ const Archive = (props) => {
 
     return (
         <Layout>
-            <SEO title='Blog' keywords={['3i INC', 'Idiots by Choice', 'Idiotism', '3i INC Blog']} /> 
+            <SEO title='Blog' keywords={['3i INC', '3i Incorporated', '3 Idiots Incorporation', 'Idiots by Choice', 'Idiotism', '3i INC Blog']} /> 
             <NavBlackText/>
             <div className='Author__Info__Container'>
                 <h1>

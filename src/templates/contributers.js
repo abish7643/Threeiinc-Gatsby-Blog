@@ -40,11 +40,11 @@ export default () => (
 render={data => (
     <Layout>
         <NavBlackText/>
-        <SEO title='Our Contributers | 3i INC | 3 Idiots Incorporation'
+        <SEO title='Our Contributers | 3i INC | 3 Idiots Incorporated.'
             description='Wanna Explore Yourself? Work with 3i and Get To Know More About Our Contributers,
             Who May Be The Actual Idiots | 3iinc.xyz'
                 keywords={['Authors', 'Author', 'Contribute', 'Contributers',
-                '3i INC', '3 Idiots', '3 Idiots Incorporation']}
+                '3i INC', '3 Idiots', '3 Idiots Incorporation','3 Idiots Incorporated']}
                 url='https://3iinc.xyz/idiots/' 
                 author='3i INC' 
             />

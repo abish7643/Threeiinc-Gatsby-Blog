@@ -19,7 +19,7 @@ const contactLeft={
 const Contact = () => (
     <Layout >
         <SEO
-            title='Contact 3i INC | 3 Idiots Incorporation'
+            title='Contact 3i INC | 3 Idiots Incorporated.'
             description="Who is an Idiot?
             The one who questions the system,
             The one who doesn't like how the system works or
@@ -58,7 +58,7 @@ const Contact = () => (
                 <div className='footer__contact__container__flex'>
                 <div className='footer__contact__one'>
                     <h1>3i INC</h1>
-                    <h3>3 IDIOTS INCORPORATION</h3>
+                    <h3>3 IDIOTS INCORPORATED.</h3>
                     <p>
                         Each I in 3I is intricately designed to match the natural genetic code, the imaginary number of complex world, the structural integrity of the strongest bridge, the quintessential paragon of the contemporary universe.
                     </p>

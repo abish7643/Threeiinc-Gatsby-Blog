@@ -29,7 +29,7 @@ function SEO({ description, author, keywords, url, image, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const metaTitle = title + " | 3i INC | 3 Idiots Incorporation"
+  const metaTitle = title + " | 3i INC | 3 Idiots Incorporated."
   
 
   return (
