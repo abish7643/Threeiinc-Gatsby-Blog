@@ -55,7 +55,23 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
-    `gatsby-plugin-advanced-sitemap`,
+    {
+      resolve: `gatsby-plugin-advanced-sitemap`,
+      options: {
+        createLinkInHead: true,
+        addUncaughtPages: true,
+        additionalSitemaps:  [
+          {
+            name: `blog`,
+            url: `/blog/sitemap-blog.xml`,
+
+          },
+          {
+            url: `https://3iinc.xyz/xml`,
+          },
+        ]
+      },
+    },
     {
       resolve: `gatsby-source-contentful`,
       options: {
