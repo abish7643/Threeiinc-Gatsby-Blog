@@ -42,7 +42,7 @@ const BlogTemplate = (props) => {
           createdat: props.data.currentBlog.createdAt,
       }
       const shareMedia = props.data.currentBlog.featuredImage.fluid.src
-      const shareTitle = "'" + props.data.currentBlog.title + "'" + " | 3i INC | 3 Idiots Incorporation"
+      const shareTitle = "'" + props.data.currentBlog.title + "'" + " | 3i INC | 3 Idiots Incorporated."
       const propDescription = shareTitle + " | " + shareUrl
       const shareTitleLink = shareTitle + " | " + shareUrl
       const iconProp = {
