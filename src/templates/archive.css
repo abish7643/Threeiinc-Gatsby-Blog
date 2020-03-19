@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -30px;
 }
 .pagination__button__container{
     margin: 0px 50px;
