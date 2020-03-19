@@ -16,6 +16,7 @@ const contactLeft={
     backgroundImage: `url(${about})`,
 }
 
+
 const Contact = () => (
     <Layout >
         <SEO
@@ -43,12 +44,13 @@ const Contact = () => (
                             <input className='name__field' placeholder='NAME' type='text' id='name' name='name'/>
                         </div>
                         <div className='field'>
-                            <input className='email__field' placeholder='EMAIL' type='text' id='email' name='email'/>
+                            <input className='email__field' placeholder='EMAIL' type='email' id='email' name='email'/>
                         </div>
                         <div className='field'>
-                            <textarea className='message__field' placeholder='MESSAGE' name='message' id='message' rows='6'></textarea>
+                            <textarea className='message__field' placeholder='MESSAGE'
+                            name='message' id='message' rows='6' pattern='.*\S.*'></textarea>
                         </div>
-                            <button type='submit' className='contact__submitbutton'>SUBMIT</button>
+                            <button type='submit'  className='contact__submitbutton'>SUBMIT</button>
                     </form>
                 </div>
                 </div>
