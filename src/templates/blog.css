@@ -58,11 +58,12 @@ body {
     margin-right: -50vw;
     opacity: 1;
     z-index: 1;
-    margin-top: -210px;
+    margin-top: -213px;
     display: block;
     max-height: max-content;
     width: auto;
     overflow: hidden;
+
 }
 .blog__hero:before {
     content: "";
