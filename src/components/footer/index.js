@@ -3,8 +3,34 @@ import './footer.css'
 
 
 export default class Footer extends React.Component{
+    state = {
+        email: '',
+        inputEntered: '',
+        checkbox: ''
+    };
+    handleChange = event => {
+        const isCheck = event.target.type == "check";
+        this.setState({
+            email: isCheck
+            ? event.target.checked
+            : event.target.value,
+            inputEntered: '1'
+            
+        });
+    };
+    handleSubmit = event => {
+        event.preventDefault();
+    };
+
+    
 
     render() {
+        let newsletterButton;
+        if (this.state.inputEntered === '1'){
+            newsletterButton = <button className='btn__med'>Submit</button>;
+        } else {
+            newsletterButton = <button className='btn__med' style={{pointerEvents: 'none', cursor: 'default'}}>Submit</button>;
+        }
         return (
             <footer className="footer__div"> 
                 <div className='footer__hero' style={{
@@ -22,21 +48,19 @@ export default class Footer extends React.Component{
                                     <input name='bot'/>
                                 </div>
                                 <div className='newsletter__field'>
-                                    <input type='email' id='email' name='email' pattern=".*\S.*"
-                                    placeholder='email'/>
+                                    <input type='email' id='email' name='email' onChange={this.handleChange} value={this.state.name} placeholder='email'/>
                                 </div>
                                 <div style={{width: '100%'}}>
                                     <div className='newsletter__field__checkbox'>
-                                        <input type='checkbox' id='checkbox' name='checkbox' style={{cursor: 'pointer', marginBottom: '30px'}}/>
+                                        <input type='checkbox' id='checkbox' name='checkbox' onChange={this.handleChange} value={this.state.checkbox} style={{cursor: 'pointer', marginBottom: '30px'}}/>
                                         <p>I Acknowledge to Receive Contents from 3i INC</p>
                                     </div>
                                 </div>
                                 
                                 <div className='newsletter__submit'>
-                                    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}} data-netlify-recaptcha="true"></div>
-                                    
-                                    <button type='submit' className='btn__med' >Submit</button>
-                                </div>
+                                    <div data-netlify-recaptcha="true"></div>
+                                    {newsletterButton}
+                                    </div>
                             </form>
                         </div>
                     </div>

@@ -5,11 +5,3 @@
  */
 
 // You can delete this file if you're not using it
-
-function validateForm() {
-    var x = document.newsletter.email.value;
-    if (x =="" || x == null){
-        alert("Fill The Form Correctly You Idiot!")
-        return false;
-    }
-}
