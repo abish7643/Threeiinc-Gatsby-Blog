@@ -5,6 +5,7 @@
 	margin-top: 10px;
 	position: relative;
 	z-index: 10;
+	min-width: 900px;
 }
 
 .nav__inner{
@@ -50,7 +51,11 @@
 	transition: ease-in 0.2s;
 }
 
-
+@media screen and (max-width: 1250px){
+	.nav__container{
+		min-width: unset;
+	}
+}
 
 @media screen and (max-width: 750px){
 	.nav__inner{

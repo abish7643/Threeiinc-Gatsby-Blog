@@ -47,7 +47,7 @@
 }
 
 .nav__component__div__black:hover .nav__component__link__black:hover{
-	background-color: white;
+	background-color: #F0F0F0;
 	color: black;
 	transition: ease-in 0.2s;
 }
