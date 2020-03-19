@@ -6,7 +6,8 @@ export default class Footer extends React.Component{
     state = {
         email: '',
         inputEntered: '',
-        checkbox: ''
+        checkbox: '',
+        checkboxTicked: ''
     };
     handleChange = event => {
         const isCheck = event.target.type == "check";
@@ -18,6 +19,12 @@ export default class Footer extends React.Component{
             
         });
     };
+    handleCheckBoxChange = event => {
+        this.setState({
+            checkbox: event.target.value,
+            checkboxTicked: '1'
+        });
+    };
     handleSubmit = event => {
         event.preventDefault();
     };
@@ -26,7 +33,7 @@ export default class Footer extends React.Component{
 
     render() {
         let newsletterButton;
-        if (this.state.inputEntered === '1'){
+        if (this.state.inputEntered === '1' && this.state.checkboxTicked === '1'){
             newsletterButton = <button className='btn__med'>Submit</button>;
         } else {
             newsletterButton = <button className='btn__med' style={{pointerEvents: 'none', cursor: 'default'}}>Submit</button>;
@@ -48,11 +55,14 @@ export default class Footer extends React.Component{
                                     <input name='bot'/>
                                 </div>
                                 <div className='newsletter__field'>
-                                    <input type='email' id='email' name='email' onChange={this.handleChange} value={this.state.name} placeholder='email'/>
+                                    <input type='email' id='email' name='email'
+                                    onChange={this.handleChange} value={this.state.name} placeholder='email'/>
                                 </div>
                                 <div style={{width: '100%'}}>
                                     <div className='newsletter__field__checkbox'>
-                                        <input type='checkbox' id='checkbox' name='checkbox' onChange={this.handleChange} value={this.state.checkbox} style={{cursor: 'pointer', marginBottom: '30px'}}/>
+                                        <input type='checkbox' id='checkbox' name='checkbox'
+                                        onChange={this.handleCheckBoxChange} value={this.state.checkbox}
+                                        style={{cursor: 'pointer', marginBottom: '30px'}}/>
                                         <p>I Acknowledge to Receive Contents from 3i INC</p>
                                     </div>
                                 </div>

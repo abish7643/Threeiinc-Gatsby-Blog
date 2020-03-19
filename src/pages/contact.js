@@ -15,17 +15,32 @@ const contactLeft={
 
 export default class Contact extends React.Component{
     state = {
+        contactName: '',
+        contactnameinputEntered: '',
         contactEmail: '',
         contactemailinputEntered: '',
-        contactCheckbox: ''
+        contactMessage: '',
+        contactmessageinputEntered: '',
     };
     handleContactChange = event => {
         this.setState({
             contactEmail: event.target.value,
             contactemailinputEntered: '1'
-            
         });
     };
+    handleContactNameChange = event => {
+        this.setState({
+            contactName: event.target.value,
+            contactnameinputEntered: '1'
+        });
+    };
+    handleContactMessageChange = event => {
+        this.setState({
+            contactMessage: event.target.value,
+            contactmessageinputEntered: '1'
+        });
+    };
+
     handleContactSubmit = event => {
         event.preventDefault();
     };
@@ -34,8 +49,9 @@ export default class Contact extends React.Component{
 
     render() {
         let contactButton;
-        console.log(this.state.contactemailinputEntered)
-        if (this.state.contactemailinputEntered === '1'){
+        if (this.state.contactemailinputEntered === '1' &&
+            this.state.contactnameinputEntered === '1' &&
+            this.state.contactmessageinputEntered === '1'){
             
             contactButton = <button className='contact__submitbutton'>SUBMIT</button>;
         } else {
@@ -67,14 +83,18 @@ export default class Contact extends React.Component{
                                 <input name='bot'/>
                             </div>
                             <div className='field'>
-                                <input className='name__field' placeholder='NAME' type='text' id='name' name='name'/>
+                                <input className='name__field' placeholder='NAME'
+                                onChange={this.handleContactNameChange} value={this.state.contactName}
+                                type='text' id='name' name='name'/>
                             </div>
                             <div className='field'>
-                                <input className='email__field' onChange={this.handleContactChange} value={this.state.contactEmail}
+                                <input className='email__field'
+                                onChange={this.handleContactChange} value={this.state.contactEmail}
                                 placeholder='EMAIL' type='email' id='email' name='email'/>
                             </div>
                             <div className='field'>
                                 <textarea className='message__field' placeholder='MESSAGE'
+                                onChange={this.handleContactMessageChange} value={this.state.contactMessage}
                                 name='message' id='message' rows='6' pattern='.*\S.*'></textarea>
                             </div>
                                 {contactButton}
