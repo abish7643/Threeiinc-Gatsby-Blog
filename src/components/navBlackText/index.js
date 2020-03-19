@@ -5,20 +5,25 @@ import React from "react";
 import './navBlackText.css';
 
 const NavBlackText = () => (
-        <div className="threeiinc-header-black">
-            <div className="threeiinc-inner-black">
-                <h1><Link to='/' className="Logo__Brand__black" style={{textDecoration: 'None'}}>3i INC</Link></h1>
-                <nav className='nav__links__black'> 
-                    <Link to="/about" className="nav__link__black" style={{textDecoration: 'None'}}>About</Link>
-                    <Link to="/contact" style={{textDecoration: 'None'}}>Contact</Link>
-                    <Link to="/idiots" style={{textDecoration: 'None'}}>Contribute</Link>
-                </nav>
-            </div>
-            <a href='https://3iinc.xyz/blog/'
-                        style={{opacity: '0', fontSize: '1px',visibility: 'none'}}
-                    ></a>
-            </div>
+    <div className="nav__container__black">
+    <div className="nav__inner__black">
+        <div className='nav__logo__div__black'>
+            <h1><Link to='/' className="nav__logo__black" style={{textDecoration: 'None'}}>3i INC</Link></h1>
+        </div>
 
+        <div className='nav__component__black'>
+            <div className='nav__component__div__black'>
+                <Link to="/about" className="nav__component__link__black" style={{textDecoration: 'None'}}>About</Link>
+            </div>
+            <div className='nav__component__div__black'>
+                <Link to="/contact" className="nav__component__link__black" style={{textDecoration: 'None'}}>Contact</Link>
+            </div>
+            <div className='nav__component__div__black'>
+                <Link to="/idiots" className="nav__component__link__black" style={{textDecoration: 'None'}}>Contribute</Link>  
+            </div>
+        </div>
+    </div>
+</div>
 )
 
 export default NavBlackText

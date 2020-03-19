@@ -5,9 +5,6 @@ import SEO from '../components/seo'
 import './contact.css'
 import about from '../images/about.jpg'
 
-const bodyStyle = {
-    backgroundColor: "#F0F0F0"
-}
 const contactLeft={
     backgroundImage: `url(${about})`,
 }
@@ -31,8 +28,12 @@ export default class Contact extends React.Component{
     handleContactNameChange = event => {
         this.setState({
             contactName: event.target.value,
-            contactnameinputEntered: '1'
         });
+        if (this.state.contactName !== ''){
+            this.setState({
+                contactnameinputEntered: '1'
+            })
+        }
     };
     handleContactMessageChange = event => {
         this.setState({
@@ -49,6 +50,7 @@ export default class Contact extends React.Component{
 
     render() {
         let contactButton;
+        console.log(this.state.contactemailinputEntered)
         if (this.state.contactemailinputEntered === '1' &&
             this.state.contactnameinputEntered === '1' &&
             this.state.contactmessageinputEntered === '1'){
@@ -60,15 +62,18 @@ export default class Contact extends React.Component{
                             </button>;
         }
         return (
-            <Layout >
+            <Layout>
+            
             <SEO
                 title='Contact 3i INC | 3 Idiots Incorporated.'
                 description="Who is an Idiot?
                 The one who questions the system,
                 The one who doesn't like how the system works or
                 The one who doesn't believe in the system. | 3iinc.xyz | 3iinc" />
-            <NavBlackText className='nav__contact'/>
-            <div className='contact__section' style={bodyStyle}>
+            <div className='nav__contact__wrapper'>
+                <NavBlackText/>
+            </div>
+            <div className='contact__section'>
                 <div className='contact__container'>
                     <div className='contact__container__left' style={contactLeft}>
     

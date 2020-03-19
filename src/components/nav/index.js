@@ -5,20 +5,28 @@ import React from "react";
 import './nav.css';
 
 const Nav = () => (
-        <div className="threeiinc-header">
-            <div className="threeiinc-inner">
-                <h1><Link to='/' className="Logo__Brand" style={{textDecoration: 'None'}}>3i INC</Link></h1>
-                <nav className='nav__links'> 
-                    <Link to="/about" className="nav__link" style={{textDecoration: 'None'}}>About</Link>
-                    <Link to="/contact" style={{textDecoration: 'None'}}>Contact</Link>
-                    <Link to="/idiots" style={{textDecoration: 'None'}}>Contribute</Link>  
-                </nav>
-            </div>
-            <a href='https://3iinc.xyz/blog/'
-                        style={{opacity: '0', visibility: 'none', fontSize: '1px'}}
-                    ></a>
-        </div>
+        <div className="nav__container">
+            <div className="nav__inner">
+                <div className='nav__logo__div'>
+                    <h1><Link to='/' className="nav__logo" style={{textDecoration: 'None'}}>3i INC</Link></h1>
+                </div>
 
+                <div className='nav__component'>
+                    <div className='nav__component__div'>
+                        <Link to="/about" className="nav__component__link" style={{textDecoration: 'None'}}>About</Link>
+                    </div>
+                    <div className='nav__component__div'>
+                        <Link to="/contact" className="nav__component__link" style={{textDecoration: 'None'}}>Contact</Link>
+                    </div>
+                    <div className='nav__component__div'>
+                        <Link to="/idiots" className="nav__component__link" style={{textDecoration: 'None'}}>Contribute</Link>  
+                    </div>
+                </div>
+            </div>
+                <a href='https://3iinc.xyz/blog/'
+                    style={{opacity: '0', visibility: 'none', fontSize: '1px'}}
+                ></a>
+        </div>
 )
 
 export default Nav

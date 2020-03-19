@@ -1,12 +1,14 @@
-
+.nav__contact__wrapper{
+    width: 100%;
+}
 .contact__section{
     position: absolute;
-    width: 100%;
+    width: auto;
     height: auto;
     left: 0;
     top: 0;
-    margin-top: 0px;
     text-align: center;
+    background: #F0F0F0;
 }
 .contact__container{
     display: inline-block;
