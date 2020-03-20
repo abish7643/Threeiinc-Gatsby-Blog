@@ -32,11 +32,9 @@
 
 .nav__component__link__black{
 	text-decoration: none;
-	color: white;
+	color: black;
 	margin: 0 20px;
 	font-weight: bolder;
-
-	background-color: black;
 }
 .nav__logo__black{
 	text-decoration: none;
@@ -47,8 +45,8 @@
 }
 
 .nav__component__div__black:hover .nav__component__link__black:hover{
-	background-color: #F0F0F0;
-	color: black;
+	background-color: black;
+	color: #323232;
 	transition: ease-in 0.2s;
 }
 
