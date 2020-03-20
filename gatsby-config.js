@@ -29,7 +29,7 @@ module.exports = {
       resolve: "gatsby-plugin-page-progress",
       options: {
         includePaths: [],
-        excludePaths: ["/",'/contact'],
+        excludePaths: ["/",'/contact','/about', '/blog'],
         color: '#93e9be',
       }
     },
