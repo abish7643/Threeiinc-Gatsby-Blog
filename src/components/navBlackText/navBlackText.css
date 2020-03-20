@@ -38,15 +38,21 @@
 }
 .nav__logo__black{
 	text-decoration: none;
-	color: black;
 	font-size: 40px;
 	text-transform: uppercase;
 	letter-spacing: 4px;
+	background-color: black;
+	color: #F0F0F0;
+}
+.nav__logo__black:hover{
+	background-color: #F0F0F0;
+	color: black;
+	transition: ease 0.2s;
 }
 
 .nav__component__div__black:hover .nav__component__link__black:hover{
 	background-color: black;
-	color: #323232;
+	color: #F0F0F0;
 	transition: ease-in 0.2s;
 }
 
