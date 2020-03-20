@@ -57,7 +57,7 @@
     flex-direction: column;
     justify-content: flex;
     align-items: center;
-    margin-left: -9px;
+    margin-left: -10px;
 }
 @media screen and (max-width: 1200px) {
     
