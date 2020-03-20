@@ -32,7 +32,8 @@
 
 .pagination__item:hover{
     cursor: pointer;
-    transform: scale(1.02);
+    transform: scale(1.01);
+    transition: ease-in-out 1s;
 }
 
 .arrow__back .arrow__next {
@@ -52,7 +53,11 @@
 }
 
 .feed__initial__authorposts{
-    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex;
+    align-items: center;
+    margin-left: -7px;
 }
 @media screen and (max-width: 1200px) {
     
