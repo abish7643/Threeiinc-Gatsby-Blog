@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, navigate, StaticQuery } from "gatsby"
+import { graphql, navigate, StaticQuery, Link } from "gatsby"
 import './featured.css'
 
 
@@ -56,9 +56,11 @@ render={data => (
                         <p className='header__author'>
                         <a style={{textDecoration:'none', color: 'white'}} onClick={() => navigate(`/idiots/${edge.node.authorData.authorSlug}`)}> {edge.node.authorData.authorName} | {edge.node.createdAt}</a>
                         </p>
-                        <button style={{marginTop: '5px'}} onClick={() => navigate(`/blog/${edge.node.slug}`)} className='btn__med'>
-                            Read More
-                        </button>
+                        <Link to={`/blog/${edge.node.slug}`}>
+                            <button style={{marginTop: '5px'}} className='btn__med'>
+                                Read More
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -61,8 +61,8 @@ const BlogTemplate = (props) => {
       if (multipleState === 1){
           multipleChapterPresent = 
           props.data.currentBlog.chapters.map(chapters => (
-              <a onClick={() => navigate(`/blog/${chapters.chapterSlug}/`)}
-               class='blog__categories__chapter'>{chapters.chapterTitle}</a> 
+              <Link to={`/blog/${chapters.chapterSlug}/`}
+               class='blog__categories__chapter'>{chapters.chapterTitle}</Link> 
           ))
       }
 

@@ -50,11 +50,6 @@ const Archive = (props) => {
                             to={`https://3iinc.xyz/idiots/${edge.node.authorData.authorSlug}/`}>
                             {`https://3iinc.xyz/idiots/${edge.node.authorData.authorSlug}/`}
                         </a>
-                        <a 
-                            to={`https://3iinc.xyz/blog/${edge.node.slug}/`}
-                            style={{opacity: '0', fontSize: '1px', marginBottom:'-1px'}}>
-                                {`https://3iinc.xyz/blog/${edge.node.slug}/`}
-                        </a>
                     </div>
                 ))}
                 </div>
