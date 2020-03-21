@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, navigate, Link } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import { DiscussionEmbed, CommentCount } from 'disqus-react' 
 import Layout from '../components/layout'
 import Nav from '../components/nav'
@@ -85,9 +85,9 @@ const BlogTemplate = (props) => {
                     <h2>{props.data.currentBlog.title}</h2><br/>
                 </div>
                 <div className='blog__info__author'>
-                    <a onClick={() => navigate(`/idiots/${props.data.currentBlog.authorData.authorSlug}`)}>
+                    <Link to={`/idiots/${props.data.currentBlog.authorData.authorSlug}`}>
                         <p className='blog__extratitleone' style={{textDecoration: 'none'}}>{props.data.currentBlog.authorData.authorName} | {date.createdat} </p>
-                    </a>
+                    </Link>
                 </div>
                 <div className='blog__extratitletwo'>
                     <p className='blog__extratitletwo'>

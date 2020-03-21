@@ -31,7 +31,7 @@ const Archive = (props) => {
             <div className='feed__initial__authorposts'>
                 <div className='feed'>
                     {blogContent.edges.map(edge => (
-                    <div key={edge.node.id} className='card'
+                    <Link key={edge.node.id} className='card'
                     style={{
                         backgroundImage: `linear-gradient(
                             to bottom,
@@ -40,7 +40,7 @@ const Archive = (props) => {
                             rgba(10, 10, 10, 0.7) 100%),
                             url(${edge.node.featuredImage.fluid.src})`
                             }}
-                            onClick={() => navigate(`/blog/${edge.node.slug}`)}>
+                            to={`/blog/${edge.node.slug}`}>
                             {edge.node.category.map(category => (
                             <p className="card__category">{category.title}</p>
                             ))}
@@ -50,7 +50,7 @@ const Archive = (props) => {
                             to={`https://3iinc.xyz/idiots/${edge.node.authorData.authorSlug}/`}>
                             {`https://3iinc.xyz/idiots/${edge.node.authorData.authorSlug}/`}
                         </a>
-                    </div>
+                    </Link>
                 ))}
                 </div>
                 <div className='pagination'>

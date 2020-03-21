@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, navigate,Link, StaticQuery} from "gatsby"
+import { graphql,Link, StaticQuery} from "gatsby"
 import './home.css'
 
 export default () => (
@@ -47,7 +47,7 @@ render={data => (
     <div className="feed__initial">
     <div className='feed'>
         {data.allContentfulBlog.edges.map(edge => (
-            <div key={edge.node.id} className='card'
+            <Link key={edge.node.id} className='card'
             style={{
                 backgroundImage: `linear-gradient(
                     to bottom,
@@ -56,17 +56,19 @@ render={data => (
                     rgba(10, 10, 10, 0.7) 100%),
                     url(${edge.node.featuredImage.fluid.src})`
                     }}
-                onClick={() => navigate(`/blog/${edge.node.slug}`)}>
+                to={`/blog/${edge.node.slug}`}>
                 {edge.node.category.map(category => (
                     <p className="card__category">{category.title}</p>
                 ))}
             <p className="card__title">{edge.node.title}</p>
-            </div>
+            </Link>
          ))}
     </div>
-    <button className='viewmore_wrapper' onClick={() => navigate(`/blog/2`)}>
-        More Posts
-    </button>
+    <Link className='viewmore_wrapper__link' to={`/blog/2`}>
+        <button className='viewmore_wrapper'>
+            More Posts
+        </button>
+    </Link>
     </div>
     )}
     />

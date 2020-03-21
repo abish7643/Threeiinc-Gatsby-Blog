@@ -79,12 +79,14 @@
     background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%);
     width: 110px;
     height: 35px;
-    margin-top: -40px;
     cursor: pointer;
     border: 0px solid white;
     transition: 1s ease;
     color: white;
     font-family: 'poppins';
+}
+.viewmore_wrapper__link{
+    margin-top: -30px;
 }
 
 .viewmore:hover{
