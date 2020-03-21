@@ -54,9 +54,10 @@ render={data => (
                         <h2 className='banner___title'>{edge.node.title}</h2>
                         <p className='header__subtitle'>{edge.node.shortDescription}</p>
                         <p className='header__author'>
-                        <Link style={{textDecoration:'none', color: 'white'}} to={`/idiots/${edge.node.authorData.authorSlug}`}>
+                        <a style={{textDecoration:'none', color: 'white'}}
+                            onClick={() => navigate(`/idiots/${edge.node.authorData.authorSlug}`)}>
                             {edge.node.authorData.authorName} | {edge.node.createdAt}
-                        </Link>
+                        </a>
                         </p>
                         <Link to={`/blog/${edge.node.slug}`}>
                             <button style={{marginTop: '5px'}} className='btn__med'>
