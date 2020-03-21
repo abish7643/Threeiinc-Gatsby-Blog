@@ -121,7 +121,7 @@ export default class Contact extends React.Component{
                         <h2>STAY CONNECTED</h2>
                         <a href='https://www.instagram.com/3i.inc/' target="_blank">Follow us on Instagram</a><br/>
                         <a href='https://www.instagram.com/3i.inc/' target="_blank">Follow us on Facebook</a><br/>
-                        <a href='https://www.instagram.com/3i.inc/' target="_blank">Follow us on Blank</a><br/>
+                        <a href='https://www.tumblr.com/blog/3i-inc' target="_blank">Follow us on Tumblr</a><br/>
                     </div>
                     <div className='footer__contact__three'>
                         <h2>CONTACT INFO</h2>

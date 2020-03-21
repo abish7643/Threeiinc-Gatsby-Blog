@@ -93,6 +93,10 @@ function SEO({ description, author, keywords, url, image, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `p:domain_verify`,
+          content: '7f81e6b719303d91c8e3201c23ef5a8f',
+        },
       ].concat(meta)}
     />
   )
