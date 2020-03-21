@@ -120,7 +120,7 @@ export default class Contact extends React.Component{
                     <div className='footer__contact__two'>
                         <h2>STAY CONNECTED</h2>
                         <a href='https://www.instagram.com/3i.inc/' target="_blank">Follow us on Instagram</a><br/>
-                        <a href='https://www.instagram.com/3i.inc/' target="_blank">Follow us on Facebook</a><br/>
+                        <a href='https://www.pinterest.com/3iinc/' target="_blank">Follow us on PinInterest</a><br/>
                         <a href='https://www.tumblr.com/blog/3i-inc' target="_blank">Follow us on Tumblr</a><br/>
                     </div>
                     <div className='footer__contact__three'>

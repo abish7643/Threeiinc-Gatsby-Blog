@@ -56,6 +56,16 @@ const BlogTemplate = (props) => {
           marginRight: '6px',
           marginTop: '-3px',
       }
+      const multipleState = props.data.currentBlog.multipleChapters
+      let multipleChapterPresent
+      if (multipleState === 1){
+          multipleChapterPresent = 
+          props.data.currentBlog.chapters.map(chapters => (
+              <a onClick={() => navigate(`/blog/${chapters.chapterSlug}/`)}
+               class='blog__categories__chapter'>{chapters.chapterTitle}</a> 
+          ))
+      }
+
     return (
         <Layout>
             <div className="blog__initialmodel">
@@ -80,10 +90,15 @@ const BlogTemplate = (props) => {
                     </a>
                 </div>
                 <div className='blog__extratitletwo'>
-                    <p className='blog__extratitletwo'>{props.data.currentBlog.readDuration}</p>
+                    <p className='blog__extratitletwo'>
+                        {props.data.currentBlog.readDuration}
+                    </p>
                         {props.data.currentBlog.category.map(category => (
-                    <strong class='blog__categories'>{category.title} | </strong> 
-                    ))}
+                            <strong class='blog__categories'>{category.title} | </strong> 
+                        ))}
+                </div>
+                <div className='blog__categories__chapters'>
+                    {multipleChapterPresent}
                 </div>
                 <a
                     style={{fontSize: '1px', opacity: '0', marginBottom: '-1px'}}
@@ -206,6 +221,13 @@ export const query = graphql`
             category {
                 title
                 id
+            }
+            multipleChapters
+            chapters {
+                chapterTitle
+                chapterSlug
+                id
+
             }
             
             createdAt(formatString: "MMMM DD, YYYY")

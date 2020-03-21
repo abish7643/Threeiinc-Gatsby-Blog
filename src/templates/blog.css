@@ -137,6 +137,24 @@ a{
     font-size: 14px;
     color: #fff;
 }
+.blog__categories__chapters{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog__categories__chapter{
+    font-weight: 900;
+    font-family: 'montserrat';
+    font-size: 14px;
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    margin: 10px 10px;
+    text-transform: uppercase;
+    padding: 1px 4px;
+}
 
 .blog__wrapper {
     display: flex;
@@ -208,6 +226,7 @@ a{
     box-shadow: 0px 6px 12px 0 rgba(30, 60, 114, 0.05);
     
 }
+
 
 
 .blog__content blockquote:before {
