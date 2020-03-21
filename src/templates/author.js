@@ -42,7 +42,7 @@ const AuthorTemplate = (props) => {
                         rgba(10, 10, 10, 0.7) 100%),
                         url(${edge.node.featuredImage.fluid.src})`
                         }}
-                    onClicked={()=> navigate(`/blog/${edge.node.slug}`)}>
+                    onClick={()=> navigate(`/blog/${edge.node.slug}`)}>
                     {edge.node.category.map(category => (
                     <p className="card__category">{category.title}</p>
                     ))}
