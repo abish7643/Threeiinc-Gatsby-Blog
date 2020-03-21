@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql,Link, navigate } from 'gatsby'
+import { graphql, navigate } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import './blog.css'
@@ -33,7 +33,7 @@ const AuthorTemplate = (props) => {
             <div className='feed__initial__authorposts'>
             <div className='feed'>
             {props.data.authorPosts.edges.map(edge => (
-                <Link key={edge.node.id} className='card'
+                <div key={edge.node.id} className='card'
                 style={{
                     backgroundImage: `linear-gradient(
                         to bottom,
@@ -42,7 +42,7 @@ const AuthorTemplate = (props) => {
                         rgba(10, 10, 10, 0.7) 100%),
                         url(${edge.node.featuredImage.fluid.src})`
                         }}
-                    to={`/blog/${edge.node.slug}`}>
+                    onClicked={()=> navigate(`/blog/${edge.node.slug}`)}>
                     {edge.node.category.map(category => (
                     <p className="card__category">{category.title}</p>
                     ))}
@@ -52,7 +52,7 @@ const AuthorTemplate = (props) => {
                     style={{opacity: '0', fontSize: '1px', marginBottom:'-1px'}}>
                         {`https://3iinc.xyz/blog/${edge.node.slug}/`}
                 </a>
-                </Link>
+                </div>
             ))}
             </div>
         </div>
