@@ -48,12 +48,16 @@ render={data => (
                 url='https://3iinc.xyz/idiots/' 
                 author='3i INC' 
             />
-            <div style={{textAlign: 'center'}} className='contribute__question__header'>
+            <div style={{textAlign: 'center'}} className='contribute__question__header' data-sal="fade"
+                        data-sal-delay="200"
+                        data-sal-easing="ease">
                <h4 > Wanna Explore Yourself? Work with 3i.
                    <Link to='/contact'> <br></br>JUST FOLLOW!</Link></h4>
             </div>
         <div className='Author__Info__Container'>
-                   <div>
+                   <div data-sal="fade"
+                        data-sal-delay="220"
+                        data-sal-easing="ease"> 
                         <h1>Contributers</h1>
                    </div>
         </div>
@@ -63,10 +67,12 @@ render={data => (
             to={`/idiots/${edge.node.authorSlug}/`}
             style={{textDecoration: 'none', color: 'black'}}
             >
-            <div className='author__image' >
+            <div className='author__image'>
                 <Img style={{minHeight: '170px'}} sizes={edge.node.authorPhoto.fluid}/>
             </div>
-            <div className='author__details'>
+            <div className='author__details' data-sal="fade"
+                        data-sal-delay="600"
+                        data-sal-easing="ease">
                 
                 <div className='author__name'>
                     <h6 style={{opacity: '0'}}>Author</h6>

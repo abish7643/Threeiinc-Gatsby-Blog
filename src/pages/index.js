@@ -22,7 +22,7 @@ const IndexPage = () => (
   </Helmet>
     <Nav/>
     <Featured/>
-    <Home/>
+    <Home />
     <Footer/>
   </Layout>
 )

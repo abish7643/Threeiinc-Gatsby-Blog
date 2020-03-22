@@ -66,7 +66,7 @@ const BlogTemplate = (props) => {
             />
             
             <Nav/>
-            <div className='blog__header'>
+            <div className='blog__header' >
                 <div className='blog__hero' style={{backgroundImage: `url(${props.data.currentBlog.featuredImage.fluid.src})`}}>
                 </div>              
             </div>
@@ -74,13 +74,17 @@ const BlogTemplate = (props) => {
                 <div className='blog__info__title'>
                     <h2>{props.data.currentBlog.title}</h2><br/>
                 </div>
-                <div className='blog__info__author'>
+                <div className='blog__info__author' data-sal="slide-down"
+                        data-sal-delay="100"
+                        data-sal-easing="ease">
                     <Link to={`/idiots/${props.data.currentBlog.authorData.authorSlug}`}>
                         <p className='blog__extratitleone' style={{textDecoration: 'none'}}>
                             {props.data.currentBlog.authorData.authorName} | {date.createdat}</p>
                     </Link>
                 </div>
-                <div className='blog__extratitletwo'>
+                <div className='blog__extratitletwo'data-sal="slide-down"
+                        data-sal-delay="11 0"
+                        data-sal-easing="ease">
                     <p className='blog__extratitletwo'>
                         {props.data.currentBlog.readDuration}
                     </p>
@@ -89,7 +93,9 @@ const BlogTemplate = (props) => {
                         ))}
                 </div>
                 
-                <div className='blog__categories__chapters'>
+                <div className='blog__categories__chapters' data-sal="slide-down"
+                        data-sal-delay="120"
+                        data-sal-easing="ease">
                     {multipleChapterPresent}
                 </div>
                 
@@ -110,7 +116,9 @@ const BlogTemplate = (props) => {
                         {__html: `${props.data.currentBlog.content.childMarkdownRemark.html}`}
                     }/>
                 </div>
-                    <div className="share__buttons">
+                    <div className="share__buttons" data-sal="fade"
+                        data-sal-delay="200"
+                        data-sal-easing="ease">
                         <WhatsappShareButton url={shareUrl} title={shareTitle} separator=" " style={socialIconcss}>
                             <WhatsappIcon  {...iconProp} />
                         </WhatsappShareButton>
@@ -133,7 +141,7 @@ const BlogTemplate = (props) => {
                             <PinterestIcon  {...iconProp}/>
                         </PinterestShareButton>
                     </div>
-                    <Link className='about__author' 
+                    <Link className='about__author'  
                         to={`/idiots/${props.data.currentBlog.authorData.authorSlug}/`}
                         style={{textDecoration: 'none', color: 'black'}}
                         >
@@ -152,7 +160,9 @@ const BlogTemplate = (props) => {
                         </div>
                     </Link>
                     <h5 className='Heading__latestposts'>LATEST POSTS</h5>
-                    <div className='nextPost__Container' style={{marginBottom: '10px'}}>
+                    <div className='nextPost__Container' style={{marginBottom: '10px'}} data-sal="fade"
+                        data-sal-delay="80"
+                        data-sal-easing="ease">
                     
                         {props.data.nextBlog.edges.map(edge => (
                         <Link className='nextPosts' to={`/blog/${edge.node.slug}/`} 
@@ -173,7 +183,7 @@ const BlogTemplate = (props) => {
                     <HyvorTalk.CommentCount data-talk-mode="number" id={props.data.currentBlog.slug} websiteId={321}/>
                 </div>
                 
-                <div className='comment__section' id='commentSection'>
+                <div className='comment__section' id='commentSection' >
                     <HyvorTalk.Embed 
                     websiteId={321}
                     loadMode="scroll"

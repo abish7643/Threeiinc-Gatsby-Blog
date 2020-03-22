@@ -49,7 +49,9 @@ render={data => (
             <div key={edge.node.id} className='header__section'>
                 <div className='header__hero' style={{backgroundImage: `url(${edge.node.featuredImage.fluid.src})`}}></div>
                 <div className='header__content'>
-                    <div className='header__info'>
+                    <div className='header__info' data-sal="fade"
+                    data-sal-delay="300"
+                    data-sal-easing="ease">
                         <h2 className='banner___title'>{edge.node.title}</h2>
                         <p className='header__subtitle'>{edge.node.shortDescription}</p>
                         <p className='header__author'>

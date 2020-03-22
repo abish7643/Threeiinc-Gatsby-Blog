@@ -15,7 +15,9 @@ const AuthorTemplate = (props) => {
                 {props.data.authorInfo.edges.map(edge => (
                 <div key={edge.node.id}>
                    <div>
-                        <h1>Posts By {edge.node.authorData.authorName}</h1>
+                        <h1 data-sal="fade"
+                                    data-sal-delay="220"
+                                    data-sal-easing="ease">Posts By {edge.node.authorData.authorName}</h1>
                    </div>
                    <SEO title={edge.node.authorData.authorName} 
                    keywords={edge.node.authorData.seoAuthorKeywords} 
@@ -44,7 +46,9 @@ const AuthorTemplate = (props) => {
                         }}
                     onClick={()=> navigate(`/blog/${edge.node.slug}`)}>
                     {edge.node.category.map(category => (
-                    <p className="card__category">{category.title}</p>
+                    <p className="card__category" data-sal="fade"
+                        data-sal-delay="300"
+                        data-sal-easing="ease">{category.title}</p>
                     ))}
                 <p className="card__title">{edge.node.title}</p>
                 <a 
