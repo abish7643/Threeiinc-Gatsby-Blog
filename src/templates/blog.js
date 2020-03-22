@@ -162,21 +162,15 @@ const BlogTemplate = (props) => {
                     <div className='nextPost__Container' style={{marginBottom: '10px'}}>
                     
                         {props.data.nextBlog.edges.map(edge => (
-                        <Link className='nextPosts' to={`/blog/${edge.node.slug}/`} style={{textDecoration: 'none',
-                            color: 'black',
-                            backgroundRepeat: 'no-repeat',
-                            backgroundSize: 'cover',
-                            backgroundImage: `linear-gradient(
-                                to bottom,
-                                rgba(255, 255, 255, 0.95) 40%,
-                                rgba(255, 255, 255, 0.97) 70%,
-                                rgba(255, 255, 255, 1) 100%),
-                                url(${edge.node.featuredImage.fluid.src})`
-                                }}
-                                >
+                        <Link className='nextPosts' to={`/blog/${edge.node.slug}/`} 
+                        style={{textDecoration: 'none', color: 'black', backgroundColor: '#fafafa'}}>
                             <h4 style={{}}>{edge.node.title}</h4>
-                            <h5 style={{textTransform: 'uppercase', fontWeight: '900'}}>{edge.node.authorData.authorName}</h5>
-                            <h6 style={{textTransform: 'uppercase'}}>{edge.node.createdAt}</h6>
+                            <h5 style={{textTransform: 'uppercase', fontWeight: '900'}}>
+                                {edge.node.authorData.authorName}
+                            </h5>
+                            <h6 style={{textTransform: 'uppercase'}}>
+                                {edge.node.createdAt}
+                            </h6>
                         </Link>
                     ))}
                     </div>
@@ -265,12 +259,6 @@ export const query = graphql`
                 authorData{
                     authorName
                     authorSlug
-                }
-                featuredImage {
-                    fluid(maxWidth: 300, quality: 70, toFormat: WEBP) {
-                        ...GatsbyContentfulFluid
-                        src
-                    }
                 }
                 createdAt(formatString: "MMMM DD, YYYY")
         
