@@ -71,8 +71,8 @@ render={data => (
                 <Img style={{minHeight: '170px'}} sizes={edge.node.authorPhoto.fluid}/>
             </div>
             <div className='author__details' data-sal="fade"
-                        data-sal-delay="600"
-                        data-sal-easing="ease">
+                        data-sal-delay="200"
+                        data-sal-easing="ease-in-out-sine">
                 
                 <div className='author__name'>
                     <h6 style={{opacity: '0'}}>Author</h6>
