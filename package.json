@@ -27,7 +27,7 @@
     "gatsby-plugin-sharp": "^2.3.5",
     "gatsby-plugin-sitemap": "^2.2.30",
     "gatsby-remark-images": "^3.2.0",
-    "gatsby-remark-images-contentful": "^2.1.27",
+    "gatsby-remark-images-contentful": "^2.2.1",
     "gatsby-remark-lazy-load": "^1.0.2",
     "gatsby-source-contentful": "^2.1.73",
     "gatsby-source-filesystem": "^2.1.40",

@@ -10,12 +10,15 @@ body {
 
 }
 .Author__Info__Container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
     position: relative;
     margin-bottom: 50px;
     background-color: black;
     color: white;
     align-self: center;
-    margin-left: -15px;
+    margin-left: -5px;
 }
 
 
@@ -317,7 +320,8 @@ a{
 .about__author__contrib{
     display: flex;
     position: relative;
-    width: 60%;
+    width: 80%;
+    max-width: 700px;
     box-shadow: 0px 6px 12px 0 rgba(30, 60, 114, 0.1);
     margin: 20px 0px;
     overflow: hidden;
@@ -328,6 +332,7 @@ a{
     background-size: cover;
     max-width: 100px;
     width: 400px;
+    overflow: hidden;
 }
 
 .author__details {
@@ -503,5 +508,12 @@ a{
     .author__image {
         max-width: 90px;
     }
+    .Author__Info__Container{
+        margin-left: -2px;
+    }
+    .about__author__contrib{
+        max-width: 500px;
+    }
+    
 }
 

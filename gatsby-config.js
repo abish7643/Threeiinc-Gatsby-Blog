@@ -56,7 +56,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     {
-      resolve: `gatsby-remark-images`,
+      resolve: `gatsby-remark-images-contentful`,
       options: {
         maxWidth: 500,
         backgroundColor: 'black',

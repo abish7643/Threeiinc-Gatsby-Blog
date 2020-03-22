@@ -237,6 +237,7 @@ export const query = graphql`
             content {
                 childMarkdownRemark {
                     html
+                    excerpt
                 }
             }
             seoTitle
