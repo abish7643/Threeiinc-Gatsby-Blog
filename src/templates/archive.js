@@ -121,7 +121,7 @@ export const pageQuery = graphql`
                         id
                     }
                     featuredImage {
-                        fluid(maxWidth: 600, quality: 85) {
+                        fluid(maxWidth: 600, quality: 70, toFormat: WEBP) {
                             src
                             ...GatsbyContentfulFluid
                         }

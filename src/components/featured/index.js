@@ -31,7 +31,7 @@ export default () => (
                     createdAt(formatString: "MMMM DD, YYYY")
                     shortDescription
                     featuredImage {
-                        fluid(maxWidth: 1200, quality: 85) {
+                        fluid(maxWidth: 1200, quality: 70, toFormat: WEBP) {
                             src
                             ...GatsbyContentfulFluid
                         }

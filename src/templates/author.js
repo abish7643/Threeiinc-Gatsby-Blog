@@ -110,7 +110,7 @@ export const query = graphql`
                         authorSlug
                     }
                     featuredImage {
-                        fluid(maxWidth: 1200) {
+                        fluid(maxWidth: 1200, quality: 70, toFormat: WEBP) {
                             src
                             ...GatsbyContentfulFluid
                         }

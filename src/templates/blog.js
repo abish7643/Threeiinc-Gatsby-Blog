@@ -213,7 +213,7 @@ export const query = graphql`
                 seoAuthorName
                 authorDescription
                 authorPhoto{
-                    fluid(maxWidth: 400, quality: 85) {
+                    fluid(maxWidth: 300, quality: 70, toFormat: WEBP) {
                         ...GatsbyContentfulFluid
                         src
                     }
@@ -246,13 +246,13 @@ export const query = graphql`
             seoKeywords
             seoUrl
             seoImage {
-                fluid(maxWidth: 1000, quality: 85) {
+                fluid(maxWidth: 1200, quality: 70, toFormat: WEBP) {
                     ...GatsbyContentfulFluid
                     src
                 }
             }
             featuredImage {
-                fluid(maxWidth: 1000, quality: 85) {
+                fluid(maxWidth: 1200, quality: 70, toFormat: WEBP) {
                     ...GatsbyContentfulFluid
                     src
                 }
@@ -275,7 +275,7 @@ export const query = graphql`
                     authorSlug
                 }
                 featuredImage {
-                    fluid(maxWidth: 200, quality: 85) {
+                    fluid(maxWidth: 300, quality: 70, toFormat: WEBP) {
                         ...GatsbyContentfulFluid
                         src
                     }

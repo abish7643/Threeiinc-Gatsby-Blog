@@ -25,7 +25,7 @@ export default () => (
                 seoAuthorName
                 authorDescription
                 authorPhoto{
-                    fluid(maxWidth: 300, quality: 70) {
+                    fluid(maxWidth: 300, quality: 70, toFormat: WEBP) {
                         ...GatsbyContentfulFluid
                         src
                 }
