@@ -65,21 +65,16 @@ render={data => (
             >
             <div className='author__image' >
                 <Img style={{minHeight: '170px'}} sizes={edge.node.authorPhoto.fluid}/>
-                </div>
+            </div>
             <div className='author__details'>
                 
                 <div className='author__name'>
-                    <h6 style={{opacity: '0'}}>About Author</h6>
+                    <h6 style={{opacity: '0'}}>Author</h6>
                     <h4>{edge.node.authorName}</h4>
                 </div>
                 <div className='author__description'>
                     <h5>{edge.node.authorDescription}</h5>
                 </div>
-                <a
-                style={{fontSize: '1px', opacity: '0', marginBottom: '-1px'}}
-                to={`https://3iinc.xyz/idiots/${edge.node.authorSlug}/`}>
-                {`https://3iinc.xyz/idiots/${edge.node.authorSlug}/`}
-                </a>
             </div>
         </Link>
          ))}
