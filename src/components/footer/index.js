@@ -68,7 +68,7 @@ export default class Footer extends React.Component{
                                 </div>
                                 
                                 <div className='newsletter__submit'>
-                                    <div data-netlify-recaptcha="true"></div>
+                                    <div data-netlify-recaptcha="false"></div>
                                     {newsletterButton}
                                     </div>
                             </form>
