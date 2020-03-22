@@ -9,12 +9,8 @@ import HyvorTalk from 'hyvor-talk-react'
 import Img from 'gatsby-image'
 
 import {
-    EmailShareButton,
-    EmailIcon,
     FacebookShareButton,
     FacebookIcon,
-    LinkedinShareButton,
-    LinkedinIcon,
     RedditShareButton,
     RedditIcon,
     TelegramShareButton,
@@ -41,14 +37,14 @@ const BlogTemplate = (props) => {
       const propDescription = shareTitle + " | " + shareUrl
       const shareTitleLink = shareTitle + " | " + shareUrl
       const iconProp = {
-        size: 34,
+        size: 36,
         round: true,
         bgStyle: {opacity: '1',
         },
         iconFillColor: 'white',
       }
       const socialIconcss = {
-          marginRight: '6px',
+          marginRight: '10px',
           marginTop: '-3px',
       }
       const multipleState = props.data.currentBlog.multipleChapters
@@ -121,18 +117,12 @@ const BlogTemplate = (props) => {
                         <FacebookShareButton url={shareUrl} quote={shareTitle} style={socialIconcss}>
                             <FacebookIcon  {...iconProp}/>
                         </FacebookShareButton>
-                        <EmailShareButton url={shareUrl} subject={shareTitle} style={socialIconcss}>
-                            <EmailIcon  {...iconProp}/>
-                        </EmailShareButton>
                         <TelegramShareButton url={shareUrl} title={shareTitle} style={socialIconcss}>
                             <TelegramIcon  {...iconProp}/>
                         </TelegramShareButton>
                         <TwitterShareButton url={shareUrl} title={shareTitle} style={socialIconcss}>
                             <TwitterIcon  {...iconProp}/>
                         </TwitterShareButton>
-                        <LinkedinShareButton url={shareUrl} title={shareTitle} style={socialIconcss}>
-                            <LinkedinIcon  {...iconProp}/>
-                        </LinkedinShareButton>
                         <RedditShareButton url={shareUrl} title={shareTitle} style={socialIconcss}>
                             <RedditIcon  {...iconProp}/>
                         </RedditShareButton>
