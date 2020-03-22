@@ -7,6 +7,8 @@ import SEO from '../components/seo'
 import './blog.css'
 import Footer from '../components/footer'
 
+import Img from 'gatsby-image'
+
 import {
     EmailShareButton,
     EmailIcon,
@@ -77,7 +79,6 @@ const BlogTemplate = (props) => {
             <Nav/>
             <div className='blog__header'>
                 <div className='blog__hero' style={{backgroundImage: `url(${props.data.currentBlog.featuredImage.fluid.src})`}}>
-                
                 </div>              
             </div>
             <div className='blog__info'>
@@ -151,7 +152,9 @@ const BlogTemplate = (props) => {
                         to={`/idiots/${props.data.currentBlog.authorData.authorSlug}/`}
                         style={{textDecoration: 'none', color: 'black'}}
                         >
-                        <div className='author__image' style={{backgroundImage: `url(${props.data.currentBlog.authorData.authorPhoto.fluid.src})`}}></div>
+                        <div className='author__image' >
+                            <Img style={{minHeight: '155px'}} sizes={props.data.currentBlog.authorData.authorPhoto.fluid}/>
+                        </div>
                         <div className='author__details'>
                             
                             <div className='author__name'>

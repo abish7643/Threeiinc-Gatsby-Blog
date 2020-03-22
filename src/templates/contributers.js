@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import Footer from '../components/footer'
 import NavBlackText from '../components/navBlackText'
 import SEO from '../components/seo'
-
+import Img from 'gatsby-image'
 
 export default () => (
     <StaticQuery
@@ -63,8 +63,8 @@ render={data => (
             to={`/idiots/${edge.node.authorSlug}/`}
             style={{textDecoration: 'none', color: 'black'}}
             >
-            <div className='author__image' 
-                style={{backgroundImage: `url(${edge.node.authorPhoto.fluid.src})`}}>
+            <div className='author__image'>
+                <Img style={{minHeight: '170px'}} sizes={edge.node.authorPhoto.fluid}/>
                 </div>
             <div className='author__details'>
                 

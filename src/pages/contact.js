@@ -75,7 +75,7 @@ export default class Contact extends React.Component{
             </div>
             <div className='contact__section'>
                 <div className='contact__container'>
-                    <div className='contact__container__left' style={contactLeft}>
+                    <div className='contact__container__left' loading='lazy' style={contactLeft}>
     
                     </div>
                     <div className='contact__container__right'>
