@@ -333,6 +333,7 @@ a{
     max-width: 100px;
     width: 400px;
     overflow: hidden;
+    max-height: 170px;
 }
 
 .author__details {
@@ -506,7 +507,7 @@ a{
         max-height: 120px;
     }
     .author__image {
-        max-width: 90px;
+        max-width: 95px;
     }
     .Author__Info__Container{
         margin-left: -2px;
