@@ -80,7 +80,8 @@ const BlogTemplate = (props) => {
                 </div>
                 <div className='blog__info__author'>
                     <Link to={`/idiots/${props.data.currentBlog.authorData.authorSlug}`}>
-                        <p className='blog__extratitleone' style={{textDecoration: 'none'}}>{props.data.currentBlog.authorData.authorName} | {date.createdat} </p>
+                        <p className='blog__extratitleone' style={{textDecoration: 'none'}}>
+                            {props.data.currentBlog.authorData.authorName} | {date.createdat}</p>
                     </Link>
                 </div>
                 <div className='blog__extratitletwo'>
@@ -91,9 +92,11 @@ const BlogTemplate = (props) => {
                             <strong class='blog__categories'>{category.title} | </strong> 
                         ))}
                 </div>
+                
                 <div className='blog__categories__chapters'>
                     {multipleChapterPresent}
                 </div>
+                
                 <a
                     style={{fontSize: '1px', opacity: '0', marginBottom: '-1px'}}
                     to={`https://3iinc.xyz/idiots/${props.data.currentBlog.authorData.authorSlug}/`}>
@@ -174,9 +177,18 @@ const BlogTemplate = (props) => {
                         </Link>
                     ))}
                     </div>
-
-                <div className='comment__section' >
-                    <HyvorTalk.Embed websiteId={321} />
+                
+                <div style={{textTransform: 'uppercase', fontFamily: 'montserrat', letterSpacing: '0.5px',
+                    backgroundColor: 'black', color: 'white', fontWeight: '600', fontSize: '13px', padding: '0px 2px'}}>
+                    <HyvorTalk.CommentCount data-talk-mode="number" id={props.data.currentBlog.slug} websiteId={321}/>
+                </div>
+                
+                <div className='comment__section' id='commentSection'>
+                    <HyvorTalk.Embed 
+                    websiteId={321}
+                    loadMode="scroll"
+                    id={props.data.currentBlog.slug}
+                    />
                 </div>
                 <div className='footer__div'>
                     <Footer/>

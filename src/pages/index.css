@@ -3,3 +3,8 @@
      width: 100vw;   
     }
 }
+
+.divJumper{
+    scroll-behavior: smooth;
+    transition: ease-in-out 1s;
+}

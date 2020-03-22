@@ -374,6 +374,12 @@ a{
     margin-right: 20px;
 }
 
+.blog__comment__count{
+    z-index: 10;
+    color: white;
+    text-align: end;
+}
+
 @media screen and (max-width: 1400px){
     .comment__section {
         width: 70%;
