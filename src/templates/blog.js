@@ -83,7 +83,7 @@ const BlogTemplate = (props) => {
                     </Link>
                 </div>
                 <div className='blog__extratitletwo'data-sal="slide-down"
-                        data-sal-delay="11 0"
+                        data-sal-delay="110"
                         data-sal-easing="ease">
                     <p className='blog__extratitletwo'>
                         {props.data.currentBlog.readDuration}
