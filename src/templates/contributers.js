@@ -25,7 +25,7 @@ export default () => (
                 seoAuthorName
                 authorDescription
                 authorPhoto{
-                    fluid(maxWidth: 400, quality: 85) {
+                    fluid(maxWidth: 300, quality: 70) {
                         ...GatsbyContentfulFluid
                         src
                 }

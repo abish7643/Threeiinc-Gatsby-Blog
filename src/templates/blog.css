@@ -352,6 +352,11 @@ a{
     font-size: 18px;
 
 }
+.author__description h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .author__feed{
     display: flex;
@@ -492,8 +497,7 @@ a{
     }
 
     .author__description {
-        margin-top: -30px;
-        font-size: 16.5px;
+        font-size: 16px;
         max-height: 120px;
     }
     .author__image {

@@ -153,7 +153,7 @@ const BlogTemplate = (props) => {
                         style={{textDecoration: 'none', color: 'black'}}
                         >
                         <div className='author__image' >
-                            <Img style={{minHeight: '155px'}} sizes={props.data.currentBlog.authorData.authorPhoto.fluid}/>
+                            <Img style={{minHeight: '170px'}} sizes={props.data.currentBlog.authorData.authorPhoto.fluid}/>
                         </div>
                         <div className='author__details'>
                             
