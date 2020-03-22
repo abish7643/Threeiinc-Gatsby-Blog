@@ -1,12 +1,11 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import { DiscussionEmbed, CommentCount } from 'disqus-react' 
 import Layout from '../components/layout'
 import Nav from '../components/nav'
 import SEO from '../components/seo'
 import './blog.css'
 import Footer from '../components/footer'
-
+import HyvorTalk from 'hyvor-talk-react'
 import Img from 'gatsby-image'
 
 import {
@@ -33,13 +32,7 @@ import {
 
 const BlogTemplate = (props) => {
     const shareUrl = 'https://3iinc.xyz/blog/' + props.data.currentBlog.slug + '/'
-    const disqusConfig = {
-        url: shareUrl,
-        shortname:  'threeiinc',
-        config: {   identifier: props.data.currentBlog.id,
-                    title: props.data.currentBlog.slug,
-                }
-      };
+    
       const date = {
           createdat: props.data.currentBlog.createdAt,
       }
@@ -146,7 +139,6 @@ const BlogTemplate = (props) => {
                         <PinterestShareButton url={shareUrl} title={shareTitleLink} description={propDescription} media={shareMedia} style={socialIconcss}>
                             <PinterestIcon  {...iconProp}/>
                         </PinterestShareButton>
-                        <CommentCount config={disqusConfig} placeholder={'...'}/>
                     </div>
                     <Link className='about__author' 
                         to={`/idiots/${props.data.currentBlog.authorData.authorSlug}/`}
@@ -189,8 +181,8 @@ const BlogTemplate = (props) => {
                     ))}
                     </div>
 
-                <div className='disqus__section' >
-                    <DiscussionEmbed shortname={disqusConfig.shortname} config={disqusConfig.config} />
+                <div className='comment__section' >
+                    <HyvorTalk.Embed websiteId={321} />
                 </div>
                 <div className='footer__div'>
                     <Footer/>
