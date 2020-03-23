@@ -67,7 +67,10 @@ const BlogTemplate = (props) => {
             
             <Nav/>
             <div className='blog__header' >
-                <div className='blog__hero' style={{backgroundImage: `url(${props.data.currentBlog.featuredImage.fluid.src})`}}>
+                <div className='blog__hero' style={{backgroundImage: `url(${props.data.currentBlog.featuredImage.fluid.src})`}}
+                data-sal="fade"
+                data-sal-delay="20"
+                data-sal-easing="ease">
                 </div>              
             </div>
             <div className='blog__info'>
