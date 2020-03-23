@@ -47,10 +47,7 @@ render={data => (
     <header>
         {data.allContentfulBlog.edges.map(edge => (
             <div key={edge.node.id} className='header__section'>
-                <div className='header__hero' style={{backgroundImage: `url(${edge.node.featuredImage.fluid.src})`}} 
-                data-sal="fade"
-                data-sal-delay="20"
-                data-sal-easing="ease"></div>
+                <div className='header__hero' style={{backgroundImage: `url(${edge.node.featuredImage.fluid.src})`}} ></div>
                 <div className='header__content'>
                     <div className='header__info'>
                         <h2 className='banner___title' 
