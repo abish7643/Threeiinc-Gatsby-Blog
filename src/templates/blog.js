@@ -62,7 +62,7 @@ const BlogTemplate = (props) => {
             <div className="blog__initialmodel">
             <SEO title={props.data.currentBlog.seoTitle} description={props.data.currentBlog.seoDescription}
                 keywords={props.data.currentBlog.seoKeywords} url={props.data.currentBlog.seoUrl} 
-                image={props.data.currentBlog.seoImage} author={props.data.currentBlog.authorData.seoAuthorName} 
+                image={props.data.currentBlog.seoImage.fluid.src} author={props.data.currentBlog.authorData.seoAuthorName} 
             />
             
             <Nav/>
