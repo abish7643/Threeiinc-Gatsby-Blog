@@ -4,11 +4,19 @@ import NavBlackText from '../components/navBlackText'
 import SEO from '../components/seo'
 import './contact.css'
 import about from '../images/about.jpg'
+import {TumblrIcon, PinterestIcon} from "react-share";
+
+const iconProp = {
+    size: 26,
+    round: true,
+    bgStyle: {opacity: '1',
+    },
+    iconFillColor: 'white',
+}
 
 const contactLeft={
     backgroundImage: `url(${about})`,
 }
-
 
 export default class Contact extends React.Component{
     state = {
@@ -119,9 +127,12 @@ export default class Contact extends React.Component{
                     </div>
                     <div className='footer__contact__two'>
                         <h2>STAY CONNECTED</h2>
-                        <a href='https://www.instagram.com/3i.inc/' target="_blank">Follow us on Instagram</a><br/>
-                        <a href='https://www.pinterest.com/3iinc/' target="_blank">Follow us on PinInterest</a><br/>
-                        <a href='https://www.tumblr.com/blog/3i-inc' target="_blank">Follow us on Tumblr</a><br/>
+                        <a href='https://www.instagram.com/3i.inc/' style={{marginLeft: '32px', padding: '0px 5px', display: 'inline-block'}} target="_blank">
+                            Follow us on Instagram</a><br/>
+                        <a href='https://www.pinterest.com/3iinc/' target="_blank" style={{padding: '0px 5px', display: 'inline-block'}}>
+                            <TumblrIcon style={{padding: '3px',marginBottom: '-9px'}} {...iconProp} />Follow us on PinInterest</a><br/>
+                        <a href='https://www.tumblr.com/blog/3i-inc' target="_blank" style={{padding: '0px 5px', display: 'inline-block'}}>
+                            <PinterestIcon  style={{padding: '3px', marginBottom: '-9px'}} {...iconProp} />Follow us on Tumblr</a><br/>
                     </div>
                     <div className='footer__contact__three'>
                         <h2>CONTACT INFO</h2>

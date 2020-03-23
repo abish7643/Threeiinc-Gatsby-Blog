@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
       }
     }
   `)
-
+  
   return (
     <>
     <main className="main__div">{children}</main>

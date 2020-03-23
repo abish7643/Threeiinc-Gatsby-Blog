@@ -77,9 +77,9 @@ module.exports = {
         maxWidth: 500,
         backgroundColor: 'black',
         loading: 'lazy',
-        withWebp: true,
-      },
+      }
     },
+      
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
@@ -109,6 +109,21 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+          resolve: `gatsby-remark-images`,
+          options: {
+            maxWidth: 550,
+            backgroundColor: 'black',
+            loading: 'lazy',
+          }
+        },
+      ]
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

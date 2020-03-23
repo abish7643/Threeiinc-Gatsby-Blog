@@ -74,7 +74,9 @@ const BlogTemplate = (props) => {
                 </div>              
             </div>
             <div className='blog__info'>
-                <div className='blog__info__title'>
+                <div className='blog__info__title' data-sal="fade"
+                data-sal-delay="10"
+                data-sal-easing="ease">
                     <h2>{props.data.currentBlog.title}</h2><br/>
                 </div>
                 <div className='blog__info__author' data-sal="slide-down"
@@ -238,7 +240,7 @@ export const query = graphql`
             content {
                 childMarkdownRemark {
                     html
-                    excerpt
+                    id
                 }
             }
             seoTitle
