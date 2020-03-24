@@ -66,16 +66,16 @@ const BlogTemplate = (props) => {
             />
             
             <Nav/>
-            <div className='blog__header' >
-                <div className='blog__hero' style={{backgroundImage: `url(${props.data.currentBlog.featuredImage.fluid.src})`}}
-                data-sal="fade"
+            <div className='blog__header'>
+                <div className='blog__hero' data-sal="fade"
                 data-sal-delay="20"
-                data-sal-easing="ease">
+                data-sal-easing="ease"
+                style={{backgroundImage: `url(${props.data.currentBlog.featuredImage.fluid.src})`}}>
                 </div>              
             </div>
             <div className='blog__info'>
                 <div className='blog__info__title' data-sal="fade"
-                data-sal-delay="10"
+                data-sal-delay="20"
                 data-sal-easing="ease">
                     <h2>{props.data.currentBlog.title}</h2><br/>
                 </div>
@@ -165,9 +165,7 @@ const BlogTemplate = (props) => {
                         </div>
                     </Link>
                     <h5 className='Heading__latestposts'>LATEST POSTS</h5>
-                    <div className='nextPost__Container' style={{marginBottom: '10px'}} data-sal="fade"
-                        data-sal-delay="80"
-                        data-sal-easing="ease">
+                    <div className='nextPost__Container' style={{marginBottom: '10px'}}>
                     
                         {props.data.nextBlog.edges.map(edge => (
                         <Link className='nextPosts' to={`/blog/${edge.node.slug}/`} 

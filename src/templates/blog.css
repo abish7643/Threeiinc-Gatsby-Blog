@@ -7,7 +7,6 @@ body {
     flex-direction: column;
     justify-content: flex;
     align-items: initial;
-
 }
 .Author__Info__Container{
     display: flex;
@@ -68,7 +67,7 @@ body {
     max-height: max-content;
     width: auto;
     overflow: hidden;
-
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.05);
 }
 .blog__hero:before {
     content: "";
