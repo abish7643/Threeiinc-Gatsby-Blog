@@ -14,10 +14,10 @@ const AuthorTemplate = (props) => {
             <div className='Author__Info__Container'>
                 {props.data.authorInfo.edges.map(edge => (
                 <div key={edge.node.id}>
-                   <div>
-                        <h1 data-sal="fade"
-                                    data-sal-delay="220"
-                                    data-sal-easing="ease">Posts By {edge.node.authorData.authorName}</h1>
+                   <div data-sal="slide-up"
+                        data-sal-delay="220"
+                        data-sal-easing="ease">
+                        <h1>Posts By {edge.node.authorData.authorName}</h1>
                    </div>
                    <SEO title={edge.node.authorData.authorName} 
                    keywords={edge.node.authorData.seoAuthorKeywords} 
@@ -35,7 +35,7 @@ const AuthorTemplate = (props) => {
             <div className='feed__initial__authorposts'>
             <div className='feed'>
             {props.data.authorPosts.edges.map(edge => (
-                <div key={edge.node.id} className='card'
+                <div key={edge.node.id} className='card' 
                 style={{
                     backgroundImage: `linear-gradient(
                         to bottom,

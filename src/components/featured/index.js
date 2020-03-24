@@ -47,7 +47,7 @@ render={data => (
     <header>
         {data.allContentfulBlog.edges.map(edge => (
             <div key={edge.node.id} className='header__section'>
-                <div className='header__hero' data-sal="fade"
+                <div className='header__hero' data-sal="slide-up"
                     data-sal-delay="10"
                     data-sal-easing="ease"
                     style={{backgroundImage: `url(${edge.node.featuredImage.fluid.src})`}}>
@@ -55,21 +55,21 @@ render={data => (
                 <div className='header__content'>
                     <div className='header__info'>
                         <h2 className='banner___title' 
-                            data-sal="fade"
-                            data-sal-delay="20"
-                            data-sal-easing="ease">{edge.node.title}</h2>
-                        <p className='header__subtitle' data-sal="slide-down"
+                            data-sal="slide-up"
                             data-sal-delay="100"
+                            data-sal-easing="ease">{edge.node.title}</h2>
+                        <p className='header__subtitle' data-sal="slide-up"
+                            data-sal-delay="150"
                             data-sal-easing="ease">{edge.node.shortDescription}</p>
-                        <p className='header__author' data-sal="slide-down"
-                            data-sal-delay="160"
+                        <p className='header__author' data-sal="slide-up"
+                            data-sal-delay="200"
                             data-sal-easing="ease">
                         <a style={{textDecoration:'none', color: 'white'}}
                             onClick={() => navigate(`/idiots/${edge.node.authorData.authorSlug}`)}>
                             {edge.node.authorData.authorName} | {edge.node.createdAt}
                         </a>
                         </p>
-                        <div data-sal="slide-down"
+                        <div data-sal="slide-up"
                             data-sal-delay="400"
                             data-sal-easing="ease">
                             <Link to={`/blog/${edge.node.slug}`}>

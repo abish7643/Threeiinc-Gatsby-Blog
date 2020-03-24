@@ -23,17 +23,22 @@ const Archive = (props) => {
             keywords={['3i INC', '3i Incorporated', '3 Idiots Incorporation', 'Idiots by Choice', 'Idiotism', '3i INC Blog']}
             description='Read the Latest Posts from the Contributers of 3i INC | Idiots by Choice! | 3iinc.xyz' /> 
             <NavBlackText/>
-            <div className='Author__Info__Container'>
-                <h1 data-sal="fade"
-                    data-sal-delay="220"
-                    data-sal-easing="ease">
+            <div className='Author__Info__Container'
+                data-sal="slide-up"
+                data-sal-delay="50"
+                data-sal-easing="ease">
+                <h1 data-sal="slide-up"
+                data-sal-delay="150"
+                data-sal-easing="ease">
                    Blog Posts
                 </h1>
             </div>
             <div className='feed__initial__authorposts'>
                 <div className='feed'>
                     {blogContent.edges.map(edge => (
-                    <div key={edge.node.id} className='card'
+                    <div key={edge.node.id} className='card' data-sal="slide-up"
+                    data-sal-delay="50"
+                    data-sal-easing="ease"
                     style={{
                         backgroundImage: `linear-gradient(
                             to bottom,
@@ -44,9 +49,13 @@ const Archive = (props) => {
                             }}
                             onClick={() => navigate(`/blog/${edge.node.slug}`)}>
                             {edge.node.category.map(category => (
-                            <p className="card__category">{category.title}</p>
+                            <p className="card__category" data-sal="slide-up"
+                            data-sal-delay="60"
+                            data-sal-easing="ease">{category.title}</p>
                             ))}
-                        <p className="card__title">{edge.node.title}</p>
+                        <p className="card__title" data-sal="slide-up"
+                        data-sal-delay="70"
+                        data-sal-easing="ease">{edge.node.title}</p>
                         <a
                             style={{fontSize: '1px', opacity: '0', marginBottom: '-1px'}}
                             to={`https://3iinc.xyz/idiots/${edge.node.authorData.authorSlug}/`}>

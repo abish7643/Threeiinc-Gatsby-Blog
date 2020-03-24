@@ -48,17 +48,21 @@ render={data => (
                 url='https://3iinc.xyz/idiots/' 
                 author='3i INC' 
             />
-            <div style={{textAlign: 'center'}} className='contribute__question__header' data-sal="fade"
-                        data-sal-delay="200"
-                        data-sal-easing="ease">
-               <h4 > Wanna Explore Yourself? Work with 3i.
-                   <Link to='/contact'> <br></br>JUST FOLLOW!</Link></h4>
+            <div style={{textAlign: 'center'}} className='contribute__question__header' >
+               <h4 data-sal="slide-up"
+                        data-sal-delay="50"
+                        data-sal-easing="ease"> Wanna Explore Yourself? Work with 3i.
+                   <Link to='/contact'> <br></br><span data-sal="slide-up"
+                        data-sal-delay="150"
+                        data-sal-easing="ease">JUST FOLLOW!</span></Link></h4>
             </div>
         <div className='Author__Info__Container'>
-                   <div data-sal="fade"
-                        data-sal-delay="220"
+                   <div data-sal="slide-up"
+                        data-sal-delay="500"
                         data-sal-easing="ease"> 
-                        <h1>Contributers</h1>
+                        <h1 data-sal="slide-up"
+                        data-sal-delay="200"
+                        data-sal-easing="ease">Contributers</h1>
                    </div>
         </div>
     <div className='author__feed'>

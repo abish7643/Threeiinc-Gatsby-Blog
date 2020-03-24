@@ -67,19 +67,19 @@ const BlogTemplate = (props) => {
             
             <Nav/>
             <div className='blog__header'>
-                <div className='blog__hero' data-sal="fade"
+                <div className='blog__hero' data-sal="slide-up"
                 data-sal-delay="20"
                 data-sal-easing="ease"
                 style={{backgroundImage: `url(${props.data.currentBlog.featuredImage.fluid.src})`}}>
                 </div>              
             </div>
             <div className='blog__info'>
-                <div className='blog__info__title' data-sal="fade"
+                <div className='blog__info__title' data-sal="slide-up"
                 data-sal-delay="20"
                 data-sal-easing="ease">
                     <h2>{props.data.currentBlog.title}</h2><br/>
                 </div>
-                <div className='blog__info__author' data-sal="slide-down"
+                <div className='blog__info__author' data-sal="slide-up"
                         data-sal-delay="100"
                         data-sal-easing="ease">
                     <Link to={`/idiots/${props.data.currentBlog.authorData.authorSlug}`}>
@@ -87,19 +87,23 @@ const BlogTemplate = (props) => {
                             {props.data.currentBlog.authorData.authorName} | {date.createdat}</p>
                     </Link>
                 </div>
-                <div className='blog__extratitletwo'data-sal="slide-down"
-                        data-sal-delay="110"
-                        data-sal-easing="ease">
-                    <p className='blog__extratitletwo'>
+                <div className='blog__extratitletwo'>
+                    <p className='blog__extratitletwo' 
+                    data-sal="slide-up"
+                    data-sal-delay="150"
+                    data-sal-easing="ease">
                         {props.data.currentBlog.readDuration}
-                    </p>
+                    </p >
                         {props.data.currentBlog.category.map(category => (
-                            <strong class='blog__categories'>{category.title} | </strong> 
+                            <strong class='blog__categories'
+                            data-sal="slide-up"
+                            data-sal-delay="200"
+                            data-sal-easing="ease">{category.title} | </strong> 
                         ))}
                 </div>
                 
-                <div className='blog__categories__chapters' data-sal="slide-down"
-                        data-sal-delay="120"
+                <div className='blog__categories__chapters' data-sal="slide-up"
+                        data-sal-delay="200"
                         data-sal-easing="ease">
                     {multipleChapterPresent}
                 </div>
@@ -121,7 +125,7 @@ const BlogTemplate = (props) => {
                         {__html: `${props.data.currentBlog.content.childMarkdownRemark.html}`}
                     }/>
                 </div>
-                    <div className="share__buttons" data-sal="fade"
+                    <div className="share__buttons" data-sal="slide-up"
                         data-sal-delay="200"
                         data-sal-easing="ease">
                         <WhatsappShareButton url={shareUrl} title={shareTitle} separator=" " style={socialIconcss}>
