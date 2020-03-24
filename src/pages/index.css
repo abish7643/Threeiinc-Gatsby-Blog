@@ -4,7 +4,9 @@
     }
 }
 
-
+body{
+  background-color: white;
+}
 
 .about__hero__div{
   position: relative;
