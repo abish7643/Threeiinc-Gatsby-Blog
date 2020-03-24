@@ -60,9 +60,13 @@ render={data => (
                     }}
                 onClick={() => navigate(`/blog/${edge.node.slug}`)}>
                 {edge.node.category.map(category => (
-                    <p className="card__category">{category.title}</p>
+                    <p className="card__category" data-sal="fade"
+                    data-sal-delay="60"
+                    data-sal-easing="ease">{category.title}</p>
                 ))}
-            <p className="card__title">{edge.node.title}</p>
+            <p className="card__title" data-sal="fade"
+                data-sal-delay="70"
+                data-sal-easing="ease">{edge.node.title}</p>
             </div>
          ))}
     </div>
