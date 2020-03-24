@@ -47,7 +47,9 @@ render={data => (
     <div className="feed__initial">
     <div className='feed' >
         {data.allContentfulBlog.edges.map(edge => (
-            <div key={edge.node.id} className='card'
+            <div key={edge.node.id} className='card' data-sal="fade"
+                data-sal-delay="50"
+                data-sal-easing="ease"
             style={{
                 backgroundImage: `linear-gradient(
                     to bottom,
