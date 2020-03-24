@@ -4,6 +4,9 @@ import NavBlackText from '../components/navBlackText'
 import Layout from "../components/layout"
 import './index.css'
 
+const textHighlight = {
+    borderBottom: 'rgb(189, 0, 61) 1.5px solid', 
+}
 
 export default class IndexPage extends React.Component{
   render() {
@@ -26,18 +29,17 @@ export default class IndexPage extends React.Component{
         <div className='about__hero__div'>
             <div className='about__hero__div__inner'>
                 <div className='about__hero__text'>
-                    <h2 className='about__hero__heading2' 
+                    <h2 className='about__hero__heading1' 
                         data-sal="slide-up"
                         data-sal-delay="300"
                         data-sal-easing="ease">
-                            An About Page, Eh?
+                            An <span style={textHighlight}>about</span> page eh?
                     </h2>
                 </div>
-                <div className='about__hero__text'>
-                    <div className='about__hero__text__half'>
-                        
-                    </div>
+                <div className='about__hero__text__content'>
+                    
                 </div>
+                
             </div>
         </div>
 

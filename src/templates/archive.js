@@ -24,7 +24,9 @@ const Archive = (props) => {
             description='Read the Latest Posts from the Contributers of 3i INC | Idiots by Choice! | 3iinc.xyz' /> 
             <NavBlackText/>
             <div className='Author__Info__Container'>
-                <h1>
+                <h1 data-sal="fade"
+                    data-sal-delay="220"
+                    data-sal-easing="ease">
                    Blog Posts
                 </h1>
             </div>

@@ -5,7 +5,7 @@
 }
 
 body{
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 .about__hero__div{
@@ -15,7 +15,8 @@ body{
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
-  height: 300px;
+  height: 200px;
+  margin-top: 150px;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -27,24 +28,37 @@ body{
   justify-content: left;
   align-items: left;
   width: 100%;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-.about__hero__heading2{
+.about__hero__heading1{
   font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: white;
   color: black;
 }
 
-
-.about__hero__text{
-  height: 300px;
-  width: 50%;
+.about__hero__heading2 span{
+  font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: black;
+}
+.about__hero__text__content{
   display: flex;
   justify-content: center;
+  align-items: left;
+  flex-direction: column;
+}
+.about__hero__text__content h4{
+  font-size: 20px;
+}
+
+.about__hero__text{
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: left;
   align-items: center;
   color: black;
   font-size: 18px;
+  
 }
 
 .about__hero__text__half{
@@ -53,21 +67,18 @@ body{
   color: black;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
 }
 
-.about__hero__text h2{
-  border-bottom: teal 1.5px solid;
-}
+
 
 @media screen and (max-width: 700px){
   .about__hero__div{
-    margin-top: 100px;
+    margin-top: 0px;
   }
-  
   .about__hero__div__inner{
     flex-direction: column;
   }
