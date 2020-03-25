@@ -38,7 +38,6 @@ body {
     margin-top: -20px;
     margin-bottom: 70px;
     padding: 10px;
-    box-shadow: 2px 6px 12px rgba(30, 60, 120, 0.05);
 }
 .blog__header{
     display: flex;
