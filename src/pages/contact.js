@@ -63,9 +63,12 @@ export default class Contact extends React.Component{
             this.state.contactnameinputEntered === '1' &&
             this.state.contactmessageinputEntered === '1'){
             
-            contactButton = <button className='contact__submitbutton'>SUBMIT</button>;
+            contactButton = <button style={{ cursor: 'pointer', backgroundColor: 'black', 
+            color: 'white', padding: '1px 20px', transition: 'ease 1s',
+            border: '1px orange solid', borderRadius: '2px'}}
+            className='contact__submitbutton'>SUBMIT</button>;
         } else {
-            contactButton = <button style={{pointerEvents: 'none', cursor: 'default'}}
+            contactButton = <button style={{color: 'grey',pointerEvents: 'none', cursor: 'default'}}
                             className='contact__submitbutton'>SUBMIT
                             </button>;
         }
@@ -83,12 +86,20 @@ export default class Contact extends React.Component{
             </div>
             <div className='contact__section'>
                 <div className='contact__container'>
-                    <div className='contact__container__left' loading='lazy' style={contactLeft}>
-    
+                    <div className='contact__container__left' style={contactLeft}
+                        data-sal="slide-up"
+                        data-sal-delay="200"
+                        data-sal-easing="ease">
                     </div>
                     <div className='contact__container__right'>
-                        <h1 className='contact__container__right__heading'>CONTACT</h1>
-                        <div className='contact__container__right__inner'>
+                        <h1 className='contact__container__right__heading'
+                        data-sal="slide-up"
+                        data-sal-delay="200"
+                        data-sal-easing="ease">CONTACT</h1>
+                        <div className='contact__container__right__inner'
+                        data-sal="slide-up"
+                        data-sal-delay="300"
+                        data-sal-easing="ease"> 
                         <form method='post' name='contact' action='/thankyouidiot' data-netlify='true' netlify-honeypot='bot'>
                             <input type='hidden' name='form-name' value='contact'/>
                             <div className='field__hidden'>
