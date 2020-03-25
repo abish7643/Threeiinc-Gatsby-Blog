@@ -38,6 +38,8 @@ body {
     margin-top: -20px;
     margin-bottom: 70px;
     padding: 10px;
+    position: relative;
+    z-index: 30;
 }
 .blog__header{
     display: flex;
