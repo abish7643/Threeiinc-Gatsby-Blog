@@ -87,7 +87,7 @@ export default class Contact extends React.Component{
     
                     </div>
                     <div className='contact__container__right'>
-                        <h1>CONTACT</h1>
+                        <h1 className='contact__container__right__heading'>CONTACT</h1>
                         <div className='contact__container__right__inner'>
                         <form method='post' name='contact' action='/thankyouidiot' data-netlify='true' netlify-honeypot='bot'>
                             <input type='hidden' name='form-name' value='contact'/>
