@@ -105,6 +105,7 @@ header {
     }
     .header__content {
         padding: 50px 25px;
+        margin-top: -240px;
     }
 
     .banner___title{
@@ -115,17 +116,18 @@ header {
 
 @media screen and (max-width: 450px) {
     .header__info{
-        width: 95%;
+        width: 100%;
+        margin-left: 0px;
     }
     .header__content {
         margin-top: -240px;
     }
 
     .banner___title{
-        font-size: 29px;
+        font-size: 28px;
     }
     .header__subtitle{
         margin-top: -5px;
-        font-size: 17px;
+        font-size: 16.5px;
     }
 }
