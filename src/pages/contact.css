@@ -12,7 +12,7 @@
 }
 .contact__container{
     display: inline-block;
-    width: 40%;
+    width: 45%;
     height: 600px;
     margin-top: 180px;
     background: white;
@@ -223,7 +223,7 @@
 
 @media screen and (max-width: 1500px) {
     .contact__container{
-        width: 60%;
+        width: 50%;
     }
     .footer__contact__container {
         width: 80%;
@@ -235,7 +235,7 @@
 }
 @media screen and (max-width: 1200px) {
     .contact__container{
-        width: 70%;
+        width: 60%;
     }
     .footer__contact__container {
         width: 90%;
@@ -246,7 +246,7 @@
 }
 @media screen and (max-width: 1000px) {
     .contact__container{
-        width: 80%;
+        width: 70%;
     }
     .footer__contact__container__flex{
         flex-direction: column;
@@ -271,13 +271,13 @@
         width: 85%;
     }
     .contact__container{
-        width: 90%;
+        width: 75%;
     }
     .contact__container__right{
-        width: 65%;
+        width: 75%;
     }
     .contact__container__left{
-        width: 35%;
+        width: 25%;
     }
     .contact__container__right__inner{
         width: 80%;
@@ -296,11 +296,11 @@
         width: 80%;
     }
     .contact__container__right{
-        width: 85%;
+        width: 80%;
 
     }
     .contact__container__left{
-        width: 15%;
+        width: 20%;
     }
     .contact__container__right__heading{
         font-size: 30px;
