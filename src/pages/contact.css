@@ -61,9 +61,11 @@
     border: 1px solid rgb(0, 44, 65, 1);
     border-radius: 30px;
     margin: 20px 0;
+    outline: none;
 }
+
 .field textarea{
-    
+    outline: none;
     padding: 1px;
     border: none;
     width: 100%;
@@ -78,9 +80,27 @@
     color: black;
     transition: all 0.3s ease 0s;
 }
+input[type="text"]{
+    font-family: 'poppins';
+    font-weight: 500;
+    color: black;
+    padding-left: 10px;
+}
+input[type="email"]{
+    font-family: 'poppins';
+    font-weight: 500;
+    color: black;
+    padding-left: 10px;    
+}
+textarea[type="message"]{
+    font-family: 'poppins';
+    font-weight: 500;
+    color: teal;
+    padding-left: 10px;    
+    padding-top: 5px;
+}
 
 ::placeholder{
-    font-weight: 100;
     padding-left: 16px;
 }
 .message__field::placeholder{

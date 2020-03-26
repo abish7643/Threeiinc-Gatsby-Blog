@@ -36,7 +36,7 @@ export default class Footer extends React.Component{
         if (this.state.inputEntered === '1' && this.state.checkboxTicked === '1'){
             newsletterButton = <button style={{ cursor: 'pointer'}} className='btn__med'>Submit</button>;
         } else {
-            newsletterButton = <button className='btn__med' style={{ color: 'grey', pointerEvents: 'none', cursor: 'default'}}>Submit</button>;
+            newsletterButton = <button className='btn__med' style={{ color: 'black', pointerEvents: 'none', cursor: 'default'}}>Submit</button>;
         }
         return (
             <footer className="footer__div"> 

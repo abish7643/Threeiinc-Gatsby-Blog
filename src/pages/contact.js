@@ -119,7 +119,7 @@ export default class Contact extends React.Component{
                             <div className='field'>
                                 <textarea className='message__field' placeholder='MESSAGE'
                                 onChange={this.handleContactMessageChange} value={this.state.contactMessage}
-                                name='message' id='message' rows='6' pattern='.*\S.*'></textarea>
+                                name='message' type="message" id='message' rows='5' pattern='.*\S.*'></textarea>
                             </div>
                                 {contactButton}
                         </form>

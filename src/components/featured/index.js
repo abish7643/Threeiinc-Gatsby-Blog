@@ -73,7 +73,7 @@ render={data => (
                             data-sal-delay="400"
                             data-sal-easing="ease">
                             <Link to={`/blog/${edge.node.slug}`}>
-                                <button style={{marginTop: '5px'}} className='btn__med'>
+                                <button style={{marginTop: '5px', outline: 'none'}} className='btn__med'>
                                     Read More
                                 </button>
                             </Link>

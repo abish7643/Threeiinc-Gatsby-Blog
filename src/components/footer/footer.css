@@ -42,15 +42,20 @@
 .newsletter__form p{
     font-size: 17px;   
 }
+.newsletter__field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .newsletter__field input {
     padding: 1px;
     outline: none;
-    width: 100%;
+    width: 97%;
     border: 1px solid black;
     color: black;
-    height: 25px;
+    height: 28px;
     background: transparent;
     border-bottom: 1px solid black;
     float: right;
