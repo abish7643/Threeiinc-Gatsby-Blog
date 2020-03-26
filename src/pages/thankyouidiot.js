@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import Nav from '../components/nav'
+import NavBlackText from '../components/navBlackText'
 
 import './contact.css'
 import { navigate } from 'gatsby'
@@ -10,7 +10,7 @@ const textHighlight = {
 
 const Thanksyou = () => (
     <Layout>
-        <Nav />
+        <NavBlackText/>
             <div className='thankyou__wrapper'>
                 <div className='contact__thanks' 
                     data-sal="slide-up"
