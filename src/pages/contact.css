@@ -125,11 +125,12 @@ textarea[type="message"]{
 .contact__thanks{
     text-align: center;
     color: black;
-    font-weight: 300;
-    font-size: 30px;
+    font-weight: 700;
+    font-size: 26px;
     justify-self: center;
     position: unset;
     margin-top: -100px;
+    line-height: 40px;
 }
 
 .home__button{

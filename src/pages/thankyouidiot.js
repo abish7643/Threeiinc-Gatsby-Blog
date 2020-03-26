@@ -4,17 +4,32 @@ import Nav from '../components/nav'
 
 import './contact.css'
 import { navigate } from 'gatsby'
-
+const textHighlight = {
+    borderBottom: 'rgb(189, 0, 61) 1.5px solid', 
+}
 
 const Thanksyou = () => (
     <Layout>
         <Nav />
             <div className='thankyou__wrapper'>
-                <div className='contact__thanks'>
-                    <p>Welcome to the Club, Cheers Mate!</p>
+                <div className='contact__thanks' 
+                    data-sal="slide-up"
+                    data-sal-delay="200"
+                    data-sal-easing="ease">
+                    <p>
+                        <span>
+                                Welcome to the Club
+                        </span><br/>
+                    <span style={textHighlight}>
+                            Cheers Mate!
+                    </span></p>
                 </div>
                 <div className='home__button'>
-                <button class='button_med' onClick={() => navigate(`/`)}>
+                <button class='button_med'
+                    data-sal="fade"
+                    data-sal-delay="300"
+                    data-sal-easing="ease-in"
+                    onClick={() => navigate(`/`)}>
                     Home
                 </button>
                 </div>
