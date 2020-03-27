@@ -200,14 +200,14 @@ a{
 .blog__content h2{
     font-family: 'poppins';
     color: black;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: -10px;
 }
 .blog__content p {
-    font-family: 'Poppins';
+    font-family: 'raleway';
     font-size: 17px;
     line-height: 28px;
-    font-weight: 300;
+    font-weight: 400;
     color: #0a0a0a;
     margin: 40px 0;
     text-indent: 30px;
@@ -239,31 +239,26 @@ a{
 }
 
 .blog__content blockquote {
-    margin: 30px 5px 30px 5px;
-    border-radius: 15px;
-    padding: 0px 30px 5px 35px;
-    box-shadow: 0px 6px 12px 0 rgba(30, 60, 114, 0.05);
-    
+    margin: 5px;
+    margin-left: 8px;
+    border-left: 2px rgba(10, 10, 10, 0.3) solid;
 }
 
 
 
-.blog__content blockquote:before {
-    content: url('../images/quote.png');
-    display: inline-block;
-    transform: translateY(30px);
-    filter: invert(19%) sepia(37%) saturate(1527%) hue-rotate(186deg) brightness(100%) contrast(95%);
-}
 
 .blog__content blockquote p {
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 23px;
+    margin-right: 20px;
+    margin-left: 30px;
+    line-height: 30px;
     font-weight: 700;
     color: #1e3c72;
-    font-family: 'poppins';
+    font-family: 'raleway';
+    font-style: italic;
     text-align: initial;
     text-transform: uppercase;
-    
+    text-indent: 0px;
 }
 
 .blog__content img {
@@ -449,12 +444,15 @@ a{
     .comment__section{
         width: 90%;
     }
-    .blog__content blockquote {
-        padding: 0px 15px 5px 15px;
-        margin: 10px 0px 10px 0;
+    .blog__content blockquote{
+        margin-left: 1px;
+        margin-right: 3px;
     }
     .blog__content blockquote p{
-        font-size: 26px;
+        font-size: 17px;
+        line-height: 26px;
+        margin-left: 15px;
+        margin-right: 0px;
     }
     .nextPost__Container {
         width: 100%;

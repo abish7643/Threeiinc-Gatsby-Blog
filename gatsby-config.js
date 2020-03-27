@@ -58,6 +58,14 @@ module.exports = {
             
           },
           {
+            family: `Raleway`,
+            variants: [`200`,`300`,`400`,`500`,`600`,`700`]
+          },
+          {
+            family: `Alfa Slab One`,
+            variants: [`200`,`300`,`400`,`500`,`600`,`700`]
+          },
+          {
             family: `Poppins`,
             variants: [`200`,`300`,`400`,`500`,`600`,`700`]
           },
