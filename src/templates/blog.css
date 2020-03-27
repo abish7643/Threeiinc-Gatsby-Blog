@@ -209,8 +209,9 @@ a{
 }
 .blog__content p {
     font-family: 'montserrat';
-    font-size: 17px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: unset;
     font-weight: 400;
     color: #0a0a0a;
     margin: 40px 0;
@@ -246,25 +247,23 @@ a{
 
 .blog__content blockquote {
     margin: 5px;
-    margin-left: 8px;
-    border-left: 2px rgba(10, 10, 10, 0.3) solid;
+    margin-left: 0px;
+    border-left: 2px rgba(10, 10, 10, 0.4) solid;
 }
 
-
-
-
 .blog__content blockquote p {
-    font-size: 23px;
+    font-size: 25px;
     margin-right: 20px;
-    margin-left: 30px;
+    margin-left: 20px;
     line-height: 30px;
-    font-weight: 700;
+    font-weight: 500;
     color: #1e3c72;
-    font-family: 'raleway';
+    font-family: 'poppins';
     font-style: italic;
     text-align: initial;
     text-transform: uppercase;
     text-indent: 0px;
+
 }
 
 .blog__content img {
@@ -451,13 +450,13 @@ a{
         width: 90%;
     }
     .blog__content blockquote{
-        margin-left: 1px;
+        margin-left: -10px;
         margin-right: 3px;
     }
     .blog__content blockquote p{
-        font-size: 17px;
-        line-height: 26px;
-        margin-left: 15px;
+        font-size: 22px;
+        line-height: 28px;
+        margin-left: 10px;
         margin-right: 0px;
     }
     .nextPost__Container {
@@ -480,7 +479,14 @@ a{
 }
 
 @media screen and (max-width: 500px){
-    
+    .blog__content p{
+        font-size: 17px;
+        line-height: 27px;
+        text-align: unset;
+    }
+    .blog__content blockquote p{
+        font-size: 21px;
+    }
     .blog__content h2{
         font-size: 26px;
     }

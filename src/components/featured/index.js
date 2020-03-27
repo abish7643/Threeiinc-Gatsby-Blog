@@ -69,7 +69,7 @@ render={data => (
                             {edge.node.authorData.authorName} | {edge.node.createdAt}
                         </a>
                         </p>
-                        <div data-sal="slide-up"
+                        <div className="header__button__div" data-sal="slide-up"
                             data-sal-delay="400"
                             data-sal-easing="ease">
                             <Link to={`/blog/${edge.node.slug}`}>
