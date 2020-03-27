@@ -194,13 +194,11 @@ a{
 .blog__content::first-line{
     text-indent: 100px;
 }
-.blog__content h3{
-   
-}
 .blog__content h2{
-    font-family: 'poppins';
+    font-family: 'Playfair Display';
     color: black;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 34px;
     margin-bottom: -10px;
 }
 .blog__content p {
@@ -232,6 +230,8 @@ a{
 .blog__content h3{
     margin-top: 40px;
     margin-bottom: -20px;
+    font-size: 26px;
+    font-family: 'Playfair Display';
 }
 
 .blog__content hr{
@@ -475,6 +475,12 @@ a{
 
 @media screen and (max-width: 500px){
     
+    .blog__content h2{
+        font-size: 28px;
+    }
+    .blog__content h3{
+        font-size: 22px;
+    }
     .blog__title{
         font-size: 26px;
         line-height: 40px;

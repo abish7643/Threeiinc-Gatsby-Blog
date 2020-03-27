@@ -62,6 +62,10 @@ module.exports = {
             variants: [`300`,`400`,`500`]
           },
           {
+            family: `Playfair Display`,
+            variants: [`300`,`400`,`500`]
+          },
+          {
             family: `Poppins`,
             variants: [`300`,`400`,`500`,`600`,`700`]
           },
