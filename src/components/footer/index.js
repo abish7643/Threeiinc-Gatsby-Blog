@@ -10,7 +10,7 @@ export default class Footer extends React.Component{
         checkboxTicked: ''
     };
     handleChange = event => {
-        const isCheck = event.target.type == "check";
+        const isCheck = event.target.type === "check";
         this.setState({
             email: isCheck
             ? event.target.checked

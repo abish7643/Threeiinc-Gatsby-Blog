@@ -27,15 +27,15 @@ import {
 
 
 const BlogTemplate = (props) => {
-    const shareUrl = 'https://3iinc.xyz/blog/' + props.data.currentBlog.slug + '/'
+    const shareUrl = `https://3iinc.xyz/blog/${props.data.currentBlog.slug}/`
     
       const date = {
           createdat: props.data.currentBlog.createdAt,
       }
       const shareMedia = props.data.currentBlog.featuredImage.fluid.src
-      const shareTitle = "'" + props.data.currentBlog.title + "'" + " | 3i INC | 3 Idiots Incorporated."
-      const propDescription = shareTitle + " | " + shareUrl
-      const shareTitleLink = shareTitle + " | " + shareUrl
+      const shareTitle = `'${props.data.currentBlog.title}' | 3i INC | 3 Idiots Incorporated.`
+      const propDescription = `${shareTitle} | ${shareUrl}`
+      const shareTitleLink = `${shareTitle} | ${shareUrl}`
       const iconProp = {
         size: 36,
         round: true,
