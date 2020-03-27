@@ -204,6 +204,8 @@ a{
 .blog__content h4{
     margin-bottom: -20px;
     margin-top: -10px;
+    font-size: 19px;
+    margin-left: 2px;
 }
 .blog__content p {
     font-family: 'montserrat';
@@ -484,6 +486,9 @@ a{
     }
     .blog__content h3{
         font-size: 19px;
+    }
+    .blog__content h4{
+        font-size: 18px;
     }
     .blog__title{
         font-size: 26px;
