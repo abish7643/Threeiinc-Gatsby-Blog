@@ -195,14 +195,14 @@ a{
     text-indent: 100px;
 }
 .blog__content h2{
-    font-family: 'Playfair Display';
+    font-family: 'poppins';
     color: black;
     font-weight: 700;
     font-size: 34px;
-    margin-bottom: -10px;
+    margin-bottom: -12px;
 }
 .blog__content p {
-    font-family: 'raleway';
+    font-family: 'montserrat';
     font-size: 17px;
     line-height: 28px;
     font-weight: 400;
@@ -229,9 +229,9 @@ a{
 }
 .blog__content h3{
     margin-top: 40px;
-    margin-bottom: -20px;
-    font-size: 26px;
-    font-family: 'Playfair Display';
+    margin-bottom: -22px;
+    font-size: 24px;
+    font-family: 'poppins';
 }
 
 .blog__content hr{
@@ -476,10 +476,10 @@ a{
 @media screen and (max-width: 500px){
     
     .blog__content h2{
-        font-size: 28px;
+        font-size: 26px;
     }
     .blog__content h3{
-        font-size: 22px;
+        font-size: 19px;
     }
     .blog__title{
         font-size: 26px;
