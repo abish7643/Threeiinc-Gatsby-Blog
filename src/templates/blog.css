@@ -201,6 +201,10 @@ a{
     font-size: 34px;
     margin-bottom: -12px;
 }
+.blog__content h4{
+    margin-bottom: -20px;
+    margin-top: -10px;
+}
 .blog__content p {
     font-family: 'montserrat';
     font-size: 17px;
