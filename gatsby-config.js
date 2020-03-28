@@ -129,8 +129,8 @@ module.exports = {
         name: `3i INC | 3 Idiots Incorporation`,
         short_name: `3i`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#2a5298`,
+        theme_color: `#2a5298`,
         display: `minimal-ui`,
         icon: `src/images/threeiinc-icon.png`, // This path is relative to the root of the site.
       },
