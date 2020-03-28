@@ -28,7 +28,7 @@ import {
 
 
 const BlogTemplate = (props) => {
-    const shareUrl = `https://3iinc.xyz/blog/${props.data.currentBlog.slug}/`
+    const shareUrl = `https://3iinc.xyz/blog/${props.data.currentBlog.slug}`
     
       const date = {
           createdat: props.data.currentBlog.createdAt,
@@ -62,7 +62,7 @@ const BlogTemplate = (props) => {
         <Layout>
             <div className="blog__initialmodel">
             <SEO title={props.data.currentBlog.seoTitle} description={props.data.currentBlog.seoDescription}
-                keywords={props.data.currentBlog.seoKeywords} url={props.data.currentBlog.seoUrl} 
+                keywords={props.data.currentBlog.seoKeywords} url={`https://3iinc.xyz/blog/${props.data.currentBlog.slug}`} 
                 image={props.data.currentBlog.seoImage.fluid.src} author={props.data.currentBlog.authorData.seoAuthorName} 
             />
             
@@ -111,13 +111,13 @@ const BlogTemplate = (props) => {
                 
                 <a
                     style={{fontSize: '1px', opacity: '0', marginBottom: '-1px'}}
-                    to={`https://3iinc.xyz/idiots/${props.data.currentBlog.authorData.authorSlug}/`}>
-                    {`https://3iinc.xyz/idiots/${props.data.currentBlog.authorData.authorSlug}/`}
+                    to={`https://3iinc.xyz/idiots/${props.data.currentBlog.authorData.authorSlug}`}>
+                    {`https://3iinc.xyz/idiots/${props.data.currentBlog.authorData.authorSlug}`}
                 </a>
                 <a 
-                    to={`https://3iinc.xyz/blog/${props.data.currentBlog.slug}/`}
+                    to={`https://3iinc.xyz/blog/${props.data.currentBlog.slug}`}
                     style={{opacity: '0', fontSize: '1px', marginBottom:'-1px'}}>
-                        {`https://3iinc.xyz/blog/${props.data.currentBlog.slug}/`}
+                        {`https://3iinc.xyz/blog/${props.data.currentBlog.slug}`}
                 </a>
             </div>
             <div className='blog__wrapper'>
