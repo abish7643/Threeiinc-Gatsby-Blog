@@ -202,8 +202,7 @@ a{
     margin-bottom: -12px;
 }
 .blog__content h4{
-    margin-bottom: -20px;
-    margin-top: -10px;
+    margin-top: 10px;
     font-size: 19px;
     margin-left: 2px;
 }
@@ -495,6 +494,7 @@ a{
     }
     .blog__content h4{
         font-size: 18px;
+        margin-bottom: 15px;
     }
     .blog__title{
         font-size: 26px;
