@@ -33,20 +33,20 @@
 
 .nav__component__link{
 	text-decoration: none;
-	color: white;
+	color: #f8f9fa;
 	margin: 0 20px;
 	font-weight: bolder;
 }
 .nav__logo{
 	text-decoration: none;
-	color: white;
+	color: #f8f9fa;
 	font-size: 40px;
 	text-transform: uppercase;
 	letter-spacing: 4px;
 }
 
 .nav__component__div:hover .nav__component__link:hover{
-	background-color: white;
+	background-color: #f8f9fa;
 	color: black;
 	transition: ease-in 0.2s;
 }
