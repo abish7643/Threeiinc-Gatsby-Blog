@@ -68,7 +68,7 @@ const BlogTemplate = (props) => {
             
             <Nav/>
             <div className='blog__header'>
-                <div className='blog__hero' data-sal="fade"
+                <div className='blog__hero' data-sal="slide-up"
                 data-sal-delay="20"
                 data-sal-easing="ease"
                 style={{backgroundImage: `url(${props.data.currentBlog.featuredImage.fluid.src})`}}>
@@ -152,7 +152,7 @@ const BlogTemplate = (props) => {
                         </PinterestShareButton>
                     </div>
                     <Link className='about__author'  
-                        to={`/idiots/${props.data.currentBlog.authorData.authorSlug}/`}
+                        to={`/idiots/${props.data.currentBlog.authorData.authorSlug}`}
                         style={{textDecoration: 'none', color: 'black'}}
                         >
                         <div className='author__image' >
@@ -173,7 +173,7 @@ const BlogTemplate = (props) => {
                     <div className='nextPost__Container' style={{marginBottom: '10px'}}>
                     
                         {props.data.nextBlog.edges.map(edge => (
-                        <Link className='nextPosts' to={`/blog/${edge.node.slug}/`} 
+                        <Link className='nextPosts' to={`/blog/${edge.node.slug}`} 
                         style={{textDecoration: 'none', color: 'black', backgroundColor: '#fafafa'}}>
                             <h4 style={{}}>{edge.node.title}</h4>
                             <h5 style={{textTransform: 'uppercase', fontWeight: '900'}}>
