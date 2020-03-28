@@ -68,7 +68,7 @@ render={data => (
     <div className='author__feed'>
         {data.allContentfulAuthorModel.edges.map(edge => (
         <Link className='about__author__contrib' key={edge.node.id}
-            to={`/idiots/${edge.node.authorSlug}/`}
+            to={`/idiots/${edge.node.authorSlug}`}
             style={{textDecoration: 'none', color: 'black'}}
             >
             <div className='author__image'>

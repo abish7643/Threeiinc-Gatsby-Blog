@@ -23,9 +23,6 @@ const Nav = () => (
                     </div>
                 </div>
             </div>
-                <a href='https://3iinc.xyz/blog/'
-                    style={{opacity: '0', visibility: 'none', fontSize: '1px'}}
-                ></a>
         </div>
 )
 
