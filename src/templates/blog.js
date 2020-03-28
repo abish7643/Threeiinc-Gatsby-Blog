@@ -73,7 +73,7 @@ const BlogTemplate = (props) => {
                 data-sal-easing="ease"
                 style={{backgroundImage: `url(${props.data.currentBlog.featuredImage.fluid.src})`}}>
                 </div>              
-    
+            </div>
             <div className='blog__info'>
                 <div className='blog__info__title' data-sal="slide-up"
                 data-sal-delay="20"
@@ -108,7 +108,6 @@ const BlogTemplate = (props) => {
                         data-sal-easing="ease">
                     {multipleChapterPresent}
                 </div>
-            </div>
                 
                 <a
                     style={{fontSize: '1px', opacity: '0', marginBottom: '-1px'}}

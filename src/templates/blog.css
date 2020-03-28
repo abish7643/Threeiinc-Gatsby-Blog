@@ -19,8 +19,6 @@ body {
     align-self: center;
     margin-left: -5px;
 }
-
-
 .blog__footer {
     display: flex;
     flex-direction: column;
@@ -86,11 +84,10 @@ body {
 .blog__info{
     display: flex;
     position: relative;
-    z-index: 100;
+    z-index: 10;
     flex-direction: column;
     margin-top: -45px;
     width: auto;
-    width: 90%;
     max-width: 98%;
     margin-left: auto;
     margin-right: auto;
@@ -397,9 +394,6 @@ a{
     .blog__info {
         max-width: 100%;
     }
-    .blog__info{
-        width: 80%;
-    }
 }
 
 @media screen and (max-width: 1200px){
@@ -422,9 +416,7 @@ a{
     .comment__section{
         width: 85%;
     }
-    .blog__info{
-        width: 100%;
-    }
+    
     
     .nextPost__Container {
         width: 90%;
