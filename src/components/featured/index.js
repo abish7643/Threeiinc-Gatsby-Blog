@@ -101,12 +101,9 @@ export default () => (
                                         }
                                     >
                                         {edge.node.authorData.authorName} |{" "}
+                                        {edge.node.createdAt}
                                         </a>
-                                        <span style={{textAlign: 'right',
-                                            display: 'flex',
-                                            justifyContent: 'right',
-                                            alignItems: 'right',
-                                        }}>{edge.node.createdAt}</span>
+                                        
                                 </p>
                                 <div
                                     className="header__button__div"
