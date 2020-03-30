@@ -590,6 +590,8 @@ h6 {
 @media screen and (max-width: 400px) {
     .blog__info__title{
         margin-top: 0px;
+        font-size: 13px;
+        min-height: 140px;
     }
     .blog__extratitleone {
         font-size: 13px;
