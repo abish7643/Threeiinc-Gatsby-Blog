@@ -88,6 +88,7 @@ body {
     margin-top: -45px;
     width: auto;
     max-width: 98%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -401,6 +402,11 @@ h6 {
         width: 60%;
     }
 }
+@media screen and (max-width: 1250px) {
+    .blog__info{
+        width: 80%;
+    }
+}
 @media screen and (max-width: 1000px) {
     .right {
         margin-top: 90px;
@@ -420,7 +426,7 @@ h6 {
         width: 86%;
     }
     .blog__info {
-        max-width: 90%;
+        width: 90%;
     }
     .blog__info__title {
         font-size: 22px;
