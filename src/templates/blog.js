@@ -31,6 +31,7 @@ const BlogTemplate = props => {
     const date = {
         createdat: props.data.currentBlog.createdAt,
     }
+    const keywordsArray = props.data.currentBlog.seoKeywords
     const shareMedia = props.data.currentBlog.featuredImage.fluid.src
     const shareTitle = `'${props.data.currentBlog.title}' | 3i INC | 3 Idiots Incorporated.`
     const propDescription = `${shareTitle} | ${shareUrl}`
@@ -182,6 +183,7 @@ const BlogTemplate = props => {
                             url={shareUrl}
                             title={shareTitle}
                             style={socialIconcss}
+                            hashtags={keywordsArray}
                         >
                             <TwitterIcon {...iconProp} />
                         </TwitterShareButton>
@@ -189,6 +191,7 @@ const BlogTemplate = props => {
                             url={shareUrl}
                             title={shareTitle}
                             style={socialIconcss}
+                            
                         >
                             <RedditIcon {...iconProp} />
                         </RedditShareButton>
@@ -196,6 +199,7 @@ const BlogTemplate = props => {
                             url={shareUrl}
                             title={shareTitle}
                             style={socialIconcss}
+                            tags={keywordsArray}
                         >
                             <TumblrIcon {...iconProp} />
                         </TumblrShareButton>
