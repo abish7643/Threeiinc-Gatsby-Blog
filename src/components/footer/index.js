@@ -130,7 +130,7 @@ export default class Footer extends React.Component {
                                 style={{
                                     fontSize: "12px",
                                     marginTop: "-5px",
-                                    backgroundColor: "white",
+                                    backgroundColor: "whitesmoke",
                                     color: "black",
                                 }}
                             >

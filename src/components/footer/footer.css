@@ -71,7 +71,7 @@
     text-align: left;
     margin-bottom: 0px;
     font-size: 12px;
-    font-weight: 800;
+    font-weight: 500;
 }
 .threeiinc__header {
     color: white;
@@ -80,10 +80,12 @@
     max-width: 400px;
     cursor: pointer;
     margin-left: 70px;
+    font-weight: 500;
 }
 .threeiinc__header p {
     font-size: 17px;
-    font-weight: 700;
+    font-weight: 500;
+    color: whitesmoke;
 }
 .footer__contents {
     display: flex;
@@ -112,7 +114,8 @@
 .newsletter__ack__text {
     font-family: "montserrat";
     font-size: 10px;
-    font-weight: 900;
+    font-weight: 500;
+    color: #323232;
 }
 
 @media screen and (max-width: 750px) {

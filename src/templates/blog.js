@@ -92,7 +92,7 @@ const BlogTemplate = props => {
                         data-sal-delay="20"
                         data-sal-easing="ease"
                     >
-                        <h2>{props.data.currentBlog.title}</h2>
+                        <h1>{props.data.currentBlog.title}</h1>
                         <br />
                     </div>
                     <div
@@ -114,6 +114,16 @@ const BlogTemplate = props => {
                         </Link>
                     </div>
                     <div className="blog__extratitletwo">
+                        {props.data.currentBlog.category.map(category => (
+                            <strong
+                                class="blog__categories"
+                                data-sal="slide-up"
+                                data-sal-delay="200"
+                                data-sal-easing="ease"
+                            >
+                                {category.title}
+                            </strong>
+                        ))}
                         <p
                             className="blog__extratitletwo"
                             data-sal="slide-up"
@@ -122,16 +132,6 @@ const BlogTemplate = props => {
                         >
                             {props.data.currentBlog.readDuration}
                         </p>
-                        {props.data.currentBlog.category.map(category => (
-                            <strong
-                                class="blog__categories"
-                                data-sal="slide-up"
-                                data-sal-delay="200"
-                                data-sal-easing="ease"
-                            >
-                                {category.title} |{" "}
-                            </strong>
-                        ))}
                     </div>
 
                     <div
@@ -266,7 +266,6 @@ const BlogTemplate = props => {
                                 <h5
                                     style={{
                                         textTransform: "uppercase",
-                                        fontWeight: "900",
                                     }}
                                 >
                                     {edge.node.authorData.authorName}

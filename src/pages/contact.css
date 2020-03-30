@@ -196,7 +196,7 @@ textarea[type="message"] {
     text-align: center;
 }
 .footer__contact__container {
-    width: 60%;
+    width: 70%;
     height: 70%;
     display: inline-block;
     margin-top: 3.5%;
@@ -208,16 +208,30 @@ textarea[type="message"] {
 }
 
 .footer__contact__one {
-    width: 45%;
+    width: 40%;
     text-align: left;
     padding: 5px;
     margin: 10px;
     margin-right: 100px;
 }
+.footer__contact__one p{
+    font-weight: 300;
+}
+.footer__contact__one h1{
+    font-weight: 600;
+}
+.footer__contact__one h3{
+    font-weight: 500;
+    margin-top: -10px;
+}
 .footer__contact__two {
     width: 30%;
     text-align: left;
     margin: 20px;
+}
+.footer__contact__two a{
+    font-size: 14px;
+    font-weight: 400;
 }
 .footer__contact__two {
     color: white;
@@ -231,11 +245,15 @@ textarea[type="message"] {
     color: #c4c4c4;
 }
 .footer__contact__three {
-    width: 25%;
-    text-align: right;
+    width: 30%;
+    text-align: left;
     margin: 15px;
     padding: 5px;
     line-height: 24px;
+}
+.footer__contact__three h4 {
+    font-size: 14px;
+    font-weight: 400;
 }
 
 @media screen and (max-width: 1500px) {
@@ -269,6 +287,7 @@ textarea[type="message"] {
     }
     .footer__contact__one {
         width: 100%;
+
         margin-left: -5px;
     }
     .footer__contact__two {

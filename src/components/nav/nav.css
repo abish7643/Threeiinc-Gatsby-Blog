@@ -33,13 +33,15 @@
 .nav__component__link {
     text-decoration: none;
     color: #f8f9fa;
+    font-size: 18px;
     margin: 0 20px;
-    font-weight: bolder;
+    font-weight: 500;
 }
 .nav__logo {
     text-decoration: none;
     color: #f8f9fa;
     font-size: 40px;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
