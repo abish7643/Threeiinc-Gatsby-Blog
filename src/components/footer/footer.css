@@ -1,4 +1,4 @@
-.footer__hero{
+.footer__hero {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,10 +12,9 @@
     z-index: -10;
     max-height: 800px;
     margin-top: 130px;
-    
 }
 
-.footer__div{
+.footer__div {
     order: 2;
     width: 95%;
     align-content: center;
@@ -23,13 +22,13 @@
     margin-top: -95px;
 }
 
-.newsletter__field__hidden{
+.newsletter__field__hidden {
     display: none;
 }
 
-.newsletter__form{
+.newsletter__form {
     color: black;
-    font-family: 'poppins';
+    font-family: "poppins";
     padding: 20px;
     margin-top: 20px;
     border-radius: 0px;
@@ -39,15 +38,14 @@
     background-color: rgb(255, 255, 255, 0.88);
 }
 
-.newsletter__form p{
-    font-size: 17px;   
+.newsletter__form p {
+    font-size: 17px;
 }
-.newsletter__field{
+.newsletter__field {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 .newsletter__field input {
     padding: 1px;
@@ -64,18 +62,18 @@
     margin-bottom: 20px;
     transition: all 0.3s ease;
 }
-.newsletter__field input::placeholder{
+.newsletter__field input::placeholder {
     text-transform: uppercase;
     font-size: 10px;
     font-weight: 800;
 }
-.newsletter__field p{
+.newsletter__field p {
     text-align: left;
     margin-bottom: 0px;
     font-size: 12px;
     font-weight: 800;
 }
-.threeiinc__header{
+.threeiinc__header {
     color: white;
     font-size: 40px;
     align-self: center;
@@ -83,50 +81,55 @@
     cursor: pointer;
     margin-left: 70px;
 }
-.threeiinc__header p{
+.threeiinc__header p {
     font-size: 17px;
     font-weight: 700;
-
 }
 .footer__contents {
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
     margin-top: 30px;
     align-items: center;
     justify-content: center;
 }
-
-.newsletter__field__checkbox{
+.newsletter__field__checkbox {
     display: inline-flex;
-    
+    margin: 0px 5px;
 }
-.newsletter__field__checkbox input{
-    margin-top: 10px;
-    margin-right: 10px;
+.newsletter__ack__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    margin-left: -5px;
+}
+.newsletter__field__checkbox input {
     background: black;
 }
 
-.newsletter__field__checkbox p{
-    font-family: 'montserrat';
+.newsletter__ack__text {
+    font-family: "montserrat";
     font-size: 10px;
     font-weight: 900;
 }
 
-@media screen and (max-width: 750px){
-    .newsletter__form{
+@media screen and (max-width: 750px) {
+    .newsletter__form {
         margin: 30px 0;
     }
     .footer__contents {
         display: flex;
         flex-direction: column;
     }
-    .threeiinc__header{
+    .threeiinc__header {
         margin: 0;
     }
 }
 
-@media screen and (max-width: 480px){
-    .newsletter__form{
+@media screen and (max-width: 480px) {
+    .newsletter__form {
         margin: 30px 0;
         max-width: 320px;
     }
@@ -134,19 +137,18 @@
         display: flex;
         flex-direction: column;
     }
-    .header__title{
+    .header__title {
         font-size: 32px;
         line-height: 38px;
     }
 }
 
-@media screen and (max-width: 400px){
-    
-    .header__title{
+@media screen and (max-width: 400px) {
+    .header__title {
         font-size: 28px;
         line-height: 38px;
     }
-    .newsletter__form{
+    .newsletter__form {
         max-width: 280px;
     }
 }

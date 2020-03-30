@@ -1,77 +1,76 @@
 .nav__container {
-	width: 75%;
-	margin: auto;
-	margin-bottom: 90px;
-	margin-top: 10px;
-	position: relative;
-	z-index: 10;
-	min-width: 900px;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 90px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 10;
+    min-width: 900px;
 }
 
-.nav__inner{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Montserrat', 'Poppins';
-	text-decoration: none;
+.nav__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", "Poppins";
+    text-decoration: none;
 }
-.nav__logo__div{
-	width: 50%;
-	text-align: left;
+.nav__logo__div {
+    width: 50%;
+    text-align: left;
 }
 
 .nav__component {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: flex-end;
-	font-size: 18px;
-	width: 60%;
-	
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 18px;
+    width: 60%;
 }
 
-.nav__component__link{
-	text-decoration: none;
-	color: #f8f9fa;
-	margin: 0 20px;
-	font-weight: bolder;
+.nav__component__link {
+    text-decoration: none;
+    color: #f8f9fa;
+    margin: 0 20px;
+    font-weight: bolder;
 }
-.nav__logo{
-	text-decoration: none;
-	color: #f8f9fa;
-	font-size: 40px;
-	text-transform: uppercase;
-	letter-spacing: 4px;
-}
-
-.nav__component__div:hover .nav__component__link:hover{
-	background-color: #f8f9fa;
-	color: black;
-	transition: ease-in 0.2s;
+.nav__logo {
+    text-decoration: none;
+    color: #f8f9fa;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
-@media screen and (max-width: 1250px){
-	.nav__container{
-		min-width: unset;
-	}
+.nav__component__div:hover .nav__component__link:hover {
+    background-color: #f8f9fa;
+    color: black;
+    transition: ease-in 0.2s;
 }
 
-@media screen and (max-width: 750px){
-	.nav__inner{
-		flex-direction: column;
-	}
-	.nav__logo__div{
-		text-align: center;
-		width: 65%;
-	}
-	.nav__component{
-		justify-content: center;
-		align-items: center;
-	}
+@media screen and (max-width: 1250px) {
+    .nav__container {
+        min-width: unset;
+    }
 }
-@media screen and (max-width: 500px){
-	.nav__component{
-		font-size: 16px;
-	}
+
+@media screen and (max-width: 750px) {
+    .nav__inner {
+        flex-direction: column;
+    }
+    .nav__logo__div {
+        text-align: center;
+        width: 65%;
+    }
+    .nav__component {
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 500px) {
+    .nav__component {
+        font-size: 16px;
+    }
 }

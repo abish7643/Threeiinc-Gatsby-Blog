@@ -1,52 +1,49 @@
 html {
-  font-family: 'Montserrat', 'Poppins', sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 0;
+    font-family: "Montserrat", "Poppins", sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
 }
 body {
-  font-family: 'Montserrat', 'Poppins', sans-serif;
-  margin: 0 auto;
-  max-width: 1200px;
-  background-color: rgba(10, 10, 10, 1);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 0;
-  
-
+    font-family: "Montserrat", "Poppins", sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: rgba(10, 10, 10, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
 }
-.main__div{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 0;
-  
+.main__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
 }
 
 h2 {
-  color: white;
-  font-weight: 500;
+    color: white;
+    font-weight: 500;
 }
 
-.btn__med{
-  border-radius: 15px;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%);
-  color: white;
-  width: 110px;
-  height: 35px;
-  margin-top: -5px;
-  cursor: pointer;
-  border: 0px solid white;
-  font-family: 'poppins';
-  outline: none;
+.btn__med {
+    border-radius: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%);
+    color: white;
+    width: 110px;
+    height: 35px;
+    margin-top: -5px;
+    cursor: pointer;
+    border: 0px solid white;
+    font-family: "poppins";
+    outline: none;
 }
-.btn__med:hover{
-  background-position: right center;
+.btn__med:hover {
+    background-position: right center;
 }

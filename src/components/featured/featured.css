@@ -31,7 +31,8 @@ header {
         to bottom,
         rgba(10, 10, 10, 0.6) 8%,
         rgba(10, 10, 10, 0.6) 60%,
-        rgba(10, 10, 10, 1) 100%);
+        rgba(10, 10, 10, 1) 100%
+    );
 }
 
 .header__content {
@@ -39,57 +40,54 @@ header {
     color: white;
     padding: 50px 50px 50px 50px;
     position: absolute;
-	left: 0;
+    left: 0;
     right: 0;
     justify-content: center;
     display: flex;
     margin-top: -220px;
 }
 
-.header__info{
+.header__info {
     max-width: 100%;
     margin: 130px 0 0 0;
     margin-left: -20px;
     width: 65%;
-    font-family: 'poppins';
+    font-family: "poppins";
 }
-.banner_title{
-    margin: 0 0 30px 0;   
-    font-family: 'poppins';
-
+.banner_title {
+    margin: 0 0 30px 0;
+    font-family: "poppins";
 }
-.banner___title{
+.banner___title {
     font-weight: 500;
     font-size: 36px;
-
 }
 
-.header__subtitle{
+.header__subtitle {
     font-size: 18px;
     line-height: 24px;
     font-weight: 500;
     color: white;
     margin: 0 0 30px 0;
 }
-.header__author{
-    font-family: 'montserrat';
+.header__author {
+    font-family: "montserrat";
     z-index: 2;
     font-size: 14px;
     color: #fff;
     font-weight: 900;
     border-bottom: 1px solid white;
-    width: 93%;
+    width: 100%;
     margin-top: -10px;
-    
 }
 @media screen and (max-width: 1250px) {
-    .header__info{
+    .header__info {
         width: 80%;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    .header__info{
+    .header__info {
         width: 90%;
         margin-top: 160px;
     }
@@ -99,7 +97,7 @@ header {
 }
 
 @media screen and (max-width: 750px) {
-    .header__info{
+    .header__info {
         width: 95%;
         margin-top: 150px;
     }
@@ -108,14 +106,14 @@ header {
         margin-top: -240px;
     }
 
-    .banner___title{
+    .banner___title {
         font-size: 28px;
         line-height: 38px;
     }
 }
 
 @media screen and (max-width: 450px) {
-    .header__info{
+    .header__info {
         width: 100%;
         margin-left: 0px;
     }
@@ -123,10 +121,10 @@ header {
         margin-top: -240px;
     }
 
-    .banner___title{
+    .banner___title {
         font-size: 28px;
     }
-    .header__subtitle{
+    .header__subtitle {
         margin-top: -5px;
         font-size: 16.5px;
     }

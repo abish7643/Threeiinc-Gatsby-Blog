@@ -1,82 +1,82 @@
 .nav__container__black {
-	width: 75%;
-	margin: auto;
-	margin-bottom: 90px;
-	margin-top: 10px;
-	position: relative;
-	z-index: 10;
-	min-width: 900px;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 90px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 10;
+    min-width: 900px;
 }
 
-.nav__inner__black{
-	position: unset;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Montserrat', 'Poppins';
-	text-decoration: none;
+.nav__inner__black {
+    position: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", "Poppins";
+    text-decoration: none;
 }
-.nav__logo__div__black{
-	width: 50%;
-	text-align: left;
+.nav__logo__div__black {
+    width: 50%;
+    text-align: left;
 }
-.nav__component__black{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: flex-end;
-	font-size: 18px;
-	width: 60%;
-}
-
-.nav__component__link__black{
-	text-decoration: none;
-	color: black;
-	margin: 0 20px;
-	font-weight: bolder;
-}
-.nav__logo__black{
-	text-decoration: none;
-	font-size: 40px;
-	text-transform: uppercase;
-	letter-spacing: 4px;
-	background-color: black;
-	color: #F0F0F0;
-}
-.nav__logo__black:hover{
-	background-color: #F0F0F0;
-	color: black;
-	transition: ease 0.2s;
+.nav__component__black {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 18px;
+    width: 60%;
 }
 
-.nav__component__div__black:hover .nav__component__link__black:hover{
-	background-color: black;
-	color: #F0F0F0;
-	transition: ease-in 0.2s;
+.nav__component__link__black {
+    text-decoration: none;
+    color: black;
+    margin: 0 20px;
+    font-weight: bolder;
+}
+.nav__logo__black {
+    text-decoration: none;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: black;
+    color: #f0f0f0;
+}
+.nav__logo__black:hover {
+    background-color: #f0f0f0;
+    color: black;
+    transition: ease 0.2s;
 }
 
-@media screen and (max-width: 1250px){
-	.nav__container__black{
-		min-width: unset;
-	}
+.nav__component__div__black:hover .nav__component__link__black:hover {
+    background-color: black;
+    color: #f0f0f0;
+    transition: ease-in 0.2s;
 }
 
-@media screen and (max-width: 750px){
-	.nav__inner__black{
-		flex-direction: column;
-	}
-	.nav__logo__div__black{
-		text-align: center;
-		width: 65%;
-	}
-	.nav__component__black{
-		justify-content: center;
-		align-items: center;
-	}
+@media screen and (max-width: 1250px) {
+    .nav__container__black {
+        min-width: unset;
+    }
 }
-@media screen and (max-width: 500px){
-	.nav__component__black{
-		font-size: 16px;
-	}
+
+@media screen and (max-width: 750px) {
+    .nav__inner__black {
+        flex-direction: column;
+    }
+    .nav__logo__div__black {
+        text-align: center;
+        width: 65%;
+    }
+    .nav__component__black {
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 500px) {
+    .nav__component__black {
+        font-size: 16px;
+    }
 }

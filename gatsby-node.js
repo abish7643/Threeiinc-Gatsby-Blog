@@ -6,23 +6,26 @@
 
 // You can delete this file if you're not using it
 
-const path = require(`path`);
+const path = require(`path`)
 
-const makeRequest = (graphql, request) => new Promise((resolve, reject) => {
-    resolve(
-        graphql(request).then(result => {
-            if (result.errors) {
-                reject(result.errors)
-            }
-            return result;
-        })
-    )
-});
+const makeRequest = (graphql, request) =>
+    new Promise((resolve, reject) => {
+        resolve(
+            graphql(request).then(result => {
+                if (result.errors) {
+                    reject(result.errors)
+                }
+                return result
+            })
+        )
+    })
 
 exports.createPages = ({ actions, graphql }) => {
-    const {createPage} = actions;
+    const { createPage } = actions
 
-const getBlog = makeRequest(graphql, `
+    const getBlog = makeRequest(
+        graphql,
+        `
 {
     allContentfulBlog (
         sort: { fields: [createdAt], order: DESC }
@@ -41,19 +44,22 @@ const getBlog = makeRequest(graphql, `
         }
     }
 }
-`).then(result => {
-    result.data.allContentfulBlog.edges.forEach(({ node }) => {
-        createPage({
-            path: `blog/${node.slug}`,
-            component: path.resolve(`src/templates/blog.js`),
-            context: {
-                id: node.id,
-            },
+`
+    ).then(result => {
+        result.data.allContentfulBlog.edges.forEach(({ node }) => {
+            createPage({
+                path: `blog/${node.slug}`,
+                component: path.resolve(`src/templates/blog.js`),
+                context: {
+                    id: node.id,
+                },
+            })
         })
     })
-});
 
-const getArchive = makeRequest(graphql, `
+    const getArchive = makeRequest(
+        graphql,
+        `
 {
     allContentfulBlog (
         sort: { fields: [createdAt], order: DESC }
@@ -68,27 +74,29 @@ const getArchive = makeRequest(graphql, `
         }
     }
 }
-`).then(result =>  {
-    const blogs = result.data.allContentfulBlog.edges
-    const blogsPerpage = 9
-    const numPages = Math.ceil(blogs.length / blogsPerpage)
+`
+    ).then(result => {
+        const blogs = result.data.allContentfulBlog.edges
+        const blogsPerpage = 9
+        const numPages = Math.ceil(blogs.length / blogsPerpage)
 
-    Array.from({ length: numPages }).forEach((_, i) => {
-        createPage({
-            path: i === 0 ? `/blog` : `/blog/${i + 1}`,
-            component: path.resolve("./src/templates/archive.js"),
-            context: {
-                limit: blogsPerpage,
-                skip: i * blogsPerpage,
-                numPages,
-                currentPage: i + 1
-            },
+        Array.from({ length: numPages }).forEach((_, i) => {
+            createPage({
+                path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+                component: path.resolve("./src/templates/archive.js"),
+                context: {
+                    limit: blogsPerpage,
+                    skip: i * blogsPerpage,
+                    numPages,
+                    currentPage: i + 1,
+                },
+            })
         })
     })
-});
 
-
-const getAuthorPage = makeRequest(graphql, `
+    const getAuthorPage = makeRequest(
+        graphql,
+        `
 {
     allContentfulBlog (
         sort: { fields: [createdAt], order: DESC }
@@ -107,19 +115,22 @@ const getAuthorPage = makeRequest(graphql, `
         }
     }
 }
-`).then(result => {
-    result.data.allContentfulBlog.edges.forEach(({ node }) => {
-        createPage({
-            path: `idiots/${node.authorData.authorSlug}`,
-            component: path.resolve(`src/templates/author.js`),
-            context: {
-                author: node.authorData.authorName,
-            },
+`
+    ).then(result => {
+        result.data.allContentfulBlog.edges.forEach(({ node }) => {
+            createPage({
+                path: `idiots/${node.authorData.authorSlug}`,
+                component: path.resolve(`src/templates/author.js`),
+                context: {
+                    author: node.authorData.authorName,
+                },
+            })
         })
     })
-});
 
-const authorsArchive = makeRequest(graphql, `
+    const authorsArchive = makeRequest(
+        graphql,
+        `
 {
     allContentfulBlog (
         sort: { fields: [createdAt], order: DESC }
@@ -138,17 +149,13 @@ const authorsArchive = makeRequest(graphql, `
         }
     }
 }
-`).then(result => {
+`
+    ).then(result => {
         createPage({
             path: `idiots/`,
             component: path.resolve(`src/templates/contributers.js`),
+        })
     })
-});
 
-return Promise.all([
-    getBlog,
-    getArchive,
-    getAuthorPage,
-    authorsArchive
-])
-};
+    return Promise.all([getBlog, getArchive, getAuthorPage, authorsArchive])
+}

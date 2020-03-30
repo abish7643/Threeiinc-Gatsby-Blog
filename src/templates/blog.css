@@ -1,20 +1,18 @@
 body {
     background-color: #fff;
 }
-.blog__initialmodel{
-    background-color: black;
+.blog__initialmodel {
     display: flex;
     flex-direction: column;
     justify-content: flex;
     align-items: initial;
 }
-.Author__Info__Container{
+.Author__Info__Container {
     display: flex;
     align-content: center;
     justify-content: center;
     position: relative;
     margin-bottom: 50px;
-    background-color: black;
     color: white;
     align-self: center;
     margin-left: -5px;
@@ -27,7 +25,7 @@ body {
     z-index: 10;
     margin-top: -40px;
 }
-.comment__section{
+.comment__section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -39,12 +37,12 @@ body {
     position: relative;
     z-index: 30;
 }
-.blog__header{
+.blog__header {
     display: flex;
     flex-direction: column;
     display: inline-block;
 }
-.blog__hero{
+.blog__hero {
     display: flex;
     flex-direction: column;
     justify-content: flex;
@@ -79,9 +77,10 @@ body {
         to bottom,
         rgba(10, 10, 10, 0.6) 8%,
         rgba(10, 10, 10, 0.6) 60%,
-        rgba(10, 10, 10, 0.4) 100%);
+        rgba(10, 10, 10, 0.4) 100%
+    );
 }
-.blog__info{
+.blog__info {
     display: flex;
     position: relative;
     z-index: 10;
@@ -94,39 +93,36 @@ body {
 }
 .blog__info__title {
     font-size: 24px;
-    font-family: 'poppins';
-
+    font-family: "poppins";
 }
 
-
-
-.blog__author .blog__date{
+.blog__author .blog__date {
     font-weight: 900;
-    font-family: 'montserrat';
+    font-family: "montserrat";
     z-index: 2;
     font-size: 14px;
     color: #fff;
     border-bottom: 1px solid white;
     margin-top: -5px;
 }
-.blog__author{
+.blog__author {
 }
 
-a{
+a {
     text-decoration: none;
 }
-.blog__extratitleone{
-    font-family: 'montserrat';
+.blog__extratitleone {
+    font-family: "montserrat";
     z-index: 2;
     font-size: 14px;
     color: #fff;
     font-weight: 900;
     border-bottom: 1px solid white;
-    width: 93%;
+    width: 96%;
     margin-top: -30px;
 }
-.blog__extratitletwo{
-    font-family: 'montserrat';
+.blog__extratitletwo {
+    font-family: "montserrat";
     z-index: 2;
     font-size: 14px;
     color: #fff;
@@ -134,21 +130,21 @@ a{
     margin-top: 2px;
     line-height: 10px;
 }
-.blog__categories{
+.blog__categories {
     font-weight: 900;
-    font-family: 'montserrat';
+    font-family: "montserrat";
     font-size: 14px;
     color: #fff;
 }
-.blog__categories__chapters{
+.blog__categories__chapters {
     margin-top: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.blog__categories__chapter{
+.blog__categories__chapter {
     font-weight: 400;
-    font-family: 'poppins';
+    font-family: "poppins";
     font-size: 14px;
     letter-spacing: 1px;
     background-color: white;
@@ -184,37 +180,36 @@ a{
     border-bottom: 1px solid rgba(30, 60, 114, 0.15);
 }
 .blog__content::first-letter {
-    font-family: 'montserrat',Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: 700;
+    font-family: "Times New Roman";
+    font-size: 28px;
+    font-weight: 500;
     letter-spacing: 0px;
-    }
-.blog__content::first-line{
+}
+.blog__content::first-line {
     text-indent: 100px;
 }
-.blog__content h2{
-    font-family: 'poppins';
+.blog__content h2 {
+    font-family: "poppins";
     color: black;
     font-weight: 700;
     font-size: 34px;
     margin-bottom: -12px;
 }
-.blog__content h4{
+.blog__content h4 {
     margin-top: 10px;
     font-size: 19px;
     margin-left: 2px;
 }
 .blog__content p {
-    font-family: 'montserrat';
+    font-family: "montserrat";
     font-size: 18px;
     line-height: 30px;
     text-align: unset;
     font-weight: 400;
     color: #0a0a0a;
     margin: 40px 0;
-    text-indent: 30px;
 }
-.blog__content table{
+.blog__content table {
     margin: 0 auto;
     margin-bottom: 30px;
     text-align: center;
@@ -222,23 +217,22 @@ a{
     max-width: 380px;
 }
 
-
-.blog__content ul{
+.blog__content ul {
     margin-top: 40px;
     margin-bottom: 12px;
     margin-left: -5px;
 }
-.blog__content li{
+.blog__content li {
     margin: 5px 0px;
 }
-.blog__content h3{
+.blog__content h3 {
     margin-top: 40px;
     margin-bottom: -22px;
     font-size: 24px;
-    font-family: 'poppins';
+    font-family: "poppins";
 }
 
-.blog__content hr{
+.blog__content hr {
     border-color: rgba(30, 60, 114, 0.1);
 }
 
@@ -255,12 +249,11 @@ a{
     line-height: 30px;
     font-weight: 500;
     color: #1e3c72;
-    font-family: 'poppins';
+    font-family: "poppins";
     font-style: italic;
     text-align: initial;
     text-transform: uppercase;
     text-indent: 0px;
-
 }
 
 .blog__content img {
@@ -291,7 +284,7 @@ a{
 .Heading__latestposts {
     margin-top: 10px;
 }
-.nextPosts{
+.nextPosts {
     box-shadow: 0px 6px 12px 0 rgba(30, 60, 114, 0.1);
     padding: 0px 10px;
     padding-bottom: -10px;
@@ -301,7 +294,8 @@ a{
     max-width: 50%;
     text-align: center;
 }
-.nextPosts h5, h6{
+.nextPosts h5,
+h6 {
     margin-top: -12px;
     padding: 0px 0px;
 }
@@ -310,27 +304,27 @@ a{
     padding: 0px 0px;
 }
 
-.share__buttons{
+.share__buttons {
     margin-top: -26px;
     margin-bottom: 10px;
     margin-left: 6px;
 }
 
-.about__author{
+.about__author {
     display: flex;
     position: relative;
     width: 40%;
     box-shadow: 0px 6px 12px 0 rgba(30, 60, 114, 0.1);
     margin: 20px 0px;
 }
-.about__author__contrib{
+.about__author__contrib {
     display: flex;
     width: 80%;
     max-width: 700px;
     box-shadow: 0px 6px 12px 0 rgba(30, 60, 114, 0.1);
     margin: 20px 0px;
 }
-.author__image{
+.author__image {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -346,13 +340,13 @@ a{
     margin-left: 20px;
     margin-top: -10px;
 }
-.author__name h4{
+.author__name h4 {
     margin-top: -15px;
     text-transform: uppercase;
     background-color: black;
     color: white;
 }
-.author__name h6{
+.author__name h6 {
     margin-top: 20px;
     text-transform: uppercase;
 }
@@ -360,9 +354,8 @@ a{
     margin-top: -15px;
     padding-right: 15px;
     font-size: 18px;
-
 }
-.author__feed{
+.author__feed {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -370,7 +363,7 @@ a{
     margin-right: 10px;
 }
 
-.contribute__question__header{
+.contribute__question__header {
     display: flex;
     justify-content: center;
     justify-self: center;
@@ -381,13 +374,13 @@ a{
     margin-right: 20px;
 }
 
-.blog__comment__count{
+.blog__comment__count {
     z-index: 10;
     color: white;
     text-align: end;
 }
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1400px) {
     .comment__section {
         width: 70%;
     }
@@ -396,36 +389,34 @@ a{
     }
 }
 
-@media screen and (max-width: 1200px){
-    .comment__section{
+@media screen and (max-width: 1200px) {
+    .comment__section {
         width: 82%;
     }
-    
-    .feed__initial__authorposts{
+
+    .feed__initial__authorposts {
         width: 100vw;
     }
-    .about__author{
+    .about__author {
         width: 60%;
     }
-
 }
-@media screen and (max-width: 1000px){
-    .right{
+@media screen and (max-width: 1000px) {
+    .right {
         margin-top: 90px;
     }
-    .comment__section{
+    .comment__section {
         width: 85%;
     }
-    
-    
+
     .nextPost__Container {
         width: 90%;
     }
 
-    .about__author{
+    .about__author {
         width: 86%;
     }
-    .about__author__contrib{
+    .about__author__contrib {
         width: 86%;
     }
     .blog__info {
@@ -436,21 +427,21 @@ a{
     }
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 750px) {
     .right {
-        float:none;
+        float: none;
         width: 100%;
         display: block;
         margin: 60px auto;
     }
-    .comment__section{
+    .comment__section {
         width: 90%;
     }
-    .blog__content blockquote{
+    .blog__content blockquote {
         margin-left: -10px;
         margin-right: 3px;
     }
-    .blog__content blockquote p{
+    .blog__content blockquote p {
         font-size: 22px;
         line-height: 28px;
         margin-left: 10px;
@@ -459,10 +450,10 @@ a{
     .nextPost__Container {
         width: 100%;
     }
-    .about__author{
+    .about__author {
         width: 92%;
     }
-    .about__author__contrib{
+    .about__author__contrib {
         width: 92%;
     }
     .blog__info__title {
@@ -470,39 +461,37 @@ a{
     }
     .author__description {
         margin-top: -25px;
-    
     }
-    
 }
 
-@media screen and (max-width: 500px){
-    .blog__content p{
+@media screen and (max-width: 500px) {
+    .blog__content p {
         font-size: 17px;
         line-height: 27px;
         text-align: unset;
     }
-    .blog__content blockquote p{
+    .blog__content blockquote p {
         font-size: 20px;
     }
-    .blog__content h2{
+    .blog__content h2 {
         font-size: 26px;
     }
-    .blog__content h3{
+    .blog__content h3 {
         font-size: 19px;
     }
-    .blog__content h4{
+    .blog__content h4 {
         font-size: 18px;
         margin-bottom: 15px;
     }
-    .blog__title{
+    .blog__title {
         font-size: 26px;
         line-height: 40px;
         margin-top: 10px;
     }
-    .blog__content{
+    .blog__content {
         width: 87%;
     }
-    .blog__info{
+    .blog__info {
         margin-left: 17px;
     }
     .blog__info__title {
@@ -519,15 +508,13 @@ a{
         width: 400px;
         height: 170px;
     }
-    .Author__Info__Container{
+    .Author__Info__Container {
         margin-left: -2px;
     }
-    .about__author__contrib{
+    .about__author__contrib {
         max-width: 500px;
     }
-    .comment__section{
+    .comment__section {
         width: 90%;
     }
-    
 }
-

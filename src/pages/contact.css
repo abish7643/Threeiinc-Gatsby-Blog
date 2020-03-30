@@ -1,25 +1,25 @@
-.nav__contact__wrapper{
+.nav__contact__wrapper {
     width: 100%;
 }
-.contact__section{
+.contact__section {
     position: absolute;
     width: auto;
     height: auto;
     left: 0;
     top: 0;
     text-align: center;
-    background: #F0F0F0;
+    background: #f0f0f0;
 }
-.contact__container{
+.contact__container {
     display: inline-block;
     width: 45%;
     height: 600px;
     margin-top: 180px;
     background: white;
-    box-shadow: 8px 8px rgba(0,0,0,0.25) blur(0%);
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.25) blur(0%);
 }
 
-.contact__container__right{
+.contact__container__right {
     float: right;
     width: 55%;
     height: 100%;
@@ -29,11 +29,11 @@
     justify-content: center;
     flex-direction: column;
 }
-.contact__container__right__inner{
+.contact__container__right__inner {
     width: 70%;
 }
 
-.contact__container__left{
+.contact__container__left {
     float: left;
     width: 45%;
     height: 100%;
@@ -41,8 +41,8 @@
     background: no-repeat;
 }
 
-.contact__container__right__heading{
-    font-family: Ubuntu, 'Poppins', 'Helvetica Neue', sans-serif;
+.contact__container__right__heading {
+    font-family: Ubuntu, "Poppins", "Helvetica Neue", sans-serif;
     font-weight: 500;
     font-size: 30px;
     background-color: black;
@@ -64,7 +64,7 @@
     outline: none;
 }
 
-.field textarea{
+.field textarea {
     outline: none;
     padding: 1px;
     border: none;
@@ -80,35 +80,35 @@
     color: black;
     transition: all 0.3s ease 0s;
 }
-input[type="text"]{
-    font-family: 'poppins';
+input[type="text"] {
+    font-family: "poppins";
     font-weight: 500;
     color: black;
     padding-left: 10px;
 }
-input[type="email"]{
-    font-family: 'poppins';
+input[type="email"] {
+    font-family: "poppins";
     font-weight: 500;
     color: black;
-    padding-left: 10px;    
+    padding-left: 10px;
 }
-textarea[type="message"]{
-    font-family: 'poppins';
+textarea[type="message"] {
+    font-family: "poppins";
     font-weight: 500;
     color: teal;
-    padding-left: 10px;    
+    padding-left: 10px;
     padding-top: 5px;
 }
 
-::placeholder{
+::placeholder {
     padding-left: 16px;
 }
-.message__field::placeholder{
+.message__field::placeholder {
     padding-top: 10px;
 }
-.contact__submitbutton{
-    background: #C4C4C4;
-    font-family: 'Montserrat', 'Poppins', sans-serif;
+.contact__submitbutton {
+    background: #c4c4c4;
+    font-family: "Montserrat", "Poppins", sans-serif;
     font-weight: 800;
     font-size: 12px;
     line-height: 22px;
@@ -116,13 +116,11 @@ textarea[type="message"]{
     margin-top: 40px;
     border-color: none;
 }
-.message__field{
+.message__field {
     margin-top: 20px;
 }
 
-
-
-.contact__thanks{
+.contact__thanks {
     text-align: center;
     color: black;
     font-weight: 700;
@@ -133,13 +131,13 @@ textarea[type="message"]{
     line-height: 40px;
 }
 
-.home__button{
+.home__button {
     justify-self: center;
     position: unset;
     margin-top: -150px;
 }
 
-.footer_wrapper{
+.footer_wrapper {
     position: absolute;
     left: 50%;
     right: 50%;
@@ -150,7 +148,7 @@ textarea[type="message"]{
     margin-top: 675px;
 }
 
-.button_med{
+.button_med {
     border-radius: 15px;
     text-align: center;
     font-size: 16px;
@@ -161,12 +159,11 @@ textarea[type="message"]{
     height: 35px;
     cursor: pointer;
     border: 0px solid white;
-    font-family: 'poppins';
+    font-family: "poppins";
     justify-self: center;
 }
 
-.button_med_link{
-
+.button_med_link {
 }
 
 .thankyou__wrapper {
@@ -176,10 +173,9 @@ textarea[type="message"]{
     margin-left: 0px;
     margin-top: 120px;
     padding: 10px;
-
 }
 
-.footer_wrapper_thankyou{
+.footer_wrapper_thankyou {
     position: absolute;
     left: 50%;
     right: 50%;
@@ -192,49 +188,49 @@ textarea[type="message"]{
 }
 
 .footer__contact {
-    background: #2B2C31;
+    background: #2b2c31;
     display: inline-block;
     width: 100%;
     height: auto;
     margin-top: 70px;
     text-align: center;
 }
-.footer__contact__container{
-    width:60%;
+.footer__contact__container {
+    width: 60%;
     height: 70%;
     display: inline-block;
     margin-top: 3.5%;
 }
-.footer__contact__container__flex{
+.footer__contact__container__flex {
     display: flex;
     flex-direction: row;
     color: white;
 }
 
-.footer__contact__one{
+.footer__contact__one {
     width: 45%;
     text-align: left;
     padding: 5px;
     margin: 10px;
     margin-right: 100px;
 }
-.footer__contact__two{
+.footer__contact__two {
     width: 30%;
     text-align: left;
     margin: 20px;
 }
-.footer__contact__two{
+.footer__contact__two {
     color: white;
     line-height: 24px;
 }
-.footer__contact__two a{
+.footer__contact__two a {
     color: inherit;
     text-decoration: none;
 }
-.footer__contact__two a:hover{
-    color: #C4C4C4;
+.footer__contact__two a:hover {
+    color: #c4c4c4;
 }
-.footer__contact__three{
+.footer__contact__three {
     width: 25%;
     text-align: right;
     margin: 15px;
@@ -243,47 +239,46 @@ textarea[type="message"]{
 }
 
 @media screen and (max-width: 1500px) {
-    .contact__container{
+    .contact__container {
         width: 50%;
     }
     .footer__contact__container {
         width: 80%;
     }
-    .footer__contact__one{
+    .footer__contact__one {
         margin-right: 50px;
     }
-
 }
 @media screen and (max-width: 1200px) {
-    .contact__container{
+    .contact__container {
         width: 60%;
     }
     .footer__contact__container {
         width: 90%;
     }
-    .footer__contact__one{
+    .footer__contact__one {
         margin-right: 20px;
     }
 }
 @media screen and (max-width: 1000px) {
-    .contact__container{
+    .contact__container {
         width: 70%;
     }
-    .footer__contact__container__flex{
+    .footer__contact__container__flex {
         flex-direction: column;
     }
-    .footer__contact__one{
+    .footer__contact__one {
         width: 100%;
         margin-left: -5px;
     }
-    .footer__contact__two{
+    .footer__contact__two {
         width: 100%;
         margin-left: -5px;
     }
-    .footer__contact__three{
+    .footer__contact__three {
         width: 100%;
         margin-left: -5px;
-        text-align: left;    
+        text-align: left;
     }
 }
 
@@ -291,42 +286,41 @@ textarea[type="message"]{
     .footer__contact__container {
         width: 85%;
     }
-    .contact__container{
+    .contact__container {
         width: 75%;
     }
-    .contact__container__right{
+    .contact__container__right {
         width: 75%;
     }
-    .contact__container__left{
+    .contact__container__left {
         width: 25%;
     }
-    .contact__container__right__inner{
+    .contact__container__right__inner {
         width: 80%;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .contact__container{
+    .contact__container {
         width: 90%;
         height: 520px;
     }
-    .field input{
+    .field input {
         width: 80%;
     }
-    .field textarea{
+    .field textarea {
         width: 80%;
     }
-    .contact__container__right{
+    .contact__container__right {
         width: 90%;
-
     }
-    .contact__container__left{
+    .contact__container__left {
         width: 10%;
     }
-    .contact__container__right__heading{
+    .contact__container__right__heading {
         font-size: 30px;
     }
-    .contact__container__right__inner{
+    .contact__container__right__inner {
         width: 100%;
     }
 }

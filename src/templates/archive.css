@@ -1,4 +1,3 @@
-
 .pagination__container {
     position: relative;
     z-index: 2;
@@ -7,30 +6,30 @@
     flex-direction: row;
     width: 50%;
 }
-.pagination{
+.pagination {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: -30px;
 }
-.pagination__button__container{
+.pagination__button__container {
     margin: 0px 50px;
 }
 
-.pagination__item{
+.pagination__item {
     border-radius: 15px;
     text-align: center;
     background: linear-gradient(to right, #1e3c72 0%, #2a5298 51%);
-    height: 35px; 
+    height: 35px;
     padding: 0px 20px;
     cursor: pointer;
     border: 0px solid white;
     font-size: 17px;
-    font-family: 'montserrat';
+    font-family: "montserrat";
     transition: all 0.2s ease-in-out;
 }
 
-.pagination__item:hover{
+.pagination__item:hover {
     cursor: pointer;
     transform: scale(1.01);
     transition: ease-in-out 1s;
@@ -43,7 +42,7 @@
     margin-bottom: 70px;
 }
 
-.feed__initial__authorposts{
+.feed__initial__authorposts {
     display: flex;
     flex-direction: column;
     justify-content: flex;
@@ -51,22 +50,19 @@
     margin-left: -10px;
 }
 @media screen and (max-width: 1200px) {
-    
-    .main__div{
-        width: 100vw;   
+    .main__div {
+        width: 100vw;
     }
-    .pagination__button__container{
+    .pagination__button__container {
         margin: 0px 45px;
     }
 }
 
 @media screen and (max-width: 450px) {
-    
-    .feed{
+    .feed {
         width: 90%;
     }
-    .pagination{
+    .pagination {
         width: 90%;
     }
-    
 }

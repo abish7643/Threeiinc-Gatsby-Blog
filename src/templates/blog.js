@@ -1,13 +1,12 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
-import Layout from '../components/layout'
-import Nav from '../components/nav'
-import SEO from '../components/seo'
-import './blog.css'
-import Footer from '../components/footer'
-import HyvorTalk from 'hyvor-talk-react'
-import Img from 'gatsby-image'
-
+import React from "react"
+import { graphql, Link } from "gatsby"
+import Layout from "../components/layout"
+import Nav from "../components/nav"
+import SEO from "../components/seo"
+import "./blog.css"
+import Footer from "../components/footer"
+import HyvorTalk from "hyvor-talk-react"
+import Img from "gatsby-image"
 
 import {
     FacebookShareButton,
@@ -24,173 +23,287 @@ import {
     TumblrIcon,
     PinterestShareButton,
     PinterestIcon,
-  } from "react-share";
+} from "react-share"
 
+const BlogTemplate = props => {
+    const shareUrl = `https://3iinc.xyz/blog/${props.data.currentBlog.slug}/`
 
-const BlogTemplate = (props) => {
-    const shareUrl = `https://3iinc.xyz/blog/${props.data.currentBlog.slug}`
-    
-      const date = {
-          createdat: props.data.currentBlog.createdAt,
-      }
-      const shareMedia = props.data.currentBlog.featuredImage.fluid.src
-      const shareTitle = `'${props.data.currentBlog.title}' | 3i INC | 3 Idiots Incorporated.`
-      const propDescription = `${shareTitle} | ${shareUrl}`
-      const shareTitleLink = `${shareTitle} | ${shareUrl}`
-      const iconProp = {
+    const date = {
+        createdat: props.data.currentBlog.createdAt,
+    }
+    const shareMedia = props.data.currentBlog.featuredImage.fluid.src
+    const shareTitle = `'${props.data.currentBlog.title}' | 3i INC | 3 Idiots Incorporated.`
+    const propDescription = `${shareTitle} | ${shareUrl}`
+    const shareTitleLink = `${shareTitle} | ${shareUrl}`
+    const iconProp = {
         size: 36,
         round: true,
-        bgStyle: {opacity: '1',
-        },
-        iconFillColor: 'white',
-      }
-      const socialIconcss = {
-          marginRight: '10px',
-          marginTop: '-3px',
-      }
-      const multipleState = props.data.currentBlog.multipleChapters
-      let multipleChapterPresent
-      if (multipleState === 1){
-          multipleChapterPresent = 
-          props.data.currentBlog.chapters.map(chapters => (
-              <Link to={`/blog/${chapters.chapterSlug}/`}
-               class='blog__categories__chapter'>{chapters.chapterTitle}</Link> 
-          ))
-      }
+        bgStyle: { opacity: "1" },
+        iconFillColor: "white",
+    }
+    const socialIconcss = {
+        marginRight: "10px",
+        marginTop: "-3px",
+    }
+    const multipleState = props.data.currentBlog.multipleChapters
+    let multipleChapterPresent
+    if (multipleState === 1) {
+        multipleChapterPresent = props.data.currentBlog.chapters.map(
+            chapters => (
+                <Link
+                    to={`/blog/${chapters.chapterSlug}/`}
+                    class="blog__categories__chapter"
+                >
+                    {chapters.chapterTitle}
+                </Link>
+            )
+        )
+    }
 
     return (
         <Layout>
             <div className="blog__initialmodel">
-            <SEO title={props.data.currentBlog.seoTitle} description={props.data.currentBlog.seoDescription}
-                keywords={props.data.currentBlog.seoKeywords} url={`https://3iinc.xyz/blog/${props.data.currentBlog.slug}`} 
-                image={props.data.currentBlog.seoImage.fluid.src} author={props.data.currentBlog.authorData.seoAuthorName} 
-            />
-            
-            <Nav/>
-            <div className='blog__header'>
-                <div className='blog__hero' data-sal="slide-up"
-                data-sal-delay="20"
-                data-sal-easing="ease"
-                style={{backgroundImage: `url(${props.data.currentBlog.featuredImage.fluid.src})`}}>
-                </div>              
-            </div>
-            <div className='blog__info'>
-                <div className='blog__info__title' data-sal="slide-up"
-                data-sal-delay="20"
-                data-sal-easing="ease">
-                    <h2>{props.data.currentBlog.title}</h2><br/>
+                <SEO
+                    title={props.data.currentBlog.seoTitle}
+                    description={props.data.currentBlog.seoDescription}
+                    keywords={props.data.currentBlog.seoKeywords}
+                    url={`https://3iinc.xyz/blog/${props.data.currentBlog.slug}/`}
+                    image={props.data.currentBlog.seoImage.fluid.src}
+                    author={props.data.currentBlog.authorData.seoAuthorName}
+                />
+
+                <Nav />
+                <div className="blog__header">
+                    <div
+                        className="blog__hero"
+                        data-sal="slide-up"
+                        data-sal-delay="20"
+                        data-sal-easing="ease"
+                        style={{
+                            backgroundImage: `url(${props.data.currentBlog.featuredImage.fluid.src})`,
+                        }}
+                    ></div>
                 </div>
-                <div className='blog__info__author' data-sal="slide-up"
+                <div className="blog__info">
+                    <div
+                        className="blog__info__title"
+                        data-sal="slide-up"
+                        data-sal-delay="20"
+                        data-sal-easing="ease"
+                    >
+                        <h2>{props.data.currentBlog.title}</h2>
+                        <br />
+                    </div>
+                    <div
+                        className="blog__info__author"
+                        data-sal="slide-up"
                         data-sal-delay="100"
-                        data-sal-easing="ease">
-                    <Link to={`/idiots/${props.data.currentBlog.authorData.authorSlug}`}>
-                        <p className='blog__extratitleone' style={{textDecoration: 'none'}}>
-                            {props.data.currentBlog.authorData.authorName} | {date.createdat}</p>
-                    </Link>
-                </div>
-                <div className='blog__extratitletwo'>
-                    <p className='blog__extratitletwo' 
-                    data-sal="slide-up"
-                    data-sal-delay="150"
-                    data-sal-easing="ease">
-                        {props.data.currentBlog.readDuration}
-                    </p >
-                        {props.data.currentBlog.category.map(category => (
-                            <strong class='blog__categories'
+                        data-sal-easing="ease"
+                    >
+                        <Link
+                            to={`/idiots/${props.data.currentBlog.authorData.authorSlug}/`}
+                        >
+                            <p
+                                className="blog__extratitleone"
+                                style={{ textDecoration: "none" }}
+                            >
+                                {props.data.currentBlog.authorData.authorName} |{" "}
+                                {date.createdat}
+                            </p>
+                        </Link>
+                    </div>
+                    <div className="blog__extratitletwo">
+                        <p
+                            className="blog__extratitletwo"
                             data-sal="slide-up"
-                            data-sal-delay="200"
-                            data-sal-easing="ease">{category.title} | </strong> 
+                            data-sal-delay="150"
+                            data-sal-easing="ease"
+                        >
+                            {props.data.currentBlog.readDuration}
+                        </p>
+                        {props.data.currentBlog.category.map(category => (
+                            <strong
+                                class="blog__categories"
+                                data-sal="slide-up"
+                                data-sal-delay="200"
+                                data-sal-easing="ease"
+                            >
+                                {category.title} |{" "}
+                            </strong>
                         ))}
-                </div>
-                
-                <div className='blog__categories__chapters' data-sal="slide-up"
+                    </div>
+
+                    <div
+                        className="blog__categories__chapters"
+                        data-sal="slide-up"
                         data-sal-delay="200"
-                        data-sal-easing="ease">
-                    {multipleChapterPresent}
+                        data-sal-easing="ease"
+                    >
+                        {multipleChapterPresent}
+                    </div>
                 </div>
-            </div>
-            <div className='blog__wrapper'>
-                <div className='blog__content'>
-                    <div dangerouslySetInnerHTML={
-                        {__html: `${props.data.currentBlog.content.childMarkdownRemark.html}`}
-                    }/>
-                </div>
-                    <div className="share__buttons" data-sal="slide-up"
+                <div className="blog__wrapper">
+                    <div className="blog__content">
+                        <div
+                            dangerouslySetInnerHTML={{
+                                __html: `${props.data.currentBlog.content.childMarkdownRemark.html}`,
+                            }}
+                        />
+                    </div>
+                    <div
+                        className="share__buttons"
+                        data-sal="slide-up"
                         data-sal-delay="200"
-                        data-sal-easing="ease">
-                        <WhatsappShareButton url={shareUrl} title={shareTitle} separator=" " style={socialIconcss}>
-                            <WhatsappIcon  {...iconProp} />
+                        data-sal-easing="ease"
+                    >
+                        <WhatsappShareButton
+                            url={shareUrl}
+                            title={shareTitle}
+                            separator=" "
+                            style={socialIconcss}
+                        >
+                            <WhatsappIcon {...iconProp} />
                         </WhatsappShareButton>
-                        <FacebookShareButton url={shareUrl} quote={shareTitle} style={socialIconcss}>
-                            <FacebookIcon  {...iconProp}/>
+                        <FacebookShareButton
+                            url={shareUrl}
+                            quote={shareTitle}
+                            style={socialIconcss}
+                        >
+                            <FacebookIcon {...iconProp} />
                         </FacebookShareButton>
-                        <TelegramShareButton url={shareUrl} title={shareTitle} style={socialIconcss}>
-                            <TelegramIcon  {...iconProp}/>
+                        <TelegramShareButton
+                            url={shareUrl}
+                            title={shareTitle}
+                            style={socialIconcss}
+                        >
+                            <TelegramIcon {...iconProp} />
                         </TelegramShareButton>
-                        <TwitterShareButton url={shareUrl} title={shareTitle} style={socialIconcss}>
-                            <TwitterIcon  {...iconProp}/>
+                        <TwitterShareButton
+                            url={shareUrl}
+                            title={shareTitle}
+                            style={socialIconcss}
+                        >
+                            <TwitterIcon {...iconProp} />
                         </TwitterShareButton>
-                        <RedditShareButton url={shareUrl} title={shareTitle} style={socialIconcss}>
-                            <RedditIcon  {...iconProp}/>
+                        <RedditShareButton
+                            url={shareUrl}
+                            title={shareTitle}
+                            style={socialIconcss}
+                        >
+                            <RedditIcon {...iconProp} />
                         </RedditShareButton>
-                        <TumblrShareButton url={shareUrl} title={shareTitle} style={socialIconcss}>
-                            <TumblrIcon  {...iconProp}/>
+                        <TumblrShareButton
+                            url={shareUrl}
+                            title={shareTitle}
+                            style={socialIconcss}
+                        >
+                            <TumblrIcon {...iconProp} />
                         </TumblrShareButton>
-                        <PinterestShareButton url={shareUrl} title={shareTitleLink} description={propDescription} media={shareMedia} style={socialIconcss}>
-                            <PinterestIcon  {...iconProp}/>
+                        <PinterestShareButton
+                            url={shareUrl}
+                            title={shareTitleLink}
+                            description={propDescription}
+                            media={shareMedia}
+                            style={socialIconcss}
+                        >
+                            <PinterestIcon {...iconProp} />
                         </PinterestShareButton>
                     </div>
-                    <Link className='about__author'  
-                        to={`/idiots/${props.data.currentBlog.authorData.authorSlug}`}
-                        style={{textDecoration: 'none', color: 'black'}}
-                        >
-                        <div className='author__image' >
-                            <Img style={{minHeight: '170px'}} sizes={props.data.currentBlog.authorData.authorPhoto.fluid}/>
+                    <Link
+                        className="about__author"
+                        to={`/idiots/${props.data.currentBlog.authorData.authorSlug}/`}
+                        style={{ textDecoration: "none", color: "black" }}
+                    >
+                        <div className="author__image">
+                            <Img
+                                style={{ minHeight: "170px" }}
+                                sizes={
+                                    props.data.currentBlog.authorData
+                                        .authorPhoto.fluid
+                                }
+                            />
                         </div>
-                        <div className='author__details'>
-                            
-                            <div className='author__name'>
+                        <div className="author__details">
+                            <div className="author__name">
                                 <h6>About Author</h6>
-                                <h4>{props.data.currentBlog.authorData.authorName}</h4>
+                                <h4>
+                                    {
+                                        props.data.currentBlog.authorData
+                                            .authorName
+                                    }
+                                </h4>
                             </div>
-                            <div className='author__description'>
-                                <h5>{props.data.currentBlog.authorData.authorDescription}</h5>
+                            <div className="author__description">
+                                <h5>
+                                    {
+                                        props.data.currentBlog.authorData
+                                            .authorDescription
+                                    }
+                                </h5>
                             </div>
                         </div>
                     </Link>
-                    <h5 className='Heading__latestposts'>LATEST POSTS</h5>
-                    <div className='nextPost__Container' style={{marginBottom: '10px'}}>
-                    
+                    <h5 className="Heading__latestposts">LATEST POSTS</h5>
+                    <div
+                        className="nextPost__Container"
+                        style={{ marginBottom: "10px" }}
+                    >
                         {props.data.nextBlog.edges.map(edge => (
-                        <Link className='nextPosts' to={`/blog/${edge.node.slug}`} 
-                        style={{textDecoration: 'none', color: 'black', backgroundColor: '#fafafa'}}>
-                            <h4 style={{}}>{edge.node.title}</h4>
-                            <h5 style={{textTransform: 'uppercase', fontWeight: '900'}}>
-                                {edge.node.authorData.authorName}
-                            </h5>
-                            <h6 style={{textTransform: 'uppercase'}}>
-                                {edge.node.createdAt}
-                            </h6>
-                        </Link>
-                    ))}
+                            <Link
+                                className="nextPosts"
+                                to={`/blog/${edge.node.slug}/`}
+                                style={{
+                                    textDecoration: "none",
+                                    color: "black",
+                                    backgroundColor: "#fafafa",
+                                }}
+                            >
+                                <h4 style={{}}>{edge.node.title}</h4>
+                                <h5
+                                    style={{
+                                        textTransform: "uppercase",
+                                        fontWeight: "900",
+                                    }}
+                                >
+                                    {edge.node.authorData.authorName}
+                                </h5>
+                                <h6 style={{ textTransform: "uppercase" }}>
+                                    {edge.node.createdAt}
+                                </h6>
+                            </Link>
+                        ))}
                     </div>
-                
-                <div style={{textTransform: 'uppercase', fontFamily: 'montserrat', letterSpacing: '0.5px',
-                    backgroundColor: 'black', color: 'white', fontWeight: '600', fontSize: '13px', padding: '0px 2px'}}>
-                    <HyvorTalk.CommentCount data-talk-mode="number" id={props.data.currentBlog.slug} websiteId={321}/>
+
+                    <div
+                        style={{
+                            textTransform: "uppercase",
+                            fontFamily: "montserrat",
+                            letterSpacing: "0.5px",
+                            backgroundColor: "black",
+                            color: "white",
+                            fontWeight: "600",
+                            fontSize: "13px",
+                            padding: "0px 2px",
+                        }}
+                    >
+                        <HyvorTalk.CommentCount
+                            data-talk-mode="number"
+                            id={props.data.currentBlog.slug}
+                            websiteId={321}
+                        />
+                    </div>
+
+                    <div className="comment__section" id="commentSection">
+                        <HyvorTalk.Embed
+                            websiteId={321}
+                            loadMode="scroll"
+                            id={props.data.currentBlog.slug}
+                        />
+                    </div>
+                    <div className="footer__div">
+                        <Footer />
+                    </div>
                 </div>
-                
-                <div className='comment__section' id='commentSection' >
-                    <HyvorTalk.Embed 
-                    websiteId={321}
-                    loadMode="scroll"
-                    id={props.data.currentBlog.slug}
-                    />
-                </div>
-                <div className='footer__div'>
-                    <Footer/>
-                </div>
-            </div>
             </div>
         </Layout>
     )
@@ -198,16 +311,16 @@ const BlogTemplate = (props) => {
 export default BlogTemplate
 export const query = graphql`
     query BlogTemplate($id: String!) {
-    currentBlog: contentfulBlog(id: {eq: $id}) {
+        currentBlog: contentfulBlog(id: { eq: $id }) {
             title
             id
             slug
-            authorData{
+            authorData {
                 authorName
                 authorSlug
                 seoAuthorName
                 authorDescription
-                authorPhoto{
+                authorPhoto {
                     fluid(maxWidth: 300, quality: 70, toFormat: WEBP) {
                         ...GatsbyContentfulFluid
                         src
@@ -225,9 +338,8 @@ export const query = graphql`
                 chapterTitle
                 chapterSlug
                 id
-
             }
-            
+
             createdAt(formatString: "MMMM DD, YYYY")
             content {
                 childMarkdownRemark {
@@ -255,24 +367,21 @@ export const query = graphql`
         }
         nextBlog: allContentfulBlog(
             limit: 2
-            sort: { fields: [createdAt], order: DESC}
-            filter: {
-                node_locale: {eq: "en-US",}
-                id: {ne: $id}
-            }
-        ){ edges {
-            node {
-                title
-                id
-                slug
-                authorData{
-                    authorName
-                    authorSlug
+            sort: { fields: [createdAt], order: DESC }
+            filter: { node_locale: { eq: "en-US" }, id: { ne: $id } }
+        ) {
+            edges {
+                node {
+                    title
+                    id
+                    slug
+                    authorData {
+                        authorName
+                        authorSlug
+                    }
+                    createdAt(formatString: "MMMM DD, YYYY")
                 }
-                createdAt(formatString: "MMMM DD, YYYY")
-        
             }
         }
-    }
     }
 `
