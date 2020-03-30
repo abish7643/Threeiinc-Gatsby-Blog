@@ -522,6 +522,7 @@ h6 {
     .blog__extratitletwo p{
         font-size: 11px;
         font-weight: 700;
+        margin-right: 3px;
     }
     .blog__extratitletwo strong{
         padding: 0px 2px;
