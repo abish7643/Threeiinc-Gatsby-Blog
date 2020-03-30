@@ -23,7 +23,7 @@
 .card__category {
     font-size: 14px;
     line-height: 18px;
-    font-weight: 600;
+    font-weight: 500;
     color: #fff;
     margin: 0;
     margin: 0px 0px 0px 10px;
@@ -55,7 +55,7 @@
 .card:hover {
     cursor: pointer;
     transform: scale(1.02);
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card:nth-child(1),
