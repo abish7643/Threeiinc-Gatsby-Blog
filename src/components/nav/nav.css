@@ -35,7 +35,7 @@
     color: #f8f9fa;
     font-size: 18px;
     margin: 0 20px;
-    font-weight: 500;
+    font-weight: 600;
 }
 .nav__logo {
     text-decoration: none;
@@ -70,9 +70,13 @@
         justify-content: center;
         align-items: center;
     }
+    .nav__component__link{
+        font-size: 17px;
+    }
 }
 @media screen and (max-width: 500px) {
     .nav__component {
         font-size: 16px;
     }
+    
 }
