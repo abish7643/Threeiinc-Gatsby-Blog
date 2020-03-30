@@ -586,3 +586,28 @@ h6 {
     }
 
 }
+
+@media screen and (max-width: 400px) {
+    .blog__info__title{
+        margin-top: 0px;
+    }
+    .blog__extratitleone {
+        font-size: 13px;
+    }
+    .blog__extratitletwo p{
+        font-size: 10px;
+    }
+    .blog__extratitletwo strong{
+        padding: 0px 1.2px;
+    }
+    .blog__categories{
+        font-size: 12px;
+    }
+    .author__description{
+        margin-top: -30px;
+        font-size: 15px;
+    }
+    .Author__Info__Container h1{
+        font-size: 26px;
+    }
+}

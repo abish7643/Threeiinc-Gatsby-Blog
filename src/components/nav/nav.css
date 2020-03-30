@@ -80,3 +80,9 @@
     }
     
 }
+
+@media screen and (max-width: 380px) {
+    .nav__component__link{
+        font-size: 15.5px;
+    }
+}

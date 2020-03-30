@@ -76,9 +76,18 @@
         justify-content: center;
         align-items: center;
     }
+    .nav__component__link__black{
+        font-size: 17px;
+    }
 }
 @media screen and (max-width: 500px) {
     .nav__component__black {
         font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .nav__component__link__black{
+        font-size: 15.5px;
     }
 }

@@ -343,3 +343,12 @@ textarea[type="message"] {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 400px){
+    .contact__container__right {
+        width: 95%;
+    }
+    .contact__container__left {
+        width: 5%;
+    }
+} 
