@@ -37,6 +37,7 @@ const Archive = props => {
                 data-sal="slide-up"
                 data-sal-delay="50"
                 data-sal-easing="ease"
+                style={{backgroundColor: 'black'}}
             >
                 <h1
                     data-sal="slide-up"

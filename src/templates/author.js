@@ -13,11 +13,12 @@ const AuthorTemplate = props => {
 
             <div className="Author__Info__Container">
                 {props.data.authorInfo.edges.map(edge => (
-                    <div key={edge.node.id}>
+                    <div style={{backgroundColor: 'black'}} key={edge.node.id}>
                         <div
                             data-sal="slide-up"
                             data-sal-delay="220"
                             data-sal-easing="ease"
+                            
                         >
                             <h1>Posts By {edge.node.authorData.authorName}</h1>
                         </div>
