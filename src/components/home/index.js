@@ -9,14 +9,15 @@ export default () => (
                 allContentfulBlog(
                     limit: 9
                     sort: { fields: [createdAt], order: DESC }
-                    filter: { node_locale: { eq: "en-US" } }
+                    filter: { node_locale: { eq: "en-US" } 
+                    home: { eq: true }
+                }
                 ) {
                     edges {
                         node {
                             id
                             slug
                             title
-                            author
                             seoUrl
                             authorData {
                                 authorName

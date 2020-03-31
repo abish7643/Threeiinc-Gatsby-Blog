@@ -352,7 +352,6 @@ export const query = graphql`
             }
             seoTitle
             seoDescription
-            seoAuthor
             seoKeywords
             seoUrl
             seoImage {
