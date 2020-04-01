@@ -213,6 +213,11 @@ const BlogTemplate = props => {
                             <PinterestIcon {...iconProp} />
                         </PinterestShareButton>
                     </div>
+                    <div>
+                        <p className='blog__commentbelowtag'>
+                            Comment Down Below
+                        </p>
+                    </div>
                     <Link
                         className="about__author"
                         to={`/idiots/${props.data.currentBlog.authorData.authorSlug}/`}
@@ -287,6 +292,7 @@ const BlogTemplate = props => {
                             fontWeight: "600",
                             fontSize: "13px",
                             padding: "0px 2px",
+                            marginTop: '-5px'
                         }}
                     >
                         <HyvorTalk.CommentCount

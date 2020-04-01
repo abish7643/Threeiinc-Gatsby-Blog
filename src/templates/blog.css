@@ -301,6 +301,16 @@ a {
     float: right;
     margin: 15px 0 30px 30px;
 }
+.blog__commentbelowtag{
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0px;
+    font-family: 'montserrat';
+}
+
 .nextPost__Container {
     display: flex;
     margin-top: -30px;
@@ -312,14 +322,15 @@ a {
     color: #323232;
 }
 .nextPosts {
-    box-shadow: 0px 6px 12px 0 rgba(30, 60, 114, 0.1);
+    box-shadow: 0px 6px 12px 0 rgba(30, 60, 114, 0.08);
     padding: 0px 10px;
     padding-bottom: -10px;
-    margin: 20px;
+    margin: 20px 10px;
     background-color: rgb(255, 255, 255);
     width: 45%;
     max-width: 50%;
     text-align: center;
+    
 }
 .nextPosts h5,
 h6 {
@@ -331,7 +342,8 @@ h6 {
     font-weight: 400;
 }
 .nextPosts h6 {
-    font-weight: 400;
+    font-weight: 300;
+    margin-top: -15px;
 }
 .nextPosts h4 {
     margin-top: 40px;
@@ -579,7 +591,34 @@ h6 {
     .comment__section {
         width: 90%;
     }
-
+    .blog__commentbelowtag{
+        font-size: 12px;
+        margin: -2px;
+    }
+    .Heading__latestposts{
+        margin-top: 0px;
+        margin-bottom: 12px;
+    }
+    .nextPosts h4 {
+        font-size: 13px;    
+        margin-top: 25px;
+    }
+    .nextPosts h5 {
+        margin-top: -10px;
+        margin-bottom: 12px;
+        font-weight: 400;
+        font-size: 11px;
+        color: #323232;
+    }
+    .nextPosts h6{
+        margin-top: -10px;
+        margin-bottom: 10px;
+        font-size: 9px;
+        font-weight: 300;
+    }
+    .nextPosts{
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 400px) {
