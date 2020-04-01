@@ -213,10 +213,24 @@ const BlogTemplate = props => {
                             <PinterestIcon {...iconProp} />
                         </PinterestShareButton>
                     </div>
-                    <div>
-                        <p className='blog__commentbelowtag'>
-                            Comment Down Below
-                        </p>
+                    <div
+                        style={{
+                            textTransform: "uppercase",
+                            fontFamily: "montserrat",
+                            letterSpacing: "0.5px",
+                            backgroundColor: "black",
+                            color: "white",
+                            fontWeight: "600",
+                            fontSize: "12px",
+                            padding: "0px 2px",
+                            marginTop: '-5px'
+                        }}
+                    >
+                        <HyvorTalk.CommentCount
+                            data-talk-mode="number"
+                            id={props.data.currentBlog.slug}
+                            websiteId={321}
+                        />
                     </div>
                     <Link
                         className="about__author"
@@ -282,25 +296,6 @@ const BlogTemplate = props => {
                         ))}
                     </div>
 
-                    <div
-                        style={{
-                            textTransform: "uppercase",
-                            fontFamily: "montserrat",
-                            letterSpacing: "0.5px",
-                            backgroundColor: "black",
-                            color: "white",
-                            fontWeight: "600",
-                            fontSize: "13px",
-                            padding: "0px 2px",
-                            marginTop: '-5px'
-                        }}
-                    >
-                        <HyvorTalk.CommentCount
-                            data-talk-mode="number"
-                            id={props.data.currentBlog.slug}
-                            websiteId={321}
-                        />
-                    </div>
 
                     <div className="comment__section" id="commentSection">
                         <HyvorTalk.Embed
