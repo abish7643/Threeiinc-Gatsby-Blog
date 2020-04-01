@@ -22,7 +22,7 @@ const NotFoundPage = () => (
                     color: "black",
                     fontSize: "45px",
                     lineHeight: "80px",
-                    fontWeight: "900",
+                    fontWeight: "500",
                 }}
             >
                 3I INC
