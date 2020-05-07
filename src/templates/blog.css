@@ -542,6 +542,7 @@ h6 {
     }
     .blog__content p {
         font-size: 17px;
+        margin: 20px 0;
         line-height: 27px;
         text-align: unset;
     }
