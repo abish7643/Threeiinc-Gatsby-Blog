@@ -78,9 +78,9 @@ body {
     left: 0;
     background-image: linear-gradient(
         to bottom,
-        rgba(10, 10, 10, 0.3) 8%,
+        rgba(10, 10, 10, 0.6) 8%,
         rgba(10, 10, 10, 0.6) 60%,
-        rgba(10, 10, 10, 0.8) 100%
+        rgba(10, 10, 10, 0.4) 100%
     );
 }
 .blog__info {
