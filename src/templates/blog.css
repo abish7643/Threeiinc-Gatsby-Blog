@@ -62,7 +62,7 @@ body {
     margin-right: -50vw;
     opacity: 1;
     z-index: 1;
-    margin-top: -215px;
+    margin-top: -217px;
     display: block;
     max-height: max-content;
     width: auto;
@@ -201,6 +201,7 @@ a {
     max-width: 960px;
     margin-top: 30px;
     margin-bottom: 10px;
+    padding-bottom: 30px;
     padding: 0 6%;
     border-bottom: 1px solid rgba(30, 60, 114, 0.15);
 }
@@ -539,6 +540,10 @@ h6 {
         font-size: 13px;
         font-weight: 500;
         margin-right: 4px;
+    }
+    .blog__content{
+        padding-bottom: 20px;
+        padding-top: 10px;
     }
     .blog__content p {
         font-size: 17px;
