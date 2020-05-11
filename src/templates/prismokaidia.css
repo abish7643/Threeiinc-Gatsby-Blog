@@ -6,7 +6,7 @@ Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
 */
 
 code[class*="language-"],
-pre {
+pre[class*="language-"] {
 	font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
 	font-size: 15px;
 	line-height: 1.375;
@@ -32,20 +32,20 @@ pre > code[class*="language-"] {
 	font-size: 1em;
 }
 
-pre::-moz-selection, pre ::-moz-selection,
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
 	text-shadow: none;
 	background: #6a51e6;
 }
 
-pre::selection, pre ::selection,
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
 	text-shadow: none;
 	background: #6a51e6;
 }
 
 /* Code blocks */
-pre {
+pre[class*="language-"] {
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
