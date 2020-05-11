@@ -196,7 +196,7 @@ export default class Contact extends React.Component {
                             <div className="footer__contact__container__flex">
                                 <div className="footer__contact__one">
                                     <h1>3i INC</h1>
-                                    <h3>3 IDIOTS INCORPORATED.</h3>
+                                    <h3>3 Idiots Incorporated.</h3>
                                     <p>
                                         Each I in 3I is intricately designed to
                                         match the natural genetic code, the
@@ -207,7 +207,7 @@ export default class Contact extends React.Component {
                                     </p>
                                 </div>
                                 <div className="footer__contact__two">
-                                    <h2>STAY CONNECTED</h2>
+                                    <h2>Stay Connected</h2>
                                     <a
                                         href="https://www.instagram.com/3i.inc/"
                                         style={{
@@ -262,9 +262,9 @@ export default class Contact extends React.Component {
                                     <h4>
                                         3i INC
                                         <br />
-                                        SOMEWHERE ON EARTH
+                                        Somewhere On Earth
                                         <br />
-                                        GREEN GRASS, RED SOIL
+                                        Green Grass, Red Soil
                                         <br />
                                         admin@3iinc.xyz
                                     </h4>

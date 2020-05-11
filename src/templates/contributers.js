@@ -42,8 +42,8 @@ export default () => (
                 <NavBlackText />
                 <SEO
                     title="Our Contributers | 3i INC | 3 Idiots Incorporated."
-                    description="Wanna Explore Yourself? Work with 3i and Get To Know More About Our Contributers,
-            Who May Be The Actual Idiots | 3iinc.xyz"
+                    description="Wanna Explore Yourself? Work with 3i and Get To Know About Our Contributers,
+                                Who May Be The Actual Idiots | 3iinc.xyz"
                     keywords={[
                         "Authors",
                         "Author",
