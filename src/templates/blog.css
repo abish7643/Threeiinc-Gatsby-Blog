@@ -198,7 +198,7 @@ a {
 }
 
 .blog__content {
-    max-width: 960px;
+    max-width: 820px;
     margin-top: 30px;
     margin-bottom: 10px;
     padding-bottom: 30px;
@@ -231,9 +231,9 @@ a {
     font-size: 17px;
     line-height: 28px;
     text-align: unset;
-    font-weight: 300;
+    font-weight: 400;
     color: #323232;
-    margin: 40px 0;
+    margin: 30px 0;
 }
 .blog__content table {
     margin: 0 auto;
@@ -252,10 +252,11 @@ a {
     margin: 5px 0px;
 }
 .blog__content h3 {
-    margin-top: 40px;
-    margin-bottom: -22px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     font-size: 24px;
     font-family: "poppins";
+    font-weight: 500;
 }
 
 .blog__content hr {
@@ -546,9 +547,9 @@ h6 {
         padding-top: 10px;
     }
     .blog__content p {
-        font-size: 16px;
+        font-size: 14px;
         margin: 20px 0;
-        line-height: 27px;
+        line-height: 24px;
         text-align: unset;
     }
     .blog__content blockquote p {

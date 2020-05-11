@@ -69,7 +69,39 @@ module.exports = {
             },
         },
         `gatsby-plugin-react-helmet`,
-        `gatsby-transformer-remark`,
+        {
+            resolve: "gatsby-transformer-remark",
+            options: {
+                plugins: [
+                      {
+                          resolve: "gatsby-remark-prismjs",
+                          options: {
+                            classPrefix: "language-",
+                            showLineNumbers: true,
+                            inlineCodeMarker: null,
+                            noInlineHighlight: true,
+
+                            languageExtensions: [
+                                
+                                {
+                                  language: "superscript",
+                                  extend: "javascript",
+                                  definition: {
+                                    superscript_types: /(SuperType)/,
+                                  },
+                                  insertBefore: {
+                                    function: {
+                                      superscript_keywords: /(superif|superelse)/,
+                                    },
+                                  },
+                                },
+                              ],
+                          }
+                      },
+                ],
+            },
+        },
+
         {
             resolve: `gatsby-remark-images-contentful`,
             options: {
@@ -112,6 +144,7 @@ module.exports = {
             resolve: `gatsby-transformer-remark`,
             options: {
                 plugins: [
+                    
                     {
                         resolve: `gatsby-remark-images`,
                         options: {
