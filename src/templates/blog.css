@@ -194,7 +194,7 @@ a {
     margin-left: -50vw;
     margin-right: -50vw;
     align-items: center;
-    margin-top: 400px;
+    margin-top: 205px;
 }
 
 .blog__content {
@@ -516,6 +516,9 @@ h6 {
     }
     .nextPost__Container {
         width: 100%;
+    }
+    .blog__wrapper{
+        margin-top: 190px;
     }
     .about__author {
         width: 92%;

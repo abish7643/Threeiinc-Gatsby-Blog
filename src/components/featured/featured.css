@@ -49,6 +49,7 @@ header {
 
 .header__info {
     max-width: 100%;
+    max-width: 1200px;
     margin: 130px 0 0 0;
     margin-left: -20px;
     width: 65%;

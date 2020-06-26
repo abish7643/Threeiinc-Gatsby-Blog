@@ -63,6 +63,7 @@ const BlogTemplate = props => {
 
     return (
         <Layout>
+            <Nav />
             <div className="blog__initialmodel">
                 <SEO
                     title={props.data.currentBlog.seoTitle}
@@ -73,7 +74,7 @@ const BlogTemplate = props => {
                     author={props.data.currentBlog.authorData.seoAuthorName}
                 />
 
-                <Nav />
+                
                 <div className="blog__header">
                     <div
                         className="blog__hero"
