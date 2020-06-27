@@ -146,7 +146,7 @@ const BlogTemplate = props => {
                 </div>
                 <div className="blog__wrapper">
                     <div className="blog__content">
-                        <div
+                        <div className="blog__content__inner"
                             dangerouslySetInnerHTML={{
                                 __html: `${props.data.currentBlog.content.childMarkdownRemark.html}`,
                             }}

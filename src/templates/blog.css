@@ -1,6 +1,10 @@
 body {
     background-color: #fff;
 }
+.blog__content__inner{
+    padding-bottom: 24px;
+}
+
 .blog__initialmodel {
     display: flex;
     flex-direction: column;
@@ -201,7 +205,6 @@ a {
     max-width: 850px;
     margin-top: 30px;
     margin-bottom: 10px;
-    padding-bottom: 100px;
     padding: 0 6%;
     border-bottom: 1px solid rgba(30, 60, 114, 0.15);
 }
@@ -217,15 +220,35 @@ a {
 .blog__content h2 {
     font-family: "poppins";
     color: black;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 34px;
     margin-bottom: -12px;
 }
 .blog__content h4 {
-    margin-top: 10px;
-    font-size: 19px;
+    padding-top: 10px;
+    font-size: 20px;
     margin-left: 2px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
+.blog__content td {
+    padding-bottom: 4px;
+    padding-top: 4px;
+    border: 1px solid rgba(30, 60, 114, 0.1);;
+}
+.blog__content th{
+    border: 1px solid rgba(30, 60, 114, 0.3);
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.blog__content table {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 760px;
+}
+
 .blog__content p {
     font-family: "montserrat";
     font-size: 17px;
@@ -233,7 +256,7 @@ a {
     text-align: unset;
     font-weight: 400;
     color: #323232;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 .highlighted__text{
     background-color: #323232;
@@ -243,13 +266,7 @@ a {
     border-radius: 10px;
 }
 
-.blog__content table {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    text-align: center;
-    width: 100%;
-    max-width: 380px;
-}
+
 
 .blog__content ul {
     margin-top: 40px;
@@ -531,6 +548,13 @@ h6 {
     .author__description {
         margin-top: -25px;
     }
+    .blog__content__inner{
+        padding-bottom: 0px;
+    }
+    .blog__content table {
+        font-size: 14px;
+    }
+    
 }
 
 @media screen and (max-width: 500px) {
@@ -572,7 +596,7 @@ h6 {
     }
     .blog__content h4 {
         font-size: 18px;
-        margin-bottom: 15px;
+        margin-bottom: 0px;
     }
     .blog__title {
         font-size: 26px;
@@ -636,6 +660,9 @@ h6 {
     }
     .nextPosts{
         margin-bottom: 10px;
+    }
+    .blog__content table {
+        font-size: 13px;
     }
 }
 
