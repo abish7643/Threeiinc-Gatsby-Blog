@@ -43,6 +43,7 @@
     "gatsby-transformer-sharp": "^2.3.7",
     "hyvor-talk-react": "^1.0.1",
     "lazysizes": "^5.2.0",
+    "netlify-plugin-minify-html": "^0.2.3",
     "prismjs": "^1.20.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
