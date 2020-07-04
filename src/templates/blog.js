@@ -218,20 +218,21 @@ const BlogTemplate = props => {
                         style={{
                             textTransform: "uppercase",
                             fontFamily: "montserrat",
-                            letterSpacing: "0.5px",
-                            backgroundColor: "black",
-                            color: "white",
-                            fontWeight: "600",
+                            letterSpacing: "0.8",
+                            backgroundColor: "#323232",
+                            color: "#eeeeee",
+                            fontWeight: "500",
                             fontSize: "12px",
-                            padding: "0px 2px",
-                            marginTop: '-5px'
+                            padding: "0px 4px",
+                            marginTop: '0px'
                         }}
                     >
+                        <span >⬐ </span>
                         <HyvorTalk.CommentCount
                             data-talk-mode="number"
                             id={props.data.currentBlog.slug}
                             websiteId={321}
-                        />
+                        /><span style={{fontWeight: "900"}}> ⬎</span>
                     </div>
                     <Link
                         className="about__author"

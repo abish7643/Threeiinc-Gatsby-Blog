@@ -291,11 +291,12 @@ a {
 .blog__content blockquote {
     margin: 5px;
     margin-left: 0px;
-    border-left: 2px rgba(10, 10, 10, 0.3) solid;
+    border-left: 2px rgba(10, 10, 10, 0.1) solid;
 }
 
 .blog__content blockquote p {
     font-size: 25px;
+    padding: 16px 0px;
     margin-right: 20px;
     margin-left: 20px;
     line-height: 30px;
@@ -318,7 +319,7 @@ a {
 .center {
     width: 100%;
     display: block;
-    margin: 30px auto;
+    margin: 40px auto;
 }
 
 .right {
@@ -528,6 +529,10 @@ h6 {
         line-height: 28px;
         margin-left: 10px;
         margin-right: 0px;
+        padding: 8px 0px;
+    }
+    .center {
+        margin: 32px auto;
     }
     .nextPost__Container {
         width: 100%;
@@ -587,6 +592,7 @@ h6 {
     }
     .blog__content blockquote p {
         font-size: 20px;
+        padding: 4px 0px;
     }
     .blog__content h2 {
         font-size: 26px;
@@ -667,6 +673,9 @@ h6 {
 }
 
 @media screen and (max-width: 400px) {
+    .center {
+        margin: 24px auto;
+    }
     .blog__info__title{
         margin-top: 0px;
         font-size: 13px;
