@@ -3,6 +3,7 @@ body {
 }
 .blog__content__inner{
     padding-bottom: 24px;
+    padding-top: 24px;
 }
 
 .blog__initialmodel {
@@ -316,6 +317,10 @@ a {
     width: fit-content;
 }
 
+.blog__content video {
+    border-radius: 4px;
+}
+
 .center {
     width: 100%;
     display: block;
@@ -555,6 +560,7 @@ h6 {
     }
     .blog__content__inner{
         padding-bottom: 0px;
+        padding-top: 8px;
     }
     .blog__content table {
         font-size: 14px;
@@ -669,6 +675,9 @@ h6 {
     }
     .blog__content table {
         font-size: 13px;
+    }
+    .blog__content__inner{
+        padding-top: 0px;
     }
 }
 
