@@ -117,10 +117,11 @@ const BlogTemplate = props => {
                     <div className="blog__extratitletwo">
                         {props.data.currentBlog.category.map(category => (
                             <strong
-                                class="blog__categories"
+                                className="blog__categories"
                                 data-sal="slide-up"
                                 data-sal-delay="200"
                                 data-sal-easing="ease"
+                                key={category.title}
                             >
                                 {category.title}
                             </strong>
@@ -277,6 +278,7 @@ const BlogTemplate = props => {
                             <Link
                                 className="nextPosts"
                                 to={`/blog/${edge.node.slug}/`}
+                                key = {edge.node.id}
                                 style={{
                                     textDecoration: "none",
                                     color: "black",

@@ -70,6 +70,7 @@ export default () => (
                                     data-sal="slide-up"
                                     data-sal-delay="60"
                                     data-sal-easing="ease"
+                                    key={category.id}
                                 >
                                     {category.title}
                                 </p>

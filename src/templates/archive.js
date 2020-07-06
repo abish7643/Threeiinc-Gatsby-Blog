@@ -72,6 +72,7 @@ const Archive = props => {
                                     data-sal="slide-up"
                                     data-sal-delay="60"
                                     data-sal-easing="ease"
+                                    key={category.title}
                                 >
                                     {category.title}
                                 </p>

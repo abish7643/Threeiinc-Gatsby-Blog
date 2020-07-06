@@ -50,7 +50,7 @@ const AuthorTemplate = props => {
                             onClick={() => navigate(`/blog/${edge.node.slug}/`)}
                         >
                             {edge.node.category.map(category => (
-                                <p className="card__category">
+                                <p className="card__category" key={category.title}>
                                     {category.title}
                                 </p>
                             ))}

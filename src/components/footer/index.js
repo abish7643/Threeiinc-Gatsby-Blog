@@ -109,7 +109,7 @@ export default class Footer extends React.Component {
                                             />
                                         </div>
                                         <div className="newsletter__ack__text">
-                                            <label for="checkbox">
+                                            <label>
                                                 I Acknowledge To Receive
                                                 Contents From 3i INC
                                             </label>
