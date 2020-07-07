@@ -25,6 +25,7 @@ export default class Contact extends React.Component {
         contactemailinputEntered: "",
         contactMessage: "",
         contactmessageinputEntered: "",
+        formStartedToFill: false,
     }
     handleContactChange = event => {
         this.setState({
@@ -47,6 +48,7 @@ export default class Contact extends React.Component {
             contactMessage: event.target.value,
             contactmessageinputEntered: "1",
         })
+        this.state.formStartedToFill = true;
     }
 
     handleContactSubmit = event => {
@@ -59,20 +61,15 @@ export default class Contact extends React.Component {
         if (
             this.state.contactemailinputEntered === "1" &&
             this.state.contactnameinputEntered === "1" &&
-            this.state.contactmessageinputEntered === "1"
+            this.state.contactmessageinputEntered === "1" &&
+            this.state.contactName !== "" &&
+            this.state.contactEmail !== "" &&
+            this.state.contactMessage !== ""
         ) {
             contactButton = (
                 <button
-                    style={{
-                        cursor: "pointer",
-                        backgroundColor: "black",
-                        color: "white",
-                        padding: "1px 20px",
-                        transition: "ease 1s",
-                        border: "1px orange solid",
-                        borderRadius: "2px",
-                    }}
-                    className="contact__submitbutton"
+                    className="btn__med"
+                    style={{marginTop: "24px"}}
                 >
                     SUBMIT
                 </button>
@@ -80,12 +77,12 @@ export default class Contact extends React.Component {
         } else {
             contactButton = (
                 <button
+                    className="btn__med__inactive"
                     style={{
-                        color: "grey",
+                        marginTop: "24px",
                         pointerEvents: "none",
-                        cursor: "default",
-                    }}
-                    className="contact__submitbutton"
+                        cursor: "none"
+                }}
                 >
                     SUBMIT
                 </button>

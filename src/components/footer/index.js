@@ -1,5 +1,5 @@
 import React from "react"
-//import Link from "gatsby"
+import { Link } from "gatsby"
 import "./footer.css"
 
 export default class Footer extends React.Component {
@@ -42,7 +42,7 @@ export default class Footer extends React.Component {
                 <button
                     className="btn__med"
                     style={{
-                        color: "black",
+                        color: "#eeeeee",
                         pointerEvents: "none",
                         cursor: "default",
                     }}
@@ -123,7 +123,16 @@ export default class Footer extends React.Component {
                             </div>
                         </div>
                         <div className="threeiinc__header">
-                            3i INC
+                            <Link to="/" style={{
+                                textDecoration: "none",
+                            }}>
+                            
+                            <p style={{
+                                textDecoration: "none",
+                                fontSize: '40px',
+                                marginBottom: "16px",
+                            }}>3i INC</p>
+
                             <p>Idiots by Choice</p>
                             
                             <p
@@ -137,6 +146,7 @@ export default class Footer extends React.Component {
                                 Stay Home, Play Safe & Save The World
                                 #BreakTheChain
                             </p>
+                            </Link>
                         </div>
                     </div>
                 </div>

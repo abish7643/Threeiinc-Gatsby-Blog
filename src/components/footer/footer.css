@@ -57,7 +57,7 @@
     background: transparent;
     border-bottom: 1px solid black;
     float: right;
-    border-radius: 20px;
+    border-radius: 4px;
     margin: 10px 0;
     margin-bottom: 20px;
     transition: all 0.3s ease;
@@ -82,6 +82,7 @@
     margin-left: 70px;
     font-weight: 500;
 }
+
 .threeiinc__header p {
     font-size: 17px;
     font-weight: 500;

@@ -57,20 +57,19 @@
 .field input {
     height: 40px;
     width: 100%;
-    border-radius: 2px;
+    border-radius: 4px;
     border: 1px solid rgb(0, 44, 65, 1);
-    border-radius: 30px;
+    border-radius: 4px;
     margin: 20px 0;
     outline: none;
 }
-
 .field textarea {
     outline: none;
     padding: 1px;
     border: none;
     width: 100%;
     border: 1px solid rgb(0, 44, 65, 1);
-    border-radius: 15px;
+    border-radius: 4px;
 }
 
 .field label {
@@ -95,7 +94,6 @@ input[type="email"] {
 textarea[type="message"] {
     font-family: "poppins";
     font-weight: 500;
-    color: teal;
     padding-left: 10px;
     padding-top: 5px;
 }

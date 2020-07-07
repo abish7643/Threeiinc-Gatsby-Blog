@@ -74,26 +74,36 @@
 }
 
 .viewmore_wrapper {
-    border-radius: 18px;
+    border-radius: 2px;
     text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%);
-    width: 110px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 120px;
     height: 35px;
     cursor: pointer;
     border: 0px solid white;
     transition: 1s ease;
-    color: white;
-    font-family: "poppins";
+    color: #1e3c72;
+    font-family: "montserrat";
+    transition: 0.3s ease-in;
 }
 .viewmore_wrapper__link {
+    border: 1px solid #2a5298;
+    border-radius: 4px;
     margin-top: -30px;
     outline: none;
 }
+.viewmore_container{
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
 
-.viewmore:hover {
+.viewmore_wrapper:hover {
+    color: #eeeeee;
     background-position: right center;
+    background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%);
 }
 @media screen and (max-width: 1350px) {
     .card:nth-child(n) {

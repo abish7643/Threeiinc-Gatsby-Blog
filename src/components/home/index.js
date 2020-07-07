@@ -86,9 +86,11 @@ export default () => (
                         </div>
                     ))}
                 </div>
+                <div className="viewmore_container">
                 <Link className="viewmore_wrapper__link" to={`/blog/2/`}>
                     <button className="viewmore_wrapper">More Posts</button>
                 </Link>
+                </div>
             </div>
         )}
     />

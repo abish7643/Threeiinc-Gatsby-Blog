@@ -26,7 +26,7 @@ const Thanksyou = () => (
             </div>
             <div className="home__button">
                 <button
-                    className="button_med"
+                    className="btn__med"
                     data-sal="fade"
                     data-sal-delay="300"
                     data-sal-easing="ease-in"

@@ -91,61 +91,63 @@ const Archive = props => {
                 <div className="pagination">
                     <div className="pagination__container">
                         <div className="pagination__button__container">
-                            <button className="pagination__item">
+                            <div className="pagination__item">
                                 {!isLast && (
                                     <Link
                                         to={nextPage}
                                         rel="next"
                                         style={{
-                                            color: "white",
+                                            color: "#2a5298",
                                             textDecoration: "none",
                                         }}
+                                        
                                     >
-                                        <div className="arrow__next">Next</div>
+                                        <button className="arrow__next">Next</button>
                                     </Link>
                                 )}
                                 {isLast && (
-                                    <div
-                                        className="arrow__next"
+                                    <div>
+                                        <button className="arrow__next"
                                         style={{
                                             visibility: "none",
                                             cursor: "none",
                                             pointerEvents: "none",
                                             textDecoration: "none",
-                                        }}
-                                    >
-                                        Next
+                                            opacity: 0.4,
+                                        }}>Next</button>
                                     </div>
                                 )}
-                            </button>
+                            </div>
                         </div>
                         <div className="pagination__button__container">
-                            <button className="pagination__item">
+                            <div className="pagination__item">
                                 {!isFirst && (
                                     <Link
                                         to={prevPage}
                                         rel="prev"
                                         style={{
-                                            color: "white",
+                                            color: "#2a5298",
                                             textDecoration: "none",
                                         }}
+                                        
                                     >
-                                        <div className="arrow__back">Back</div>
+                                        <button className="arrow__back">Back</button>
                                     </Link>
                                 )}
                                 {isFirst && (
-                                    <div
-                                        className="arrow__back"
+                                    <div>
+                                        <button className="arrow__back"
                                         style={{
                                             visibility: "none",
+                                            cursor: "none",
                                             pointerEvents: "none",
                                             textDecoration: "none",
+                                            opacity: 0.4,
                                         }}
-                                    >
-                                        Back
+                                        >Back</button>
                                     </div>
                                 )}
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
