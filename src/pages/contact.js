@@ -101,8 +101,8 @@ export default class Contact extends React.Component {
                 <div className="nav__contact__wrapper">
                     <NavBlackText />
                 </div>
-                <div className="contact__section">
-                    <div className="contact__container">
+                <div className="contact__section" >
+                    <div className="contact__container" style={contactLeft}>
                         <div
                             className="contact__container__left"
                             style={contactLeft}
@@ -183,7 +183,9 @@ export default class Contact extends React.Component {
                                             pattern=".*\S.*"
                                         ></textarea>
                                     </div>
+                                    <div className="contact__submit__btn__container">
                                     {contactButton}
+                                    </div>
                                 </form>
                             </div>
                         </div>

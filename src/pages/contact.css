@@ -32,7 +32,9 @@
 .contact__container__right__inner {
     width: 70%;
 }
-
+.contact__submit__btn__container{
+    margin: 0 8%;
+}
 .contact__container__left {
     float: left;
     width: 45%;
@@ -336,9 +338,13 @@ textarea[type="message"] {
     }
     .contact__container__right__heading {
         font-size: 30px;
+        margin-top: 2px;
     }
     .contact__container__right__inner {
         width: 100%;
+    }
+    .field input {
+        margin: 16px 0;
     }
 }
 
