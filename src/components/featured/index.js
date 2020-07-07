@@ -119,7 +119,7 @@ export default () => (
                                             }}
                                             className="btn__med"
                                         >
-                                            Read More
+                                            Read Post
                                         </button>
                                     </Link>
                                 </div>
