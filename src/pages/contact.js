@@ -117,7 +117,7 @@ export default class Contact extends React.Component {
                                 data-sal-delay="200"
                                 data-sal-easing="ease"
                             >
-                                CONTACT
+                                Contact Us
                             </h1>
                             <div
                                 className="contact__container__right__inner"
@@ -215,6 +215,7 @@ export default class Contact extends React.Component {
                                             display: "inline-block",
                                         }}
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         Follow us on Instagram
                                     </a>
@@ -222,6 +223,7 @@ export default class Contact extends React.Component {
                                     <a
                                         href="https://www.tumblr.com/blog/3i-inc"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                         style={{
                                             padding: "0px 5px",
                                             display: "inline-block",
@@ -240,6 +242,7 @@ export default class Contact extends React.Component {
                                     <a
                                         href="https://www.pinterest.com/3iinc/"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                         style={{
                                             padding: "0px 5px",
                                             display: "inline-block",

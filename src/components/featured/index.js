@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, navigate, StaticQuery, Link } from "gatsby"
+import { graphql, StaticQuery, Link } from "gatsby"
 import "./featured.css"
 
 export default () => (
@@ -86,23 +86,20 @@ export default () => (
                                         flexDirection: 'row'
                                     }}
                                 >
-                                    <a
+                                    <Link
                                         style={{
                                             textDecoration: "none",
                                             color: "white",
                                             display: 'flex',
                                             justifyContent: 'left',
-                                            alignItems: 'left'
+                                            alignItems: 'left',
+                                            cursor: "pointer"
                                         }}
-                                        onClick={() =>
-                                            navigate(
-                                                `/idiots/${edge.node.authorData.authorSlug}/`
-                                            )
-                                        }
+                                        to={`/idiots/${edge.node.authorData.authorSlug}/`}
                                     >
                                         {edge.node.authorData.authorName} |{" "}
                                         {edge.node.createdAt}
-                                        </a>
+                                        </Link>
                                         
                                 </p>
                                 <div

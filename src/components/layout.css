@@ -38,7 +38,7 @@ h2 {
     background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%);
     color: white;
     min-width: 120px;
-    height: 35px;
+    height: 36px;
     margin-top: -5px;
     cursor: pointer;
     border: 0px solid white;
@@ -52,19 +52,23 @@ h2 {
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 500;
-    color: #323232;
+    color: #2a5298;
     background: #fff;
     min-width: 120px;
-    height: 35px;
+    height: 36px;
     margin-top: -5px;
     cursor: pointer;
-    border: 1px solid #323232;
+    border: 1px solid #2a5298;
     font-family: "montserrat";
     outline: none;
   }
 
 @media screen and (max-width: 500px) {
     .btn__med{
+        
+        width: 100%;
+    }
+    .btn__med__inactive{
         
         width: 100%;
     }

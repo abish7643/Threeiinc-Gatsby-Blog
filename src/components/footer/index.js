@@ -5,21 +5,13 @@ import "./footer.css"
 export default class Footer extends React.Component {
     state = {
         email: "",
-        inputEntered: "",
-        checkbox: "",
-        checkboxTicked: "",
+        inputEntered: ""
     }
     handleChange = event => {
         const isCheck = event.target.type === "check"
         this.setState({
             email: isCheck ? event.target.checked : event.target.value,
             inputEntered: "1",
-        })
-    }
-    handleCheckBoxChange = event => {
-        this.setState({
-            checkbox: event.target.value,
-            checkboxTicked: "1",
         })
     }
     handleSubmit = event => {
@@ -29,8 +21,7 @@ export default class Footer extends React.Component {
     render() {
         let newsletterButton
         if (
-            this.state.inputEntered === "1" &&
-            this.state.checkboxTicked === "1"
+            this.state.inputEntered === "1"
         ) {
             newsletterButton = (
                 <button style={{ cursor: "pointer" }} className="btn__med">
@@ -47,7 +38,7 @@ export default class Footer extends React.Component {
                         cursor: "default",
                     }}
                 >
-                    Submit
+                    Subscribe
                 </button>
             )
         }
@@ -61,7 +52,7 @@ export default class Footer extends React.Component {
                 >
                     <div className="footer__contents">
                         <div className="newsletter__form">
-                            <p>Subscribe for Newsletter</p>
+                            <p>Want to keep up with the latest posts? Subscribe to our newsletter!</p>
                             <div className="newsletter__inner">
                                 <form
                                     name="newsletter"
@@ -92,30 +83,6 @@ export default class Footer extends React.Component {
                                             placeholder="email"
                                         />
                                     </div>
-                                    <div
-                                        style={{ width: "100%" }}
-                                        className="newsletter__ack__div"
-                                    >
-                                        <div className="newsletter__field__checkbox">
-                                            <input
-                                                type="checkbox"
-                                                id="checkbox"
-                                                name="checkbox"
-                                                onChange={
-                                                    this.handleCheckBoxChange
-                                                }
-                                                value={this.state.checkbox}
-                                                style={{ cursor: "pointer" }}
-                                            />
-                                        </div>
-                                        <div className="newsletter__ack__text">
-                                            <label>
-                                                I Acknowledge To Receive
-                                                Contents From 3i INC
-                                            </label>
-                                        </div>
-                                    </div>
-
                                     <div className="newsletter__submit">
                                         {newsletterButton}
                                     </div>

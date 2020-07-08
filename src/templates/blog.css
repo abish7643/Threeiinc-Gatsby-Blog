@@ -221,16 +221,19 @@ a {
 .blog__content h2 {
     font-family: "poppins";
     color: black;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 34px;
-    margin-bottom: -12px;
+    margin-bottom: 0px;
 }
 .blog__content h4 {
-    padding-top: 10px;
+    padding-top: 8px;
     font-size: 20px;
     margin-left: 2px;
     padding-bottom: 0px;
-    margin-bottom: 0px;
+    margin-bottom: -8px;
+    margin-top: 0px;
+    font-weight: 300;
+    font-family: "poppins";
 }
 .blog__content td {
     padding-bottom: 4px;
@@ -604,13 +607,13 @@ h6 {
     }
     .blog__content h2 {
         font-size: 26px;
+        margin-bottom: -12px;
     }
     .blog__content h3 {
         font-size: 19px;
     }
     .blog__content h4 {
         font-size: 18px;
-        margin-bottom: 0px;
     }
     .blog__title {
         font-size: 26px;

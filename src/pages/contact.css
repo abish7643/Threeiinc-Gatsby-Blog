@@ -29,6 +29,9 @@
     justify-content: center;
     flex-direction: column;
 }
+.contact__container__right h1 {
+    font-family: "montserrat";
+}
 .contact__container__right__inner {
     width: 70%;
 }
