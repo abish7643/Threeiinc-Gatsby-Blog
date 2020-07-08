@@ -44,6 +44,11 @@ h2 {
     border: 0px solid white;
     font-family: "montserrat";
     outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.btn__med:hover{
+    background-image: linear-gradient(to right, #2a5298 0%, #1e3c72 100%);
 }
 
 .btn__med__inactive{

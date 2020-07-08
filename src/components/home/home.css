@@ -84,10 +84,11 @@
     cursor: pointer;
     border: 0px solid white;
     transition: 1s ease;
-    color: #1e3c72;
     font-family: "montserrat";
     transition: 0.3s ease-in;
-    background-color: #fff;
+    color: #eeeeee;
+    background-position: right center;
+    background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%);
 }
 .viewmore_wrapper__link {
     border: 1px solid #2a5298;
@@ -101,11 +102,10 @@
     margin-bottom: 16px;
 }
 
-.viewmore_wrapper:hover {
-    color: #eeeeee;
+.viewmore_wrapper:hover{
     background-position: right center;
-    background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%);
 }
+
 @media screen and (max-width: 1350px) {
     .card:nth-child(n) {
         grid-column-start: span 4;
@@ -145,5 +145,8 @@
     .card {
         margin-left: 0px;
         margin-right: 0px;
+    }
+    .viewmore_container{
+        margin-top: -8px;
     }
 }

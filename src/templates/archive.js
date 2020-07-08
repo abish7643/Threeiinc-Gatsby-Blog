@@ -102,7 +102,7 @@ const Archive = props => {
                                         }}
                                         
                                     >
-                                        <button className="arrow__next">Next</button>
+                                        <button className="arrow__next">{">"}</button>
                                     </Link>
                                 )}
                                 {isLast && (
@@ -113,8 +113,10 @@ const Archive = props => {
                                             cursor: "none",
                                             pointerEvents: "none",
                                             textDecoration: "none",
-                                            opacity: 0.4,
-                                        }}>Next</button>
+                                            background: "white",
+                                            color: '#323232',
+                                            opacity: 0.3,
+                                        }}>{">"}</button>
                                     </div>
                                 )}
                             </div>
@@ -131,7 +133,7 @@ const Archive = props => {
                                         }}
                                         
                                     >
-                                        <button className="arrow__back">Back</button>
+                                        <button className="arrow__back">{"<"}</button>
                                     </Link>
                                 )}
                                 {isFirst && (
@@ -142,9 +144,11 @@ const Archive = props => {
                                             cursor: "none",
                                             pointerEvents: "none",
                                             textDecoration: "none",
-                                            opacity: 0.4,
+                                            background: "white",
+                                            color: '#323232',
+                                            opacity: 0.3,
                                         }}
-                                        >Back</button>
+                                        >{"<"}</button>
                                     </div>
                                 )}
                             </div>
