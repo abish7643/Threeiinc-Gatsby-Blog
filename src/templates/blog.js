@@ -1,13 +1,13 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql, Link, navigate } from "gatsby"
 import Layout from "../components/layout"
 import Nav from "../components/nav"
 import SEO from "../components/seo"
 import "./blog.css"
 import Footer from "../components/footer"
-import HyvorTalk from "hyvor-talk-react"
 import Img from "gatsby-image"
 import './prismokaidia.css'
+import CommentSection from "../components/comment"
 import {
     FacebookShareButton,
     FacebookIcon,
@@ -39,8 +39,8 @@ const BlogTemplate = props => {
     const iconProp = {
         size: 36,
         round: true,
-        bgStyle: { opacity: "1" },
-        iconFillColor: "white",
+        bgStyle: { opacity: "0.25" },
+        iconFillColor: "black",
     }
     const socialIconcss = {
         marginRight: "10px",
@@ -215,26 +215,7 @@ const BlogTemplate = props => {
                             <PinterestIcon {...iconProp} />
                         </PinterestShareButton>
                     </div>
-                    <div
-                        style={{
-                            textTransform: "uppercase",
-                            fontFamily: "montserrat",
-                            letterSpacing: "0.8",
-                            backgroundColor: "#323232",
-                            color: "#eeeeee",
-                            fontWeight: "500",
-                            fontSize: "12px",
-                            padding: "0px 4px",
-                            marginTop: '0px'
-                        }}
-                    >
-                        <span style={{fontWeight: "900"}}>⬐ </span>
-                        <HyvorTalk.CommentCount
-                            data-talk-mode="number"
-                            id={props.data.currentBlog.slug}
-                            websiteId={321}
-                        /><span style={{fontWeight: "900"}}> ⬎</span>
-                    </div>
+                    
                     <Link
                         className="about__author"
                         to={`/idiots/${props.data.currentBlog.authorData.authorSlug}/`}
@@ -269,37 +250,59 @@ const BlogTemplate = props => {
                             </div>
                         </div>
                     </Link>
-                    <h5 className="Heading__latestposts">LATEST POSTS</h5>
-                    <div
-                        className="nextPost__Container"
-                        style={{ marginBottom: "10px" }}
-                    >
-                        {props.data.nextBlog.edges.map(edge => (
-                            <Link
-                                className="nextPosts"
-                                to={`/blog/${edge.node.slug}/`}
-                                key = {edge.node.id}
-                                style={{
-                                    textDecoration: "none",
-                                    color: "black",
-                                }}
+
+                    <CommentSection slug={props}/>
+                    <div className="latestposts__blogpost">
+                        <p>Latest Posts</p>
+                    </div>
+                    <div className="feed__initial__blogpost">
+                    <div className="feed__blogpost">
+                    {props.data.nextBlog.edges.map(edge => (
+                        <div
+                            key={edge.node.id}
+                            className="card__blogpost"
+                            data-sal="slide-up"
+                            data-sal-delay="50"
+                            data-sal-easing="ease"
+                            style={{
+                                backgroundImage: `linear-gradient(
+                    to bottom,
+                    rgba(10, 10, 10, 0) 0%,
+                    rgba(10, 10, 10, 0.5) 50%,
+                    rgba(10, 10, 10, 0.7) 100%),
+                    url(${edge.node.featuredImage.fluid.src})`,
+                            }}
+                            onClick={() => navigate(`/blog/${edge.node.slug}/`)}
+                        >
+                            {edge.node.category.map(category => (
+                                <p
+                                    className="card__category"
+                                    data-sal="slide-up"
+                                    data-sal-delay="60"
+                                    data-sal-easing="ease"
+                                    key={category.id}
+                                >
+                                    {category.title}
+                                </p>
+                            ))}
+                            <p
+                                className="card__title"
+                                data-sal="slide-up"
+                                data-sal-delay="70"
+                                data-sal-easing="ease"
                             >
-                                <h4 style={{}}>{edge.node.title}</h4>
-                            </Link>
-                        ))}
+                                {edge.node.title}
+                            </p>
+                        </div>
+                    ))}
                     </div>
+                </div>
 
-
-                    <div className="comment__section" id="commentSection">
-                        <HyvorTalk.Embed
-                            websiteId={321}
-                            loadMode="scroll"
-                            id={props.data.currentBlog.slug}
-                        />
-                    </div>
                     <div className="footer__div">
                         <Footer />
                     </div>
+
+                    
                 </div>
             </div>
         </Layout>
@@ -371,11 +374,21 @@ export const query = graphql`
                     title
                     id
                     slug
+                    category {
+                        title
+                        id
+                    }
                     authorData {
                         authorName
                         authorSlug
                     }
                     createdAt(formatString: "MMMM DD, YYYY")
+                    featuredImage {
+                        fluid(maxWidth: 1200, quality: 70, toFormat: WEBP) {
+                            ...GatsbyContentfulFluid
+                            src
+                        }
+                    }
                 }
             }
         }

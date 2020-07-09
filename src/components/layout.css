@@ -67,6 +67,24 @@ h2 {
     font-family: "montserrat";
     outline: none;
   }
+  .btn__med__outline{
+    border-radius: 4px;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #1e3c72;
+    min-width: 280px;
+    height: 44px;
+    background: #fff;
+    cursor: pointer;
+    border: 2px solid #1e3c72;
+    font-family: "montserrat";
+    outline: none;
+    transition: 0.3s ease-in-out;
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
 
 @media screen and (max-width: 500px) {
     .btn__med{
@@ -76,6 +94,9 @@ h2 {
     .btn__med__inactive{
         
         width: 100%;
+    }
+    .btn__med__outline{
+        width: 92%;
     }
 }
 .btn__med:hover {

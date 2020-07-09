@@ -39,9 +39,10 @@ body {
     justify-content: flex-start;
     width: 900px;
     margin: 0 auto;
-    margin-top: -20px;
-    margin-bottom: 70px;
+    margin-top: -48px;
+    margin-bottom: 0px;
     padding: 10px;
+    padding-bottom: 0px;
     position: relative;
     z-index: 30;
 }
@@ -481,6 +482,21 @@ h6 {
     text-align: end;
 }
 
+.latestposts__blogpost{
+    font-family: "poppins";
+    font-size: 32px;
+    display: block;
+    text-align: left;
+    width: 100%;
+    max-width: 850px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+.latestposts__blogpost p{
+    text-align: left;
+    margin: 0;
+}
+
 @media screen and (max-width: 1400px) {
     
     .blog__info {
@@ -524,6 +540,10 @@ h6 {
     }
     .blog__info__title {
         font-size: 16px;
+    }
+    .latestposts__blogpost{
+        width: 92%;
+        margin-left: 5px;
     }
 }
 
@@ -589,6 +609,12 @@ h6 {
     }
     .nextPosts{
         height: unset;
+    }
+    .latestposts__blogpost p{
+        font-size: 32px;
+    }
+    .latestposts__blogpost{
+        margin-top: 0px;
     }
     
 }
@@ -668,6 +694,7 @@ h6 {
     }
     .comment__section {
         width: 90%;
+        margin-top: -56px;
     }
     .blog__commentbelowtag{
         font-size: 12px;
@@ -704,6 +731,9 @@ h6 {
     }
     .blog__content__inner{
         padding-top: 0px;
+    }
+    ..latestposts__blogpost{
+        margin-top: -8px;
     }
 }
 
