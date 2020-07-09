@@ -228,7 +228,7 @@ const BlogTemplate = props => {
                             marginTop: '0px'
                         }}
                     >
-                        <span >⬐ </span>
+                        <span style={{fontWeight: "900"}}>⬐ </span>
                         <HyvorTalk.CommentCount
                             data-talk-mode="number"
                             id={props.data.currentBlog.slug}
@@ -286,16 +286,6 @@ const BlogTemplate = props => {
                                 }}
                             >
                                 <h4 style={{}}>{edge.node.title}</h4>
-                                <h5
-                                    style={{
-                                        textTransform: "uppercase",
-                                    }}
-                                >
-                                    {edge.node.authorData.authorName}
-                                </h5>
-                                <h6 style={{ textTransform: "uppercase" }}>
-                                    {edge.node.createdAt}
-                                </h6>
                             </Link>
                         ))}
                     </div>
