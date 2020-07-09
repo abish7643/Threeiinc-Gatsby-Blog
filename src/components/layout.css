@@ -78,7 +78,7 @@ h2 {
     height: 44px;
     background: #fff;
     cursor: pointer;
-    border: 2px solid #1e3c72;
+    border: 1px solid #1e3c72;
     font-family: "montserrat";
     outline: none;
     transition: 0.3s ease-in-out;
@@ -86,6 +86,10 @@ h2 {
     margin-bottom: 48px;
     position: relative;
     z-index: 100;
+    transition: 0.6s ease-in-out;
+  }
+  .btn__med__outline:hover{
+    border: 2px solid #1e3c72;
   }
 
 @media screen and (max-width: 500px) {

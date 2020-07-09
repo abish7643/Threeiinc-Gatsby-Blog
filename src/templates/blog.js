@@ -252,9 +252,8 @@ const BlogTemplate = props => {
                     </Link>
 
                     <CommentSection slug={props}/>
-                    <div className="latestposts__blogpost">
-                        <p>Latest Posts</p>
-                    </div>
+                    
+                    <p className="latestposts__blogpost">Latest Posts</p>
                     <div className="feed__initial__blogpost">
                     <div className="feed__blogpost">
                     {props.data.nextBlog.edges.map(edge => (
@@ -268,8 +267,8 @@ const BlogTemplate = props => {
                                 backgroundImage: `linear-gradient(
                     to bottom,
                     rgba(10, 10, 10, 0) 0%,
-                    rgba(10, 10, 10, 0.4) 50%,
-                    rgba(10, 10, 10, 0.8) 100%),
+                    rgba(10, 10, 10, 0.5) 50%,
+                    rgba(10, 10, 10, 0.7) 100%),
                     url(${edge.node.featuredImage.fluid.src})`,
                             }}
                             onClick={() => navigate(`/blog/${edge.node.slug}/`)}

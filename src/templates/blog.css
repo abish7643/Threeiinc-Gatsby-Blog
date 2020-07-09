@@ -46,6 +46,8 @@ body {
     position: relative;
     z-index: 30;
 }
+
+
 .blog__header {
     display: flex;
     flex-direction: column;
@@ -447,12 +449,13 @@ h6 {
 .author__description {
     margin-top: -15px;
     padding-right: 15px;
-    font-size: 18px;
+    font-size: 20px;
 }
 .author__description h5{
-    font-weight: 600;
+    font-family: "montserrat";
     color: #323232;
-    font-weight: 600;
+    font-weight: 500;
+    
 }
 .author__feed {
     display: flex;
