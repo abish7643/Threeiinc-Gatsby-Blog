@@ -56,14 +56,9 @@ module.exports = {
                     {
                         family: `Montserrat`,
                         variants: [`300`, `400`, `500`, `600`],
-                    },
-                    {
-                        family: `Raleway`,
-                        variants: [`300`, `400`, `500`],
-                    },
-                    {
+                    },{
                         family: `Poppins`,
-                        variants: [`300`, `400`, `500`, `600`, `700`],
+                        variants: [`300`, `400`, `500`, `600`],
                     },
                 ],
             },
@@ -110,14 +105,14 @@ module.exports = {
         {
             resolve: `gatsby-source-contentful`,
             options: {
-                spaceId: `2g0bd82kkvps`,
+                spaceId: process.env.CONTENTFUL_SPACE_ID,
                 accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
             },
         },
         {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
-                trackingId: "UA-155379843-2",
+                trackingId: process.env.GOOGLE_ANALYTICS_ID,
                 head: true,
             },
         },

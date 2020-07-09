@@ -2,25 +2,23 @@
     width: 100%;
 }
 .contact__section {
-    position: absolute;
-    width: auto;
-    height: auto;
-    left: 0;
-    top: 0;
     text-align: center;
-    background: #f0f0f0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
 }
 .contact__container {
-    display: inline-block;
-    width: 45%;
+    width: 960px;
+    display: flex;
     height: 600px;
-    margin-top: 180px;
     background: white;
     box-shadow: 8px 8px rgba(0, 0, 0, 0.25) blur(0%);
+    flex-direction: row;
 }
 
 .contact__container__right {
-    float: right;
     width: 55%;
     height: 100%;
     background: white;
@@ -204,9 +202,9 @@ textarea[type="message"] {
 }
 .footer__contact__container {
     width: 70%;
-    height: 70%;
+    padding-top: 80px;
+    padding-bottom: 80px;
     display: inline-block;
-    margin-top: 3.5%;
 }
 .footer__contact__container__flex {
     display: flex;
@@ -215,21 +213,33 @@ textarea[type="message"] {
 }
 
 .footer__contact__one {
-    width: 40%;
     text-align: left;
-    padding: 5px;
-    margin: 10px;
-    margin-right: 100px;
+    padding: 20px;
+    max-width: 580px;
+    margin-left: 16px;
 }
 .footer__contact__one p{
-    font-weight: 300;
+    font-weight: 400;
+    margin-top: -8px;
 }
 .footer__contact__one h1{
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 42px;
+    margin-top: 0px;
+    font-family: "montserrat";
+    text-transform: uppercase;
+    
+    color: white;
+    background: black;
+    padding: 0px 4px;
+    transition: 0.1s ease-out;
 }
+
+
+
 .footer__contact__one h3{
     font-weight: 500;
-    margin-top: -10px;
+    margin-top: -16px;
 }
 .footer__contact__two {
     width: 30%;
@@ -264,38 +274,31 @@ textarea[type="message"] {
 }
 
 @media screen and (max-width: 1500px) {
-    .contact__container {
-        width: 50%;
-    }
     .footer__contact__container {
         width: 80%;
     }
-    .footer__contact__one {
-        margin-right: 50px;
-    }
+    
 }
 @media screen and (max-width: 1200px) {
-    .contact__container {
-        width: 60%;
-    }
+    
     .footer__contact__container {
         width: 90%;
     }
-    .footer__contact__one {
-        margin-right: 20px;
+    .footer__contact__one{
+        max-width: 540px;
     }
 }
 @media screen and (max-width: 1000px) {
-    .contact__container {
-        width: 70%;
+    .contact__container{
+        width: 90%;
+    }
+    .footer__contact__one{
+        margin-left: 16px;
+        margin-top: 48px;
+        max-width: 440px;
     }
     .footer__contact__container__flex {
         flex-direction: column;
-    }
-    .footer__contact__one {
-        width: 100%;
-
-        margin-left: -5px;
     }
     .footer__contact__two {
         width: 100%;
@@ -312,17 +315,29 @@ textarea[type="message"] {
     .footer__contact__container {
         width: 85%;
     }
-    .contact__container {
-        width: 75%;
-    }
     .contact__container__right {
-        width: 75%;
+        width: 60%;
     }
     .contact__container__left {
-        width: 25%;
+        width: 40%;
     }
     .contact__container__right__inner {
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .footer__contact__one{
+        margin-left: 0px;
+    }
+    .contact__section{
+        margin-bottom: 48px;
+    }
+    .contact__container__right {
+        width: 70%;
+    }
+    .contact__container__left {
+        width: 30%;
     }
 }
 
@@ -353,6 +368,28 @@ textarea[type="message"] {
     .field input {
         margin: 16px 0;
     }
+    .contact__section{
+        margin-bottom: 32px;
+    }
+    .footer__contact__one{
+        margin-left: 5px;
+    }
+    .footer__contact__one h1{
+        width: fit-content;
+    }
+    .footer__contact__one h1:hover{
+        color: black;
+        background: rgb(238, 238, 238);
+    }
+}
+
+@media screen and (max-width: 480px){
+    .footer__contact__one{
+        padding: 0px;
+    }
+    .footer__contact__one{
+        margin-top: 32px;
+    }
 }
 
 @media screen and (max-width: 400px){
@@ -361,5 +398,11 @@ textarea[type="message"] {
     }
     .contact__container__left {
         width: 5%;
+    }
+    .footer__contact__one{
+        margin-top: 24px;
+    }
+    .contact__section{
+        margin-bottom: 16px;
     }
 } 

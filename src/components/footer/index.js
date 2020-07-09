@@ -47,7 +47,7 @@ export default class Footer extends React.Component {
                 <div
                     className="footer__hero"
                     style={{
-                        background: "#2B2C31",
+                        background: "#eee",
                     }}
                 >
                     <div className="footer__contents">
@@ -89,31 +89,24 @@ export default class Footer extends React.Component {
                                 </form>
                             </div>
                         </div>
-                        <div className="threeiinc__header">
-                            <Link to="/" style={{
-                                textDecoration: "none",
-                            }}>
-                            
-                            <p style={{
-                                textDecoration: "none",
-                                fontSize: '40px',
-                                marginBottom: "16px",
-                            }}>3i INC</p>
-
-                            <p>Idiots by Choice</p>
-                            
-                            <p
-                                style={{
-                                    fontSize: "12px",
-                                    marginTop: "-5px",
-                                    backgroundColor: "whitesmoke",
-                                    color: "black",
-                                }}
-                            >
-                                Stay Home, Play Safe & Save The World
-                                #BreakTheChain
-                            </p>
+                        <div className="footer__contact__one">
+                            <Link style={{textDecoration: 'none'}} to="/">
+                                <h1 
+                                style=
+                                {{  textDecoration: 'none'
+                                }}>
+                                    3i INC
+                                    </h1>
                             </Link>
+                            <h3>3 Idiots Incorporated.</h3>
+                            <p>
+                                Each I in 3I is intricately designed to
+                                match the natural genetic code, the
+                                imaginary number of complex world, the
+                                structural integrity of the strongest
+                                bridge, the quintessential paragon of
+                                the contemporary universe.
+                            </p>
                         </div>
                     </div>
                 </div>

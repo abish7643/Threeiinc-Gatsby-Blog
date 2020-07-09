@@ -3,20 +3,9 @@ import Layout from "../components/layout"
 import NavBlackText from "../components/navBlackText"
 import SEO from "../components/seo"
 import "./contact.css"
-import about from "../images/about.jpg"
-import { TumblrIcon, PinterestIcon } from "react-share"
 import Image from "../components/image"
+import Footer from "../components/footer"
 
-const iconProp = {
-    size: 26,
-    round: true,
-    bgStyle: { opacity: "1" },
-    iconFillColor: "white",
-}
-
-const contactLeft = {
-    backgroundImage: `url(${about})`,
-}
 
 export default class Contact extends React.Component {
     state = {
@@ -189,91 +178,8 @@ export default class Contact extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="footer__contact">
-                        <div className="footer__contact__container">
-                            <div className="footer__contact__container__flex">
-                                <div className="footer__contact__one">
-                                    <h1>3i INC</h1>
-                                    <h3>3 Idiots Incorporated.</h3>
-                                    <p>
-                                        Each I in 3I is intricately designed to
-                                        match the natural genetic code, the
-                                        imaginary number of complex world, the
-                                        structural integrity of the strongest
-                                        bridge, the quintessential paragon of
-                                        the contemporary universe.
-                                    </p>
-                                </div>
-                                <div className="footer__contact__two">
-                                    <h2>Stay Connected</h2>
-                                    <a
-                                        href="https://www.instagram.com/3i.inc/"
-                                        style={{
-                                            marginLeft: "32px",
-                                            padding: "0px 5px",
-                                            display: "inline-block",
-                                        }}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        Follow us on Instagram
-                                    </a>
-                                    <br />
-                                    <a
-                                        href="https://www.tumblr.com/blog/3i-inc"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        style={{
-                                            padding: "0px 5px",
-                                            display: "inline-block",
-                                        }}
-                                    >
-                                        <TumblrIcon
-                                            style={{
-                                                padding: "3px",
-                                                marginBottom: "-9px",
-                                            }}
-                                            {...iconProp}
-                                        />
-                                        Follow us on Tumblr
-                                    </a>
-                                    <br />
-                                    <a
-                                        href="https://www.pinterest.com/3iinc/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        style={{
-                                            padding: "0px 5px",
-                                            display: "inline-block",
-                                        }}
-                                    >
-                                        <PinterestIcon
-                                            style={{
-                                                padding: "3px",
-                                                marginBottom: "-9px",
-                                            }}
-                                            {...iconProp}
-                                        />
-                                        Follow us on Pinterest
-                                    </a>
-                                    <br />
-                                </div>
-                                <div className="footer__contact__three">
-                                    <h2>CONTACT INFO</h2>
-                                    <h4>
-                                        3i INC
-                                        <br />
-                                        Somewhere On Earth
-                                        <br />
-                                        Green Grass, Red Soil
-                                        <br />
-                                        admin@3iinc.xyz
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+                <Footer/>
             </Layout>
         )
     }

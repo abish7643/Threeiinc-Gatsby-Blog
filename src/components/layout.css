@@ -38,7 +38,7 @@ h2 {
     background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%);
     color: white;
     min-width: 120px;
-    height: 36px;
+    height: 40px;
     margin-top: -5px;
     cursor: pointer;
     border: 0px solid white;
@@ -60,7 +60,7 @@ h2 {
     color: #2a5298;
     background: #fff;
     min-width: 120px;
-    height: 36px;
+    height: 40px;
     margin-top: -5px;
     cursor: pointer;
     border: 1px solid #2a5298;
