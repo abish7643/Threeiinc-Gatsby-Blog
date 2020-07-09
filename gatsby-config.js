@@ -103,16 +103,6 @@ module.exports = {
         },
 
         {
-            resolve: `gatsby-remark-images-contentful`,
-            options: {
-                maxWidth: 500,
-                backgroundColor: "black",
-                loading: "lazy",
-                withWebp: true
-            },
-        },
-
-        {
             resolve: `gatsby-plugin-sitemap`,
             options: {
                 exclude: [`/thankyouidiot`],
@@ -149,11 +139,16 @@ module.exports = {
                     {
                         resolve: `gatsby-remark-images-contentful`,
                         options: {
-                            maxWidth: 550,
-                            backgroundColor: "black",
-                            loading: "lazy",
+                            maxWidth: 960,
+                            tracedSVG: true,
+                            withWebp: true,
+                            linkImagesToOriginal: false
                         },
                     },
+                    {
+                        resolve: `gatsby-remark-images-medium-zoom`, // Important!
+                        options: {}
+                    }
                 ],
             },
         },

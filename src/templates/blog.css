@@ -315,6 +315,11 @@ a {
     border-radius: 5px;
     box-shadow: 0px 10px 10px -2px rgba(30, 60, 114, 0.15);
 }
+.gatsby-resp-image-background-image {
+    margin: 48px 0;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px -2px rgba(30, 60, 114, 0.15);
+}
 
 .img {
     width: fit-content;
@@ -544,6 +549,9 @@ h6 {
     .center {
         margin: 32px auto;
     }
+    .gatsby-resp-image-background-image{
+        margin: 32px 0px;
+    }
     .nextPost__Container {
         width: 100%;
     }
@@ -689,6 +697,9 @@ h6 {
 @media screen and (max-width: 400px) {
     .center {
         margin: 24px auto;
+    }
+    .gatsby-resp-image-background-image{
+        margin: 24px 0px;
     }
     .blog__info__title{
         margin-top: 0px;
