@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import "./contact.css"
 import about from "../images/about.jpg"
 import { TumblrIcon, PinterestIcon } from "react-share"
+import Image from "../components/image"
 
 const iconProp = {
     size: 26,
@@ -102,14 +103,12 @@ export default class Contact extends React.Component {
                     <NavBlackText />
                 </div>
                 <div className="contact__section" >
-                    <div className="contact__container" style={contactLeft}>
+                    <div className="contact__container" >
                         <div
                             className="contact__container__left"
-                            style={contactLeft}
-                            data-sal="slide-up"
-                            data-sal-delay="200"
-                            data-sal-easing="ease"
-                        ></div>
+                        >
+                            <Image/>
+                        </div>
                         <div className="contact__container__right">
                             <h1
                                 className="contact__container__right__heading"

@@ -108,6 +108,7 @@ module.exports = {
                 maxWidth: 500,
                 backgroundColor: "black",
                 loading: "lazy",
+                withWebp: true
             },
         },
 
@@ -146,7 +147,7 @@ module.exports = {
                 plugins: [
                     
                     {
-                        resolve: `gatsby-remark-images`,
+                        resolve: `gatsby-remark-images-contentful`,
                         options: {
                             maxWidth: 550,
                             backgroundColor: "black",

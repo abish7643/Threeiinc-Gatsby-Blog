@@ -44,6 +44,10 @@
     height: 100%;
     background-size: cover;
     background: no-repeat;
+    overflow: hidden;
+}
+.contact__form__image{
+    min-height: 600px;
 }
 
 .contact__container__right__heading {
