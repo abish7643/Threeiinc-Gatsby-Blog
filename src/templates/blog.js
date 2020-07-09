@@ -282,7 +282,6 @@ const BlogTemplate = props => {
                                 style={{
                                     textDecoration: "none",
                                     color: "black",
-                                    backgroundColor: "#fafafa",
                                 }}
                             >
                                 <h4 style={{}}>{edge.node.title}</h4>
