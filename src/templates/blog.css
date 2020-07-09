@@ -452,6 +452,7 @@ h6 {
 .author__description h5{
     font-weight: 600;
     color: #323232;
+    font-weight: 600;
 }
 .author__feed {
     display: flex;
@@ -613,9 +614,6 @@ h6 {
     .latestposts__blogpost p{
         font-size: 32px;
     }
-    .latestposts__blogpost{
-        margin-top: 0px;
-    }
     
 }
 
@@ -731,9 +729,6 @@ h6 {
     }
     .blog__content__inner{
         padding-top: 0px;
-    }
-    ..latestposts__blogpost{
-        margin-top: -8px;
     }
 }
 

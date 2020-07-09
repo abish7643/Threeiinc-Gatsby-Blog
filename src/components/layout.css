@@ -84,6 +84,8 @@ h2 {
     transition: 0.3s ease-in-out;
     margin-top: 24px;
     margin-bottom: 32px;
+    position: relative;
+    z-index: 100;
   }
 
 @media screen and (max-width: 500px) {

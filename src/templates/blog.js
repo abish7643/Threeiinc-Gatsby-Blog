@@ -268,8 +268,8 @@ const BlogTemplate = props => {
                                 backgroundImage: `linear-gradient(
                     to bottom,
                     rgba(10, 10, 10, 0) 0%,
-                    rgba(10, 10, 10, 0.5) 50%,
-                    rgba(10, 10, 10, 0.7) 100%),
+                    rgba(10, 10, 10, 0.4) 50%,
+                    rgba(10, 10, 10, 0.8) 100%),
                     url(${edge.node.featuredImage.fluid.src})`,
                             }}
                             onClick={() => navigate(`/blog/${edge.node.slug}/`)}
