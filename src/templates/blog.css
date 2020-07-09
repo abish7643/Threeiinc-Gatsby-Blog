@@ -235,6 +235,8 @@ a {
     font-weight: 300;
     font-family: "poppins";
 }
+
+
 .blog__content td {
     padding-bottom: 4px;
     padding-top: 4px;
@@ -246,8 +248,7 @@ a {
     padding-top: 8px;
 }
 .blog__content table {
-    margin: 0 auto;
-    margin-bottom: 30px;
+    margin: 32px auto;
     text-align: center;
     width: 100%;
     max-width: 760px;
