@@ -6,6 +6,7 @@
     margin-top: 72px;
     margin-bottom: 48px;
     padding: 8px;
+    max-width: 960px;
 }
 
 .search__entries__none{
@@ -95,6 +96,7 @@
 }
 .ais-SearchBox-input{
     height: 36px;
+    width: 300px;
     border: 1px solid black;
     border-radius: 5px;
     margin-right: 8px;
@@ -235,6 +237,11 @@
 } 
 
 
+@media screen and (max-width: 1250px){
+    .search__inner{
+        max-width: unset;
+    }
+  }
   @media screen and (max-width: 1000px){
     .search__entries__details__title{
         font-size: 15px;

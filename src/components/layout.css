@@ -32,12 +32,12 @@ h2 {
 .btn__med {
     border-radius: 4px;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 500;
     background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%);
     color: white;
-    min-width: 120px;
+    min-width: 160px;
     height: 40px;
     margin-top: -5px;
     cursor: pointer;
