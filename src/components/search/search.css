@@ -214,6 +214,7 @@
   }
 
   .ais-Pagination-link{
+    border-radius: 4px;
     border: 1px solid #1e3c72;
     font-weight: 400;
     padding: 8px 20px;
