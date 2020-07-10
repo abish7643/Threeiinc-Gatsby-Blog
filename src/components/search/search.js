@@ -8,8 +8,8 @@ import { InstantSearch, SearchBox, connectHits, Pagination } from 'react-instant
 import "./search.css"
 
 const searchClient = algoliasearch(
-  'XAXE9VEPK1',
-  '689da4f53053898c055506301a75efb1'
+  "XAXE9VEPK1",
+  "689da4f53053898c055506301a75efb1"
 )
 
 const PostHits = connectHits(({ hits }) => (
