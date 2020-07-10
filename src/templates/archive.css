@@ -64,6 +64,16 @@
     justify-content: flex;
     align-items: center;
 }
+
+.search-svg{
+    filter: invert();
+    width: 28px;
+    height: 28px;
+    margin-bottom: -2px;
+    padding: 0px 8px 0px 8px;
+}
+
+
 @media screen and (max-width: 1200px) {
     .main__div {
         width: 100vw;
