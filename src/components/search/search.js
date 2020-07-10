@@ -8,8 +8,8 @@ import { InstantSearch, SearchBox, connectHits, Pagination } from 'react-instant
 import "./search.css"
 
 const searchClient = algoliasearch(
-  process.env.ALGOLIA_APP_ID,
-  process.env.ALGOLIA_API_KEY
+  'XAXE9VEPK1',
+  '689da4f53053898c055506301a75efb1'
 )
 
 const PostHits = connectHits(({ hits }) => (
@@ -17,7 +17,6 @@ const PostHits = connectHits(({ hits }) => (
       {hits.length ? (
         <div className="search__inner">
           {hits.map(hit => {
-              console.log(hit);
             return (
                   <div
                     key={hit.objectID}
