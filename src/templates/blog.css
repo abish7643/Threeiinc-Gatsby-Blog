@@ -400,6 +400,10 @@ h6 {
     margin-left: 6px;
 }
 
+.share__buttons button:hover{
+    transform: scale(1.08);
+}
+
 .about__author {
     display: flex;
     position: relative;

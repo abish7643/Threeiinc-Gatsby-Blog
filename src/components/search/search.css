@@ -6,7 +6,7 @@
     margin-top: 72px;
     margin-bottom: 48px;
     padding: 8px;
-    max-width: 960px;
+    max-width: 1200px;
 }
 
 .search__entries__none{
@@ -246,6 +246,9 @@
     .search__entries__details__title{
         font-size: 15px;
     }
+    .search__entries__details__author{
+        font-size: 11px;
+    }
   }
   @media screen and (max-width: 750px) {
       .search__entries{
@@ -264,12 +267,13 @@
         margin-left: 12px;
         margin-right: 8px;
     }
-    .search__entries__details__author{
-        font-size: 11px;
-    }
+    
     .search__entries__none{
         margin-top: 96px;
         margin-bottom: 96px;
+    }
+    .ais-SearchBox-input{
+        width: 280px;
     }
 }
 @media screen and (max-width: 400px) {
@@ -279,5 +283,8 @@
     .search__entries__details{
         margin-left: 10px;
         margin-right: 4px;
+    }
+    .ais-SearchBox-input{
+        width: 256px;
     }
 }

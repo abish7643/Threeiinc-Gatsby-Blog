@@ -19,6 +19,27 @@
     
 }
 
+.search__middle{
+    border-radius: 4px;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 160px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid #2a5298;
+    transition: 0.3s ease-in-out;
+    font-family: "montserrat";
+    color: #1e3c72;
+    background-position: right center;
+    background: #fff;
+}
+
+.search__middle:hover{
+    transform: scale(1.02);
+}
+
 .pagination__item{
     border: 1px solid #eeeeee;
     border-radius: 4px;
@@ -27,7 +48,7 @@
     border-radius: 4px;
     text-align: center;
     cursor: pointer;
-    padding: 8px 24px;
+    padding: 11px 24px;
     border: 1px solid #1e3c72;
     font-size: 12px;
     font-weight: 900;
@@ -42,7 +63,7 @@
     border-radius: 4px;
     text-align: center;
     cursor: pointer;
-    padding: 8px 24px;
+    padding: 11px 24px;
     border: 1px solid #1e3c72;
     font-size: 12px;
     font-weight: 500;
@@ -67,10 +88,10 @@
 
 .search-svg{
     filter: invert();
-    width: 28px;
-    height: 28px;
-    margin-bottom: -2px;
-    padding: 0px 8px 0px 8px;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 2px;
+    padding: 0px 0px 0px 8px;
 }
 
 
@@ -89,5 +110,13 @@
     }
     .pagination {
         width: 90%;
+    }
+    .pagination__button__container {
+        margin: 0px 32px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .pagination__button__container {
+        margin: 0px 16px;
     }
 }

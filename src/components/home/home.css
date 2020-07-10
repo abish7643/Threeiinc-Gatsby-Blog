@@ -144,7 +144,7 @@
     transition: 0.2s ease-in;
     color: #1e3c72;
     background-position: right center;
-    background-image: #fff;
+    background: #fff;
 }
 
 .viewmore_wrapper__outline:hover{

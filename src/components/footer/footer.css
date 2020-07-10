@@ -126,6 +126,9 @@
 .socialbuttons__footer a{
     margin-right: 8px;
 }
+.socialbuttons__footer a svg:hover{
+    transform: scale(1.08);
+}
 
 .icon{
     height: 20px;
