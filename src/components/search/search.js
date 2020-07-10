@@ -10,7 +10,6 @@ import "./search.css"
 const searchClient = algoliasearch(
   "XAXE9VEPK1",
   "689da4f53053898c055506301a75efb1",
-  "posts"
 )
 
 const PostHits = connectHits(({ hits }) => (
@@ -59,7 +58,7 @@ export default function Search() {
   return (
       <div className="search__page__container">
         <InstantSearch
-        indexName={process.env.ALGOLIA_INDEX_NAME}
+        indexName={"posts"}
         searchClient={searchClient}
         >
         <SearchBox translations={{placeholder: 'Search 3i'}}/>
