@@ -35,7 +35,7 @@ export default class CommentSection extends React.Component {
                     /><span> </span>
                 )</button>
                 <div className="comment__section" id="commentSection">
-                
+                    
                     {hyvorPlatform}
                 </div>
             </>

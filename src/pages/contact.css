@@ -214,9 +214,10 @@ textarea[type="message"] {
 
 .footer__contact__one {
     text-align: left;
-    padding: 20px;
+    padding: 0px 20px;
     max-width: 580px;
     margin-left: 16px;
+    margin-top: 8px;
 }
 .footer__contact__one p{
     font-weight: 400;
@@ -372,7 +373,7 @@ textarea[type="message"] {
         margin-bottom: 32px;
     }
     .footer__contact__one{
-        margin-left: 5px;
+        margin-left: 2px;
     }
     .footer__contact__one h1{
         width: fit-content;
