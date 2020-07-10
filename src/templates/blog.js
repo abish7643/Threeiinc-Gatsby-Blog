@@ -38,7 +38,7 @@ const BlogTemplate = props => {
     const shareTitleLink = `${shareTitle} | ${shareUrl}`
     const iconProp = {
         size: 36,
-        round: true,
+        round: false,
         bgStyle: { opacity: "0.25" },
         iconFillColor: "black",
     }
