@@ -9,7 +9,8 @@ import "./search.css"
 
 const searchClient = algoliasearch(
   "XAXE9VEPK1",
-  "689da4f53053898c055506301a75efb1"
+  "689da4f53053898c055506301a75efb1",
+  "posts"
 )
 
 const PostHits = connectHits(({ hits }) => (
