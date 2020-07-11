@@ -14,9 +14,8 @@ export default class Footer extends React.Component {
         inputEntered: ""
     }
     handleChange = event => {
-        const isCheck = event.target.type === "check"
         this.setState({
-            email: isCheck ? event.target.checked : event.target.value,
+            email: event.target.value,
             inputEntered: "1",
         })
     }
@@ -33,7 +32,7 @@ export default class Footer extends React.Component {
         }
         let newsletterButton
         if (
-            this.state.inputEntered === "1"
+            this.state.email !== ""
         ) {
             newsletterButton = (
                 <button style={{ cursor: "pointer" }} className="btn__med">
