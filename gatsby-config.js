@@ -31,6 +31,7 @@ module.exports = {
                 // optional, any index settings
               },
               enablePartialUpdates: true, // default: false
+              matchFields: ['slug', 'shortDescription'],
             },
           },
         {
