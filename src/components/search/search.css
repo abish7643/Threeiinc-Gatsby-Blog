@@ -183,7 +183,6 @@
     border-radius: 4px;
     text-align: center;
     cursor: pointer;
-    
     margin: 4px;
     font-size: 16px;
     font-weight: 900;
@@ -244,6 +243,46 @@
     padding: 0px 2px;
 }
 
+.ais-RefinementList-list{
+    list-style: none;
+    display: flex;
+    margin-left: -56px;
+    font-family: "montserrat";
+    margin-top: 32px;
+    transition: 0.3s ease-in-out;
+}
+
+.ais-RefinementList-label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefefe;
+    padding: 2px 4px;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px 0 rgba(10, 10, 10, 0.05);
+}
+
+.ais-RefinementList-labelText{
+    margin: 0px 8px;
+}
+
+.ais-RefinementList-count{
+    font-weight: 500;
+    background-color: #000;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.ais-RefinementList-list li{
+    margin: 0px 12px;
+    transition: 0.3s ease-in-out;
+}
+
+.ais-RefinementList-checkbox{
+    
+}
+
 
 @media screen and (max-width: 1250px){
     .search__inner{
@@ -283,6 +322,7 @@
     .ais-SearchBox-input{
         width: 280px;
     }
+    
 }
 @media screen and (max-width: 400px) {
     .search__entries__details__title{

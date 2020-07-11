@@ -154,9 +154,9 @@ module.exports = {
                         resolve: `gatsby-remark-images-contentful`,
                         options: {
                             maxWidth: 960,
-                            tracedSVG: true,
                             withWebp: true,
-                            linkImagesToOriginal: false
+                            linkImagesToOriginal: false,
+                            backgroundColor: 'transparent'
                         },
                     },
                     {

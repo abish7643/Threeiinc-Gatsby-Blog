@@ -3,8 +3,8 @@ import {navigate} from 'gatsby'
 import moment from 'moment'
 import Img from 'gatsby-image'
 import algoliasearch from 'algoliasearch/lite'
-import { InstantSearch, SearchBox, connectHits, Highlight, Pagination } from 'react-instantsearch-dom'
-
+import {  InstantSearch, SearchBox, connectHits, Highlight, Pagination } from 'react-instantsearch-dom'
+//import {InfiniteHits, RefinementList} from 'react-instantsearch-dom'
 import "./search.css"
 
 const searchClient = algoliasearch(
