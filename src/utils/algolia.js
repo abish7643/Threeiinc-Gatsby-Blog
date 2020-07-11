@@ -19,6 +19,7 @@ query postQuery {
                     authorSlug
                 }
                 createdAt
+                shortDescription
                 featuredImage {
                     fluid(maxWidth: 600, quality: 70, toFormat: WEBP) {
                         src
