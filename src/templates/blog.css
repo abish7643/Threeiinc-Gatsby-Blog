@@ -17,7 +17,7 @@ body {
     align-content: center;
     justify-content: center;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 64px;
     color: white;
     align-self: center;
     margin-left: -5px;
@@ -472,13 +472,38 @@ h6 {
     justify-content: center;
     justify-self: center;
     margin-top: -30px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    margin-left: 10px;
-    margin-right: 20px;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
 }
 .contribute__question__header h4{
     font-weight: 500;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contribute__question__header h4 p{
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 12px;
+    text-decoration: none;
+    border: 1px solid #1e3c72;
+    padding: 10px 18px;
+    color: #fff;
+    width: fit-content;
+    transition: 0.2 ease-in-out;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%);
+}
+
+.contribute__question__header h4 p:hover{
+    background: #fff;
+    border: 1px solid #1e3c72;
+    color: #1e3c72;
 }
 
 .blog__comment__count {

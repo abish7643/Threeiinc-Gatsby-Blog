@@ -66,18 +66,15 @@ export default () => (
                         data-sal-delay="50"
                         data-sal-easing="ease"
                     >
-                        {" "}
-                        Wanna Explore Yourself? Work with 3i.
+                        Wanna Explore Yourself? Work with 3i.<br></br>
                         <Link to="/contact/">
-                            {" "}
-                            <br></br>
-                            <span
+                            <p
                                 data-sal="slide-up"
                                 data-sal-delay="150"
                                 data-sal-easing="ease"
                             >
-                                JUST FOLLOW!
-                            </span>
+                                Let Us Know!
+                            </p>
                         </Link>
                     </h4>
                 </div>
