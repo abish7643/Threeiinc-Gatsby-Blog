@@ -86,6 +86,7 @@
 .text-opacity-low{
     background-color: #eeeeee;
     padding-left: 2px;
+    margin-left: 2px;
     padding-right: 2px;
 }
 
@@ -235,6 +236,13 @@
     transition: 0.3s ease-in-out;
     background-image: linear-gradient(to right, #2a5298 0%, #1e3c72 100%);
 } 
+
+.ais-Highlight-highlighted{
+    background-color: #2a5298;
+    color: white;
+    font-weight: unset;
+    padding: 0px 2px;
+}
 
 
 @media screen and (max-width: 1250px){

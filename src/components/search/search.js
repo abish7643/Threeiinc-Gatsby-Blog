@@ -3,7 +3,7 @@ import {navigate} from 'gatsby'
 import moment from 'moment'
 import Img from 'gatsby-image'
 import algoliasearch from 'algoliasearch/lite'
-import { InstantSearch, SearchBox, connectHits, Pagination } from 'react-instantsearch-dom'
+import { InstantSearch, SearchBox, connectHits, Highlight, Pagination } from 'react-instantsearch-dom'
 
 import "./search.css"
 
@@ -34,10 +34,10 @@ const PostHits = connectHits(({ hits }) => (
                         </span>
                     ))}
                     <p className="search__entries__details__title">
-                        {hit.title}
+                      <Highlight attribute="title" hit={hit} tagName="strong" />
                     </p>
                     <p className="search__entries__details__author">
-                        <span className="text-left"><span className="text-opacity-low">By</span> {hit.authorData.authorName} </span>  
+                        <span className="text-left"><span className="text-opacity-low">By</span> <Highlight attribute="authorData.authorName" hit={hit} tagName="strong" /></span>  
                         <span className="text-opacity-low">on {moment(hit.createdAt).format('MMM Do YYYY')}</span>
                     </p>
                 </div>
