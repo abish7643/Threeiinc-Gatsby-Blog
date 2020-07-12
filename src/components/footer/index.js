@@ -118,9 +118,9 @@ export default class Footer extends React.Component {
 
                             <div
                                 className="socialbuttons__footer"
-                                data-sal="slide-up"
-                                data-sal-delay="200"
-                                data-sal-easing="ease"
+                                data-sal="fade"
+                                data-sal-delay="50"
+                                data-sal-easing="ease-in-out"
                             >
                                 <a
                                     href="https://www.instagram.com/3i.inc/"
