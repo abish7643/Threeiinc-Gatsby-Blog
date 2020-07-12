@@ -12,14 +12,12 @@
     align-items: center;
     margin-top: -30px;
     margin-bottom: 24px;
-    
 }
 .pagination__button__container {
     margin: 0px 50px;
-    
 }
 
-.search__middle{
+.search__middle {
     border-radius: 4px;
     text-align: center;
     font-size: 12px;
@@ -36,15 +34,15 @@
     background: #fff;
 }
 
-.search__middle:hover{
+.search__middle:hover {
     transform: scale(1.02);
 }
 
-.pagination__item{
+.pagination__item {
     border: 1px solid #eeeeee;
     border-radius: 4px;
 }
-.arrow__back{
+.arrow__back {
     border-radius: 4px;
     text-align: center;
     cursor: pointer;
@@ -59,7 +57,7 @@
     color: #eeeeee;
 }
 
-.arrow__next{
+.arrow__next {
     border-radius: 4px;
     text-align: center;
     cursor: pointer;
@@ -74,7 +72,6 @@
     color: #eeeeee;
 }
 
-
 .feed {
     margin-bottom: 70px;
 }
@@ -86,14 +83,13 @@
     align-items: center;
 }
 
-.search-svg{
+.search-svg {
     filter: invert();
     width: 16px;
     height: 16px;
     margin-bottom: 2px;
     padding: 0px 0px 0px 8px;
 }
-
 
 @media screen and (max-width: 1200px) {
     .main__div {

@@ -82,25 +82,24 @@ export default () => (
                                     data-sal-delay="200"
                                     data-sal-easing="ease"
                                     style={{
-                                        display: 'flex',
-                                        flexDirection: 'row'
+                                        display: "flex",
+                                        flexDirection: "row",
                                     }}
                                 >
                                     <Link
                                         style={{
                                             textDecoration: "none",
                                             color: "white",
-                                            display: 'flex',
-                                            justifyContent: 'left',
-                                            alignItems: 'left',
-                                            cursor: "pointer"
+                                            display: "flex",
+                                            justifyContent: "left",
+                                            alignItems: "left",
+                                            cursor: "pointer",
                                         }}
                                         to={`/idiots/${edge.node.authorData.authorSlug}/`}
                                     >
                                         {edge.node.authorData.authorName} |{" "}
                                         {edge.node.createdAt}
-                                        </Link>
-                                        
+                                    </Link>
                                 </p>
                                 <div
                                     className="header__button__div"

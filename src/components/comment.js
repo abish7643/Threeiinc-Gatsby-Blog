@@ -14,7 +14,7 @@ export default class CommentSection extends React.Component {
     render() {
         let hideButton
         let hyvorPlatform
-        if (this.state.clicked === true){
+        if (this.state.clicked === true) {
             hyvorPlatform = (
                 <HyvorTalk.Embed
                     websiteId={321}
@@ -22,20 +22,31 @@ export default class CommentSection extends React.Component {
                     id={this.props.slug.data.currentBlog.slug}
                 />
             )
-            hideButton = { visibility: 'hidden', height: '0px', marginTop: '0px', opacity: '0'}
+            hideButton = {
+                visibility: "hidden",
+                height: "0px",
+                marginTop: "0px",
+                opacity: "0",
+            }
         }
-        
+
         return (
-            <> 
-                <button className="btn__med__outline" style={hideButton} onClick={this.handleClick}> Read Responses (
-                    <span> </span><HyvorTalk.CommentCount
+            <>
+                <button
+                    className="btn__med__outline"
+                    style={hideButton}
+                    onClick={this.handleClick}
+                >
+                    {" "}
+                    Read Responses (<span> </span>
+                    <HyvorTalk.CommentCount
                         data-talk-mode="number"
                         id={this.props.slug.data.currentBlog.slug}
                         websiteId={321}
-                    /><span> </span>
-                )</button>
+                    />
+                    <span> </span>)
+                </button>
                 <div className="comment__section" id="commentSection">
-                    
                     {hyvorPlatform}
                 </div>
             </>

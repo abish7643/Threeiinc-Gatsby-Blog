@@ -47,11 +47,11 @@ h2 {
     transition: 0.3s ease-in-out;
 }
 
-.btn__med:hover{
+.btn__med:hover {
     background-image: linear-gradient(to right, #2a5298 0%, #1e3c72 100%);
 }
 
-.btn__med__inactive{
+.btn__med__inactive {
     border-radius: 4px;
     text-align: center;
     font-size: 12px;
@@ -66,8 +66,8 @@ h2 {
     border: 1px solid #2a5298;
     font-family: "montserrat";
     outline: none;
-  }
-  .btn__med__outline{
+}
+.btn__med__outline {
     border-radius: 4px;
     text-align: center;
     font-size: 12px;
@@ -86,22 +86,21 @@ h2 {
     margin-bottom: 48px;
     position: relative;
     z-index: 100;
-  }
-  .btn__med__outline:hover{
+}
+.btn__med__outline:hover {
     transform: scale(1.02);
-  }
+}
 
 @media screen and (max-width: 500px) {
-    .btn__med{
+    .btn__med {
         height: 36px;
         font-size: 12px;
         width: 100%;
     }
-    .btn__med__inactive{
-        
+    .btn__med__inactive {
         width: 100%;
     }
-    .btn__med__outline{
+    .btn__med__outline {
         width: 92%;
     }
 }

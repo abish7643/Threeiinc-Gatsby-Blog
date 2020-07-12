@@ -6,7 +6,6 @@ import "./contact.css"
 import Image from "../components/image"
 import Footer from "../components/footer"
 
-
 export default class Contact extends React.Component {
     state = {
         contactName: "",
@@ -38,7 +37,7 @@ export default class Contact extends React.Component {
             contactMessage: event.target.value,
             contactmessageinputEntered: "1",
         })
-        this.state.formStartedToFill = true;
+        this.state.formStartedToFill = true
     }
 
     handleContactSubmit = event => {
@@ -57,10 +56,7 @@ export default class Contact extends React.Component {
             this.state.contactMessage !== ""
         ) {
             contactButton = (
-                <button
-                    className="btn__med"
-                    style={{marginTop: "24px"}}
-                >
+                <button className="btn__med" style={{ marginTop: "24px" }}>
                     SUBMIT
                 </button>
             )
@@ -71,8 +67,8 @@ export default class Contact extends React.Component {
                     style={{
                         marginTop: "24px",
                         pointerEvents: "none",
-                        cursor: "none"
-                }}
+                        cursor: "none",
+                    }}
                 >
                     SUBMIT
                 </button>
@@ -91,12 +87,10 @@ export default class Contact extends React.Component {
                 <div className="nav__contact__wrapper">
                     <NavBlackText />
                 </div>
-                <div className="contact__section" >
-                    <div className="contact__container" >
-                        <div
-                            className="contact__container__left"
-                        >
-                            <Image/>
+                <div className="contact__section">
+                    <div className="contact__container">
+                        <div className="contact__container__left">
+                            <Image />
                         </div>
                         <div className="contact__container__right">
                             <h1
@@ -172,14 +166,14 @@ export default class Contact extends React.Component {
                                         ></textarea>
                                     </div>
                                     <div className="contact__submit__btn__container">
-                                    {contactButton}
+                                        {contactButton}
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-                <Footer/>
+                <Footer />
             </Layout>
         )
     }

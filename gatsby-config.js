@@ -5,7 +5,6 @@ require("dotenv").config({
 const queries = require("./src/utils/algolia")
 
 module.exports = {
-
     siteMetadata: {
         title: `3i INC | 3 Idiots Incorporated.`,
         description: `Idiots by Choice! | 3 Idiots Incorporated.`,
@@ -21,19 +20,19 @@ module.exports = {
             // This plugin must be placed last in your list of plugins to ensure that it can query all the GraphQL data
             resolve: `gatsby-plugin-algolia`,
             options: {
-              appId: process.env.ALGOLIA_APP_ID,
-              // Careful, no not prefix this with GATSBY_, since that way users can change
-              // the data in the index.
-              apiKey: process.env.ALGOLIA_ADMIN_KEY,
-              queries,
-              chunkSize: 10000, // default: 1000
-              settings: {
-                // optional, any index settings
-              },
-              enablePartialUpdates: true, // default: false
-              matchFields: ['slug', 'shortDescription'],
+                appId: process.env.ALGOLIA_APP_ID,
+                // Careful, no not prefix this with GATSBY_, since that way users can change
+                // the data in the index.
+                apiKey: process.env.ALGOLIA_ADMIN_KEY,
+                queries,
+                chunkSize: 10000, // default: 1000
+                settings: {
+                    // optional, any index settings
+                },
+                enablePartialUpdates: true, // default: false
+                matchFields: ["slug", "shortDescription"],
             },
-          },
+        },
         {
             resolve: `gatsby-plugin-nprogress`,
             options: {
@@ -76,7 +75,8 @@ module.exports = {
                     {
                         family: `Montserrat`,
                         variants: [`300`, `400`, `500`, `600`],
-                    },{
+                    },
+                    {
                         family: `Poppins`,
                         variants: [`300`, `400`, `500`, `600`],
                     },
@@ -88,31 +88,30 @@ module.exports = {
             resolve: "gatsby-transformer-remark",
             options: {
                 plugins: [
-                      {
-                          resolve: "gatsby-remark-prismjs",
-                          options: {
+                    {
+                        resolve: "gatsby-remark-prismjs",
+                        options: {
                             classPrefix: "language-",
                             showLineNumbers: true,
                             inlineCodeMarker: null,
                             noInlineHighlight: true,
 
                             languageExtensions: [
-                                
                                 {
-                                  language: "superscript",
-                                  extend: "javascript",
-                                  definition: {
-                                    superscript_types: /(SuperType)/,
-                                  },
-                                  insertBefore: {
-                                    function: {
-                                      superscript_keywords: /(superif|superelse)/,
+                                    language: "superscript",
+                                    extend: "javascript",
+                                    definition: {
+                                        superscript_types: /(SuperType)/,
                                     },
-                                  },
+                                    insertBefore: {
+                                        function: {
+                                            superscript_keywords: /(superif|superelse)/,
+                                        },
+                                    },
                                 },
-                              ],
-                          }
-                      },
+                            ],
+                        },
+                    },
                 ],
             },
         },
@@ -149,20 +148,19 @@ module.exports = {
             resolve: `gatsby-transformer-remark`,
             options: {
                 plugins: [
-                    
                     {
                         resolve: `gatsby-remark-images-contentful`,
                         options: {
                             maxWidth: 960,
                             withWebp: true,
                             linkImagesToOriginal: false,
-                            backgroundColor: 'transparent'
+                            backgroundColor: "transparent",
                         },
                     },
                     {
                         resolve: `gatsby-remark-images-medium-zoom`, // Important!
-                        options: {}
-                    }
+                        options: {},
+                    },
                 ],
             },
         },

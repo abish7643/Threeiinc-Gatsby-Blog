@@ -28,7 +28,7 @@ query postQuery {
             }
         }
     }
-}`;
+}`
 
 const authorQuery = `
 query authorQuery {
@@ -45,25 +45,27 @@ query authorQuery {
         }
     }
 }
-`;
-  
-  const queries = [
+`
+
+const queries = [
     {
         query: postQuery,
-        transformer: ({ data }) => data.allContentfulBlog.edges.map(({ node }) => node), // optional
-        indexName: 'posts', // overrides main index name, optional
+        transformer: ({ data }) =>
+            data.allContentfulBlog.edges.map(({ node }) => node), // optional
+        indexName: "posts", // overrides main index name, optional
         settings: {
             // optional, any index settings
         },
     },
     {
         query: authorQuery,
-        transformer: ({ data }) => data.allContentfulAuthorModel.edges.map(({ node }) => node), // optional
-        indexName: 'authors', // overrides main index name, optional
+        transformer: ({ data }) =>
+            data.allContentfulAuthorModel.edges.map(({ node }) => node), // optional
+        indexName: "authors", // overrides main index name, optional
         settings: {
-          // optional, any index settings
+            // optional, any index settings
         },
     },
-  ];
-  
+]
+
 module.exports = queries

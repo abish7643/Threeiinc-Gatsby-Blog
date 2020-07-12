@@ -27,7 +27,7 @@ const NotFoundPage = () => (
             >
                 3I INC
             </h2>
-            <h1 style={{ fontFamily: "montserrat"}}>NOT FOUND</h1>
+            <h1 style={{ fontFamily: "montserrat" }}>NOT FOUND</h1>
             <p
                 style={{
                     fontFamily: "poppins",

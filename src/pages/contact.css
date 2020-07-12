@@ -33,7 +33,7 @@
 .contact__container__right__inner {
     width: 70%;
 }
-.contact__submit__btn__container{
+.contact__submit__btn__container {
     margin: 0 8%;
 }
 .contact__container__left {
@@ -44,7 +44,7 @@
     background: no-repeat;
     overflow: hidden;
 }
-.contact__form__image{
+.contact__form__image {
     min-height: 600px;
 }
 
@@ -219,26 +219,24 @@ textarea[type="message"] {
     margin-left: 16px;
     margin-top: 8px;
 }
-.footer__contact__one p{
+.footer__contact__one p {
     font-weight: 400;
     margin-top: -8px;
 }
-.footer__contact__one h1{
+.footer__contact__one h1 {
     font-weight: 500;
     font-size: 42px;
     margin-top: 0px;
     font-family: "montserrat";
     text-transform: uppercase;
-    
+
     color: white;
     background: black;
     padding: 0px 4px;
     transition: 0.1s ease-out;
 }
 
-
-
-.footer__contact__one h3{
+.footer__contact__one h3 {
     font-weight: 500;
     margin-top: -16px;
 }
@@ -247,7 +245,7 @@ textarea[type="message"] {
     text-align: left;
     margin: 20px;
 }
-.footer__contact__two a{
+.footer__contact__two a {
     font-size: 14px;
     font-weight: 400;
 }
@@ -278,22 +276,20 @@ textarea[type="message"] {
     .footer__contact__container {
         width: 80%;
     }
-    
 }
 @media screen and (max-width: 1200px) {
-    
     .footer__contact__container {
         width: 90%;
     }
-    .footer__contact__one{
+    .footer__contact__one {
         max-width: 540px;
     }
 }
 @media screen and (max-width: 1000px) {
-    .contact__container{
+    .contact__container {
         width: 90%;
     }
-    .footer__contact__one{
+    .footer__contact__one {
         margin-left: 16px;
         margin-top: 48px;
         max-width: 440px;
@@ -328,10 +324,10 @@ textarea[type="message"] {
 }
 
 @media screen and (max-width: 750px) {
-    .footer__contact__one{
+    .footer__contact__one {
         margin-left: 0px;
     }
-    .contact__section{
+    .contact__section {
         margin-bottom: 48px;
     }
     .contact__container__right {
@@ -369,41 +365,41 @@ textarea[type="message"] {
     .field input {
         margin: 16px 0;
     }
-    .contact__section{
+    .contact__section {
         margin-bottom: 32px;
     }
-    .footer__contact__one{
+    .footer__contact__one {
         margin-left: 2px;
     }
-    .footer__contact__one h1{
+    .footer__contact__one h1 {
         width: fit-content;
     }
-    .footer__contact__one h1:hover{
+    .footer__contact__one h1:hover {
         color: black;
         background: rgb(238, 238, 238);
     }
 }
 
-@media screen and (max-width: 480px){
-    .footer__contact__one{
+@media screen and (max-width: 480px) {
+    .footer__contact__one {
         padding: 0px;
     }
-    .footer__contact__one{
+    .footer__contact__one {
         margin-top: 32px;
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
     .contact__container__right {
         width: 95%;
     }
     .contact__container__left {
         width: 5%;
     }
-    .footer__contact__one{
+    .footer__contact__one {
         margin-top: 24px;
     }
-    .contact__section{
+    .contact__section {
         margin-bottom: 16px;
     }
-} 
+}

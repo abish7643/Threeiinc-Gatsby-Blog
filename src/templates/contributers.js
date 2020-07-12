@@ -78,13 +78,13 @@ export default () => (
                         </Link>
                     </h4>
                 </div>
-                <div className="Author__Info__Container"
-                        data-sal="slide-up"
-                        data-sal-delay="300"
-                        data-sal-easing="ease">
-                    <div
-                        style={{backgroundColor: 'black'}}
-                    >
+                <div
+                    className="Author__Info__Container"
+                    data-sal="slide-up"
+                    data-sal-delay="300"
+                    data-sal-easing="ease"
+                >
+                    <div style={{ backgroundColor: "black" }}>
                         <h1
                             data-sal="slide-up"
                             data-sal-delay="500"
