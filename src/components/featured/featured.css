@@ -38,7 +38,7 @@ header {
 .header__content {
     min-height: 500px;
     color: white;
-    padding: 50px 50px 50px 50px;
+    padding: 48px 48px 48px 48px;
     position: absolute;
     left: 0;
     right: 0;
@@ -61,13 +61,21 @@ header {
 }
 .banner___title {
     font-weight: 500;
-    font-size: 36px;
+    font-size: 48px;
+    min-height: 72px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.header__button__div{
+    margin-top: 12px;
 }
 
 .header__subtitle {
     font-size: 18px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: 500;
     color: white;
     margin: 0 0 30px 0;
 }
@@ -76,7 +84,7 @@ header {
     z-index: 2;
     font-size: 14px;
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
     border-bottom: 1px solid white;
     width: 100%;
     margin-top: -10px;
@@ -94,7 +102,8 @@ header {
         margin-top: 160px;
     }
     .banner___title {
-        line-height: 40px;
+        font-size: 44px;
+        line-height: 56px;
     }
 }
 
@@ -104,13 +113,13 @@ header {
         margin-top: 150px;
     }
     .header__content {
-        padding: 50px 25px;
+        padding: 50px 20px;
         margin-top: -240px;
     }
 
     .banner___title {
-        font-size: 28px;
-        line-height: 38px;
+        font-size: 40px;
+        line-height: 52px;
     }
 }
 
@@ -124,11 +133,15 @@ header {
     }
 
     .banner___title {
-        font-size: 28px;
+        font-size: 32px;
+        line-height: 48px;
     }
     .header__subtitle {
         margin-top: -5px;
         font-size: 16px;
+    }
+    .header__button__div{
+        margin-top: 16px;
     }
 }
 
@@ -138,7 +151,7 @@ header {
         line-height: 22px;
     }
     .banner___title {
-        font-size: 26px;
+        font-size: 28px;
         line-height: 36px;
     }
 }
