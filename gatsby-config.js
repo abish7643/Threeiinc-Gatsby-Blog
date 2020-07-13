@@ -124,7 +124,8 @@ module.exports = {
         {
             resolve: `gatsby-plugin-sitemap`,
             options: {
-                exclude: [`/thankyouidiot`],
+                exclude: [`/thankyouidiot`, `/404`],
+                changefreq: `daily`,
             },
         },
         {
