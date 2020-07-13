@@ -6333,6 +6333,13 @@ gatsby-plugin-algolia@^0.11.1:
     gatsby-cli "^1.1.58"
     lodash.chunk "^4.2.0"
 
+gatsby-plugin-canonical-urls@^2.3.10:
+  version "2.3.10"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-canonical-urls/-/gatsby-plugin-canonical-urls-2.3.10.tgz#6d66431883bca4df017a54795b7f943d00c76e4a"
+  integrity sha512-KidooQt7cjpy3m8Tr5NSje5WGKrsLfdmtJr/AdyBmPAHxlAquDs2Fy7haoZQaAJGz+QZYUhs6HYmgUrYRCbfKA==
+  dependencies:
+    "@babel/runtime" "^7.10.3"
+
 gatsby-plugin-google-analytics@^2.1.35:
   version "2.3.11"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.3.11.tgz#201769a27ae9ca5852c25af004d83635ef1e1f14"
