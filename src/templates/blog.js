@@ -25,7 +25,7 @@ import {
     PinterestIcon,
 } from "react-share"
 
-const BlogTemplate = props => {
+const BlogTemplate = (props) => {
     const shareUrl = `https://3iinc.xyz/blog/${props.data.currentBlog.slug}/`
 
     const date = {
@@ -43,14 +43,14 @@ const BlogTemplate = props => {
         iconFillColor: "black",
     }
     const socialIconcss = {
-        marginRight: "10px",
+        marginRight: "8px",
         marginTop: "-3px",
     }
     const multipleState = props.data.currentBlog.multipleChapters
     let multipleChapterPresent
     if (multipleState === 1) {
         multipleChapterPresent = props.data.currentBlog.chapters.map(
-            chapters => (
+            (chapters) => (
                 <Link
                     to={`/blog/${chapters.chapterSlug}/`}
                     class="blog__categories__chapter"
@@ -114,7 +114,7 @@ const BlogTemplate = props => {
                         </Link>
                     </div>
                     <div className="blog__extratitletwo">
-                        {props.data.currentBlog.category.map(category => (
+                        {props.data.currentBlog.category.map((category) => (
                             <strong
                                 className="blog__categories"
                                 data-sal="slide-up"
@@ -255,7 +255,7 @@ const BlogTemplate = props => {
                     <p className="latestposts__blogpost">Latest Posts</p>
                     <div className="feed__initial__blogpost">
                         <div className="feed__blogpost">
-                            {props.data.nextBlog.edges.map(edge => (
+                            {props.data.nextBlog.edges.map((edge) => (
                                 <div
                                     key={edge.node.id}
                                     className="card__blogpost"
@@ -274,7 +274,7 @@ const BlogTemplate = props => {
                                         navigate(`/blog/${edge.node.slug}/`)
                                     }
                                 >
-                                    {edge.node.category.map(category => (
+                                    {edge.node.category.map((category) => (
                                         <p
                                             className="card__category"
                                             data-sal="slide-up"
