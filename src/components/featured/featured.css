@@ -48,11 +48,9 @@ header {
 }
 
 .header__info {
-    max-width: 100%;
+    width: 100%;
     max-width: 1200px;
-    margin: 130px 0 0 0;
-    margin-left: -20px;
-    width: 65%;
+    margin: 130px 8px 0 8px;
     font-family: "poppins";
 }
 .banner_title {
@@ -90,16 +88,10 @@ header {
     margin-top: -10px;
     text-transform: uppercase;
 }
-@media screen and (max-width: 1250px) {
-    .header__info {
-        width: 80%;
-    }
-}
 
 @media screen and (max-width: 1000px) {
     .header__info {
-        width: 90%;
-        margin-top: 160px;
+        margin: 160px 0px 0 0px;
     }
     .banner___title {
         font-size: 44px;
@@ -109,8 +101,7 @@ header {
 
 @media screen and (max-width: 750px) {
     .header__info {
-        width: 95%;
-        margin-top: 150px;
+        margin: 150px 8px 0 8px;
     }
     .header__content {
         padding: 50px 20px;
@@ -127,6 +118,7 @@ header {
     .header__info {
         width: 100%;
         margin-left: 0px;
+        margin-right: 0px;
     }
     .header__content {
         margin-top: -240px;
