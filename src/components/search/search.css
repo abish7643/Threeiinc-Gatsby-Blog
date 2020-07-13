@@ -113,9 +113,6 @@
     filter: invert();
 }
 .ais-SearchBox-resetIcon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 0;
     transition: 0.2s ease-in-out;
 }
@@ -146,6 +143,9 @@
 }
 
 .ais-SearchBox-reset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 4px;
     text-align: center;
     font-size: 12px;
@@ -311,7 +311,7 @@
         margin-bottom: 96px;
     }
     .ais-SearchBox-input {
-        width: 280px;
+        width: 272px;
     }
 }
 @media screen and (max-width: 400px) {
@@ -323,6 +323,6 @@
         margin-right: 4px;
     }
     .ais-SearchBox-input {
-        width: 256px;
+        width: 248px;
     }
 }
