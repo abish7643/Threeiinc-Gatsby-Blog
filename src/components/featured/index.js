@@ -45,9 +45,9 @@ export default () => (
                 }
             }
         `}
-        render={data => (
+        render={(data) => (
             <header>
-                {data.allContentfulBlog.edges.map(edge => (
+                {data.allContentfulBlog.edges.map((edge) => (
                     <div key={edge.node.id} className="header__section">
                         <div
                             className="header__hero"
