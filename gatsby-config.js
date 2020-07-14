@@ -126,6 +126,51 @@ module.exports = {
             options: {
                 exclude: [`/thankyouidiot`, `/404`],
                 changefreq: `daily`,
+                query: `{
+                    allSitePage {
+                      edges {
+                        node {
+                          path
+                        }
+                      }
+                    }
+                    site {
+                      siteMetadata {
+                        siteUrl
+                      }
+                    }
+                  }`,
+                serialize: ({ site, allSitePage }) =>
+                    allSitePage.edges.map((edges) => {
+                        let customPriority = 0.8
+                        let path = edges.node.path
+
+                        if (path === "/") {
+                            customPriority = 1
+                        }
+                        if (path.match(/blog/)) {
+                            customPriority = 0.9
+                        }
+                        if (path.match(/idiots/)) {
+                            customPriority = 0.7
+                        }
+                        if (path === "/idiots/") {
+                            customPriority = 0.9
+                        }
+                        if (path.match(/about/)) {
+                            customPriority = 0.9
+                        }
+                        if (path.match(/search/)) {
+                            customPriority = 0.9
+                        }
+
+                        return {
+                            url: `${site.siteMetadata.siteUrl}${edges.node.path}`,
+                            changefreq: `daily`,
+                            priority: customPriority,
+                            lastmod: `${new Date()}`,
+                        }
+                    }),
             },
         },
         {
