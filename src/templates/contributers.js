@@ -37,7 +37,7 @@ export default () => (
                 }
             }
         `}
-        render={data => (
+        render={(data) => (
             <Layout>
                 <NavBlackText />
                 <SEO
@@ -95,19 +95,18 @@ export default () => (
                     </div>
                 </div>
                 <div className="author__feed">
-                    {data.allContentfulAuthorModel.edges.map(edge => (
+                    {data.allContentfulAuthorModel.edges.map((edge) => (
                         <Link
                             className="about__author__contrib"
                             key={edge.node.id}
                             to={`/idiots/${edge.node.authorSlug}`}
                             style={{ textDecoration: "none", color: "black" }}
                         >
-                            <div className="author__image">
-                                <Img
-                                    style={{ minHeight: "170px" }}
-                                    sizes={edge.node.authorPhoto.fluid}
-                                />
-                            </div>
+                            <Img
+                                className="author__image"
+                                style={{ minHeight: "170px" }}
+                                sizes={edge.node.authorPhoto.fluid}
+                            />
                             <div className="author__details">
                                 <div className="author__name">
                                     <h6 style={{ opacity: "0" }}>Author</h6>

@@ -419,8 +419,10 @@ h6 {
     background-size: cover;
     max-width: 100px;
     width: 400px;
-    max-height: 170px;
-    height: 170px;
+    max-height: 176px;
+    height: 176px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 
 .author__details {
@@ -487,17 +489,19 @@ h6 {
     text-decoration: none;
     border: 1px solid #1e3c72;
     padding: 10px 18px;
-    color: #fff;
+    color: #1e3c72;
     width: fit-content;
     transition: 0.2 ease-in-out;
     text-transform: uppercase;
-    background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%);
+    background-color: #fff;
+    transition: 0.2s ease-in-out;
 }
 
 .contribute__question__header h4 p:hover {
-    background: #fff;
+    background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%);
     border: 1px solid #1e3c72;
-    color: #1e3c72;
+    color: #fff;
+    transition: 0.2s ease-in-out;
 }
 
 .blog__comment__count {

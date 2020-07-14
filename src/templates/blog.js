@@ -220,15 +220,14 @@ const BlogTemplate = (props) => {
                         to={`/idiots/${props.data.currentBlog.authorData.authorSlug}/`}
                         style={{ textDecoration: "none", color: "black" }}
                     >
-                        <div className="author__image">
-                            <Img
-                                style={{ minHeight: "170px" }}
-                                sizes={
-                                    props.data.currentBlog.authorData
-                                        .authorPhoto.fluid
-                                }
-                            />
-                        </div>
+                        <Img
+                            className="author__image"
+                            style={{ minHeight: "170px" }}
+                            sizes={
+                                props.data.currentBlog.authorData.authorPhoto
+                                    .fluid
+                            }
+                        />
                         <div className="author__details">
                             <div className="author__name">
                                 <h6>About Author</h6>

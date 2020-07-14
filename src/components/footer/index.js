@@ -13,13 +13,13 @@ export default class Footer extends React.Component {
         email: "",
         inputEntered: "",
     }
-    handleChange = event => {
+    handleChange = (event) => {
         this.setState({
             email: event.target.value,
             inputEntered: "1",
         })
     }
-    handleSubmit = event => {
+    handleSubmit = (event) => {
         event.preventDefault()
     }
 
