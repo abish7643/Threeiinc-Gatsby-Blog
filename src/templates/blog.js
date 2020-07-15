@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, Link, navigate } from "gatsby"
 import Layout from "../components/layout"
-import Nav from "../components/nav"
+import NavBlackText from "../components/navBlackText"
 import SEO from "../components/seo"
 import "./blog.css"
 import Footer from "../components/footer"
@@ -63,7 +63,7 @@ const BlogTemplate = (props) => {
 
     return (
         <Layout>
-            <Nav />
+            <NavBlackText />
             <div className="blog__initialmodel">
                 <SEO
                     title={props.data.currentBlog.seoTitle}
@@ -74,76 +74,79 @@ const BlogTemplate = (props) => {
                     author={props.data.currentBlog.authorData.seoAuthorName}
                 />
 
-                <div className="blog__header">
-                    <div
-                        className="blog__hero"
-                        data-sal="slide-up"
-                        data-sal-delay="20"
-                        data-sal-easing="ease"
-                        style={{
-                            backgroundImage: `url(${props.data.currentBlog.featuredImage.fluid.src})`,
-                        }}
-                    ></div>
-                </div>
                 <div className="blog__info">
-                    <div
-                        className="blog__info__title"
-                        data-sal="slide-up"
-                        data-sal-delay="20"
-                        data-sal-easing="ease"
-                    >
-                        <h1>{props.data.currentBlog.title}</h1>
-                        <br />
-                    </div>
-                    <div
-                        className="blog__info__author"
-                        data-sal="slide-up"
-                        data-sal-delay="100"
-                        data-sal-easing="ease"
-                    >
-                        <Link
-                            to={`/idiots/${props.data.currentBlog.authorData.authorSlug}/`}
-                        >
-                            <p
-                                className="blog__extratitleone"
-                                style={{ textDecoration: "none" }}
-                            >
-                                {props.data.currentBlog.authorData.authorName} |{" "}
-                                {date.createdat}
-                            </p>
-                        </Link>
-                    </div>
-                    <div className="blog__extratitletwo">
-                        {props.data.currentBlog.category.map((category) => (
-                            <strong
-                                className="blog__categories"
-                                data-sal="slide-up"
-                                data-sal-delay="200"
-                                data-sal-easing="ease"
-                                key={category.title}
-                            >
-                                {category.title}
-                            </strong>
-                        ))}
-                        <p
-                            className="blog__extratitletwo"
-                            data-sal="slide-up"
-                            data-sal-delay="150"
+                    <div className="blog__hero__typography">
+                        <div
+                            className="blog__info__title"
+                            data-sal="fade"
+                            data-sal-delay="20"
                             data-sal-easing="ease"
                         >
-                            {props.data.currentBlog.readDuration}
-                        </p>
-                    </div>
+                            <h1>{props.data.currentBlog.title}</h1>
+                            <br />
+                        </div>
+                        <div
+                            className="blog__info__author"
+                            data-sal="fade"
+                            data-sal-delay="100"
+                            data-sal-easing="ease"
+                        >
+                            <Link
+                                to={`/idiots/${props.data.currentBlog.authorData.authorSlug}/`}
+                            >
+                                <p
+                                    className="blog__extratitleone"
+                                    style={{ textDecoration: "none" }}
+                                >
+                                    {
+                                        props.data.currentBlog.authorData
+                                            .authorName
+                                    }{" "}
+                                    | {date.createdat}
+                                </p>
+                            </Link>
+                        </div>
+                        <div className="blog__extratitletwo">
+                            {props.data.currentBlog.category.map((category) => (
+                                <strong
+                                    className="blog__categories"
+                                    data-sal="fade"
+                                    data-sal-delay="200"
+                                    data-sal-easing="ease"
+                                    key={category.title}
+                                >
+                                    {category.title}
+                                </strong>
+                            ))}
+                            <p
+                                className="blog__extratitletwo"
+                                data-sal="fade"
+                                data-sal-delay="150"
+                                data-sal-easing="ease"
+                            >
+                                {props.data.currentBlog.readDuration}
+                            </p>
+                        </div>
 
-                    <div
-                        className="blog__categories__chapters"
-                        data-sal="slide-up"
-                        data-sal-delay="200"
-                        data-sal-easing="ease"
-                    >
-                        {multipleChapterPresent}
+                        <div
+                            className="blog__categories__chapters"
+                            data-sal="fade"
+                            data-sal-delay="200"
+                            data-sal-easing="ease"
+                        >
+                            {multipleChapterPresent}
+                        </div>
                     </div>
                 </div>
+                <Img
+                    className="blog__hero"
+                    data-sal="fade"
+                    data-sal-delay="20"
+                    data-sal-easing="ease"
+                    alt={`${props.data.currentBlog.featuredImage.description}`}
+                    fluid={props.data.currentBlog.featuredImage.fluid}
+                />
+
                 <div className="blog__wrapper">
                     <div className="blog__content">
                         <div
@@ -215,6 +218,16 @@ const BlogTemplate = (props) => {
                         </PinterestShareButton>
                     </div>
 
+                    <div
+                        className="blog__categories__chapters"
+                        style={{ marginTop: "0px", marginBottom: "8px" }}
+                        data-sal="slide-up"
+                        data-sal-delay="200"
+                        data-sal-easing="ease"
+                    >
+                        {multipleChapterPresent}
+                    </div>
+
                     <Link
                         className="about__author"
                         to={`/idiots/${props.data.currentBlog.authorData.authorSlug}/`}
@@ -258,9 +271,9 @@ const BlogTemplate = (props) => {
                                 <div
                                     key={edge.node.id}
                                     className="card__blogpost"
-                                    data-sal="slide-up"
+                                    data-sal="fade"
                                     data-sal-delay="50"
-                                    data-sal-easing="ease"
+                                    data-sal-easing="ease-in-out"
                                     style={{
                                         backgroundImage: `linear-gradient(
                     to bottom,
@@ -305,6 +318,9 @@ const BlogTemplate = (props) => {
                             <Link
                                 className="viewmore_wrapper__link"
                                 to={`/blog/2/`}
+                                data-sal="fade"
+                                data-sal-delay="50"
+                                data-sal-easing="ease-in-out"
                             >
                                 <button className="viewmore_wrapper">
                                     More Posts
@@ -313,6 +329,9 @@ const BlogTemplate = (props) => {
                             <Link
                                 className="viewmore_wrapper__link"
                                 to={`/search/`}
+                                data-sal="fade"
+                                data-sal-delay="50"
+                                data-sal-easing="ease-in-out"
                             >
                                 <button className="viewmore_wrapper__outline">
                                     Search
@@ -393,6 +412,7 @@ export const query = graphql`
                 }
             }
             featuredImage {
+                description
                 fluid(maxWidth: 1200, quality: 70, toFormat: WEBP) {
                     ...GatsbyContentfulFluid
                     src

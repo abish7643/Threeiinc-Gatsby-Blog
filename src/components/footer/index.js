@@ -53,12 +53,7 @@ export default class Footer extends React.Component {
         }
         return (
             <footer className="footer__div">
-                <div
-                    className="footer__hero"
-                    style={{
-                        background: "#eee",
-                    }}
-                >
+                <div className="footer__hero">
                     <div className="footer__contents">
                         <div className="newsletter__form">
                             <p>

@@ -16,13 +16,13 @@ export default class Contact extends React.Component {
         contactmessageinputEntered: "",
         formStartedToFill: false,
     }
-    handleContactChange = event => {
+    handleContactChange = (event) => {
         this.setState({
             contactEmail: event.target.value,
             contactemailinputEntered: "1",
         })
     }
-    handleContactNameChange = event => {
+    handleContactNameChange = (event) => {
         this.setState({
             contactName: event.target.value,
         })
@@ -32,7 +32,7 @@ export default class Contact extends React.Component {
             })
         }
     }
-    handleContactMessageChange = event => {
+    handleContactMessageChange = (event) => {
         this.setState({
             contactMessage: event.target.value,
             contactmessageinputEntered: "1",
@@ -40,7 +40,7 @@ export default class Contact extends React.Component {
         this.state.formStartedToFill = true
     }
 
-    handleContactSubmit = event => {
+    handleContactSubmit = (event) => {
         event.preventDefault()
     }
 
@@ -77,7 +77,7 @@ export default class Contact extends React.Component {
         return (
             <Layout>
                 <SEO
-                    title="Contact 3i INC | 3 Idiots Incorporated."
+                    title="Contact 3i"
                     description="Who is an Idiot?
                 The one who questions the system,
                 The one who doesn't like how the system works or
@@ -95,17 +95,17 @@ export default class Contact extends React.Component {
                         <div className="contact__container__right">
                             <h1
                                 className="contact__container__right__heading"
-                                data-sal="slide-up"
+                                data-sal="fade"
                                 data-sal-delay="200"
-                                data-sal-easing="ease"
+                                data-sal-easing="ease-in-out"
                             >
                                 Contact Us
                             </h1>
                             <div
                                 className="contact__container__right__inner"
-                                data-sal="slide-up"
+                                data-sal="fade"
                                 data-sal-delay="300"
-                                data-sal-easing="ease"
+                                data-sal-easing="ease-in-out"
                             >
                                 <form
                                     method="post"

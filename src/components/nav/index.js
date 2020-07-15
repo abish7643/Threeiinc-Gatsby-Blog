@@ -42,7 +42,7 @@ const Nav = () => (
                     <Link
                         to="/idiots/"
                         className="nav__component__link"
-                        style={{ textDecoration: "None" }}
+                        style={{ textDecoration: "None", marginRight: "0px" }}
                     >
                         Contribute
                     </Link>

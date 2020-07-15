@@ -264,7 +264,7 @@
 }
 @media screen and (max-width: 500px) {
     .feed {
-        grid-auto-rows: 240px;
+        grid-auto-rows: 280px;
     }
     .viewmore_container {
         margin-top: -8px;

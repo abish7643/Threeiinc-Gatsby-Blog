@@ -7,7 +7,7 @@ import "../components/home/home.css"
 import "./archive.css"
 import Footer from "../components/footer"
 
-const Archive = props => {
+const Archive = (props) => {
     const blogContent = props.data.allContentfulBlog
     const { currentPage, numPages } = props.pageContext
     const isFirst = currentPage === 1
@@ -34,29 +34,29 @@ const Archive = props => {
             <NavBlackText />
             <div
                 className="Author__Info__Container"
-                data-sal="slide-up"
+                data-sal="fade"
                 data-sal-delay="50"
-                data-sal-easing="ease"
+                data-sal-easing="ease-in-out"
                 style={{ backgroundColor: "black", cursor: "pointer" }}
                 onClick={() => navigate("/search/")}
             >
                 <h1
-                    data-sal="slide-up"
+                    data-sal="fade"
                     data-sal-delay="150"
-                    data-sal-easing="ease"
+                    data-sal-easing="ease-in-out"
                 >
                     Blog Posts
                 </h1>
             </div>
             <div className="feed__initial__authorposts">
                 <div className="feed">
-                    {blogContent.edges.map(edge => (
+                    {blogContent.edges.map((edge) => (
                         <div
                             key={edge.node.id}
                             className="card"
-                            data-sal="slide-up"
+                            data-sal="fade"
                             data-sal-delay="50"
-                            data-sal-easing="ease"
+                            data-sal-easing="ease-in-out"
                             style={{
                                 backgroundImage: `linear-gradient(
                             to bottom,
@@ -67,12 +67,12 @@ const Archive = props => {
                             }}
                             onClick={() => navigate(`/blog/${edge.node.slug}/`)}
                         >
-                            {edge.node.category.map(category => (
+                            {edge.node.category.map((category) => (
                                 <p
                                     className="card__category"
-                                    data-sal="slide-up"
-                                    data-sal-delay="60"
-                                    data-sal-easing="ease"
+                                    data-sal="fade"
+                                    data-sal-delay="70"
+                                    data-sal-easing="ease-in-out"
                                     key={category.title}
                                 >
                                     {category.title}
@@ -80,9 +80,9 @@ const Archive = props => {
                             ))}
                             <p
                                 className="card__title"
-                                data-sal="slide-up"
-                                data-sal-delay="70"
-                                data-sal-easing="ease"
+                                data-sal="fade"
+                                data-sal-delay="80"
+                                data-sal-easing="ease-in-out"
                             >
                                 {edge.node.title}
                             </p>

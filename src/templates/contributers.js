@@ -41,7 +41,7 @@ export default () => (
             <Layout>
                 <NavBlackText />
                 <SEO
-                    title="Our Contributers | 3i INC | 3 Idiots Incorporated."
+                    title="Our Contributers"
                     description="Wanna Explore Yourself? Work with 3i and Get To Know About Our Contributers,
                                 Who May Be The Actual Idiots | 3iinc.xyz"
                     keywords={[
@@ -69,9 +69,9 @@ export default () => (
                         Wanna Explore Yourself? Work with 3i.<br></br>
                         <Link to="/contact/">
                             <p
-                                data-sal="slide-up"
+                                data-sal="fade"
                                 data-sal-delay="150"
-                                data-sal-easing="ease"
+                                data-sal-easing="ease-in-out"
                             >
                                 Let Us Know!
                             </p>
@@ -80,15 +80,15 @@ export default () => (
                 </div>
                 <div
                     className="Author__Info__Container"
-                    data-sal="slide-up"
+                    data-sal="fade"
                     data-sal-delay="300"
-                    data-sal-easing="ease"
+                    data-sal-easing="ease-in-out"
                 >
                     <div style={{ backgroundColor: "black" }}>
                         <h1
-                            data-sal="slide-up"
+                            data-sal="fade"
                             data-sal-delay="500"
-                            data-sal-easing="ease"
+                            data-sal-easing="ease-in-out"
                         >
                             Contributers
                         </h1>
@@ -97,6 +97,9 @@ export default () => (
                 <div className="author__feed">
                     {data.allContentfulAuthorModel.edges.map((edge) => (
                         <Link
+                            data-sal="fade"
+                            data-sal-delay="50"
+                            data-sal-easing="ease-in-out"
                             className="about__author__contrib"
                             key={edge.node.id}
                             to={`/idiots/${edge.node.authorSlug}`}

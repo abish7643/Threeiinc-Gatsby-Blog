@@ -42,16 +42,16 @@ export default () => (
                 }
             }
         `}
-        render={data => (
+        render={(data) => (
             <div className="feed__initial">
                 <div className="feed">
-                    {data.allContentfulBlog.edges.map(edge => (
+                    {data.allContentfulBlog.edges.map((edge) => (
                         <div
                             key={edge.node.id}
                             className="card"
-                            data-sal="slide-up"
+                            data-sal="fade"
                             data-sal-delay="50"
-                            data-sal-easing="ease"
+                            data-sal-easing="ease-in-out"
                             style={{
                                 backgroundImage: `linear-gradient(
                     to bottom,
@@ -62,7 +62,7 @@ export default () => (
                             }}
                             onClick={() => navigate(`/blog/${edge.node.slug}/`)}
                         >
-                            {edge.node.category.map(category => (
+                            {edge.node.category.map((category) => (
                                 <p
                                     className="card__category"
                                     data-sal="slide-up"
@@ -85,10 +85,22 @@ export default () => (
                     ))}
                 </div>
                 <div className="viewmore_container">
-                    <Link className="viewmore_wrapper__link" to={`/blog/2/`}>
+                    <Link
+                        className="viewmore_wrapper__link"
+                        to={`/blog/2/`}
+                        data-sal="fade"
+                        data-sal-delay="50"
+                        data-sal-easing="ease-in-out"
+                    >
                         <button className="viewmore_wrapper">More Posts</button>
                     </Link>
-                    <Link className="viewmore_wrapper__link" to={`/search/`}>
+                    <Link
+                        className="viewmore_wrapper__link"
+                        to={`/search/`}
+                        data-sal="fade"
+                        data-sal-delay="100"
+                        data-sal-easing="ease-in-out"
+                    >
                         <button className="viewmore_wrapper__outline">
                             Search
                             <svg
