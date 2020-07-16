@@ -332,7 +332,7 @@ const BlogTemplate = (props) => {
                         >
                             <Link
                                 className="viewmore_wrapper__link"
-                                to={`/blog/2/`}
+                                to={`/blog/`}
                                 data-sal="fade"
                                 data-sal-delay="50"
                                 data-sal-easing="ease-in-out"
