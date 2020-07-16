@@ -52,7 +52,7 @@
     font-weight: 500;
     color: #fff;
     margin: 0;
-    margin: 0px 0px 0px 10px;
+    margin: 0px 0px 0px 6px;
 }
 
 .card__title {
@@ -60,7 +60,7 @@
     line-height: 28px;
     font-weight: 400;
     color: #fff;
-    margin: 10px 0px 10px 10px;
+    margin: 10px 4px 10px 6px;
 }
 
 .zindex__higher {
