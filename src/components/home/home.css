@@ -63,6 +63,10 @@
     margin: 10px 0px 10px 10px;
 }
 
+.zindex__higher {
+    z-index: 10;
+}
+
 .card {
     background-size: cover;
     background-repeat: no-repeat;

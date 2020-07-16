@@ -34,17 +34,18 @@
 .nav__component__link {
     text-decoration: none;
     color: #f8f9fa;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0 20px;
-    font-weight: 600;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 .nav__logo {
     text-decoration: none;
     color: #f8f9fa;
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
 }
 
 .nav__component__div:hover .nav__component__link:hover {
@@ -56,10 +57,15 @@
 @media screen and (max-width: 1250px) {
     .nav__container {
         min-width: unset;
+        width: 80%;
     }
 }
 
 @media screen and (max-width: 750px) {
+    .nav__logo {
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
     .nav__inner {
         flex-direction: column;
     }
@@ -72,7 +78,7 @@
         align-items: center;
     }
     .nav__component__link {
-        font-size: 17px;
+        font-size: 15px;
     }
 }
 @media screen and (max-width: 500px) {
@@ -83,6 +89,6 @@
 
 @media screen and (max-width: 380px) {
     .nav__component__link {
-        font-size: 15.5px;
+        font-size: 15px;
     }
 }

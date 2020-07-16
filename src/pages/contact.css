@@ -351,10 +351,10 @@ textarea[type="message"] {
         width: 80%;
     }
     .contact__container__right {
-        width: 90%;
+        width: 100%;
     }
     .contact__container__left {
-        width: 10%;
+        width: 0%;
     }
     .contact__container__right__heading {
         font-size: 30px;

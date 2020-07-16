@@ -24,7 +24,8 @@ const NavBlackText = () => (
                     <Link
                         to="/about/"
                         className="nav__component__link__black"
-                        style={{ textDecoration: "None" }}
+                        activeClassName="nav__component__link__black__active"
+                        style={{ textDecoration: "None", marginLeft: "0px" }}
                     >
                         About
                     </Link>
@@ -33,6 +34,7 @@ const NavBlackText = () => (
                     <Link
                         to="/contact/"
                         className="nav__component__link__black"
+                        activeClassName="nav__component__link__black__active"
                         style={{ textDecoration: "None" }}
                     >
                         Contact
@@ -42,7 +44,8 @@ const NavBlackText = () => (
                     <Link
                         to="/idiots/"
                         className="nav__component__link__black"
-                        style={{ textDecoration: "None" }}
+                        activeClassName="nav__component__link__black__active"
+                        style={{ textDecoration: "None", marginRight: "0px" }}
                     >
                         Contribute
                     </Link>

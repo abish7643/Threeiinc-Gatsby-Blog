@@ -24,7 +24,7 @@ const Nav = () => (
                     <Link
                         to="/about/"
                         className="nav__component__link"
-                        style={{ textDecoration: "None" }}
+                        style={{ textDecoration: "None", marginLeft: "0px" }}
                     >
                         About
                     </Link>

@@ -57,37 +57,17 @@ export default () => (
                     url="https://3iinc.xyz/idiots/"
                     author="3i INC"
                 />
-                <div
-                    style={{ textAlign: "center" }}
-                    className="contribute__question__header"
-                >
-                    <h4
-                        data-sal="slide-up"
-                        data-sal-delay="50"
-                        data-sal-easing="ease"
-                    >
-                        Wanna Explore Yourself? Work with 3i.<br></br>
-                        <Link to="/contact/">
-                            <p
-                                data-sal="fade"
-                                data-sal-delay="150"
-                                data-sal-easing="ease-in-out"
-                            >
-                                Let Us Know!
-                            </p>
-                        </Link>
-                    </h4>
-                </div>
+
                 <div
                     className="Author__Info__Container"
                     data-sal="fade"
-                    data-sal-delay="300"
+                    data-sal-delay="10"
                     data-sal-easing="ease-in-out"
                 >
                     <div style={{ backgroundColor: "black" }}>
                         <h1
                             data-sal="fade"
-                            data-sal-delay="500"
+                            data-sal-delay="50"
                             data-sal-easing="ease-in-out"
                         >
                             Contributers
@@ -121,6 +101,27 @@ export default () => (
                             </div>
                         </Link>
                     ))}
+                </div>
+                <div
+                    style={{ textAlign: "center" }}
+                    className="contribute__question__header"
+                >
+                    <h4
+                        data-sal="slide-up"
+                        data-sal-delay="50"
+                        data-sal-easing="ease"
+                    >
+                        Wanna Explore Yourself? Work with 3i.<br></br>
+                        <Link to="/contact/">
+                            <p
+                                data-sal="fade"
+                                data-sal-delay="150"
+                                data-sal-easing="ease-in-out"
+                            >
+                                Let Us Know!
+                            </p>
+                        </Link>
+                    </h4>
                 </div>
                 <Footer />
             </Layout>

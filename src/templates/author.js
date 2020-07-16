@@ -5,39 +5,77 @@ import SEO from "../components/seo"
 import "./blog.css"
 import Footer from "../components/footer"
 import NavBlackText from "../components/navBlackText"
+import Img from "gatsby-image"
 
-const AuthorTemplate = props => {
+const AuthorTemplate = (props) => {
     return (
         <Layout>
             <NavBlackText />
 
             <div className="Author__Info__Container">
-                {props.data.authorInfo.edges.map(edge => (
-                    <div
-                        style={{ backgroundColor: "black" }}
-                        key={edge.node.id}
-                    >
+                {props.data.authorInfo.edges.map((edge) => (
+                    <>
                         <div
-                            data-sal="slide-up"
-                            data-sal-delay="220"
-                            data-sal-easing="ease"
+                            style={{ backgroundColor: "black" }}
+                            key={edge.node.id}
                         >
-                            <h1>Posts By {edge.node.authorData.authorName}</h1>
+                            <div
+                                data-sal="slide-up"
+                                data-sal-delay="220"
+                                data-sal-easing="ease"
+                            >
+                                <h1>
+                                    Posts By {edge.node.authorData.authorName}
+                                </h1>
+                            </div>
+                            <SEO
+                                title={edge.node.authorData.authorName}
+                                keywords={
+                                    edge.node.authorData.seoAuthorKeywords
+                                }
+                                author={edge.node.authorData.authorName}
+                                url={`https://3iinc.xyz/idiots/${edge.node.authorData.authorSlug}/`}
+                                description={`${edge.node.authorData.authorDescription} ' Read All The Posts From The Author of 3i INC | Idiots By Choice!'`}
+                            />
                         </div>
-                        <SEO
-                            title={edge.node.authorData.authorName}
-                            keywords={edge.node.authorData.seoAuthorKeywords}
-                            author={edge.node.authorData.authorName}
-                            url={`https://3iinc.xyz/idiots/${edge.node.authorData.authorSlug}/`}
-                            description={`${edge.node.authorData.authorDescription} ' Read All The Posts From The Author of 3i INC | Idiots By Choice!'`}
-                        />
-                    </div>
+                    </>
+                ))}
+            </div>
+            <div className="Author__Info__Container">
+                {props.data.authorInfo.edges.map((edge) => (
+                    <>
+                        <Link
+                            data-sal="fade"
+                            data-sal-delay="50"
+                            data-sal-easing="ease-in-out"
+                            className="about__author"
+                            to={`/idiots/${edge.node.authorData.authorSlug}`}
+                            style={{ textDecoration: "none", color: "black" }}
+                        >
+                            <Img
+                                className="author__image"
+                                style={{ minHeight: "170px" }}
+                                sizes={edge.node.authorData.authorPhoto.fluid}
+                            />
+                            <div className="author__details">
+                                <div className="author__name">
+                                    <h6>About Author</h6>
+                                    <h4>{edge.node.authorData.authorName}</h4>
+                                </div>
+                                <div className="author__description">
+                                    <h5>
+                                        {edge.node.authorData.authorDescription}
+                                    </h5>
+                                </div>
+                            </div>
+                        </Link>
+                    </>
                 ))}
             </div>
 
             <div className="feed__initial__authorposts">
                 <div className="feed">
-                    {props.data.authorPosts.edges.map(edge => (
+                    {props.data.authorPosts.edges.map((edge) => (
                         <div
                             key={edge.node.id}
                             className="card"
@@ -51,7 +89,7 @@ const AuthorTemplate = props => {
                             }}
                             onClick={() => navigate(`/blog/${edge.node.slug}/`)}
                         >
-                            {edge.node.category.map(category => (
+                            {edge.node.category.map((category) => (
                                 <p
                                     className="card__category"
                                     key={category.title}
@@ -116,6 +154,12 @@ export const query = graphql`
                         seoAuthorName
                         seoAuthorKeywords
                         authorDescription
+                        authorPhoto {
+                            fluid(maxWidth: 300, quality: 70, toFormat: WEBP) {
+                                ...GatsbyContentfulFluid
+                                src
+                            }
+                        }
                     }
                 }
             }

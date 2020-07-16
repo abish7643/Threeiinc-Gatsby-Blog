@@ -71,18 +71,18 @@ header {
 }
 
 .header__subtitle {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
     color: white;
     margin: 0 0 30px 0;
 }
 .header__author {
     font-family: "montserrat";
     z-index: 2;
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
-    font-weight: 600;
+    font-weight: 500;
     border-bottom: 1px solid white;
     width: 100%;
     margin-top: -10px;
@@ -131,16 +131,19 @@ header {
     .header__subtitle {
         margin-top: -5px;
         font-size: 16px;
+        font-weight: 400;
     }
     .header__button__div {
         margin-top: 16px;
+    }
+    .header__author {
+        font-size: 15px;
     }
 }
 
 @media screen and (max-width: 400px) {
     .header__subtitle {
         font-size: 15px;
-        line-height: 22px;
     }
     .banner___title {
         font-size: 28px;

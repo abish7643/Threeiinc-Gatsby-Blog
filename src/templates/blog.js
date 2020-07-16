@@ -11,53 +11,95 @@ import CommentSection from "../components/comment"
 import {
     FacebookShareButton,
     FacebookIcon,
-    RedditShareButton,
-    RedditIcon,
     TelegramShareButton,
     TelegramIcon,
     TwitterShareButton,
     TwitterIcon,
     WhatsappShareButton,
     WhatsappIcon,
-    TumblrShareButton,
-    TumblrIcon,
-    PinterestShareButton,
-    PinterestIcon,
 } from "react-share"
 
 const BlogTemplate = (props) => {
-    const shareUrl = `https://3iinc.xyz/blog/${props.data.currentBlog.slug}/`
-
     const date = {
         createdat: props.data.currentBlog.createdAt,
     }
+
+    const shareUrl = `https://3iinc.xyz/blog/${props.data.currentBlog.slug}/`
     const keywordsArray = props.data.currentBlog.seoKeywords
-    const shareMedia = props.data.currentBlog.featuredImage.fluid.src
-    const shareTitle = `'${props.data.currentBlog.title}' | 3i INC | 3 Idiots Incorporated.`
-    const propDescription = `${shareTitle} | ${shareUrl}`
-    const shareTitleLink = `${shareTitle} | ${shareUrl}`
+    //const shareMedia = props.data.currentBlog.featuredImage.fluid.src
+    const shareTitle = `${props.data.currentBlog.title} | 3i INC | 3 Idiots Incorporated.`
+    //const propDescription = `${shareTitle} | ${shareUrl}`
+    //const shareTitleLink = `${shareTitle} | ${shareUrl}`
+
     const iconProp = {
-        size: 36,
-        round: false,
+        size: 40,
+        round: true,
         bgStyle: { opacity: "0.25" },
-        iconFillColor: "black",
+        iconFillColor: "#323232",
     }
     const socialIconcss = {
-        marginRight: "8px",
-        marginTop: "-3px",
+        marginRight: "32px",
+        marginTop: "-4px",
     }
+
     const multipleState = props.data.currentBlog.multipleChapters
-    let multipleChapterPresent
+    let multipleChapterPresentTop
+    let multipleChapterPresentBottom
+    let multipleChapterContainer
     if (multipleState === 1) {
-        multipleChapterPresent = props.data.currentBlog.chapters.map(
+        multipleChapterContainer = props.data.currentBlog.chapters.map(
             (chapters) => (
-                <Link
-                    to={`/blog/${chapters.chapterSlug}/`}
-                    class="blog__categories__chapter"
+                <div
+                    onClick={() => navigate(`/blog/${chapters.chapterSlug}/`)}
+                    class="search__entries"
+                    data-sal="fade"
+                    data-sal-delay="100"
+                    data-sal-easing="ease"
                 >
-                    {chapters.chapterTitle}
-                </Link>
+                    <Img
+                        className="search__entries__img"
+                        sizes={props.data.currentBlog.featuredImage.fluid}
+                    />
+                    <div className="search__entries__details">
+                        {props.data.currentBlog.category.map((category) => (
+                            <span
+                                className="search__entries__details__category"
+                                key={category.id}
+                            >
+                                {category.title}
+                            </span>
+                        ))}
+                        <p className="search__entries__details__title">
+                            {chapters.chapterTitle}
+                        </p>
+                        <p className="search__entries__details__author">
+                            <span className="text-left">
+                                {"By "}
+                                <span className="text-opacity-low">
+                                    {
+                                        props.data.currentBlog.authorData
+                                            .authorName
+                                    }
+                                </span>{" "}
+                            </span>
+                            {"on "}
+                            <span className="text-opacity-low">
+                                {date.createdat}
+                            </span>
+                        </p>
+                    </div>
+                </div>
             )
+        )
+        multipleChapterPresentTop = (
+            <div className="search__inner__blog__top">
+                {multipleChapterContainer}
+            </div>
+        )
+        multipleChapterPresentBottom = (
+            <div className="search__inner__blog__bottom">
+                {multipleChapterContainer}
+            </div>
         )
     }
 
@@ -73,7 +115,7 @@ const BlogTemplate = (props) => {
                     image={props.data.currentBlog.seoImage.fluid.src}
                     author={props.data.currentBlog.authorData.seoAuthorName}
                 />
-
+                <div className="blog__color__header"></div>
                 <div className="blog__info">
                     <div className="blog__hero__typography">
                         <div
@@ -83,6 +125,7 @@ const BlogTemplate = (props) => {
                             data-sal-easing="ease"
                         >
                             <h1>{props.data.currentBlog.title}</h1>
+
                             <br />
                         </div>
                         <div
@@ -98,11 +141,14 @@ const BlogTemplate = (props) => {
                                     className="blog__extratitleone"
                                     style={{ textDecoration: "none" }}
                                 >
-                                    {
-                                        props.data.currentBlog.authorData
-                                            .authorName
-                                    }{" "}
-                                    | {date.createdat}
+                                    By{" "}
+                                    <strong>
+                                        {
+                                            props.data.currentBlog.authorData
+                                                .authorName
+                                        }
+                                    </strong>{" "}
+                                    On {date.createdat}
                                 </p>
                             </Link>
                         </div>
@@ -128,24 +174,20 @@ const BlogTemplate = (props) => {
                             </p>
                         </div>
 
-                        <div
-                            className="blog__categories__chapters"
-                            data-sal="fade"
-                            data-sal-delay="200"
-                            data-sal-easing="ease"
-                        >
-                            {multipleChapterPresent}
-                        </div>
+                        {multipleChapterPresentTop}
                     </div>
                 </div>
                 <Img
                     className="blog__hero"
                     data-sal="fade"
-                    data-sal-delay="20"
+                    data-sal-delay="50"
                     data-sal-easing="ease"
                     alt={`${props.data.currentBlog.featuredImage.description}`}
-                    fluid={props.data.currentBlog.featuredImage.fluid}
+                    sizes={props.data.currentBlog.featuredImage.fluid}
                 />
+                <p className="blog__hero__alt">
+                    {props.data.currentBlog.featuredImage.description}
+                </p>
 
                 <div className="blog__wrapper">
                     <div className="blog__content">
@@ -156,10 +198,11 @@ const BlogTemplate = (props) => {
                             }}
                         />
                     </div>
+
                     <div
                         className="share__buttons"
-                        data-sal="slide-up"
-                        data-sal-delay="200"
+                        data-sal="fade"
+                        data-sal-delay="50"
                         data-sal-easing="ease"
                     >
                         <WhatsappShareButton
@@ -192,43 +235,15 @@ const BlogTemplate = (props) => {
                         >
                             <TwitterIcon {...iconProp} />
                         </TwitterShareButton>
-                        <RedditShareButton
-                            url={shareUrl}
-                            title={shareTitle}
-                            style={socialIconcss}
-                        >
-                            <RedditIcon {...iconProp} />
-                        </RedditShareButton>
-                        <TumblrShareButton
-                            url={shareUrl}
-                            title={shareTitle}
-                            style={socialIconcss}
-                            tags={keywordsArray}
-                        >
-                            <TumblrIcon {...iconProp} />
-                        </TumblrShareButton>
-                        <PinterestShareButton
-                            url={shareUrl}
-                            title={shareTitleLink}
-                            description={propDescription}
-                            media={shareMedia}
-                            style={socialIconcss}
-                        >
-                            <PinterestIcon {...iconProp} />
-                        </PinterestShareButton>
                     </div>
-
-                    <div
-                        className="blog__categories__chapters"
-                        style={{ marginTop: "0px", marginBottom: "8px" }}
-                        data-sal="slide-up"
-                        data-sal-delay="200"
-                        data-sal-easing="ease"
-                    >
-                        {multipleChapterPresent}
+                    <div className="chapters__blog">
+                        <div>{multipleChapterPresentBottom}</div>
                     </div>
 
                     <Link
+                        data-sal="fade"
+                        data-sal-delay="50"
+                        data-sal-easing="ease-in-out"
                         className="about__author"
                         to={`/idiots/${props.data.currentBlog.authorData.authorSlug}/`}
                         style={{ textDecoration: "none", color: "black" }}
