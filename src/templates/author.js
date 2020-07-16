@@ -55,14 +55,34 @@ const AuthorTemplate = (props) => {
                             <Img
                                 className="author__image"
                                 style={{ minHeight: "170px" }}
+                                data-sal="fade"
+                                data-sal-delay="100"
+                                data-sal-easing="ease-in-out"
                                 sizes={edge.node.authorData.authorPhoto.fluid}
                             />
                             <div className="author__details">
                                 <div className="author__name">
-                                    <h6>About Author</h6>
-                                    <h4>{edge.node.authorData.authorName}</h4>
+                                    <h6
+                                        data-sal="fade"
+                                        data-sal-delay="100"
+                                        data-sal-easing="ease-in-out"
+                                    >
+                                        About Author
+                                    </h6>
+                                    <h4
+                                        data-sal="fade"
+                                        data-sal-delay="150"
+                                        data-sal-easing="ease-in-out"
+                                    >
+                                        {edge.node.authorData.authorName}
+                                    </h4>
                                 </div>
-                                <div className="author__description">
+                                <div
+                                    className="author__description"
+                                    data-sal="fade"
+                                    data-sal-delay="200"
+                                    data-sal-easing="ease-in-out"
+                                >
                                     <h5>
                                         {edge.node.authorData.authorDescription}
                                     </h5>

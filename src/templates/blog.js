@@ -251,6 +251,9 @@ const BlogTemplate = (props) => {
                         <Img
                             className="author__image"
                             style={{ minHeight: "170px" }}
+                            data-sal="fade"
+                            data-sal-delay="100"
+                            data-sal-easing="ease-in-out"
                             sizes={
                                 props.data.currentBlog.authorData.authorPhoto
                                     .fluid
@@ -258,15 +261,30 @@ const BlogTemplate = (props) => {
                         />
                         <div className="author__details">
                             <div className="author__name">
-                                <h6>About Author</h6>
-                                <h4>
+                                <h6
+                                    data-sal="fade"
+                                    data-sal-delay="100"
+                                    data-sal-easing="ease-in-out"
+                                >
+                                    About Author
+                                </h6>
+                                <h4
+                                    data-sal="fade"
+                                    data-sal-delay="150"
+                                    data-sal-easing="ease-in-out"
+                                >
                                     {
                                         props.data.currentBlog.authorData
                                             .authorName
                                     }
                                 </h4>
                             </div>
-                            <div className="author__description">
+                            <div
+                                className="author__description"
+                                data-sal="fade"
+                                data-sal-delay="200"
+                                data-sal-easing="ease-in-out"
+                            >
                                 <h5>
                                     {
                                         props.data.currentBlog.authorData

@@ -89,13 +89,34 @@ export default () => (
                                 className="author__image"
                                 style={{ minHeight: "170px" }}
                                 sizes={edge.node.authorPhoto.fluid}
+                                data-sal="fade"
+                                data-sal-delay="100"
+                                data-sal-easing="ease-in-out"
                             />
                             <div className="author__details">
                                 <div className="author__name">
-                                    <h6 style={{ opacity: "0" }}>Author</h6>
-                                    <h4>{edge.node.authorName}</h4>
+                                    <h6
+                                        style={{ opacity: "0" }}
+                                        data-sal="fade"
+                                        data-sal-delay="100"
+                                        data-sal-easing="ease-in-out"
+                                    >
+                                        Author
+                                    </h6>
+                                    <h4
+                                        data-sal="fade"
+                                        data-sal-delay="150"
+                                        data-sal-easing="ease-in-out"
+                                    >
+                                        {edge.node.authorName}
+                                    </h4>
                                 </div>
-                                <div className="author__description">
+                                <div
+                                    className="author__description"
+                                    data-sal="fade"
+                                    data-sal-delay="200"
+                                    data-sal-easing="ease-in-out"
+                                >
                                     <h5>{edge.node.authorDescription}</h5>
                                 </div>
                             </div>
