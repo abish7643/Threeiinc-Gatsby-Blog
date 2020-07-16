@@ -77,6 +77,11 @@ header {
     color: white;
     margin: 0 0 30px 0;
 }
+
+.subtlehightlight {
+    background-color: #eee;
+}
+
 .header__author {
     font-family: "montserrat";
     z-index: 2;

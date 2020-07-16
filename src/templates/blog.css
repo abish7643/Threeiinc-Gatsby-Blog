@@ -95,7 +95,7 @@ body {
     max-width: 920px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -4px;
+    margin-top: -8px;
     margin-bottom: 16px;
     padding: 0 8px;
 }
@@ -238,9 +238,18 @@ a {
     z-index: 10;
     flex-direction: column;
     width: 100%;
-    max-width: 850px;
+    max-width: 864px;
     width: 96%;
     z-index: 1;
+}
+
+.react-share__ShareButton svg {
+    border-radius: 6px;
+    transition: 0.2s ease-in-out;
+}
+.react-share__ShareButton svg:hover {
+    transform: scale(1.01);
+    transition: 0.2s ease-in-out;
 }
 
 .blog__content {
@@ -298,8 +307,8 @@ a {
 .blog__content p {
     font-family: "montserrat";
     font-size: 18px;
-    line-height: 1.7;
-    text-align: unset;
+    line-height: 1.75;
+    text-align: left;
     font-weight: 400;
     color: #323232;
     margin: 20px 0;
@@ -712,6 +721,7 @@ h6 {
         margin-bottom: 24px;
     }
     .blog__info {
+        margin-top: -28px;
         margin-bottom: 0px;
         width: 96%;
     }
@@ -748,7 +758,6 @@ h6 {
     .blog__content p {
         font-size: 15px;
         margin: 20px 0;
-        text-align: unset;
     }
     .blog__content blockquote p {
         font-size: 20px;
@@ -832,7 +841,7 @@ h6 {
     }
 
     .blog__info__title h1 {
-        font-size: 33px;
+        font-size: 32px;
     }
 }
 
@@ -864,6 +873,6 @@ h6 {
     }
 
     .blog__info__title h1 {
-        font-size: 32px;
+        font-size: 28px;
     }
 }

@@ -90,14 +90,18 @@ export default () => (
                                         style={{
                                             textDecoration: "none",
                                             color: "white",
-                                            display: "flex",
-                                            justifyContent: "left",
-                                            alignItems: "left",
                                             cursor: "pointer",
                                         }}
                                         to={`/idiots/${edge.node.authorData.authorSlug}/`}
                                     >
-                                        {edge.node.authorData.authorName} |{" "}
+                                        {"By"}
+                                        <strong>
+                                            {" "}
+                                            {
+                                                edge.node.authorData.authorName
+                                            }{" "}
+                                        </strong>
+                                        {"On "}
                                         {edge.node.createdAt}
                                     </Link>
                                 </p>

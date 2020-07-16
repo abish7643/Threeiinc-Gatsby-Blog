@@ -8,6 +8,7 @@ import Footer from "../components/footer"
 import Img from "gatsby-image"
 import "./prismokaidia.css"
 import CommentSection from "../components/comment"
+//import { Palette } from "react-palette"
 import {
     FacebookShareButton,
     FacebookIcon,
@@ -26,14 +27,14 @@ const BlogTemplate = (props) => {
 
     const shareUrl = `https://3iinc.xyz/blog/${props.data.currentBlog.slug}/`
     const keywordsArray = props.data.currentBlog.seoKeywords
-    //const shareMedia = props.data.currentBlog.featuredImage.fluid.src
+    const shareMedia = `https:${props.data.currentBlog.featuredImage.fluid.src}`
     const shareTitle = `${props.data.currentBlog.title} | 3i INC | 3 Idiots Incorporated.`
     //const propDescription = `${shareTitle} | ${shareUrl}`
     //const shareTitleLink = `${shareTitle} | ${shareUrl}`
 
     const iconProp = {
         size: 40,
-        round: true,
+        round: false,
         bgStyle: { opacity: "0.25" },
         iconFillColor: "#323232",
     }
@@ -112,10 +113,10 @@ const BlogTemplate = (props) => {
                     description={props.data.currentBlog.seoDescription}
                     keywords={props.data.currentBlog.seoKeywords}
                     url={`https://3iinc.xyz/blog/${props.data.currentBlog.slug}/`}
-                    image={props.data.currentBlog.seoImage.fluid.src}
+                    image={`https:${props.data.currentBlog.seoImage.fluid.src}`}
                     author={props.data.currentBlog.authorData.seoAuthorName}
                 />
-                <div className="blog__color__header"></div>
+                <div className="blog__color__header"></div>}
                 <div className="blog__info">
                     <div className="blog__hero__typography">
                         <div
@@ -188,7 +189,6 @@ const BlogTemplate = (props) => {
                 <p className="blog__hero__alt">
                     {props.data.currentBlog.featuredImage.description}
                 </p>
-
                 <div className="blog__wrapper">
                     <div className="blog__content">
                         <div
@@ -237,7 +237,7 @@ const BlogTemplate = (props) => {
                         </TwitterShareButton>
                     </div>
                     <div className="chapters__blog">
-                        <div>{multipleChapterPresentBottom}</div>
+                        {multipleChapterPresentBottom}
                     </div>
 
                     <Link

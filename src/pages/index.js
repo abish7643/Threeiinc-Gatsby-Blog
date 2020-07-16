@@ -13,9 +13,7 @@ export default class IndexPage extends React.Component {
             <Layout>
                 <Helmet>
                     <meta charSet="utf-8" />
-                    <title>
-                        3i INC | 3 Idiots Incorporated. | Idiots by Choice
-                    </title>
+                    <title>3 Idiots Incorporated. | Idiots by Choice</title>
                     <meta
                         name="title"
                         content="3 Idiots Incorporated. | Idiots by Choice"
@@ -26,7 +24,7 @@ export default class IndexPage extends React.Component {
           Who's an Idiot? The one who questions the system,
           The one who doesn't like how the system works or
           The one who doesn't believe in the system.
-          We Are The Fucking Idiots! | 3i INC | 3 Idiots Incorporated. | 3iinc.xyz | 3iinc"
+          We Are The Fucking Idiots! | 3i INC | 3iinc.xyz"
                     />
                     <meta
                         name="keywords"

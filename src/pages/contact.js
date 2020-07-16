@@ -81,7 +81,7 @@ export default class Contact extends React.Component {
                     description="Who is an Idiot?
                 The one who questions the system,
                 The one who doesn't like how the system works or
-                The one who doesn't believe in the system. | 3iinc.xyz | 3iinc"
+                The one who doesn't believe in the system. | 3iinc.xyz"
                     url="https://3iinc.xyz/contact/"
                 />
                 <div className="nav__contact__wrapper">
