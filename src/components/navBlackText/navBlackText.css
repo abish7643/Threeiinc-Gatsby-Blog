@@ -42,8 +42,7 @@
 }
 
 .nav__component__link__black__active {
-    background-color: #1e3787;
-    color: white;
+    background-color: #eeeeee;
     border-radius: 4px;
 }
 
