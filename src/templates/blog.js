@@ -116,7 +116,7 @@ const BlogTemplate = (props) => {
                     image={`https:${props.data.currentBlog.seoImage.fluid.src}`}
                     author={props.data.currentBlog.authorData.seoAuthorName}
                 />
-                <div className="blog__color__header"></div>}
+                <div className="blog__color__header"></div>
                 <div className="blog__info">
                     <div className="blog__hero__typography">
                         <div
