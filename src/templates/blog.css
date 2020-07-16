@@ -262,7 +262,7 @@ a {
 }
 .blog__content::first-letter {
     font-family: "Times New Roman";
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 500;
     letter-spacing: 0px;
 }

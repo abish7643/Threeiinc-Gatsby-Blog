@@ -79,6 +79,9 @@ const AuthorTemplate = (props) => {
                         <div
                             key={edge.node.id}
                             className="card"
+                            data-sal="fade"
+                            data-sal-delay="50"
+                            data-sal-easing="ease-in-out"
                             style={{
                                 backgroundImage: `linear-gradient(
                         to bottom,
@@ -93,11 +96,22 @@ const AuthorTemplate = (props) => {
                                 <p
                                     className="card__category"
                                     key={category.title}
+                                    data-sal="slide-up"
+                                    data-sal-delay="60"
+                                    data-sal-easing="ease"
                                 >
                                     {category.title}
                                 </p>
                             ))}
-                            <p className="card__title">{edge.node.title}</p>
+                            <p
+                                className="card__title"
+                                data-sal="slide-up"
+                                data-sal-delay="70"
+                                data-sal-easing="ease"
+                                className="card__title"
+                            >
+                                {edge.node.title}
+                            </p>
                         </div>
                     ))}
                 </div>

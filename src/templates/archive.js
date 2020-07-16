@@ -70,9 +70,9 @@ const Archive = (props) => {
                             {edge.node.category.map((category) => (
                                 <p
                                     className="card__category"
-                                    data-sal="fade"
-                                    data-sal-delay="70"
-                                    data-sal-easing="ease-in-out"
+                                    data-sal="slide-up"
+                                    data-sal-delay="60"
+                                    data-sal-easing="ease"
                                     key={category.title}
                                 >
                                     {category.title}
@@ -80,9 +80,9 @@ const Archive = (props) => {
                             ))}
                             <p
                                 className="card__title"
-                                data-sal="fade"
-                                data-sal-delay="80"
-                                data-sal-easing="ease-in-out"
+                                data-sal="slide-up"
+                                data-sal-delay="70"
+                                data-sal-easing="ease"
                             >
                                 {edge.node.title}
                             </p>
