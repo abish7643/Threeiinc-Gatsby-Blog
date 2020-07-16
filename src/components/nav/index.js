@@ -24,27 +24,35 @@ const Nav = () => (
                     <Link
                         to="/about/"
                         className="nav__component__link"
-                        style={{ textDecoration: "None", marginLeft: "0px" }}
+                        style={{
+                            textDecoration: "None",
+                            marginLeft: "0px",
+                            letterSpacing: "0.5px",
+                        }}
                     >
                         About
                     </Link>
                 </div>
                 <div className="nav__component__div">
                     <Link
-                        to="/contact/"
+                        to="/idiots/"
                         className="nav__component__link"
                         style={{ textDecoration: "None" }}
                     >
-                        Contact
+                        Contribute
                     </Link>
                 </div>
                 <div className="nav__component__div">
                     <Link
-                        to="/idiots/"
+                        to="/contact/"
                         className="nav__component__link"
-                        style={{ textDecoration: "None", marginRight: "0px" }}
+                        style={{
+                            textDecoration: "None",
+                            marginRight: "0px",
+                            letterSpacing: "-0.5px",
+                        }}
                     >
-                        Contribute
+                        Contact
                     </Link>
                 </div>
             </div>

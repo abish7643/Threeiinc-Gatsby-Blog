@@ -33,14 +33,18 @@
 .nav__component__link__black {
     text-decoration: none;
     color: black;
-    margin: 0 20px;
+    margin: 0 10px;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 500;
+    padding: 2px 6px;
+    border: 1px solid black;
 }
 
 .nav__component__link__black__active {
-    border-bottom: 1px solid #1e3787;
+    background-color: #1e3787;
+    color: white;
+    border-radius: 4px;
 }
 
 .nav__logo__black {
@@ -49,7 +53,7 @@
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background-color: black;
+    background-color: #222222;
     color: #f0f0f0;
 }
 .nav__logo__black:hover {
@@ -89,6 +93,7 @@
     }
     .nav__component__link__black {
         font-size: 15px;
+        border: none;
     }
 }
 @media screen and (max-width: 500px) {

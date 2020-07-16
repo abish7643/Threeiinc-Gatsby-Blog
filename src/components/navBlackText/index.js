@@ -25,19 +25,13 @@ const NavBlackText = () => (
                         to="/about/"
                         className="nav__component__link__black"
                         activeClassName="nav__component__link__black__active"
-                        style={{ textDecoration: "None", marginLeft: "0px" }}
+                        style={{
+                            textDecoration: "None",
+                            marginLeft: "0px",
+                            letterSpacing: "0.5px",
+                        }}
                     >
                         About
-                    </Link>
-                </div>
-                <div className="nav__component__div__black">
-                    <Link
-                        to="/contact/"
-                        className="nav__component__link__black"
-                        activeClassName="nav__component__link__black__active"
-                        style={{ textDecoration: "None" }}
-                    >
-                        Contact
                     </Link>
                 </div>
                 <div className="nav__component__div__black">
@@ -45,9 +39,23 @@ const NavBlackText = () => (
                         to="/idiots/"
                         className="nav__component__link__black"
                         activeClassName="nav__component__link__black__active"
-                        style={{ textDecoration: "None", marginRight: "0px" }}
+                        style={{ textDecoration: "None" }}
                     >
                         Contribute
+                    </Link>
+                </div>
+                <div className="nav__component__div__black">
+                    <Link
+                        to="/contact/"
+                        className="nav__component__link__black"
+                        activeClassName="nav__component__link__black__active"
+                        style={{
+                            textDecoration: "None",
+                            marginRight: "0px",
+                            letterSpacing: "-0.5px",
+                        }}
+                    >
+                        Contact
                     </Link>
                 </div>
             </div>
