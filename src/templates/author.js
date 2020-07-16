@@ -116,18 +116,18 @@ const AuthorTemplate = (props) => {
                                 <p
                                     className="card__category"
                                     key={category.title}
-                                    data-sal="slide-up"
-                                    data-sal-delay="60"
-                                    data-sal-easing="ease"
+                                    data-sal="fade"
+                                    data-sal-delay="100"
+                                    data-sal-easing="ease-in-out"
                                 >
                                     {category.title}
                                 </p>
                             ))}
                             <p
                                 className="card__title"
-                                data-sal="slide-up"
-                                data-sal-delay="70"
-                                data-sal-easing="ease"
+                                data-sal="fade"
+                                data-sal-delay="150"
+                                data-sal-easing="ease-in-out"
                                 className="card__title"
                             >
                                 {edge.node.title}
