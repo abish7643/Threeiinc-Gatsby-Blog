@@ -5,7 +5,7 @@ export default class CommentSection extends React.Component {
     state = {
         clicked: false,
     }
-    handleClick = event => {
+    handleClick = (event) => {
         this.setState({
             clicked: true,
         })
