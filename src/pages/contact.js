@@ -125,7 +125,10 @@ export default class Contact extends React.Component {
                                         </label>
                                         <input name="bot" />
                                     </div>
-                                    <label className="form-label" for="name">
+                                    <label
+                                        className="form-label"
+                                        htmlFor="name"
+                                    >
                                         Name
                                     </label>
                                     <div className="field">
@@ -141,7 +144,10 @@ export default class Contact extends React.Component {
                                             name="name"
                                         />
                                     </div>
-                                    <label className="form-label" for="email">
+                                    <label
+                                        className="form-label"
+                                        htmlFor="email"
+                                    >
                                         Email
                                     </label>
                                     <div className="field">
@@ -155,7 +161,10 @@ export default class Contact extends React.Component {
                                             name="email"
                                         />
                                     </div>
-                                    <label className="form-label" for="message">
+                                    <label
+                                        className="form-label"
+                                        htmlFor="message"
+                                    >
                                         Message
                                     </label>
                                     <div className="field">

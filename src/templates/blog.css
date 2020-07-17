@@ -259,7 +259,7 @@ a {
     margin-top: 24px;
     margin-bottom: 10px;
     margin: 0 6%;
-    padding-bottom: 24px;
+    padding-bottom: 32px;
     border-bottom: 1px solid rgba(30, 60, 114, 0.04);
 }
 .blog__content::first-letter {
@@ -275,15 +275,14 @@ a {
     color: black;
     font-weight: 400;
     font-size: 34px;
-    margin-bottom: 0px;
+    margin-bottom: -24px;
+    margin-top: 40px;
 }
 .blog__content h4 {
-    padding-top: 8px;
     font-size: 20px;
     margin-left: 2px;
-    padding-bottom: 0px;
-    margin-bottom: -8px;
-    margin-top: 0px;
+    margin-bottom: -24px;
+    margin-top: 32px;
     font-weight: 300;
     font-family: "poppins";
 }
@@ -299,7 +298,8 @@ a {
     padding-top: 8px;
 }
 .blog__content table {
-    margin: 32px auto;
+    margin: 40px auto;
+    margin-bottom: 0px;
     text-align: center;
     width: 100%;
     max-width: 760px;
@@ -313,7 +313,8 @@ a {
     font-weight: 400;
     color: #323232;
     opacity: 0.875;
-    margin: 20px 0;
+    margin-top: 40px;
+    margin-bottom: 0px;
 }
 .highlighted__text {
     background-color: #eee;
@@ -331,8 +332,8 @@ a {
     margin: 5px 0px;
 }
 .blog__content h3 {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: -24px;
     font-size: 24px;
     font-family: "poppins";
     font-weight: 500;
@@ -343,17 +344,17 @@ a {
 }
 
 .blog__content blockquote {
-    margin: 5px;
-    margin-left: 0px;
-    border-left: 2px rgba(10, 10, 10, 0.1) solid;
+    margin: 40px 0px;
+    margin-bottom: 0px;
+    border-left: 2px rgba(10, 10, 10, 0.06) solid;
 }
 
 .blog__content blockquote p {
-    font-size: 25px;
-    padding: 16px 0px;
-    margin-right: 20px;
-    margin-left: 20px;
-    line-height: 30px;
+    font-size: 24px;
+    margin: 0px 0px;
+    margin-right: 8px;
+    margin-left: 24px;
+    line-height: 1.5;
     font-weight: 500;
     color: #1e3c72;
     font-family: "poppins";
@@ -367,6 +368,7 @@ a {
 }
 .gatsby-resp-image-background-image {
     margin: 48px 0;
+    margin-bottom: 0px;
     border-radius: 5px;
     box-shadow: 0px 10px 10px -2px rgba(30, 60, 114, 0.16);
 }
@@ -383,13 +385,13 @@ a {
 .center {
     width: 100%;
     display: block;
-    margin: 40px auto;
+    margin: 0px auto;
 }
 
 .right {
     width: 48%;
     float: right;
-    margin: 15px 0 30px 30px;
+    margin: 16px 0 32px 32px;
 }
 .blog__commentbelowtag {
     background-color: black;
@@ -569,7 +571,7 @@ h6 {
         width: 90%;
     }
     .blog__content {
-        padding-bottom: 24px;
+        padding-bottom: 32px;
     }
     .blog__content blockquote {
         margin-left: -10px;
@@ -577,10 +579,8 @@ h6 {
     }
     .blog__content blockquote p {
         font-size: 22px;
-        line-height: 28px;
         margin-left: 10px;
         margin-right: 0px;
-        padding: 8px 0px;
     }
     .center {
         margin: 32px auto;
@@ -679,25 +679,33 @@ h6 {
     }
     .blog__content {
         margin-top: 16px;
-        padding-bottom: 24px;
+        padding-bottom: 40px;
     }
     .blog__content p {
         font-size: 15px;
-        margin: 20px 0;
+        margin-top: 24px;
+    }
+
+    .blog__content blockquote {
+        margin-top: 24px;
     }
     .blog__content blockquote p {
         font-size: 20px;
-        padding: 4px 0px;
     }
     .blog__content h2 {
         font-size: 26px;
-        margin-bottom: -12px;
+        margin-top: 24px;
+        margin-bottom: -8px;
     }
     .blog__content h3 {
         font-size: 19px;
+        margin-bottom: -8px;
+        margin-top: 24px;
     }
     .blog__content h4 {
         font-size: 18px;
+        margin-top: 24px;
+        margin-bottom: -8px;
     }
     .blog__content {
         width: 90%;
@@ -738,6 +746,7 @@ h6 {
     }
     .blog__content table {
         font-size: 13px;
+        margin-top: 24px;
     }
     .blog__content__inner {
         padding-top: 0px;
@@ -758,9 +767,6 @@ h6 {
 @media screen and (max-width: 400px) {
     .center {
         margin: 24px auto;
-    }
-    .gatsby-resp-image-background-image {
-        margin: 24px 0px;
     }
     .blog__extratitleone {
         font-size: 13px;

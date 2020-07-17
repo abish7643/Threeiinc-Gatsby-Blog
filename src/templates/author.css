@@ -57,6 +57,7 @@
     padding: 4px 0px 16px 0px;
     color: #323232;
     opacity: 0.875;
+    min-height: 48px;
 }
 
 .author__feed {

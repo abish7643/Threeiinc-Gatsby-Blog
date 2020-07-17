@@ -69,6 +69,7 @@
     align-items: left;
     font-weight: 600;
     color: #2a5298;
+    opacity: 0.9;
     transition: 0.2s ease-in-out;
 }
 

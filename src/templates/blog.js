@@ -10,6 +10,8 @@ import Img from "gatsby-image"
 import "./prismokaidia.css"
 import CommentSection from "../components/comment"
 import { usePalette } from "react-palette"
+import Searchcard from "../components/atoms/search/searchcard"
+
 import {
     FacebookShareButton,
     FacebookIcon,
@@ -247,7 +249,6 @@ const BlogTemplate = (props) => {
                     <div className="chapters__blog">
                         {multipleChapterPresentBottom}
                     </div>
-
                     <Link
                         data-sal="fade"
                         data-sal-delay="50"
@@ -303,46 +304,8 @@ const BlogTemplate = (props) => {
                     <div className="chapters__blog">
                         <p className="latestposts__blogpost">Latest Posts</p>
                         <div className="search__inner__blog__bottom">
-                            {props.data.nextBlog.edges.map((edge) => (
-                                <div
-                                    key={edge.node.id}
-                                    className="search__entries"
-                                    onClick={() =>
-                                        navigate(`/blog/${edge.node.slug}/`)
-                                    }
-                                >
-                                    <Img
-                                        className="search__entries__img"
-                                        sizes={edge.node.featuredImage.fluid}
-                                    />
-                                    <div className="search__entries__details">
-                                        {edge.node.category.map((category) => (
-                                            <span
-                                                className="search__entries__details__category"
-                                                key={category.id}
-                                            >
-                                                {category.title}
-                                            </span>
-                                        ))}
-                                        <p className="search__entries__details__title">
-                                            {edge.node.title}
-                                        </p>
-                                        <p className="search__entries__details__author">
-                                            <span className="text-left">
-                                                <span className="text-opacity-low">
-                                                    By
-                                                </span>{" "}
-                                                {
-                                                    edge.node.authorData
-                                                        .authorName
-                                                }
-                                            </span>
-                                            <span className="text-opacity-low">
-                                                on {edge.node.createdAt}
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
+                            {props.data.nextBlog.edges.map((edges) => (
+                                <Searchcard postdata={edges} />
                             ))}
                         </div>
                         <div className="viewmore_container__blog">
@@ -369,7 +332,6 @@ const BlogTemplate = (props) => {
                                     <svg
                                         className="search-svg-btn"
                                         id="Layer_1"
-                                        enable-background="new 0 0 512.002 512.002"
                                         height="512"
                                         viewBox="0 0 512.002 512.002"
                                         width="512"
@@ -402,6 +364,7 @@ export const query = graphql`
             slug
             authorData {
                 authorName
+                id
                 authorSlug
                 seoAuthorName
                 authorDescription

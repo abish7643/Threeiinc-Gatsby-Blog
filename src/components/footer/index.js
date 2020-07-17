@@ -81,7 +81,7 @@ export default class Footer extends React.Component {
                                         <input name="bot" />
                                     </div>
                                     <label
-                                        for="email"
+                                        htmlFor="email"
                                         style={{
                                             marginBottom: "-8px",
                                             marginLeft: "2px",
