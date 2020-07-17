@@ -51,10 +51,9 @@
 }
 
 .author__description {
-    padding-right: 16px;
     font-size: 16px;
     line-height: 1.3;
-    padding: 4px 0px 16px 0px;
+    padding: 4px 16px 16px 0px;
     color: #323232;
     opacity: 0.875;
     min-height: 48px;
