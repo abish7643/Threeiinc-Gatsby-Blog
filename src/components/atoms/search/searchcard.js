@@ -6,6 +6,9 @@ export default function Searchcard({ postdata }) {
     return (
         <div
             key={postdata.node.id}
+            data-sal="fade"
+            data-sal-delay="100"
+            data-sal-easing="ease"
             className="search__entries"
             onClick={() => navigate(`/blog/${postdata.node.slug}/`)}
         >
