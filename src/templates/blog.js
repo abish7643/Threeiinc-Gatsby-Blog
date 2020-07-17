@@ -122,7 +122,7 @@ const BlogTemplate = (props) => {
                     author={props.data.currentBlog.authorData.seoAuthorName}
                 />
                 <div
-                    style={{ background: data.muted, opacity: "0.16" }}
+                    style={{ background: data.muted, opacity: "0.2" }}
                     className="blog__color__header"
                 ></div>
                 <div className="blog__info">
