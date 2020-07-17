@@ -21,8 +21,8 @@ export default class IndexPage extends React.Component {
                     url="https://3iinc.xyz/about/"
                     keywords="3iinc, idiots, 3i, INC, 3 Idiots Incorporation, 3 Idiots Incorporated, 3 Idiots, Blog, Articles, Rogue, Idiot, Choice"
                 />
-                <NavBlackText />
 
+                <NavBlackText />
                 <div className="about__hero__div">
                     <div className="about__hero__div__inner">
                         <div className="about__hero__text">

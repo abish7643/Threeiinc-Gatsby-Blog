@@ -4,11 +4,12 @@ import Layout from "../components/layout"
 import NavBlackText from "../components/navBlackText"
 import SEO from "../components/seo"
 import "./blog.css"
+import "./author.css"
 import Footer from "../components/footer"
 import Img from "gatsby-image"
 import "./prismokaidia.css"
 import CommentSection from "../components/comment"
-//import { Palette } from "react-palette"
+import { usePalette } from "react-palette"
 import {
     FacebookShareButton,
     FacebookIcon,
@@ -21,19 +22,21 @@ import {
 } from "react-share"
 
 const BlogTemplate = (props) => {
+    const shareMedia = `https:${props.data.currentBlog.featuredImage.fluid.src}`
+    const { data, loading, error } = usePalette(shareMedia)
+
     const date = {
         createdat: props.data.currentBlog.createdAt,
     }
 
     const shareUrl = `https://3iinc.xyz/blog/${props.data.currentBlog.slug}/`
     const keywordsArray = props.data.currentBlog.seoKeywords
-    const shareMedia = `https:${props.data.currentBlog.featuredImage.fluid.src}`
     const shareTitle = `${props.data.currentBlog.title} | 3i INC | 3 Idiots Incorporated.`
     //const propDescription = `${shareTitle} | ${shareUrl}`
     //const shareTitleLink = `${shareTitle} | ${shareUrl}`
 
     const iconProp = {
-        size: 40,
+        size: 38,
         round: false,
         bgStyle: { opacity: "0.25" },
         iconFillColor: "#323232",
@@ -116,7 +119,10 @@ const BlogTemplate = (props) => {
                     image={`https:${props.data.currentBlog.seoImage.fluid.src}`}
                     author={props.data.currentBlog.authorData.seoAuthorName}
                 />
-                <div className="blog__color__header"></div>
+                <div
+                    style={{ background: data.muted, opacity: "0.16" }}
+                    className="blog__color__header"
+                ></div>
                 <div className="blog__info">
                     <div className="blog__hero__typography">
                         <div
@@ -140,7 +146,9 @@ const BlogTemplate = (props) => {
                             >
                                 <p
                                     className="blog__extratitleone"
-                                    style={{ textDecoration: "none" }}
+                                    style={{
+                                        textDecoration: "none",
+                                    }}
                                 >
                                     By{" "}
                                     <strong>
@@ -244,110 +252,100 @@ const BlogTemplate = (props) => {
                         data-sal="fade"
                         data-sal-delay="50"
                         data-sal-easing="ease-in-out"
-                        className="about__author"
+                        className="about__author__blog"
                         to={`/idiots/${props.data.currentBlog.authorData.authorSlug}/`}
                         style={{ textDecoration: "none", color: "black" }}
                     >
                         <Img
-                            className="author__image"
-                            style={{ minHeight: "170px" }}
+                            className="author__img"
                             data-sal="fade"
                             data-sal-delay="100"
                             data-sal-easing="ease-in-out"
-                            sizes={
+                            fluid={
                                 props.data.currentBlog.authorData.authorPhoto
                                     .fluid
                             }
                         />
-                        <div className="author__details">
-                            <div className="author__name">
-                                <h6
-                                    data-sal="fade"
-                                    data-sal-delay="100"
-                                    data-sal-easing="ease-in-out"
-                                >
-                                    About Author
-                                </h6>
-                                <h4
-                                    data-sal="fade"
-                                    data-sal-delay="150"
-                                    data-sal-easing="ease-in-out"
-                                >
-                                    {
-                                        props.data.currentBlog.authorData
-                                            .authorName
-                                    }
-                                </h4>
-                            </div>
-                            <div
-                                className="author__description"
+                        <div className="author__typography">
+                            <p
+                                data-sal="fade"
+                                data-sal-delay="100"
+                                data-sal-easing="ease-in-out"
+                                className="author__label"
+                            >
+                                About Author
+                            </p>
+                            <h4
+                                data-sal="fade"
+                                data-sal-delay="150"
+                                data-sal-easing="ease-in-out"
+                                className="author__name"
+                            >
+                                {props.data.currentBlog.authorData.authorName}
+                            </h4>
+
+                            <p
                                 data-sal="fade"
                                 data-sal-delay="200"
                                 data-sal-easing="ease-in-out"
+                                className="author__description"
                             >
-                                <h5>
-                                    {
-                                        props.data.currentBlog.authorData
-                                            .authorDescription
-                                    }
-                                </h5>
-                            </div>
+                                {
+                                    props.data.currentBlog.authorData
+                                        .authorDescription
+                                }
+                            </p>
                         </div>
                     </Link>
 
                     <CommentSection slug={props} />
 
-                    <p className="latestposts__blogpost">Latest Posts</p>
-                    <div className="feed__initial__blogpost">
-                        <div className="feed__blogpost">
+                    <div className="chapters__blog">
+                        <p className="latestposts__blogpost">Latest Posts</p>
+                        <div className="search__inner__blog__bottom">
                             {props.data.nextBlog.edges.map((edge) => (
                                 <div
                                     key={edge.node.id}
-                                    className="card__blogpost"
-                                    data-sal="fade"
-                                    data-sal-delay="50"
-                                    data-sal-easing="ease-in-out"
-                                    style={{
-                                        backgroundImage: `linear-gradient(
-                    to bottom,
-                    rgba(10, 10, 10, 0) 0%,
-                    rgba(10, 10, 10, 0.5) 50%,
-                    rgba(10, 10, 10, 0.7) 100%),
-                    url(${edge.node.featuredImage.fluid.src})`,
-                                    }}
+                                    className="search__entries"
                                     onClick={() =>
                                         navigate(`/blog/${edge.node.slug}/`)
                                     }
                                 >
-                                    {edge.node.category.map((category) => (
-                                        <p
-                                            className="card__category"
-                                            data-sal="fade"
-                                            data-sal-delay="100"
-                                            data-sal-easing="ease-in-out"
-                                            key={category.id}
-                                        >
-                                            {category.title}
+                                    <Img
+                                        className="search__entries__img"
+                                        sizes={edge.node.featuredImage.fluid}
+                                    />
+                                    <div className="search__entries__details">
+                                        {edge.node.category.map((category) => (
+                                            <span
+                                                className="search__entries__details__category"
+                                                key={category.id}
+                                            >
+                                                {category.title}
+                                            </span>
+                                        ))}
+                                        <p className="search__entries__details__title">
+                                            {edge.node.title}
                                         </p>
-                                    ))}
-                                    <p
-                                        className="card__title"
-                                        data-sal="fade"
-                                        data-sal-delay="150"
-                                        data-sal-easing="ease-in-out"
-                                    >
-                                        {edge.node.title}
-                                    </p>
+                                        <p className="search__entries__details__author">
+                                            <span className="text-left">
+                                                <span className="text-opacity-low">
+                                                    By
+                                                </span>{" "}
+                                                {
+                                                    edge.node.authorData
+                                                        .authorName
+                                                }
+                                            </span>
+                                            <span className="text-opacity-low">
+                                                on {edge.node.createdAt}
+                                            </span>
+                                        </p>
+                                    </div>
                                 </div>
                             ))}
                         </div>
-                        <div
-                            className="viewmore_container"
-                            style={{
-                                marginTop: "-48px",
-                                marginBottom: "120px",
-                            }}
-                        >
+                        <div className="viewmore_container__blog">
                             <Link
                                 className="viewmore_wrapper__link"
                                 to={`/blog/`}
@@ -439,21 +437,21 @@ export const query = graphql`
             seoKeywords
             seoUrl
             seoImage {
-                fluid(maxWidth: 1200, quality: 70, toFormat: WEBP) {
+                fluid(maxWidth: 920, quality: 70, toFormat: WEBP) {
                     ...GatsbyContentfulFluid
                     src
                 }
             }
             featuredImage {
                 description
-                fluid(maxWidth: 1200, quality: 70, toFormat: WEBP) {
+                fluid(maxWidth: 920, quality: 70, toFormat: WEBP) {
                     ...GatsbyContentfulFluid
                     src
                 }
             }
         }
         nextBlog: allContentfulBlog(
-            limit: 2
+            limit: 4
             sort: { fields: [createdAt], order: DESC }
             filter: { node_locale: { eq: "en-US" }, id: { ne: $id } }
         ) {

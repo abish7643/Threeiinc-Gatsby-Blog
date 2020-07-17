@@ -84,9 +84,8 @@ export default class Contact extends React.Component {
                 The one who doesn't believe in the system. | 3iinc.xyz"
                     url="https://3iinc.xyz/contact/"
                 />
-                <div className="nav__contact__wrapper">
-                    <NavBlackText />
-                </div>
+
+                <NavBlackText />
                 <div className="contact__section">
                     <div className="contact__container">
                         <div className="contact__container__left">
@@ -99,7 +98,7 @@ export default class Contact extends React.Component {
                                 data-sal-delay="200"
                                 data-sal-easing="ease-in-out"
                             >
-                                Contact Us
+                                Get In Touch
                             </h1>
                             <div
                                 className="contact__container__right__inner"
@@ -126,10 +125,13 @@ export default class Contact extends React.Component {
                                         </label>
                                         <input name="bot" />
                                     </div>
+                                    <label className="form-label" for="name">
+                                        Name
+                                    </label>
                                     <div className="field">
                                         <input
                                             className="name__field"
-                                            placeholder="NAME"
+                                            placeholder="Sebastian King"
                                             onChange={
                                                 this.handleContactNameChange
                                             }
@@ -139,21 +141,27 @@ export default class Contact extends React.Component {
                                             name="name"
                                         />
                                     </div>
+                                    <label className="form-label" for="email">
+                                        Email
+                                    </label>
                                     <div className="field">
                                         <input
                                             className="email__field"
                                             onChange={this.handleContactChange}
                                             value={this.state.contactEmail}
-                                            placeholder="EMAIL"
+                                            placeholder="sebastianking@ieee.org"
                                             type="email"
                                             id="email"
                                             name="email"
                                         />
                                     </div>
+                                    <label className="form-label" for="message">
+                                        Message
+                                    </label>
                                     <div className="field">
                                         <textarea
                                             className="message__field"
-                                            placeholder="MESSAGE"
+                                            placeholder="Open up."
                                             onChange={
                                                 this.handleContactMessageChange
                                             }

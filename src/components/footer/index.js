@@ -80,6 +80,16 @@ export default class Footer extends React.Component {
                                         </label>
                                         <input name="bot" />
                                     </div>
+                                    <label
+                                        for="email"
+                                        style={{
+                                            marginBottom: "-8px",
+                                            marginLeft: "2px",
+                                        }}
+                                        className="form-label"
+                                    >
+                                        Email
+                                    </label>
                                     <div className="newsletter__field">
                                         <input
                                             type="email"
@@ -87,7 +97,7 @@ export default class Footer extends React.Component {
                                             name="email"
                                             onChange={this.handleChange}
                                             value={this.state.name}
-                                            placeholder="email"
+                                            placeholder="sebastianking@mail.org"
                                         />
                                     </div>
                                     <div className="newsletter__submit">

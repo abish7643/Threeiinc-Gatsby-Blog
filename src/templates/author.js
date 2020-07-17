@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import "./blog.css"
 import Footer from "../components/footer"
 import NavBlackText from "../components/navBlackText"
-import Img from "gatsby-image"
+//import Img from "gatsby-image"
 
 const AuthorTemplate = (props) => {
     return (
@@ -38,57 +38,6 @@ const AuthorTemplate = (props) => {
                                 description={`${edge.node.authorData.authorDescription} ' Read All The Posts From The Author of 3i INC | Idiots By Choice!'`}
                             />
                         </div>
-                    </>
-                ))}
-            </div>
-            <div className="Author__Info__Container">
-                {props.data.authorInfo.edges.map((edge) => (
-                    <>
-                        <Link
-                            data-sal="fade"
-                            data-sal-delay="50"
-                            data-sal-easing="ease-in-out"
-                            className="about__author"
-                            to={`/idiots/${edge.node.authorData.authorSlug}`}
-                            style={{ textDecoration: "none", color: "black" }}
-                        >
-                            <Img
-                                className="author__image"
-                                style={{ minHeight: "170px" }}
-                                data-sal="fade"
-                                data-sal-delay="100"
-                                data-sal-easing="ease-in-out"
-                                sizes={edge.node.authorData.authorPhoto.fluid}
-                            />
-                            <div className="author__details">
-                                <div className="author__name">
-                                    <h6
-                                        data-sal="fade"
-                                        data-sal-delay="100"
-                                        data-sal-easing="ease-in-out"
-                                    >
-                                        About Author
-                                    </h6>
-                                    <h4
-                                        data-sal="fade"
-                                        data-sal-delay="150"
-                                        data-sal-easing="ease-in-out"
-                                    >
-                                        {edge.node.authorData.authorName}
-                                    </h4>
-                                </div>
-                                <div
-                                    className="author__description"
-                                    data-sal="fade"
-                                    data-sal-delay="200"
-                                    data-sal-easing="ease-in-out"
-                                >
-                                    <h5>
-                                        {edge.node.authorData.authorDescription}
-                                    </h5>
-                                </div>
-                            </div>
-                        </Link>
                     </>
                 ))}
             </div>

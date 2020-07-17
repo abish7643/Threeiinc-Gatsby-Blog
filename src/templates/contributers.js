@@ -86,39 +86,38 @@ export default () => (
                             style={{ textDecoration: "none", color: "black" }}
                         >
                             <Img
-                                className="author__image"
-                                style={{ minHeight: "170px" }}
-                                sizes={edge.node.authorPhoto.fluid}
+                                className="author__img"
+                                fluid={edge.node.authorPhoto.fluid}
                                 data-sal="fade"
                                 data-sal-delay="100"
                                 data-sal-easing="ease-in-out"
                             />
-                            <div className="author__details">
-                                <div className="author__name">
-                                    <h6
-                                        style={{ opacity: "0" }}
-                                        data-sal="fade"
-                                        data-sal-delay="100"
-                                        data-sal-easing="ease-in-out"
-                                    >
-                                        Author
-                                    </h6>
-                                    <h4
-                                        data-sal="fade"
-                                        data-sal-delay="150"
-                                        data-sal-easing="ease-in-out"
-                                    >
-                                        {edge.node.authorName}
-                                    </h4>
-                                </div>
-                                <div
-                                    className="author__description"
+                            <div className="author__typography">
+                                <p
+                                    data-sal="fade"
+                                    data-sal-delay="100"
+                                    data-sal-easing="ease-in-out"
+                                    className="author__label"
+                                >
+                                    About Author
+                                </p>
+
+                                <h4
+                                    data-sal="fade"
+                                    data-sal-delay="150"
+                                    data-sal-easing="ease-in-out"
+                                    className="author__name"
+                                >
+                                    {edge.node.authorName}
+                                </h4>
+                                <p
                                     data-sal="fade"
                                     data-sal-delay="200"
                                     data-sal-easing="ease-in-out"
+                                    className="author__description"
                                 >
-                                    <h5>{edge.node.authorDescription}</h5>
-                                </div>
+                                    {edge.node.authorDescription}
+                                </p>
                             </div>
                         </Link>
                     ))}

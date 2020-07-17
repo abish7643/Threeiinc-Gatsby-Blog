@@ -31,6 +31,17 @@
     max-width: 1200px;
 }
 
+.search__inner__blog__latestpost {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 120px;
+    grid-gap: 24px;
+    padding: 8px;
+    max-width: 850px;
+    width: 100%;
+    margin: 0px auto;
+}
+
 .search__entries__none {
     margin-top: 144px;
     margin-bottom: 144px;
@@ -317,6 +328,10 @@
     .search__entries__details__title {
         font-size: 16px;
     }
+
+    .search__inner__blog__latestpost {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -338,6 +353,9 @@
     .search__inner__blog__bottom {
         margin-top: 24px;
         margin-bottom: 16px;
+    }
+    .search__inner__blog__top {
+        margin-top: 48px;
     }
 }
 @media screen and (max-width: 400px) {
