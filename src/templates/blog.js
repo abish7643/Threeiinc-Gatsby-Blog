@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react"
 import { graphql, Link, navigate } from "gatsby"
 import Layout from "../components/layout"
@@ -429,7 +430,7 @@ export const query = graphql`
                     }
                     createdAt(formatString: "MMMM DD, YYYY")
                     featuredImage {
-                        fluid(maxWidth: 1200, quality: 70, toFormat: WEBP) {
+                        fluid(maxWidth: 300, quality: 70, toFormat: WEBP) {
                             ...GatsbyContentfulFluid
                             src
                         }

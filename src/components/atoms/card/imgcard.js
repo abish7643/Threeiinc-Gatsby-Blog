@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react"
 import { navigate } from "gatsby"
 
@@ -35,7 +36,6 @@ export default function Imgcard({ postdata }) {
                 data-sal="fade"
                 data-sal-delay="150"
                 data-sal-easing="ease-in-out"
-                className="card__title"
             >
                 {postdata.node.title}
             </p>

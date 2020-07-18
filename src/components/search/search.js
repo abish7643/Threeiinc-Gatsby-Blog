@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react"
 import { navigate } from "gatsby"
 import moment from "moment"
@@ -22,7 +23,7 @@ const PostHits = connectHits(({ hits }) => (
     <>
         {hits.length ? (
             <div className="search__inner">
-                {hits.map(hit => {
+                {hits.map((hit) => {
                     return (
                         <div
                             key={hit.objectID}
@@ -34,7 +35,7 @@ const PostHits = connectHits(({ hits }) => (
                                 sizes={hit.featuredImage.fluid}
                             />
                             <div className="search__entries__details">
-                                {hit.category.map(category => (
+                                {hit.category.map((category) => (
                                     <span
                                         className="search__entries__details__category"
                                         key={category.id}

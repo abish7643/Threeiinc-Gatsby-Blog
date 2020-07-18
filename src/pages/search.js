@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react"
 import NavBlackText from "../components/navBlackText"
 import Layout from "../components/layout"

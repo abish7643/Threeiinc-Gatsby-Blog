@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react"
 import Img from "gatsby-image"
 import { navigate } from "gatsby"

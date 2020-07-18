@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql, navigate } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./blog.css"
@@ -127,7 +127,7 @@ export const query = graphql`
                         authorSlug
                     }
                     featuredImage {
-                        fluid(maxWidth: 1200, quality: 70, toFormat: WEBP) {
+                        fluid(maxWidth: 600, quality: 70, toFormat: WEBP) {
                             src
                             ...GatsbyContentfulFluid
                         }

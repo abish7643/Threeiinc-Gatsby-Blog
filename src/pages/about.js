@@ -12,6 +12,7 @@ export default class IndexPage extends React.Component {
     render() {
         return (
             <Layout>
+                <NavBlackText />
                 <SEO
                     title="About Us"
                     description="Who's an Idiot? The one who questions the system,
@@ -22,7 +23,6 @@ export default class IndexPage extends React.Component {
                     keywords="3iinc, idiots, 3i, INC, 3 Idiots Incorporation, 3 Idiots Incorporated, 3 Idiots, Blog, Articles, Rogue, Idiot, Choice"
                 />
 
-                <NavBlackText />
                 <div className="about__hero__div">
                     <div className="about__hero__div__inner">
                         <div className="about__hero__text">
