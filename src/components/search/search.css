@@ -6,7 +6,7 @@
     margin-top: 72px;
     margin-bottom: 48px;
     padding: 8px;
-    max-width: 1200px;
+    max-width: 960px;
 }
 
 .search__inner__blog__top {
@@ -57,7 +57,7 @@
 .search__entries {
     width: 100%;
     grid-column-start: span 6;
-    border-radius: 5px;
+    border-radius: 4px;
     transition: 1s ease-in-out;
     border: none;
     z-index: 0;

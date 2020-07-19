@@ -9,6 +9,7 @@
 }
 .about__author__contrib {
     display: grid;
+    z-index: 10;
     grid-template-columns: repeat(12, 1fr);
     width: 80%;
     max-width: 700px;
@@ -66,6 +67,7 @@
     align-items: center;
     margin-right: 10px;
     margin-bottom: 32px;
+    margin-top: 24px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -97,6 +99,9 @@
     .author__typography {
         grid-column-start: span 9;
     }
+    .author__feed {
+        margin-top: 16px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -112,6 +117,9 @@
     }
     .author__typography {
         margin-left: 12px;
+    }
+    .author__feed {
+        margin-top: 8px;
     }
 }
 

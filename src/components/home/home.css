@@ -7,7 +7,7 @@
     width: 100%;
     align-items: center;
     margin-left: 0px;
-    margin-top: 375px;
+    margin-top: 380px;
     position: relative;
     order: 2;
     z-index: 0;
@@ -56,7 +56,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 5px;
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -69,7 +69,7 @@
 
 .card:hover {
     cursor: pointer;
-    transform: scale(1.02);
+    transform: scale(1.01);
     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -114,7 +114,7 @@
 }
 
 .viewmore_wrapper:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 .viewmore_wrapper__outline {
@@ -136,7 +136,7 @@
 }
 
 .viewmore_wrapper__outline:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 .search-svg-btn {
@@ -170,7 +170,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 5px;
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -183,7 +183,7 @@
 
 .card__blogpost:hover {
     cursor: pointer;
-    transform: scale(1.02);
+    transform: scale(1.01);
     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
 }
 

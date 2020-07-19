@@ -1,13 +1,6 @@
-header {
-    width: 100vw;
-}
-.header__section {
-    width: 100vw;
-}
 .header__hero {
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
     height: 580px;
     width: 100vw;
     position: absolute;
@@ -112,6 +105,11 @@ header {
         padding: 50px 20px;
         margin-top: -240px;
     }
+    .header__subtitle {
+        margin-top: -5px;
+        font-size: 16px;
+        font-weight: 400;
+    }
 
     .banner___title {
         font-size: 40px;
@@ -133,11 +131,7 @@ header {
         font-size: 32px;
         line-height: 48px;
     }
-    .header__subtitle {
-        margin-top: -5px;
-        font-size: 16px;
-        font-weight: 400;
-    }
+
     .header__button__div {
         margin-top: 16px;
     }
@@ -148,7 +142,7 @@ header {
 
 @media screen and (max-width: 400px) {
     .header__subtitle {
-        font-size: 15px;
+        font-size: 16px;
     }
     .banner___title {
         font-size: 28px;

@@ -14,8 +14,8 @@ export default function Imgcard({ postdata }) {
                 backgroundImage: `linear-gradient(
                         to bottom,
                         rgba(10, 10, 10, 0) 0%,
-                        rgba(10, 10, 10, 0.5) 50%,
-                        rgba(10, 10, 10, 0.7) 100%),
+                        rgba(10, 10, 10, 0.36) 50%,
+                        rgba(10, 10, 10, 0.6) 100%),
                         url(${postdata.node.featuredImage.fluid.src})`,
             }}
             onClick={() => navigate(`/blog/${postdata.node.slug}/`)}

@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 64px;
+    z-index: 10;
 }
 .contact__container {
     width: 960px;
@@ -165,7 +166,7 @@ textarea[type="message"] {
 }
 
 .button_med {
-    border-radius: 15px;
+    border-radius: 4px;
     text-align: center;
     font-size: 16px;
     font-weight: 400;

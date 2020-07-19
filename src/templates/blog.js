@@ -135,8 +135,6 @@ const BlogTemplate = (props) => {
                             data-sal-easing="ease"
                         >
                             <h1>{props.data.currentBlog.title}</h1>
-
-                            <br />
                         </div>
                         <div
                             className="blog__info__author"

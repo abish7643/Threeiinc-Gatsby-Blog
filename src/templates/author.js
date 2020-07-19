@@ -13,6 +13,10 @@ const AuthorTemplate = (props) => {
         <Layout>
             <NavBlackText />
 
+            <div
+                style={{ opacity: "0.9" }}
+                className="blog__color__header"
+            ></div>
             <div className="Author__Info__Container">
                 {props.data.authorInfo.edges.map((edge) => (
                     <>
@@ -21,9 +25,9 @@ const AuthorTemplate = (props) => {
                             key={edge.node.id}
                         >
                             <div
-                                data-sal="slide-up"
-                                data-sal-delay="220"
-                                data-sal-easing="ease"
+                                data-sal="fade"
+                                data-sal-delay="100"
+                                data-sal-easing="ease-in-out"
                             >
                                 <h1>
                                     Posts By {edge.node.authorData.authorName}

@@ -35,6 +35,10 @@ const Archive = (props) => {
             />
             <NavBlackText />
             <div
+                style={{ opacity: "0.9" }}
+                className="blog__color__header"
+            ></div>
+            <div
                 className="Author__Info__Container"
                 data-sal="fade"
                 data-sal-delay="50"

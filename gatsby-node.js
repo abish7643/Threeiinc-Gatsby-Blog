@@ -11,7 +11,7 @@ const path = require(`path`)
 const makeRequest = (graphql, request) =>
     new Promise((resolve, reject) => {
         resolve(
-            graphql(request).then(result => {
+            graphql(request).then((result) => {
                 if (result.errors) {
                     reject(result.errors)
                 }
@@ -45,7 +45,7 @@ exports.createPages = ({ actions, graphql }) => {
     }
 }
 `
-    ).then(result => {
+    ).then((result) => {
         result.data.allContentfulBlog.edges.forEach(({ node }) => {
             createPage({
                 path: `blog/${node.slug}/`,
@@ -75,7 +75,7 @@ exports.createPages = ({ actions, graphql }) => {
     }
 }
 `
-    ).then(result => {
+    ).then((result) => {
         const blogs = result.data.allContentfulBlog.edges
         const blogsPerpage = 9
         const numPages = Math.ceil(blogs.length / blogsPerpage)
@@ -116,7 +116,7 @@ exports.createPages = ({ actions, graphql }) => {
     }
 }
 `
-    ).then(result => {
+    ).then((result) => {
         result.data.allContentfulBlog.edges.forEach(({ node }) => {
             createPage({
                 path: `idiots/${node.authorData.authorSlug}/`,
@@ -150,7 +150,7 @@ exports.createPages = ({ actions, graphql }) => {
     }
 }
 `
-    ).then(result => {
+    ).then((result) => {
         createPage({
             path: `idiots/`,
             component: path.resolve(`src/templates/contributers.js`),

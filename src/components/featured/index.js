@@ -51,9 +51,6 @@ export default () => (
                     <div key={edge.node.id} className="header__section">
                         <div
                             className="header__hero"
-                            data-sal="fade"
-                            data-sal-delay="10"
-                            data-sal-easing="ease-in-out"
                             style={{
                                 backgroundImage: `url(${edge.node.featuredImage.fluid.src})`,
                             }}

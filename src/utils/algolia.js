@@ -21,7 +21,7 @@ query postQuery {
                 createdAt
                 shortDescription
                 featuredImage {
-                    fluid(maxWidth: 600, quality: 70, toFormat: WEBP) {
+                    fluid(maxWidth: 300, quality: 70, toFormat: WEBP) {
                         src
                     }
                 }
