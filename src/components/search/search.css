@@ -130,10 +130,14 @@
 .ais-SearchBox-input {
     height: 36px;
     width: 300px;
-    border: 1px solid black;
+    border: 1px solid #323232;
     border-radius: 5px;
     margin-right: 8px;
     transition: 0.3s ease-in-out;
+}
+.ais-SearchBox-form input[type="search"] {
+    padding-left: 8px;
+    font-family: "poppins";
 }
 
 .ais-SearchBox-submitIcon {

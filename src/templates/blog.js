@@ -128,20 +128,10 @@ const BlogTemplate = (props) => {
                 ></div>
                 <div className="blog__info">
                     <div className="blog__hero__typography">
-                        <div
-                            className="blog__info__title"
-                            data-sal="fade"
-                            data-sal-delay="20"
-                            data-sal-easing="ease"
-                        >
+                        <div className="blog__info__title">
                             <h1>{props.data.currentBlog.title}</h1>
                         </div>
-                        <div
-                            className="blog__info__author"
-                            data-sal="fade"
-                            data-sal-delay="100"
-                            data-sal-easing="ease"
-                        >
+                        <div className="blog__info__author">
                             <Link
                                 to={`/idiots/${props.data.currentBlog.authorData.authorSlug}/`}
                             >
@@ -166,20 +156,12 @@ const BlogTemplate = (props) => {
                             {props.data.currentBlog.category.map((category) => (
                                 <strong
                                     className="blog__categories"
-                                    data-sal="fade"
-                                    data-sal-delay="200"
-                                    data-sal-easing="ease"
                                     key={category.title}
                                 >
                                     {category.title}
                                 </strong>
                             ))}
-                            <p
-                                className="blog__extratitletwo"
-                                data-sal="fade"
-                                data-sal-delay="150"
-                                data-sal-easing="ease"
-                            >
+                            <p className="blog__extratitletwo">
                                 {props.data.currentBlog.readDuration}
                             </p>
                         </div>
