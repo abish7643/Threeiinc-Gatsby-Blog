@@ -126,7 +126,6 @@
     }
     .feed__initial__authorposts {
         width: 100%;
-        margin-top: 8px;
     }
 }
 @media screen and (max-width: 400px) {
