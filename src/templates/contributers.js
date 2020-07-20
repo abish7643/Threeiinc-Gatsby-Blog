@@ -82,7 +82,7 @@ export default () => (
                             data-sal-easing="ease-in-out"
                             className="about__author__contrib"
                             key={edge.node.id}
-                            to={`/idiots/${edge.node.authorSlug}`}
+                            to={`/idiots/${edge.node.authorSlug}/`}
                             style={{ textDecoration: "none", color: "black" }}
                         >
                             <Img

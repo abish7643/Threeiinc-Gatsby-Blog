@@ -378,6 +378,12 @@ a {
 .gatsby-resp-image-image {
     border-radius: 4px;
 }
+.gatsby-resp-image-image[alt] {
+    color: white;
+    border: 0;
+    text-decoration: none;
+    font-family: "montserrat";
+}
 
 .img {
     width: fit-content;

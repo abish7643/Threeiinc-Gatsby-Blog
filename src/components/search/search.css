@@ -307,9 +307,6 @@
     transition: 0.3s ease-in-out;
 }
 
-.ais-RefinementList-checkbox {
-}
-
 @media screen and (max-width: 1250px) {
     .search__inner {
         max-width: unset;
