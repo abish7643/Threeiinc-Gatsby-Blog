@@ -24,7 +24,7 @@ export default class IndexPage extends React.Component {
           Who's an Idiot? The one who questions the system,
           The one who doesn't like how the system works or
           The one who doesn't believe in the system.
-          We Are The Fucking Idiots! | 3i INC | 3iinc.xyz"
+          We Are The Freakin' Idiots! | 3i INC"
                     />
                     <meta
                         name="keywords"

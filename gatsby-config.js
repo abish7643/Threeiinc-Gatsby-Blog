@@ -90,37 +90,6 @@ module.exports = {
         },
         `gatsby-plugin-react-helmet`,
         {
-            resolve: "gatsby-transformer-remark",
-            options: {
-                plugins: [
-                    {
-                        resolve: "gatsby-remark-prismjs",
-                        options: {
-                            classPrefix: "language-",
-                            showLineNumbers: true,
-                            inlineCodeMarker: null,
-                            noInlineHighlight: true,
-
-                            languageExtensions: [
-                                {
-                                    language: "superscript",
-                                    extend: "javascript",
-                                    definition: {
-                                        superscript_types: /(SuperType)/,
-                                    },
-                                    insertBefore: {
-                                        function: {
-                                            superscript_keywords: /(superif|superelse)/,
-                                        },
-                                    },
-                                },
-                            ],
-                        },
-                    },
-                ],
-            },
-        },
-        {
             resolve: `gatsby-plugin-canonical-urls`,
             options: {
                 siteUrl: `https://3iinc.xyz`,
@@ -218,6 +187,7 @@ module.exports = {
                         resolve: `gatsby-remark-images-medium-zoom`, // Important!
                         options: {},
                     },
+                    "gatsby-remark-prismjs",
                 ],
             },
         },
