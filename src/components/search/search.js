@@ -52,16 +52,16 @@ const PostHits = connectHits(({ hits }) => (
                                 </p>
                                 <p className="search__entries__details__author">
                                     <span className="text-left">
-                                        <span className="text-opacity-low">
-                                            By
-                                        </span>{" "}
+                                        <span>By</span>
                                         <Highlight
                                             attribute="authorData.authorName"
                                             hit={hit}
                                             tagName="strong"
+                                            className="text-opacity-low"
                                         />
                                     </span>
-                                    <span className="text-opacity-low">
+                                    <span>
+                                        {" "}
                                         on{" "}
                                         {moment(hit.createdAt).format(
                                             "MMM Do YYYY"
