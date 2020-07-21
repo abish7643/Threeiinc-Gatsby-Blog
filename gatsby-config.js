@@ -184,10 +184,15 @@ module.exports = {
                         },
                     },
                     {
-                        resolve: `gatsby-remark-images-medium-zoom`, // Important!
+                        resolve: `gatsby-remark-images-medium-zoom`,
                         options: {},
                     },
-                    "gatsby-remark-prismjs",
+                    {
+                        resolve: `gatsby-remark-highlight-code`,
+                        options: {
+                            lineNumbers: true,
+                        },
+                    },
                 ],
             },
         },

@@ -8,6 +8,15 @@ import Footer from "../components/footer"
 import "./index.css"
 
 export default class IndexPage extends React.Component {
+    async componentDidMount() {
+        try {
+            const deckdeckgoLoader = require("@deckdeckgo/highlight-code/dist/loader")
+
+            await deckdeckgoLoader.defineCustomElements(window)
+        } catch (err) {
+            console.error(err)
+        }
+    }
     render() {
         return (
             <Layout>

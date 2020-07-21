@@ -1080,6 +1080,19 @@
   resolved "https://registry.yarnpkg.com/@contentful/rich-text-types/-/rich-text-types-13.4.0.tgz#a59c311ebd1b801ee00edbc08663c8d78da26171"
   integrity sha512-YPdYqGmWiGAood7ri2BUXfPQKNthkQYV1rmQdaq4UAxWK5NLB5NXckaUYLbohqhHKtrq4tnfzVn+ePWID7Dzbg==
 
+"@deckdeckgo/highlight-code@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@deckdeckgo/highlight-code/-/highlight-code-1.1.2.tgz#e0d57318b218ee918ad2c72d65e0696431673d03"
+  integrity sha512-AEOsdPBMdUe/gfDwEA7FkOdSooazxGFZ+Nt3n50OJGnQeBgmQIQCQoReXrb8upBxqi1HE9APVrA0Ymx0D4RVEw==
+  dependencies:
+    "@deckdeckgo/utils" "1.1.0"
+    prismjs "^1.20.0"
+
+"@deckdeckgo/utils@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@deckdeckgo/utils/-/utils-1.1.0.tgz#945c2d98ecafb3fd4b5aa03c6ed69f6d6d06b380"
+  integrity sha512-/bomB2gBlEuXmLSXCHujABB1EYDTrcK/IQaH9NFh6ZUB+dEfb3L3uCof8RyUvQcEzqhVJJa63ZBnDnitJSOWYg==
+
 "@fastly/performance-observer-polyfill@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@fastly/performance-observer-polyfill/-/performance-observer-polyfill-1.1.1.tgz#2e64762fa2e43f32c01dcb2ac68421aded55bbb8"
@@ -6422,6 +6435,15 @@ gatsby-link@^2.4.12:
     "@types/reach__router" "^1.3.3"
     prop-types "^15.7.2"
 
+gatsby-node-helpers@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/gatsby-node-helpers/-/gatsby-node-helpers-0.3.0.tgz#3bdca3b7902a702a5834fef280ad66d51099d57c"
+  integrity sha1-O9yjt5AqcCpYNP7ygK1m1RCZ1Xw=
+  dependencies:
+    json-stringify-safe "^5.0.1"
+    lodash "^4.17.4"
+    p-is-promise "^1.1.0"
+
 gatsby-page-utils@^0.2.17:
   version "0.2.17"
   resolved "https://registry.yarnpkg.com/gatsby-page-utils/-/gatsby-page-utils-0.2.17.tgz#7df7a26198a40cc023bc59d18ad3cda5338c729a"
@@ -6671,6 +6693,16 @@ gatsby-remark-component@^1.1.3:
   dependencies:
     unist-util-visit "^1.1.1"
 
+gatsby-remark-highlight-code@^1.4.5:
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-highlight-code/-/gatsby-remark-highlight-code-1.4.5.tgz#f3fb0a2cc3140f41a1297126bfe817710eb020b8"
+  integrity sha512-cUrsjI2bG9u0zlmZkLEQAUw4My8dXsx4h2uhP8rNx98PHSN7JZ8hpFZGxziVuXk68fepT6eYfqVbmtWlwWFdPw==
+  dependencies:
+    gatsby-node-helpers "^0.3.0"
+    lodash "^4.17.15"
+    mdast-util-to-string "^1.1.0"
+    unist-util-visit "^2.0.2"
+
 gatsby-remark-images-contentful@^2.3.11:
   version "2.3.11"
   resolved "https://registry.yarnpkg.com/gatsby-remark-images-contentful/-/gatsby-remark-images-contentful-2.3.11.tgz#d287d06dc10474185c62e89cce1952ab652eff5a"
@@ -6789,7 +6821,7 @@ gatsby-telemetry@^1.3.19:
     node-fetch "2.6.0"
     uuid "3.4.0"
 
-gatsby-transformer-remark@^2.8.7:
+gatsby-transformer-remark@^2.8.25:
   version "2.8.25"
   resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.8.25.tgz#564a2028c84c7d5ac75fae4ffdabd3ce098163ea"
   integrity sha512-RTO741t6eG4lw0WWmZRjN55SLBx225fJr+t+QkqUNTbBdTxRuUfHyAK6gRzVDtIC9Jtr1fQZxK0Hx2M6nj72RQ==
