@@ -29,7 +29,7 @@ const BlogTemplate = (props) => {
     const { data, loading, error } = usePalette(shareMedia)
 
     const deckdeckgoLoader = require("@deckdeckgo/highlight-code/dist/loader")
-    deckdeckgoLoader.defineCustomElements(window)
+    deckdeckgoLoader.defineCustomElements()
 
     const date = {
         createdat: props.data.currentBlog.createdAt,
