@@ -11,6 +11,7 @@ import Img from "gatsby-image"
 import CommentSection from "../components/comment"
 import { usePalette } from "react-palette"
 import Searchcard from "../components/atoms/search/searchcard"
+import "@deckdeckgo/highlight-code"
 
 import {
     FacebookShareButton,
@@ -26,6 +27,9 @@ import {
 const BlogTemplate = (props) => {
     const shareMedia = `https:${props.data.currentBlog.featuredImage.fluid.src}`
     const { data, loading, error } = usePalette(shareMedia)
+
+    const deckdeckgoLoader = require("@deckdeckgo/highlight-code/dist/loader")
+    deckdeckgoLoader.defineCustomElements(window)
 
     const date = {
         createdat: props.data.currentBlog.createdAt,
@@ -61,6 +65,7 @@ const BlogTemplate = (props) => {
                     data-sal="fade"
                     data-sal-delay="100"
                     data-sal-easing="ease"
+                    key={chapters.chapterSlug}
                 >
                     <Img
                         className="search__entries__img"
