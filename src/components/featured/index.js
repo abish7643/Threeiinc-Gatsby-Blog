@@ -60,14 +60,14 @@ export default () => (
                         ></div>
                         <div className="header__content">
                             <div className="header__info">
-                                <h2
+                                <h1
                                     className="banner___title"
                                     data-sal="fade"
                                     data-sal-delay="100"
                                     data-sal-easing="ease-in-out"
                                 >
                                     {edge.node.title}
-                                </h2>
+                                </h1>
                                 <p
                                     className="header__subtitle"
                                     data-sal="fade"

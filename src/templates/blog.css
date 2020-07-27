@@ -788,6 +788,9 @@ h6 {
     .chapters__blog {
         width: 94%;
     }
+    .blog__info__title {
+        margin-top: 24px;
+    }
 
     .blog__info__title h1 {
         font-size: 32px;
