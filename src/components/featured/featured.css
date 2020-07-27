@@ -140,6 +140,7 @@
     }
     .header__author {
         font-size: 15px;
+        width: 99.5%;
     }
 }
 
