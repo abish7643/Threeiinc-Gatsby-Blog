@@ -34,13 +34,14 @@ const AuthorTemplate = (props) => {
                                 </h1>
                             </div>
                             <SEO
-                                title={edge.node.authorData.authorName}
+                                title={`Posts By ${edge.node.authorData.authorName}`}
                                 keywords={
                                     edge.node.authorData.seoAuthorKeywords
                                 }
                                 author={edge.node.authorData.authorName}
+                                image={`https:${edge.node.authorData.authorPhoto.fluid.src}`}
                                 url={`https://3iinc.xyz/idiots/${edge.node.authorData.authorSlug}/`}
-                                description={`${edge.node.authorData.authorDescription} ' Read All The Posts From The Author of 3i INC | Idiots By Choice!'`}
+                                description={`'${edge.node.authorData.authorDescription}' Read All The Idiotic Views By ${edge.node.authorData.authorName} | Idiots By Choice!`}
                             />
                         </div>
                     </>
