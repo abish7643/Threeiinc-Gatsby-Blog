@@ -123,7 +123,6 @@
     }
     .header__content {
         margin-top: -240px;
-        padding-right: 16px;
     }
 
     .header__subtitle {
@@ -133,6 +132,7 @@
     .banner___title {
         font-size: 28px;
         margin-top: 32px;
+        margin-right: -4px;
     }
 
     .header__button__div {
@@ -140,7 +140,6 @@
     }
     .header__author {
         font-size: 15px;
-        width: 99.5%;
     }
 }
 
