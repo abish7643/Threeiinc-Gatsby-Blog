@@ -321,9 +321,15 @@ a {
 }
 .blog__content a {
     text-decoration: none;
-    color: #323232;
+    color: #1e3c72;
+    font-weight: 600;
     margin: 0px 1px;
-    border-bottom: 1px solid black;
+    text-decoration: #1e3c72 2px underline;
+    transition: ease-in-out 0.3s;
+}
+.blog__content a:hover {
+    text-decoration: #fff 2px underline;
+    transition: ease-in-out 0.3s;
 }
 .highlighted__text {
     background-color: #eee;
@@ -382,11 +388,12 @@ deckgo-highlight-code {
     box-shadow: 0px 10px 10px -2px rgba(30, 60, 114, 0.15);
 }
 .gatsby-resp-image-background-image {
-    margin: 48px 0;
-    margin-bottom: 0px;
+    margin: 48px 0px;
+    margin-bottom: 0;
     border-radius: 4px;
     box-shadow: 0px 10px 10px -2px rgba(30, 60, 114, 0.16);
 }
+
 .gatsby-resp-image-image {
     border-radius: 4px;
 }
