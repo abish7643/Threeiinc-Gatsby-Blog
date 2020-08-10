@@ -817,10 +817,11 @@ h6 {
         width: 94%;
     }
     .blog__info__title {
-        margin-top: 24px;
+        margin-top: 0px;
     }
 
     .blog__info__title h1 {
+        margin-top: 4px;
         font-size: 32px;
     }
 }

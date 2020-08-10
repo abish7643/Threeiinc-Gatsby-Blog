@@ -55,6 +55,7 @@
     margin-bottom: 0px;
     font-size: 44px;
     min-height: 72px;
+    line-height: 1.36;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -130,8 +131,8 @@
     }
 
     .banner___title {
-        font-size: 28px;
-        margin-top: 32px;
+        font-size: 32px;
+        margin-top: 16px;
         margin-right: -4px;
     }
 
@@ -145,6 +146,6 @@
 
 @media screen and (max-width: 400px) {
     .banner___title {
-        font-size: 24px;
+        font-size: 28px;
     }
 }
