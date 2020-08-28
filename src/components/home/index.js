@@ -45,7 +45,14 @@ export default () => (
         `}
         render={(data) => (
             <>
-                <p className="feed__heading">Latest Posts</p>
+                <p
+                    className="feed__heading"
+                    data-sal="fade"
+                    data-sal-delay="50"
+                    data-sal-easing="ease-in-out"
+                >
+                    Latest Posts
+                </p>
                 <div className="feed__initial">
                     <div className="feed">
                         {data.allContentfulBlog.edges.map((edge) => (

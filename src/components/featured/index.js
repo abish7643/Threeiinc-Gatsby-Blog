@@ -67,19 +67,30 @@ export default () => (
                         />
                         <div className="header__content">
                             <div className="header__info">
-                                <h1
-                                    className="banner___title"
-                                    data-sal="fade"
-                                    data-sal-delay="100"
-                                    data-sal-easing="ease-in-out"
+                                <Link
+                                    to={`/blog/${edge.node.slug}/`}
+                                    style={{
+                                        textDecoration: "none",
+                                        color: "#323232",
+                                        zIndex: "150",
+                                    }}
                                 >
-                                    {edge.node.title}
-                                    <span className="title__fullstop">.</span>
-                                </h1>
+                                    <h1
+                                        className="banner___title"
+                                        data-sal="fade"
+                                        data-sal-delay="100"
+                                        data-sal-easing="ease-in-out"
+                                    >
+                                        {edge.node.title}
+                                        <span className="title__fullstop">
+                                            .
+                                        </span>
+                                    </h1>
+                                </Link>
                                 <p
                                     className="header__subtitle"
                                     data-sal="fade"
-                                    data-sal-delay="150"
+                                    data-sal-delay="200"
                                     data-sal-easing="ease-in-out"
                                 >
                                     {edge.node.shortDescription}

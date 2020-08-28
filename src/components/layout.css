@@ -102,7 +102,7 @@ h2 {
 
 @media screen and (max-width: 500px) {
     .btn__med {
-        height: 40px;
+        height: 44px;
         font-size: 12px;
         width: 100%;
     }
