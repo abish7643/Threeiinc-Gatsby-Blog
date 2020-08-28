@@ -1,9 +1,10 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.3iinc.ml">
-    <h1>3i INC<h1>
-  </a>
-</p>
+# Live Demo
+[3iinc.xyz](https://3iinc.xyz/)<br/>
+[3iinc.netlify.app](https://3iinc.netlify.app/)
+
+---
+  
 <h1 align="center">
   Gatsby's default starter
 </h1>
