@@ -358,7 +358,17 @@ a {
 }
 
 .blog__content hr {
-    border-color: rgba(30, 60, 114, 0.1);
+    margin-top: 16px;
+    margin-left: 50px;
+    border: none;
+    text-align: center;
+    letter-spacing: 50px;
+    font-weight: 600;
+    font-size: 32px;
+    opacity: 0.32;
+}
+.blog__content hr::before {
+    content: "...";
 }
 
 .blog__content blockquote {
@@ -737,7 +747,7 @@ h6 {
     }
     .blog__content {
         margin-top: 16px;
-        padding-bottom: 40px;
+        padding-bottom: 48px;
     }
     .blog__content p {
         font-size: 15px;
