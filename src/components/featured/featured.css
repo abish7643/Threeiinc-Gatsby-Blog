@@ -183,7 +183,7 @@
 }
 
 .banner___title {
-    font-size: 48px;
+    font-size: 44px;
     margin-bottom: 24px;
     margin-top: 0;
     font-family: "Playfair Display", "Poppins";
@@ -195,6 +195,7 @@
     margin-top: 0;
     line-height: 24px;
     font-family: "Montserrat";
+    opacity: 0.80;
 }
 
 .featured__footer {
@@ -227,7 +228,7 @@
 }
 
 .header__button__div {
-    padding-right: 10px;
+    padding-right: 18px;
 }
 
 .featured__date {
@@ -254,9 +255,6 @@
     }
 }
 
-@media screen and (max-width: 600px) {
-}
-
 @media screen and (max-width: 500px) {
     .header__section {
         grid-gap: 24px;
@@ -274,7 +272,8 @@
         justify-content: left;
     }
     .header__subtitle {
-        margin-bottom: 32px;
+        font-size: 15px;
+        margin-bottom: 24px;
     }
     .header__button__div {
         padding: 0;

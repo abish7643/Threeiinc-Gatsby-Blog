@@ -133,7 +133,7 @@ export default () => (
                                                     marginTop: "5px",
                                                     outline: "none",
                                                 }}
-                                                className="btn__med__outline"
+                                                className="btn__med"
                                             >
                                                 Read Post
                                             </button>
