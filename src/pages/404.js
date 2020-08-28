@@ -15,12 +15,12 @@ const NotFoundPage = () => (
                 margin: "0px 16px",
             }}
         >
-            <h1 style={{ fontFamily: "montserrat", fontSize: "48px" }}>
+            <h1 style={{ fontFamily: "Montserrat", fontSize: "48px" }}>
                 NOT FOUND
             </h1>
             <p
                 style={{
-                    fontFamily: "montserrat",
+                    fontFamily: "Montserrat",
                     margin: "40px 0px",
                     marginTop: "24px",
                 }}

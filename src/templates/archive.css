@@ -28,7 +28,7 @@
     cursor: pointer;
     border: 1px solid #2a5298;
     transition: 0.3s ease-in-out;
-    font-family: "montserrat";
+    font-family: "Montserrat";
     color: #1e3c72;
     background-position: right center;
     background: #fff;
@@ -51,7 +51,7 @@
     font-size: 12px;
     font-weight: 900;
     text-transform: uppercase;
-    font-family: "montserrat";
+    font-family: "Montserrat";
     transition: 0.3s ease-out;
     background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%);
     color: #eeeeee;
@@ -66,7 +66,7 @@
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
-    font-family: "montserrat";
+    font-family: "Montserrat";
     transition: 0.3s ease-out;
     background-image: linear-gradient(to right, #1e3c72 0%, #2a5298 51%);
     color: #eeeeee;

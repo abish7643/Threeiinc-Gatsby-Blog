@@ -1,5 +1,5 @@
 html {
-    font-family: "Montserrat", "Poppins", sans-serif;
+    font-family: "Montserrat", "Playfair Display", sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     display: flex;
@@ -8,7 +8,7 @@ html {
     z-index: 0;
 }
 body {
-    font-family: "Montserrat", "Poppins", sans-serif;
+    font-family: "Montserrat", "Playfair Display", sans-serif;
     margin: 0 auto;
     max-width: 1200px;
     background-color: rgba(10, 10, 10, 1);
@@ -42,7 +42,7 @@ h2 {
     margin-top: -5px;
     cursor: pointer;
     border: 0px solid white;
-    font-family: "montserrat";
+    font-family: "Montserrat";
     outline: none;
     transition: 0.3s ease-in-out;
 }
@@ -64,7 +64,7 @@ h2 {
     margin-top: -5px;
     cursor: pointer;
     border: 1px solid #2a5298;
-    font-family: "montserrat";
+    font-family: "Montserrat";
     outline: none;
 }
 .btn__med__outline {
@@ -79,16 +79,25 @@ h2 {
     background: #fff;
     cursor: pointer;
     border: 1px solid #1e3c72;
-    font-family: "montserrat";
+    font-family: "Montserrat";
     outline: none;
     transition: 0.1s ease-in-out;
     margin-top: 24px;
-    margin-bottom: 48px;
+    margin-bottom: 4px;
     position: relative;
     z-index: 100;
 }
 .btn__med__outline:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
+}
+
+.title__fullstop {
+    color: #2a5298;
+}
+
+.no-text-decoration {
+    text-decoration: none;
+    color: #323232;
 }
 
 @media screen and (max-width: 500px) {
@@ -101,7 +110,7 @@ h2 {
         width: 100%;
     }
     .btn__med__outline {
-        width: 92%;
+        width: 100%;
     }
 }
 .btn__med:hover {

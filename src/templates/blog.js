@@ -133,7 +133,7 @@ const BlogTemplate = (props) => {
                 <div className="blog__info">
                     <div className="blog__hero__typography">
                         <div className="blog__info__title">
-                            <h1>{props.data.currentBlog.title}</h1>
+                            <h1>{props.data.currentBlog.title}.</h1>
                         </div>
                         <div className="blog__info__author">
                             <Link
@@ -381,14 +381,14 @@ export const query = graphql`
             seoKeywords
             seoUrl
             seoImage {
-                fluid(maxWidth: 920, quality: 70, toFormat: WEBP) {
+                fluid(maxWidth: 1200, quality: 70, toFormat: WEBP) {
                     ...GatsbyContentfulFluid
                     src
                 }
             }
             featuredImage {
                 description
-                fluid(maxWidth: 920, quality: 70, toFormat: WEBP) {
+                fluid(maxWidth: 1200, quality: 70, toFormat: WEBP) {
                     ...GatsbyContentfulFluid
                     src
                 }

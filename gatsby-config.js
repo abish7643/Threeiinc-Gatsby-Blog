@@ -78,6 +78,7 @@ module.exports = {
             options: {
                 fonts: [
                     `Montserrat\:300,400,500,600`,
+                    `Playfair Display\:400,500`,
                     `Poppins\:300,400,500,600`, // you can also specify font weights and styles
                 ],
                 display: "swap",

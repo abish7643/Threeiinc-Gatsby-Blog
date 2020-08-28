@@ -27,7 +27,7 @@
     flex-direction: column;
 }
 .contact__container__right h1 {
-    font-family: "montserrat";
+    font-family: "Montserrat";
 }
 .contact__container__right__inner {
     width: 70%;
@@ -48,7 +48,7 @@
 }
 
 .contact__container__right__heading {
-    font-family: Ubuntu, "Poppins", "Helvetica Neue", sans-serif;
+    font-family: Ubuntu, "Playfair Display", "Helvetica Neue", sans-serif;
     font-weight: 500;
     font-size: 30px;
     background-color: black;
@@ -102,19 +102,19 @@
     transition: all 0.3s ease 0s;
 }
 input[type="text"] {
-    font-family: "poppins";
+    font-family: "Playfair Display";
     font-weight: 400;
     color: black;
     padding-left: 4px;
 }
 input[type="email"] {
-    font-family: "poppins";
+    font-family: "Playfair Display";
     font-weight: 400;
     color: black;
     padding-left: 4px;
 }
 textarea[type="message"] {
-    font-family: "poppins";
+    font-family: "Playfair Display";
     font-weight: 400;
     padding-left: 4px;
     padding-top: 2px;
@@ -128,7 +128,7 @@ textarea[type="message"] {
 }
 .contact__submitbutton {
     background: #c4c4c4;
-    font-family: "Montserrat", "Poppins", sans-serif;
+    font-family: "Montserrat", "Playfair Display", sans-serif;
     font-weight: 800;
     font-size: 12px;
     line-height: 22px;
@@ -176,7 +176,7 @@ textarea[type="message"] {
     height: 35px;
     cursor: pointer;
     border: 0px solid white;
-    font-family: "poppins";
+    font-family: "Playfair Display";
     justify-self: center;
 }
 
@@ -239,7 +239,7 @@ textarea[type="message"] {
     font-weight: 500;
     font-size: 42px;
     margin-top: 0px;
-    font-family: "montserrat";
+    font-family: "Montserrat";
     text-transform: uppercase;
 
     color: white;

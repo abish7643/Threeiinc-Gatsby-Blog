@@ -1,6 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import Nav from "../components/nav"
+import NavBlackText from "../components/navBlackText"
 import Layout from "../components/layout"
 import Featured from "../components/featured"
 import Home from "../components/home"
@@ -32,7 +32,7 @@ export default class IndexPage extends React.Component {
                     />
                     <meta name="url" content="https://3iinc.xyz" />
                 </Helmet>
-                <Nav />
+                <NavBlackText />
                 <Featured />
                 <Home />
                 <Footer />

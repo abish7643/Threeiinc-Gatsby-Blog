@@ -7,10 +7,26 @@
     width: 100%;
     align-items: center;
     margin-left: 0px;
-    margin-top: 380px;
     position: relative;
     order: 2;
     z-index: 0;
+}
+
+.feed__heading {
+    font-size: 48px;
+    font-family: "Playfair Display", "Poppins";
+    text-align: center;
+    display: block;
+}
+
+.feed__heading::before {
+    content: "";
+    position: absolute;
+    margin-left: -20px;
+    width: 104px;
+    height: 88px;
+    background-color: #323232;
+    opacity: 0.08;
 }
 
 .feed {
@@ -99,7 +115,7 @@
     cursor: pointer;
     border: 1px solid #2a5298;
     transition: 1s ease;
-    font-family: "montserrat";
+    font-family: "Montserrat";
     transition: 0.2s ease-in-out;
     color: #eeeeee;
     background-position: right center;
@@ -128,7 +144,7 @@
     cursor: pointer;
     border: 1px solid #2a5298;
     transition: 1s ease-in-out;
-    font-family: "montserrat";
+    font-family: "Montserrat";
     transition: 0.2s ease-in;
     color: #1e3c72;
     background-position: right center;
@@ -284,5 +300,13 @@
     }
     .viewmore_wrapper__outline {
         width: 100%;
+    }
+    .feed__heading {
+        margin-top: 0px;
+    }
+
+    .feed__heading::before {
+        left: 0;
+        margin-left: 28px;
     }
 }

@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, StaticQuery, Link } from "gatsby"
+import Img from "gatsby-image"
 import "./featured.css"
 
 export default () => (
@@ -22,6 +23,16 @@ export default () => (
                             authorData {
                                 authorName
                                 authorSlug
+                                authorPhoto {
+                                    fluid(
+                                        maxWidth: 300
+                                        quality: 70
+                                        toFormat: WEBP
+                                    ) {
+                                        ...GatsbyContentfulFluid
+                                        src
+                                    }
+                                }
                             }
                             category {
                                 title
@@ -47,17 +58,13 @@ export default () => (
         `}
         render={(data) => (
             <header>
+                <div className="header__watermark">Featured</div>
                 {data.allContentfulBlog.edges.map((edge) => (
                     <div key={edge.node.id} className="header__section">
-                        <div
+                        <Img
                             className="header__hero"
-                            data-sal="fade"
-                            data-sal-delay="50"
-                            data-sal-easing="ease-in-out"
-                            style={{
-                                backgroundImage: `url(${edge.node.featuredImage.fluid.src})`,
-                            }}
-                        ></div>
+                            fluid={edge.node.featuredImage.fluid}
+                        />
                         <div className="header__content">
                             <div className="header__info">
                                 <h1
@@ -67,6 +74,7 @@ export default () => (
                                     data-sal-easing="ease-in-out"
                                 >
                                     {edge.node.title}
+                                    <span className="title__fullstop">.</span>
                                 </h1>
                                 <p
                                     className="header__subtitle"
@@ -76,52 +84,61 @@ export default () => (
                                 >
                                     {edge.node.shortDescription}
                                 </p>
-                                <p
-                                    className="header__author"
-                                    data-sal="fade"
-                                    data-sal-delay="200"
-                                    data-sal-easing="ease-in-out"
-                                    style={{
-                                        display: "flex",
-                                        flexDirection: "row",
-                                    }}
-                                >
-                                    <Link
-                                        style={{
-                                            textDecoration: "none",
-                                            color: "white",
-                                            cursor: "pointer",
-                                        }}
-                                        to={`/idiots/${edge.node.authorData.authorSlug}/`}
+                                <div className="featured__footer">
+                                    <div
+                                        className="featured__author"
+                                        data-sal="fade"
+                                        data-sal-delay="200"
+                                        data-sal-easing="ease-in-out"
                                     >
-                                        {"By"}
-                                        <strong>
-                                            {" "}
-                                            {
-                                                edge.node.authorData.authorName
-                                            }{" "}
-                                        </strong>
-                                        {"On "}
-                                        {edge.node.createdAt}
-                                    </Link>
-                                </p>
-                                <div
-                                    className="header__button__div"
-                                    data-sal="fade"
-                                    data-sal-delay="400"
-                                    data-sal-easing="ease-in-out"
-                                >
-                                    <Link to={`/blog/${edge.node.slug}/`}>
-                                        <button
-                                            style={{
-                                                marginTop: "5px",
-                                                outline: "none",
-                                            }}
-                                            className="btn__med"
+                                        <Link
+                                            to={`/idiots/${edge.node.authorData.authorSlug}/`}
                                         >
-                                            Read Post
-                                        </button>
-                                    </Link>
+                                            <Img
+                                                className="featured__author__photo"
+                                                fluid={
+                                                    edge.node.authorData
+                                                        .authorPhoto.fluid
+                                                }
+                                            />
+                                        </Link>
+                                        <div>
+                                            <Link
+                                                className="no-text-decoration"
+                                                to={`/idiots/${edge.node.authorData.authorSlug}/`}
+                                            >
+                                                <strong>
+                                                    {" "}
+                                                    {
+                                                        edge.node.authorData
+                                                            .authorName
+                                                    }
+                                                </strong>
+                                            </Link>
+                                            <p className="featured__date">
+                                                Published on{" "}
+                                                {edge.node.createdAt}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        className="header__button__div"
+                                        data-sal="fade"
+                                        data-sal-delay="400"
+                                        data-sal-easing="ease-in-out"
+                                    >
+                                        <Link to={`/blog/${edge.node.slug}/`}>
+                                            <button
+                                                style={{
+                                                    marginTop: "5px",
+                                                    outline: "none",
+                                                }}
+                                                className="btn__med__outline"
+                                            >
+                                                Read Post
+                                            </button>
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>

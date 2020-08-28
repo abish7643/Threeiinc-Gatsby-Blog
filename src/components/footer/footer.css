@@ -33,7 +33,7 @@
 
 .newsletter__form {
     color: black;
-    font-family: "poppins";
+    font-family: "Playfair Display";
     padding: 20px;
     border-radius: 0px;
     box-shadow: 0px 4px 8px 0px rgba(10, 10, 10, 0.2);
@@ -124,7 +124,7 @@
 }
 
 .newsletter__ack__text {
-    font-family: "montserrat";
+    font-family: "Montserrat";
     font-size: 10px;
     font-weight: 500;
     color: #323232;

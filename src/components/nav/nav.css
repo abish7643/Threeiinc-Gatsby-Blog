@@ -4,7 +4,7 @@
     margin-bottom: 90px;
     margin-top: 10px;
     position: relative;
-    z-index: 10;
+    z-index: 120;
     min-width: 900px;
 }
 
@@ -14,7 +14,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-family: "Montserrat", "Poppins";
+    font-family: "Montserrat", "Playfair Display";
     text-decoration: none;
 }
 .nav__logo__div {

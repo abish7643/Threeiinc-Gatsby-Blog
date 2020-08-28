@@ -33,7 +33,7 @@ export default class CommentSection extends React.Component {
         return (
             <>
                 <button
-                    className="btn__med__outline"
+                    className="btn__med__outline blog__comment__btn__margin"
                     style={hideButton}
                     onClick={this.handleClick}
                 >

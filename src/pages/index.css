@@ -20,7 +20,7 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
-    font-family: Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: Ubuntu, Cantarell, "Montserrat", "Helvetica Neue", sans-serif;
 }
 
 .about__hero__div__inner {
@@ -32,12 +32,12 @@ body {
 }
 
 .about__hero__heading1 {
-    font-family: Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: Ubuntu, Cantarell, "Montserrat", "Helvetica Neue", sans-serif;
     color: black;
 }
 
 .about__hero__heading2 span {
-    font-family: Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: Ubuntu, Cantarell, "Montserrat", "Helvetica Neue", sans-serif;
     color: black;
 }
 .about__hero__text__content {

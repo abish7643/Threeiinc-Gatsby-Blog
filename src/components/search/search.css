@@ -81,7 +81,7 @@
     grid-column-start: span 9;
     margin: 12px 16px;
     margin-right: 12px;
-    font-family: "montserrat";
+    font-family: "Montserrat";
 }
 
 .search__entries__details__category {
@@ -135,7 +135,7 @@
 }
 .ais-SearchBox-form input[type="search"] {
     padding-left: 8px;
-    font-family: "poppins";
+    font-family: "Playfair Display";
 }
 
 .ais-SearchBox-submitIcon {
@@ -157,7 +157,7 @@
 }
 
 .ais-SearchBox-input::placeholder {
-    font-family: "poppins";
+    font-family: "Playfair Display";
 }
 .ais-SearchBox-submit {
     border-radius: 4px;
@@ -170,7 +170,7 @@
     background-image: linear-gradient(to right, #2a5298 0%, #1e3c72 100%);
     cursor: pointer;
     border: 1px solid #1e3c72;
-    font-family: "montserrat";
+    font-family: "Montserrat";
     outline: none;
     transition: 0.3s ease-in-out;
     position: relative;
@@ -191,7 +191,7 @@
     background-image: linear-gradient(to right, #2a5298 0%, #1e3c72 100%);
     cursor: pointer;
     border: 1px solid #1e3c72;
-    font-family: "montserrat";
+    font-family: "Montserrat";
     outline: none;
     transition: 0.3s ease-in-out;
     position: relative;
@@ -218,7 +218,7 @@
     font-size: 16px;
     font-weight: 900;
     text-transform: uppercase;
-    font-family: "montserrat";
+    font-family: "Montserrat";
     transition: 0.3s ease-in-out;
     color: #000;
 }
@@ -275,7 +275,7 @@
     list-style: none;
     display: flex;
     margin-left: -56px;
-    font-family: "montserrat";
+    font-family: "Montserrat";
     margin-top: 32px;
     transition: 0.3s ease-in-out;
 }
