@@ -3,7 +3,8 @@ import HyvorTalk from "hyvor-talk-react"
 
 export default class CommentSection extends React.Component {
     state = {
-        clicked: false,
+        // clicked: false,
+        clicked: true,
     }
     handleClick = (event) => {
         this.setState({

@@ -6,12 +6,12 @@ import { navigate } from "gatsby"
 export default function Searchcard({ postdata }) {
     return (
         <div
-            key={postdata.node.id}
             data-sal="fade"
             data-sal-delay="100"
             data-sal-easing="ease"
             className="search__entries"
             onClick={() => navigate(`/blog/${postdata.node.slug}/`)}
+            key={postdata.node.slug}
         >
             <Img
                 className="search__entries__img"
@@ -21,7 +21,7 @@ export default function Searchcard({ postdata }) {
                 {postdata.node.category.map((category) => (
                     <span
                         className="search__entries__details__category"
-                        key={category.id}
+                        key={category.title}
                     >
                         {category.title}
                     </span>

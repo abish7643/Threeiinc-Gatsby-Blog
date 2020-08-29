@@ -75,7 +75,7 @@ const BlogTemplate = (props) => {
                         {props.data.currentBlog.category.map((category) => (
                             <span
                                 className="search__entries__details__category"
-                                key={category.id}
+                                key={category.title}
                             >
                                 {category.title}
                             </span>
