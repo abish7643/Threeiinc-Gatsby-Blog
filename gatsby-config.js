@@ -35,6 +35,7 @@ module.exports = {
                     "shortDescription",
                     "featuredImage",
                     "title",
+                    "authorName",
                 ],
             },
         },
