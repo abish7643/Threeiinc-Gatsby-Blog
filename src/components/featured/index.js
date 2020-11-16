@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, StaticQuery, Link } from "gatsby"
+import { graphql, StaticQuery, Link, navigate } from "gatsby"
 import Img from "gatsby-image"
 import "./featured.css"
 
@@ -60,12 +60,21 @@ export default () => (
             <header>
                 <div className="header__watermark">Featured</div>
                 {data.allContentfulBlog.edges.map((edge) => (
-                    <div key={edge.node.id} className="header__section">
+                    <div
+                        onClick={() => navigate(`/blog/${edge.node.slug}/`)}
+                        key={edge.node.id}
+                        className="header__section"
+                    >
                         <Img
                             className="header__hero"
                             fluid={edge.node.featuredImage.fluid}
                         />
-                        <div className="header__content">
+                        <div
+                            className="header__content"
+                            data-sal="fade"
+                            data-sal-delay="50"
+                            data-sal-easing="ease-in-out"
+                        >
                             <div className="header__info">
                                 <Link
                                     to={`/blog/${edge.node.slug}/`}

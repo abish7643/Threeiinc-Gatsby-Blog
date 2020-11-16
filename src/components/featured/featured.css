@@ -5,6 +5,10 @@
     margin-bottom: 48px;
 }
 
+.header__section:hover {
+    cursor: pointer;
+}
+
 .header__watermark {
     font-size: 200px;
     font-weight: 600;
@@ -20,6 +24,7 @@
 .header__hero {
     grid-column-start: span 6;
     border-radius: 4px;
+    max-height: 520px;
 }
 
 .header__content {
@@ -42,7 +47,7 @@
     margin-top: 0;
     line-height: 24px;
     font-family: "Montserrat";
-    opacity: 0.80;
+    opacity: 0.8;
     color: #323232;
 }
 
@@ -106,6 +111,7 @@
 @media screen and (max-width: 500px) {
     .header__section {
         grid-gap: 24px;
+        border-bottom: 1px solid rgba(50, 50, 50, 0.1);
     }
     .featured__footer {
         display: block;
@@ -133,7 +139,10 @@
         margin-top: 32px;
         opacity: 0.06;
     }
-    .header__hero{
+    .header__hero {
         max-height: 256px;
+    }
+    .header__button__div button {
+        display: none;
     }
 }
