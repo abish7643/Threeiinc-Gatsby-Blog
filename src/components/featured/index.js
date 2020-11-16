@@ -61,9 +61,9 @@ export default () => (
                 <div className="header__watermark">Featured</div>
                 {data.allContentfulBlog.edges.map((edge) => (
                     <div
-                        onClick={() => navigate(`/blog/${edge.node.slug}/`)}
                         key={edge.node.id}
                         className="header__section"
+                        onClick={() => navigate(`/blog/${edge.node.slug}/`)}
                     >
                         <Img
                             className="header__hero"
@@ -95,15 +95,15 @@ export default () => (
                                             .
                                         </span>
                                     </h1>
+                                    <p
+                                        className="header__subtitle"
+                                        data-sal="fade"
+                                        data-sal-delay="200"
+                                        data-sal-easing="ease-in-out"
+                                    >
+                                        {edge.node.shortDescription}
+                                    </p>
                                 </Link>
-                                <p
-                                    className="header__subtitle"
-                                    data-sal="fade"
-                                    data-sal-delay="200"
-                                    data-sal-easing="ease-in-out"
-                                >
-                                    {edge.node.shortDescription}
-                                </p>
                                 <div className="featured__footer">
                                     <div
                                         className="featured__author"

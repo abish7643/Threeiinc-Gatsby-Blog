@@ -14,9 +14,10 @@
 
 .feed__heading {
     font-size: 48px;
-    font-family: "Playfair Display", "Poppins";
+    font-family: "Playfair Display", "Serif";
     text-align: center;
     display: block;
+    color: #323232;
 }
 
 .feed__heading::before {
@@ -26,7 +27,7 @@
     width: 104px;
     height: 88px;
     background-color: #323232;
-    opacity: 0.08;
+    opacity: 0.06;
 }
 
 .feed {
@@ -303,10 +304,15 @@
     }
     .feed__heading {
         margin-top: 0px;
+        text-align: left;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        font-size: 36px;
     }
 
     .feed__heading::before {
-        left: 0;
-        margin-left: 28px;
+        right: 0;
+        margin-top: 16px;
+        margin-left: 0px;
     }
 }
