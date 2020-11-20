@@ -394,6 +394,7 @@ deckgo-highlight-code {
     margin-bottom: 40px;
     box-shadow: rgba(30, 60, 114, 0.32) 0 8px 16px;
     font-size: 16px;
+    max-height: 600px;
 }
 
 .blog__content img {
@@ -632,6 +633,8 @@ h6 {
         margin-top: 32px;
         margin-bottom: 32px;
         font-size: 14px;
+        max-height: 480px;
+        scrollbar-color: #eee;
     }
     .blog__content blockquote {
         margin-left: -10px;
@@ -756,6 +759,7 @@ h6 {
 
     deckgo-highlight-code {
         font-size: 12px;
+        max-height: 400px;
     }
 
     .blog__content blockquote {
@@ -778,6 +782,9 @@ h6 {
         font-size: 18px;
         margin-top: 24px;
         margin-bottom: -8px;
+    }
+    .blog__content ol {
+        padding-left: 24px;
     }
     .blog__content {
         width: 90%;
