@@ -15,7 +15,7 @@ export default function Searchcard({ postdata }) {
         >
             <Img
                 className="search__entries__img"
-                sizes={postdata.node.featuredImage.fluid}
+                fluid={postdata.node.featuredImage.fluid}
             />
             <div className="search__entries__details">
                 {postdata.node.category.map((category) => (

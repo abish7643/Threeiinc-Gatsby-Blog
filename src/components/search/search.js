@@ -32,7 +32,7 @@ const PostHits = connectHits(({ hits }) => (
                         >
                             <Img
                                 className="search__entries__img"
-                                sizes={hit.featuredImage.fluid}
+                                fluid={hit.featuredImage.fluid}
                             />
                             <div className="search__entries__details">
                                 {hit.category.map((category) => (

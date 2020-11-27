@@ -11,7 +11,8 @@ import Img from "gatsby-image"
 import CommentSection from "../components/comment"
 import { usePalette } from "react-palette"
 import Searchcard from "../components/atoms/search/searchcard"
-import "@deckdeckgo/highlight-code"
+// import "@deckdeckgo/highlight-code"
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader"
 
 import {
     FacebookShareButton,
@@ -28,8 +29,9 @@ const BlogTemplate = (props) => {
     const shareMedia = `https:${props.data.currentBlog.featuredImage.fluid.src}`
     const { data, loading, error } = usePalette(shareMedia)
 
-    const deckdeckgoLoader = require("@deckdeckgo/highlight-code/dist/loader")
-    deckdeckgoLoader.defineCustomElements()
+    deckDeckGoHighlightElement()
+    // const deckdeckgoLoader = require("@deckdeckgo/highlight-code/dist/loader")
+    // deckdeckgoLoader.defineCustomElements()
 
     const date = {
         createdat: props.data.currentBlog.createdAt,
@@ -69,7 +71,7 @@ const BlogTemplate = (props) => {
                 >
                     <Img
                         className="search__entries__img"
-                        sizes={props.data.currentBlog.featuredImage.fluid}
+                        fluid={props.data.currentBlog.featuredImage.fluid}
                     />
                     <div className="search__entries__details">
                         {props.data.currentBlog.category.map((category) => (
@@ -179,7 +181,7 @@ const BlogTemplate = (props) => {
                     data-sal-delay="50"
                     data-sal-easing="ease"
                     alt={`${props.data.currentBlog.featuredImage.description}`}
-                    sizes={props.data.currentBlog.featuredImage.fluid}
+                    fluid={props.data.currentBlog.featuredImage.fluid}
                 />
                 <p className="blog__hero__alt">
                     {props.data.currentBlog.featuredImage.description}
