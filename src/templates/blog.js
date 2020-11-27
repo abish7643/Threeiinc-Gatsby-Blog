@@ -26,12 +26,12 @@ import {
 } from "react-share"
 
 const BlogTemplate = (props) => {
-    const shareMedia = `https:${props.data.currentBlog.featuredImage.fluid.src}`
-    const { data, loading, error } = usePalette(shareMedia)
-
     deckDeckGoHighlightElement()
     // const deckdeckgoLoader = require("@deckdeckgo/highlight-code/dist/loader")
     // deckdeckgoLoader.defineCustomElements()
+
+    const shareMedia = `https:${props.data.currentBlog.featuredImage.fluid.src}`
+    const { data, loading, error } = usePalette(shareMedia)
 
     const date = {
         createdat: props.data.currentBlog.createdAt,
