@@ -11,8 +11,8 @@ import Img from "gatsby-image"
 import CommentSection from "../components/comment"
 import { usePalette } from "react-palette"
 import Searchcard from "../components/atoms/search/searchcard"
-// import "@deckdeckgo/highlight-code"
-import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader"
+import "@deckdeckgo/highlight-code"
+// import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader"
 
 import {
     FacebookShareButton,
@@ -26,9 +26,9 @@ import {
 } from "react-share"
 
 const BlogTemplate = (props) => {
-    deckDeckGoHighlightElement()
-    // const deckdeckgoLoader = require("@deckdeckgo/highlight-code/dist/loader")
-    // deckdeckgoLoader.defineCustomElements()
+    // deckDeckGoHighlightElement()
+    const deckdeckgoLoader = require("@deckdeckgo/highlight-code/dist/loader")
+    deckdeckgoLoader.defineCustomElements()
 
     const shareMedia = `https:${props.data.currentBlog.featuredImage.fluid.src}`
     const { data, loading, error } = usePalette(shareMedia)
