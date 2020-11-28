@@ -183,6 +183,8 @@ const BlogTemplate = (props) => {
                     alt={`${props.data.currentBlog.featuredImage.description}`}
                     fluid={props.data.currentBlog.featuredImage.fluid}
                     placeholderClassName="blog__hero__img"
+                    loading="eager"
+                    fadeIn={false}
                 />
                 <p className="blog__hero__alt">
                     {props.data.currentBlog.featuredImage.description}
