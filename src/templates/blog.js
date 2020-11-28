@@ -182,6 +182,7 @@ const BlogTemplate = (props) => {
                     data-sal-easing="ease"
                     alt={`${props.data.currentBlog.featuredImage.description}`}
                     fluid={props.data.currentBlog.featuredImage.fluid}
+                    placeholderClassName="blog__hero__img"
                 />
                 <p className="blog__hero__alt">
                     {props.data.currentBlog.featuredImage.description}
