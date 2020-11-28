@@ -182,18 +182,7 @@ const BlogTemplate = (props) => {
                     data-sal-easing="ease"
                     alt={`${props.data.currentBlog.featuredImage.description}`}
                     fluid={props.data.currentBlog.featuredImage.fluid}
-                    placeholderClassName="blog__hero__placeholder"
-                />
-                <img
-                    src={props.data.currentBlog.featuredImage.fluid.src}
-                    alt={`${props.data.currentBlog.featuredImage.description}`}
-                    style={{
-                        visibility: "hidden",
-                        height: "0px",
-                        padding: "0px",
-                        margin: "0px",
-                    }}
-                    className="blog__hero__img"
+                    placeholderClassName="blog__hero__img"
                 />
                 <p className="blog__hero__alt">
                     {props.data.currentBlog.featuredImage.description}
