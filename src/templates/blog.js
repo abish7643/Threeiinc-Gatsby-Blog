@@ -291,11 +291,11 @@ const BlogTemplate = (props) => {
 
                     <div className="chapters__blog">
                         <p className="latestposts__blogpost">Latest Posts</p>
-                        <div className="search__inner__blog__bottom">
+                        <aside className="search__inner__blog__bottom">
                             {props.data.nextBlog.edges.map((edges) => (
                                 <Searchcard postdata={edges} />
                             ))}
-                        </div>
+                        </aside>
                         <div className="viewmore_container__blog">
                             <Link
                                 className="viewmore_wrapper__link"
