@@ -440,6 +440,12 @@ deckgo-highlight-code {
     width: fit-content;
 }
 
+iframe {
+    width: 100%;
+    min-height: 480px;
+    margin-top: 40px;
+}
+
 .gatsby-resp-image-figure {
     margin: 0;
 }
@@ -670,6 +676,10 @@ h6 {
         margin: 32px 0px;
         margin-bottom: 0px;
     }
+    iframe {
+        min-height: 320px;
+        margin-top: 32px;
+    }
     .nextPost__Container {
         width: 100%;
     }
@@ -868,6 +878,10 @@ h6 {
         margin-top: 4px;
         font-size: 32px;
     }
+    iframe {
+        min-height: 200px;
+        margin-top: 24px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -889,5 +903,8 @@ h6 {
 
     .blog__info__title h1 {
         font-size: 28px;
+    }
+    iframe {
+        margin-top: 20px;
     }
 }
