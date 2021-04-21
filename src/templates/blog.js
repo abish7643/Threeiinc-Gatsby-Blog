@@ -384,7 +384,7 @@ export const query = graphql`
             seoKeywords
             seoUrl
             seoImage {
-                fluid(maxWidth: 1200, quality: 70, toFormat: WEBP) {
+                fluid(maxWidth: 1200, quality: 70) {
                     ...GatsbyContentfulFluid
                     src
                 }
