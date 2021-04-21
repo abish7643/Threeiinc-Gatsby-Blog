@@ -190,6 +190,9 @@ module.exports = {
                         resolve: `gatsby-remark-highlight-code`,
                         options: {
                             lineNumbers: true,
+                            editable: false,
+                            terminal: 'carbon',
+                            theme: 'one-dark'
                         },
                     },
                     {
