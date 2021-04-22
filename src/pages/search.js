@@ -14,6 +14,7 @@ export default class searchpost extends React.Component {
                     title="Search Posts"
                     description="Get The Result You Need From The Whole Contributers of 3i INC | Idiots by Choice! | 3iinc.xyz"
                     url="https://3iinc.xyz/search/"
+                    image='https://images.ctfassets.net/2g0bd82kkvps/6YYHEOQ1diL651fE06jWpy/30e2abe4ffe942d9538912f5a6fb4b03/threeiinc-icon.png'
                 />
                 <NavBlackText />
                 <Search />

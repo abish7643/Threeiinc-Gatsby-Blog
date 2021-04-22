@@ -28,8 +28,16 @@ function SEO({ description, author, keywords, url, image, lang, meta, title }) {
         `
     )
 
+
+    // if (title === '3 Idiots Incorporated. | Idiots by Choice'){
+    //     metaTitle = `${title}`;
+    // } else {
+        // metaTitle = `${title} | 3 Idiots Incorporated. | Idiots By Choice`;
+    // }
+
+    const metaTitle = `${title}`;
     const metaDescription = description || site.siteMetadata.description
-    const metaTitle = `${title} | 3 Idiots Incorporated. | Idiots By Choice`
+
 
     return (
         <Helmet
@@ -37,7 +45,7 @@ function SEO({ description, author, keywords, url, image, lang, meta, title }) {
                 lang,
             }}
             title={title}
-            titleTemplate={`%s | ${site.siteMetadata.title}`}
+            titleTemplate={`%s`}
             meta={[
                 {
                     name: `description`,

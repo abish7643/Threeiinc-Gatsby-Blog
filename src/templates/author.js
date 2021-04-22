@@ -103,7 +103,7 @@ export const query = graphql`
                         seoAuthorKeywords
                         authorDescription
                         authorPhoto {
-                            fluid(maxWidth: 300, quality: 70, toFormat: WEBP) {
+                            fluid(maxWidth: 1920, quality: 70) {
                                 ...GatsbyContentfulFluid
                                 src
                             }

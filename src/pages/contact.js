@@ -84,6 +84,7 @@ export default class Contact extends React.Component {
                 The one who doesn't like how the system works or
                 The one who doesn't believe in the system. | 3iinc.xyz"
                     url="https://3iinc.xyz/contact/"
+                    image='https://images.ctfassets.net/2g0bd82kkvps/6YYHEOQ1diL651fE06jWpy/30e2abe4ffe942d9538912f5a6fb4b03/threeiinc-icon.png'
                 />
 
                 <NavBlackText />
