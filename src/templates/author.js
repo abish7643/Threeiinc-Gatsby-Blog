@@ -42,6 +42,7 @@ const AuthorTemplate = (props) => {
                                 image={`https:${edge.node.authorData.authorPhoto.fluid.src}`}
                                 url={`https://3iinc.xyz/idiots/${edge.node.authorData.authorSlug}/`}
                                 description={`'${edge.node.authorData.authorDescription}' Read All The Idiotic Views By ${edge.node.authorData.authorName} | Idiots By Choice!`}
+                                type='profile'
                             />
                         </div>
                     </>

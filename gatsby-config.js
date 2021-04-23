@@ -6,13 +6,13 @@ const queries = require("./src/utils/algolia")
 
 module.exports = {
     siteMetadata: {
-        title: `3i INC | 3 Idiots Incorporated.`,
-        description: `Idiots by Choice! | 3 Idiots Incorporated.`,
+        title: `3i INC. | 3 Idiots Incorporated`,
+        description: `Idiots by Choice! | 3iinc.xyz`,
         author: `@3iinc`,
         siteUrl: `https://3iinc.xyz`,
         keywords: ``,
-        image: ``,
-        url: ``,
+        image: `https://images.ctfassets.net/2g0bd82kkvps/6YYHEOQ1diL651fE06jWpy/30e2abe4ffe942d9538912f5a6fb4b03/threeiinc-icon.png`,
+        url: `https://3iinc.xyz`,
     },
 
     plugins: [

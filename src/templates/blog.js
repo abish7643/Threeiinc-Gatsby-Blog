@@ -127,6 +127,7 @@ const BlogTemplate = (props) => {
                     url={`https://3iinc.xyz/blog/${props.data.currentBlog.slug}/`}
                     image={`https:${props.data.currentBlog.seoImage.fluid.src}`}
                     author={props.data.currentBlog.authorData.seoAuthorName}
+                    type= 'articles'
                 />
                 <div
                     style={{ background: data.muted, opacity: "0.16" }}
