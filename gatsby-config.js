@@ -6,7 +6,7 @@ const queries = require("./src/utils/algolia")
 
 module.exports = {
     siteMetadata: {
-        title: `3i INC. | 3 Idiots Incorporated`,
+        title: `3 Idiots Incorporated`,
         description: `Idiots by Choice! | 3iinc.xyz`,
         author: `@3iinc`,
         siteUrl: `https://3iinc.xyz`,

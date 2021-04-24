@@ -8,7 +8,7 @@ const NotFoundPage = () => (
         <SEO 
             title="404: Not found" 
             keywords="3iinc, idiots, 3i, INC, 3 Idiots Incorporation, 3 Idiots Incorporated, 3 Idiots, Blog, Articles, Rogue, Idiot, Choice"
-            image='https://images.ctfassets.net/2g0bd82kkvps/6YYHEOQ1diL651fE06jWpy/30e2abe4ffe942d9538912f5a6fb4b03/threeiinc-icon.png'
+            image='https://images.ctfassets.net/2g0bd82kkvps/6ynBunIyUpjS8JMkNoZDrt/6c334f81010a4401ea1f99292bb9376c/threeiinc-cover.png'
         />
         <NavBlackText />
         <div

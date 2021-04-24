@@ -56,6 +56,7 @@ export default () => (
                     ]}
                     url="https://3iinc.xyz/idiots/"
                     author="3i INC"
+                    image="https://images.ctfassets.net/2g0bd82kkvps/6ynBunIyUpjS8JMkNoZDrt/6c334f81010a4401ea1f99292bb9376c/threeiinc-cover.png"
                 />
 
                 <div
