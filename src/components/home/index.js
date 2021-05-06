@@ -65,9 +65,9 @@ export default () => (
                                 style={{
                                     backgroundImage: `linear-gradient(
                     to bottom,
-                    rgba(10, 10, 10, 0) 0%,
-                    rgba(10, 10, 10, 0.36) 50%,
-                    rgba(10, 10, 10, 0.6) 100%),
+                    rgba(10, 10, 10, 0.24) 0%,
+                    rgba(10, 10, 10, 0.48) 40%,
+                    rgba(10, 10, 10, 0.88) 100%),
                     url(${edge.node.featuredImage.fluid.src})`,
                                 }}
                                 onClick={() =>
