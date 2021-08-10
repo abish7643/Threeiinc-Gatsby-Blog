@@ -58,7 +58,7 @@ const BlogTemplate = (props) => {
     let multipleChapterPresentTop
     let multipleChapterPresentBottom
     let multipleChapterContainer
-    if (multipleState === 1) {
+    if (multipleState === true) {
         multipleChapterContainer = props.data.currentBlog.chapters.map(
             (chapters) => (
                 <div
