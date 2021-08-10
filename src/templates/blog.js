@@ -39,7 +39,7 @@ const BlogTemplate = (props) => {
 
     const shareUrl = `https://3iinc.xyz/blog/${props.data.currentBlog.slug}/`
     const keywordsArray = props.data.currentBlog.seoKeywords
-    const shareTitle = `${props.data.currentBlog.title} | 3i INC | 3 Idiots Incorporated.`
+    const shareTitle = `${props.data.currentBlog.title}`
     //const propDescription = `${shareTitle} | ${shareUrl}`
     //const shareTitleLink = `${shareTitle} | ${shareUrl}`
 
@@ -127,7 +127,7 @@ const BlogTemplate = (props) => {
                     url={`https://3iinc.xyz/blog/${props.data.currentBlog.slug}/`}
                     image={`https:${props.data.currentBlog.seoImage.fluid.src}`}
                     author={props.data.currentBlog.authorData.seoAuthorName}
-                    type= 'articles'
+                    type="articles"
                 />
                 <div
                     style={{ background: data.muted, opacity: "0.16" }}
