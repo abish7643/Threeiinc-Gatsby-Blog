@@ -167,6 +167,7 @@ module.exports = {
         },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
+        `gatsby-plugin-twitter`,
         {
             resolve: `gatsby-transformer-remark`,
             options: {
@@ -191,8 +192,8 @@ module.exports = {
                         options: {
                             lineNumbers: true,
                             editable: false,
-                            terminal: 'carbon',
-                            theme: 'one-dark'
+                            terminal: "carbon",
+                            theme: "one-dark",
                         },
                     },
                     {
