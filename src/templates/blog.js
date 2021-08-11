@@ -54,11 +54,11 @@ const BlogTemplate = (props) => {
         marginTop: "-4px",
     }
 
-    const multipleState = props.data.currentBlog.multipleChapters
+    const multipleChapters = props.data.currentBlog.chapters
     let multipleChapterPresentTop
     let multipleChapterPresentBottom
     let multipleChapterContainer
-    if (multipleState === true) {
+    if (multipleChapters !== null) {
         multipleChapterContainer = props.data.currentBlog.chapters.map(
             (chapters) => (
                 <div
