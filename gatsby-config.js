@@ -16,6 +16,7 @@ module.exports = {
     },
 
     plugins: [
+        `gatsby-plugin-image`,
         {
             // This plugin must be placed last in your list of plugins to ensure that it can query all the GraphQL data
             resolve: `gatsby-plugin-algolia`,
@@ -58,22 +59,22 @@ module.exports = {
                 color: "#93e9be",
             },
         },
-        {
-            resolve: `gatsby-plugin-scroll-reveal`,
-            options: {
-                threshold: 0.1, // Percentage of an element's area that needs to be visible to launch animation
-                once: true, // Defines if animation needs to be launched once
-                disable: false, // Flag for disabling animations
+        // {
+        //     resolve: `gatsby-plugin-scroll-reveal`,
+        //     options: {
+        //         threshold: 0.1, // Percentage of an element's area that needs to be visible to launch animation
+        //         once: true, // Defines if animation needs to be launched once
+        //         disable: false, // Flag for disabling animations
 
-                // Advanced Options
-                selector: "[data-sal]", // Selector of the elements to be animated
-                animateClassName: "sal-animate", // Class name which triggers animation
-                disabledClassName: "sal-disabled", // Class name which defines the disabled state
-                rootMargin: "0% 50%", // Corresponds to root's bounding box margin
-                enterEventName: "sal:in", // Enter event name
-                exitEventName: "sal:out", // Exit event name
-            },
-        },
+        //         // Advanced Options
+        //         selector: "[data-sal]", // Selector of the elements to be animated
+        //         animateClassName: "sal-animate", // Class name which triggers animation
+        //         disabledClassName: "sal-disabled", // Class name which defines the disabled state
+        //         rootMargin: "0% 50%", // Corresponds to root's bounding box margin
+        //         enterEventName: "sal:in", // Enter event name
+        //         exitEventName: "sal:out", // Exit event name
+        //     },
+        // },
         {
             resolve: `gatsby-plugin-google-fonts`,
             options: {
@@ -95,7 +96,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-sitemap`,
             options: {
-                exclude: [`/thankyouidiot`, `/404`],
+                excludes: [`/thankyouidiot`, `/404`],
                 changefreq: `daily`,
                 query: `{
                     allSitePage {

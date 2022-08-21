@@ -1,0 +1,80 @@
+{
+  "name": "gatsby-threeinc",
+  "private": true,
+  "description": "Idiots by Choice | 3 Idiots Incorporations | 3i INC",
+  "version": "0.1.0",
+  "author": "Abish Vijayan <abishvijayan7643@gmail.com>",
+  "dependencies": {
+    "@deckdeckgo/highlight-code": "^2.2.2",
+    "algoliasearch": "^4.10.3",
+    "browser-monads": "^1.0.0",
+    "dns-packet": "^1.3.4",
+    "dotenv": "^8.2.0",
+    "gatsby": "^3.0.0",
+    "gatsby-cli": "^2.16.1",
+    "gatsby-image": "^2.8.0",
+    "gatsby-plugin-algolia": "^0.22.0",
+    "gatsby-plugin-canonical-urls": "^2.7.0",
+    "gatsby-plugin-google-analytics": "^2.8.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-manifest": "^2.9.0",
+    "gatsby-plugin-nprogress": "^2.7.0",
+    "gatsby-plugin-offline": "^3.7.0",
+    "gatsby-plugin-page-progress": "^2.2.1",
+    "gatsby-plugin-react-helmet": "^3.7.0",
+    "gatsby-plugin-scroll-reveal": "^0.0.7",
+    "gatsby-plugin-sharp": "^2.11.1",
+    "gatsby-plugin-sitemap": "^2.9.0",
+    "gatsby-plugin-twitter": "^3.11.0",
+    "gatsby-remark-component": "^1.1.3",
+    "gatsby-remark-external-links": "^0.0.4",
+    "gatsby-remark-highlight-code": "^2.1.1",
+    "gatsby-remark-images": "^3.8.0",
+    "gatsby-remark-images-contentful": "^2.7.0",
+    "gatsby-remark-images-medium-zoom": "^1.4.0",
+    "gatsby-remark-lazy-load": "^1.0.2",
+    "gatsby-remark-prismjs": "^3.10.0",
+    "gatsby-source-contentful": "^3.1.3",
+    "gatsby-source-filesystem": "^2.8.0",
+    "gatsby-transformer-remark": "^2.13.0",
+    "gatsby-transformer-sharp": "^2.9.0",
+    "hyvor-talk-react": "^1.0.3",
+    "moment": "^2.29.1",
+    "prismjs": "^1.24.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-helmet": "^6.1.0",
+    "react-instantsearch-dom": "^6.12.1",
+    "react-palette": "^1.0.2",
+    "react-share": "^4.3.1",
+    "trim": "0.0.3",
+    "trim-newlines": "^3.0.1",
+    "ws": "^6.2.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  },
+  "keywords": [
+    "3iinc",
+    "3 Idiots Incorporations",
+    "3i INC"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

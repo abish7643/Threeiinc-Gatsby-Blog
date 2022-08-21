@@ -1,5 +1,5 @@
 import React from "react"
-import HyvorTalk from "hyvor-talk-react"
+import {Embed, CommentCount} from "hyvor-talk-react"
 
 export default class CommentSection extends React.Component {
     state = {
@@ -17,7 +17,7 @@ export default class CommentSection extends React.Component {
         let hyvorPlatform
         if (this.state.clicked === true) {
             hyvorPlatform = (
-                <HyvorTalk.Embed
+                <Embed
                     websiteId={321}
                     loadMode="scroll"
                     id={this.props.slug.data.currentBlog.slug}
@@ -40,7 +40,7 @@ export default class CommentSection extends React.Component {
                 >
                     {" "}
                     Read Responses (<span> </span>
-                    <HyvorTalk.CommentCount
+                    <CommentCount
                         data-talk-mode="number"
                         id={this.props.slug.data.currentBlog.slug}
                         websiteId={321}
