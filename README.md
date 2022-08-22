@@ -3,6 +3,9 @@
 [3iinc.xyz](https://3iinc.xyz/)<br/>
 [3iinc.netlify.app](https://3iinc.netlify.app/)
 
+# Important Note
+This project is based on Gatsby V2. Due to lack of maintainers, this project is not recommended anymore and will be archived soon.
+
 ---
   
 <h1 align="center">
