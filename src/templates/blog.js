@@ -9,7 +9,7 @@ import "./author.css"
 import Footer from "../components/footer"
 import Img from "gatsby-image"
 import CommentSection from "../components/comment"
-import { usePalette } from "react-palette"
+// import { usePalette } from "react-palette"
 import Searchcard from "../components/atoms/search/searchcard"
 import "@deckdeckgo/highlight-code"
 // import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader"
@@ -31,7 +31,7 @@ const BlogTemplate = (props) => {
     deckdeckgoLoader.defineCustomElements()
 
     const shareMedia = `https:${props.data.currentBlog.featuredImage.fluid.src}`
-    const { data, loading, error } = usePalette(shareMedia)
+    // const { data, loading, error } = usePalette(shareMedia)
 
     const date = {
         createdat: props.data.currentBlog.createdAt,
@@ -130,7 +130,7 @@ const BlogTemplate = (props) => {
                     type="articles"
                 />
                 <div
-                    style={{ background: data.muted, opacity: "0.16" }}
+                    style={{ background: "#e2dedb", opacity: "0.6"}}
                     className="blog__color__header"
                 ></div>
                 <div className="blog__info">
