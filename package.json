@@ -10,7 +10,7 @@
     "browser-monads": "^1.0.0",
     "dns-packet": "^1.3.4",
     "dotenv": "^8.2.0",
-    "gatsby": "2.32.13",
+    "gatsby": "5.3.3",
     "gatsby-cli": "^2.16.1",
     "gatsby-image": "^2.8.0",
     "gatsby-plugin-algolia": "^0.22.0",
