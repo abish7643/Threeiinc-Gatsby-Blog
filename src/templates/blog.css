@@ -347,10 +347,23 @@ a {
     line-height: 1.72;
     text-align: left;
     font-weight: 400;
-    color: #323232;
-    opacity: 0.88;
+    color: #4d4d4d;
+    opacity: 1;
     margin-top: 40px;
     margin-bottom: 0px;
+}
+.blog__content ol {
+    margin-top: 40px;
+    margin-bottom: 12px;
+    margin-left: -5px;
+}
+.blog__content ol li {
+    font-family: "Montserrat";
+    font-size: 16px;
+    line-height: 1.72;
+    text-align: left;
+    font-weight: 400;
+    color: #4d4d4d;
 }
 .blog__content a {
     text-decoration: none;
@@ -786,6 +799,21 @@ h6 {
         padding-bottom: 48px;
     }
     .blog__content p {
+        font-size: 15px;
+        margin-top: 24px;
+    }
+    .blog__content ol {
+        margin-top: 24px;
+    }
+    .blog__content ol li {
+        font-size: 15px;
+        margin-top: 24px;
+    }
+
+    .blog__content ul {
+        margin-top: 24px;
+    }
+    .blog__content ul li {
         font-size: 15px;
         margin-top: 24px;
     }
