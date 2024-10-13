@@ -33,7 +33,7 @@
 
 .newsletter__form {
     color: black;
-    font-family: "Playfair Display";
+    font-family: "Montserrat", "Playfair Display", sans-serif;
     padding: 20px;
     border-radius: 0px;
     box-shadow: 0px 4px 8px 0px rgba(10, 10, 10, 0.2);

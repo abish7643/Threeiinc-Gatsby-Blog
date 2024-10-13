@@ -102,19 +102,21 @@
     transition: all 0.3s ease 0s;
 }
 input[type="text"] {
-    font-family: "Playfair Display";
+    font-family: "Montserrat", "Playfair Display", sans-serif;
     font-weight: 400;
     color: black;
     padding-left: 4px;
+    font-size: 16px;
 }
 input[type="email"] {
-    font-family: "Playfair Display";
+    font-family: "Montserrat", "Playfair Display", sans-serif;
     font-weight: 400;
     color: black;
     padding-left: 4px;
+    font-size: 16px;
 }
 textarea[type="message"] {
-    font-family: "Playfair Display";
+    font-family: "Montserrat", "Playfair Display", sans-serif;
     font-weight: 400;
     padding-left: 4px;
     padding-top: 2px;

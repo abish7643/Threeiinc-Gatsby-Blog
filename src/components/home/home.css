@@ -108,10 +108,10 @@
 .viewmore_wrapper {
     border-radius: 4px;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 500;
-    width: 160px;
+    width: 176px;
     height: 40px;
     cursor: pointer;
     border: 1px solid #2a5298;
@@ -137,10 +137,10 @@
 .viewmore_wrapper__outline {
     border-radius: 4px;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 500;
-    width: 160px;
+    width: 176px;
     height: 40px;
     cursor: pointer;
     border: 1px solid #2a5298;
@@ -293,6 +293,7 @@
     }
     .viewmore_wrapper {
         width: 100%;
+        font-size: 14px;
     }
     .viewmore_wrapper__link {
         width: 100%;
@@ -301,6 +302,7 @@
     }
     .viewmore_wrapper__outline {
         width: 100%;
+        font-size: 14px;
     }
     .feed__heading {
         margin-top: 0px;
