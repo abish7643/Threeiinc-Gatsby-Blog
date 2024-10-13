@@ -127,7 +127,7 @@ body {
 
 .blog__color__header {
     background-image: linear-gradient(to right, #eee 0%, #eee 51%);
-    height: 560px;
+    height: 600px;
     width: 100vw;
     position: absolute;
     left: 50%;
