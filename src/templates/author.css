@@ -43,16 +43,17 @@
     background-color: black;
     color: white;
     margin: 8px 0px;
+    font-size: 18px;
 }
 
 .author__label {
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
     padding: 16px 0px 0px 0px;
 }
 
 .author__description {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.4;
     padding: 4px 16px 16px 0px;
     color: #323232;

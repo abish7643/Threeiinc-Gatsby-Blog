@@ -234,6 +234,7 @@ textarea[type="message"] {
 .footer__contact__one p {
     font-weight: 400;
     margin-top: -8px;
+    font-size: 16px;
 }
 .footer__contact__one h1 {
     font-weight: 500;
@@ -251,6 +252,7 @@ textarea[type="message"] {
 .footer__contact__one h3 {
     font-weight: 500;
     margin-top: -16px;
+    font-size: 24px;
 }
 .footer__contact__two {
     width: 30%;

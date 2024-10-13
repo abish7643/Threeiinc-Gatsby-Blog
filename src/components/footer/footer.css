@@ -43,7 +43,7 @@
 }
 
 .newsletter__form p {
-    font-size: 17px;
+    font-size: 20px;
 }
 .newsletter__field {
     display: flex;
@@ -74,6 +74,8 @@
 
 .newsletter__field input[type="email"] {
     padding-left: 4px;
+    font-size: 16px;
+    font-family: "Montserrat", "Playfair Display", sans-serif;
 }
 
 .newsletter__field p {
@@ -183,7 +185,7 @@
         line-height: 38px;
     }
     .newsletter__form p {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
