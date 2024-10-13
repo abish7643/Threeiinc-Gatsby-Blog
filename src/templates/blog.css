@@ -364,6 +364,7 @@ a {
     text-align: left;
     font-weight: 400;
     color: #4d4d4d;
+    margin-top: 24px;
 }
 .blog__content a {
     text-decoration: none;
@@ -387,6 +388,15 @@ a {
     margin-top: 40px;
     margin-bottom: 12px;
     margin-left: -5px;
+}
+.blog__content ul li {
+    font-family: "Montserrat";
+    font-size: 16px;
+    line-height: 1.72;
+    text-align: left;
+    font-weight: 400;
+    color: #4d4d4d;
+    margin-top: 24px;
 }
 .blog__content li {
     margin: 5px 0px;
